@@ -1,0 +1,18 @@
+service vendor.usb_default /vendor/bin/hw/android.hardware.usb-service.example
+    class hal
+    user system
+    group system shell
+
+on boot
+    chown root system /sys/class/typec/port0/power_role
+    chown root system /sys/class/typec/port0/data_role
+    chown root system /sys/class/typec/port0/port_type
+    chmod 664 /sys/class/typec/port0/power_role
+    chmod 664 /sys/class/typec/port0/data_role
+    chmod 664 /sys/class/typec/port0/port_type
+
+    chown root system /config/usb_gadget/g1/UDC
+    chmod 664 /config/usb_gadget/g1/UDC
+
+    chown root system /sys/class/usb_notify/usb_control/usb_data_enabled
+    chmod 664 /sys/class/usb_notify/usb_control/usb_data_enabled

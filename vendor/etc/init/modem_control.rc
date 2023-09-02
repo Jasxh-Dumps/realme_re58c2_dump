@@ -1,0 +1,7 @@
+service vendor.modem_control  /vendor/bin/modem_control
+    class core
+    user root
+    group system radio shell
+
+ #transfer modem control log to kernel log need open this code
+ #   file /dev/kmsg w

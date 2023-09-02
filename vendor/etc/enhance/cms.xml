@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <enhance major_version="13"/>
+  <enhance version="2206292012"/>
+  <hsv_cm_epf_slp_ltm>
+    <reg_table mode="auto">
+      <hsv>
+        <param hue="0" sat="1024"/>
+        <param hue="1" sat="1024"/>
+        <param hue="2" sat="1024"/>
+        <param hue="3" sat="1024"/>
+        <param hue="4" sat="1024"/>
+        <param hue="5" sat="1024"/>
+        <param hue="6" sat="1024"/>
+        <param hue="7" sat="1024"/>
+        <param hue="8" sat="1024"/>
+        <param hue="9" sat="1024"/>
+        <param hue="10" sat="1024"/>
+        <param hue="11" sat="1024"/>
+        <param hue="12" sat="1024"/>
+        <param hue="13" sat="1024"/>
+        <param hue="14" sat="1024"/>
+        <param hue="15" sat="1024"/>
+        <param hue="16" sat="1024"/>
+        <param hue="17" sat="1024"/>
+        <param hue="18" sat="1024"/>
+        <param hue="19" sat="1024"/>
+        <param hue="20" sat="1024"/>
+        <param hue="21" sat="1024"/>
+        <param hue="22" sat="1024"/>
+        <param hue="23" sat="1024"/>
+        <param hue="24" sat="1024"/>
+        <param hue="25" sat="1024"/>
+        <param hue="26" sat="1024"/>
+        <param hue="27" sat="1024"/>
+        <param hue="28" sat="1024"/>
+        <param hue="29" sat="1024"/>
+        <param hue="30" sat="1024"/>
+        <param hue="31" sat="1024"/>
+        <param hue="32" sat="1024"/>
+        <param hue="33" sat="1024"/>
+        <param hue="34" sat="1024"/>
+        <param hue="35" sat="1024"/>
+        <param hue="36" sat="1024"/>
+        <param hue="37" sat="1024"/>
+        <param hue="38" sat="1024"/>
+        <param hue="39" sat="1024"/>
+        <param hue="40" sat="1024"/>
+        <param hue="41" sat="1024"/>
+        <param hue="42" sat="1024"/>
+        <param hue="43" sat="1024"/>
+        <param hue="44" sat="1024"/>
+        <param hue="45" sat="1024"/>
+        <param hue="46" sat="1024"/>
+        <param hue="47" sat="1024"/>
+        <param hue="48" sat="1024"/>
+        <param hue="49" sat="1024"/>
+        <param hue="50" sat="1024"/>
+        <param hue="51" sat="1024"/>
+        <param hue="52" sat="1024"/>
+        <param hue="53" sat="1024"/>
+        <param hue="54" sat="1024"/>
+        <param hue="55" sat="1024"/>
+        <param hue="56" sat="1024"/>
+        <param hue="57" sat="1024"/>
+        <param hue="58" sat="1024"/>
+        <param hue="59" sat="1024"/>
+        <param hue="60" sat="1024"/>
+        <param hue="61" sat="1024"/>
+        <param hue="62" sat="1024"/>
+        <param hue="63" sat="1024"/>
+        <param hue="64" sat="1024"/>
+        <param hue="65" sat="1024"/>
+        <param hue="66" sat="1024"/>
+        <param hue="67" sat="1024"/>
+        <param hue="68" sat="1024"/>
+        <param hue="69" sat="1024"/>
+        <param hue="70" sat="1024"/>
+        <param hue="71" sat="1024"/>
+        <param hue="72" sat="1024"/>
+        <param hue="73" sat="1024"/>
+        <param hue="74" sat="1024"/>
+        <param hue="75" sat="1024"/>
+        <param hue="76" sat="1024"/>
+        <param hue="77" sat="1024"/>
+        <param hue="78" sat="1024"/>
+        <param hue="79" sat="1024"/>
+        <param hue="80" sat="1024"/>
+        <param hue="81" sat="1024"/>
+        <param hue="82" sat="1024"/>
+        <param hue="83" sat="1024"/>
+        <param hue="84" sat="1024"/>
+        <param hue="85" sat="1024"/>
+        <param hue="86" sat="1024"/>
+        <param hue="87" sat="1024"/>
+        <param hue="88" sat="1024"/>
+        <param hue="89" sat="1024"/>
+        <param hue="90" sat="1024"/>
+        <param hue="91" sat="1024"/>
+        <param hue="92" sat="1024"/>
+        <param hue="93" sat="1024"/>
+        <param hue="94" sat="1024"/>
+        <param hue="95" sat="1024"/>
+        <param hue="96" sat="1024"/>
+        <param hue="97" sat="1024"/>
+        <param hue="98" sat="1024"/>
+        <param hue="99" sat="1024"/>
+        <param hue="100" sat="1024"/>
+        <param hue="101" sat="1024"/>
+        <param hue="102" sat="1024"/>
+        <param hue="103" sat="1024"/>
+        <param hue="104" sat="1024"/>
+        <param hue="105" sat="1024"/>
+        <param hue="106" sat="1024"/>
+        <param hue="107" sat="1024"/>
+        <param hue="108" sat="1024"/>
+        <param hue="109" sat="1024"/>
+        <param hue="110" sat="1024"/>
+        <param hue="111" sat="1024"/>
+        <param hue="112" sat="1024"/>
+        <param hue="113" sat="1024"/>
+        <param hue="114" sat="1024"/>
+        <param hue="115" sat="1024"/>
+        <param hue="116" sat="1024"/>
+        <param hue="117" sat="1024"/>
+        <param hue="118" sat="1024"/>
+        <param hue="119" sat="1024"/>
+        <param hue="120" sat="1024"/>
+        <param hue="121" sat="1024"/>
+        <param hue="122" sat="1024"/>
+        <param hue="123" sat="1024"/>
+        <param hue="124" sat="1024"/>
+        <param hue="125" sat="1024"/>
+        <param hue="126" sat="1024"/>
+        <param hue="127" sat="1024"/>
+        <param hue="128" sat="1024"/>
+        <param hue="129" sat="1024"/>
+        <param hue="130" sat="1024"/>
+        <param hue="131" sat="1024"/>
+        <param hue="132" sat="1024"/>
+        <param hue="133" sat="1024"/>
+        <param hue="134" sat="1024"/>
+        <param hue="135" sat="1024"/>
+        <param hue="136" sat="1024"/>
+        <param hue="137" sat="1024"/>
+        <param hue="138" sat="1024"/>
+        <param hue="139" sat="1024"/>
+        <param hue="140" sat="1024"/>
+        <param hue="141" sat="1024"/>
+        <param hue="142" sat="1024"/>
+        <param hue="143" sat="1024"/>
+        <param hue="144" sat="1024"/>
+        <param hue="145" sat="1024"/>
+        <param hue="146" sat="1024"/>
+        <param hue="147" sat="1024"/>
+        <param hue="148" sat="1024"/>
+        <param hue="149" sat="1024"/>
+        <param hue="150" sat="1024"/>
+        <param hue="151" sat="1024"/>
+        <param hue="152" sat="1024"/>
+        <param hue="153" sat="1024"/>
+        <param hue="154" sat="1024"/>
+        <param hue="155" sat="1024"/>
+        <param hue="156" sat="1024"/>
+        <param hue="157" sat="1024"/>
+        <param hue="158" sat="1024"/>
+        <param hue="159" sat="1024"/>
+        <param hue="160" sat="1024"/>
+        <param hue="161" sat="1024"/>
+        <param hue="162" sat="1024"/>
+        <param hue="163" sat="1024"/>
+        <param hue="164" sat="1024"/>
+        <param hue="165" sat="1024"/>
+        <param hue="166" sat="1024"/>
+        <param hue="167" sat="1024"/>
+        <param hue="168" sat="1024"/>
+        <param hue="169" sat="1024"/>
+        <param hue="170" sat="1024"/>
+        <param hue="171" sat="1024"/>
+        <param hue="172" sat="1024"/>
+        <param hue="173" sat="1024"/>
+        <param hue="174" sat="1024"/>
+        <param hue="175" sat="1024"/>
+        <param hue="176" sat="1024"/>
+        <param hue="177" sat="1024"/>
+        <param hue="178" sat="1024"/>
+        <param hue="179" sat="1024"/>
+        <param hue="180" sat="1024"/>
+        <param hue="181" sat="1024"/>
+        <param hue="182" sat="1024"/>
+        <param hue="183" sat="1024"/>
+        <param hue="184" sat="1024"/>
+        <param hue="185" sat="1024"/>
+        <param hue="186" sat="1024"/>
+        <param hue="187" sat="1024"/>
+        <param hue="188" sat="1024"/>
+        <param hue="189" sat="1024"/>
+        <param hue="190" sat="1024"/>
+        <param hue="191" sat="1024"/>
+        <param hue="192" sat="1024"/>
+        <param hue="193" sat="1024"/>
+        <param hue="194" sat="1024"/>
+        <param hue="195" sat="1024"/>
+        <param hue="196" sat="1024"/>
+        <param hue="197" sat="1024"/>
+        <param hue="198" sat="1024"/>
+        <param hue="199" sat="1024"/>
+        <param hue="200" sat="1024"/>
+        <param hue="201" sat="1024"/>
+        <param hue="202" sat="1024"/>
+        <param hue="203" sat="1024"/>
+        <param hue="204" sat="1024"/>
+        <param hue="205" sat="1024"/>
+        <param hue="206" sat="1024"/>
+        <param hue="207" sat="1024"/>
+        <param hue="208" sat="1024"/>
+        <param hue="209" sat="1024"/>
+        <param hue="210" sat="1024"/>
+        <param hue="211" sat="1024"/>
+        <param hue="212" sat="1024"/>
+        <param hue="213" sat="1024"/>
+        <param hue="214" sat="1024"/>
+        <param hue="215" sat="1024"/>
+        <param hue="216" sat="1024"/>
+        <param hue="217" sat="1024"/>
+        <param hue="218" sat="1024"/>
+        <param hue="219" sat="1024"/>
+        <param hue="220" sat="1024"/>
+        <param hue="221" sat="1024"/>
+        <param hue="222" sat="1024"/>
+        <param hue="223" sat="1024"/>
+        <param hue="224" sat="1024"/>
+        <param hue="225" sat="1024"/>
+        <param hue="226" sat="1024"/>
+        <param hue="227" sat="1024"/>
+        <param hue="228" sat="1024"/>
+        <param hue="229" sat="1024"/>
+        <param hue="230" sat="1024"/>
+        <param hue="231" sat="1024"/>
+        <param hue="232" sat="1024"/>
+        <param hue="233" sat="1024"/>
+        <param hue="234" sat="1024"/>
+        <param hue="235" sat="1024"/>
+        <param hue="236" sat="1024"/>
+        <param hue="237" sat="1024"/>
+        <param hue="238" sat="1024"/>
+        <param hue="239" sat="1024"/>
+        <param hue="240" sat="1024"/>
+        <param hue="241" sat="1024"/>
+        <param hue="242" sat="1024"/>
+        <param hue="243" sat="1024"/>
+        <param hue="244" sat="1024"/>
+        <param hue="245" sat="1024"/>
+        <param hue="246" sat="1024"/>
+        <param hue="247" sat="1024"/>
+        <param hue="248" sat="1024"/>
+        <param hue="249" sat="1024"/>
+        <param hue="250" sat="1024"/>
+        <param hue="251" sat="1024"/>
+        <param hue="252" sat="1024"/>
+        <param hue="253" sat="1024"/>
+        <param hue="254" sat="1024"/>
+        <param hue="255" sat="1024"/>
+        <param hue="256" sat="1024"/>
+        <param hue="257" sat="1024"/>
+        <param hue="258" sat="1024"/>
+        <param hue="259" sat="1024"/>
+        <param hue="260" sat="1024"/>
+        <param hue="261" sat="1024"/>
+        <param hue="262" sat="1024"/>
+        <param hue="263" sat="1024"/>
+        <param hue="264" sat="1024"/>
+        <param hue="265" sat="1024"/>
+        <param hue="266" sat="1024"/>
+        <param hue="267" sat="1024"/>
+        <param hue="268" sat="1024"/>
+        <param hue="269" sat="1024"/>
+        <param hue="270" sat="1024"/>
+        <param hue="271" sat="1024"/>
+        <param hue="272" sat="1024"/>
+        <param hue="273" sat="1024"/>
+        <param hue="274" sat="1024"/>
+        <param hue="275" sat="1024"/>
+        <param hue="276" sat="1024"/>
+        <param hue="277" sat="1024"/>
+        <param hue="278" sat="1024"/>
+        <param hue="279" sat="1024"/>
+        <param hue="280" sat="1024"/>
+        <param hue="281" sat="1024"/>
+        <param hue="282" sat="1024"/>
+        <param hue="283" sat="1024"/>
+        <param hue="284" sat="1024"/>
+        <param hue="285" sat="1024"/>
+        <param hue="286" sat="1024"/>
+        <param hue="287" sat="1024"/>
+        <param hue="288" sat="1024"/>
+        <param hue="289" sat="1024"/>
+        <param hue="290" sat="1024"/>
+        <param hue="291" sat="1024"/>
+        <param hue="292" sat="1024"/>
+        <param hue="293" sat="1024"/>
+        <param hue="294" sat="1024"/>
+        <param hue="295" sat="1024"/>
+        <param hue="296" sat="1024"/>
+        <param hue="297" sat="1024"/>
+        <param hue="298" sat="1024"/>
+        <param hue="299" sat="1024"/>
+        <param hue="300" sat="1024"/>
+        <param hue="301" sat="1024"/>
+        <param hue="302" sat="1024"/>
+        <param hue="303" sat="1024"/>
+        <param hue="304" sat="1024"/>
+        <param hue="305" sat="1024"/>
+        <param hue="306" sat="1024"/>
+        <param hue="307" sat="1024"/>
+        <param hue="308" sat="1024"/>
+        <param hue="309" sat="1024"/>
+        <param hue="310" sat="1024"/>
+        <param hue="311" sat="1024"/>
+        <param hue="312" sat="1024"/>
+        <param hue="313" sat="1024"/>
+        <param hue="314" sat="1024"/>
+        <param hue="315" sat="1024"/>
+        <param hue="316" sat="1024"/>
+        <param hue="317" sat="1024"/>
+        <param hue="318" sat="1024"/>
+        <param hue="319" sat="1024"/>
+        <param hue="320" sat="1024"/>
+        <param hue="321" sat="1024"/>
+        <param hue="322" sat="1024"/>
+        <param hue="323" sat="1024"/>
+        <param hue="324" sat="1024"/>
+        <param hue="325" sat="1024"/>
+        <param hue="326" sat="1024"/>
+        <param hue="327" sat="1024"/>
+        <param hue="328" sat="1024"/>
+        <param hue="329" sat="1024"/>
+        <param hue="330" sat="1024"/>
+        <param hue="331" sat="1024"/>
+        <param hue="332" sat="1024"/>
+        <param hue="333" sat="1024"/>
+        <param hue="334" sat="1024"/>
+        <param hue="335" sat="1024"/>
+        <param hue="336" sat="1024"/>
+        <param hue="337" sat="1024"/>
+        <param hue="338" sat="1024"/>
+        <param hue="339" sat="1024"/>
+        <param hue="340" sat="1024"/>
+        <param hue="341" sat="1024"/>
+        <param hue="342" sat="1024"/>
+        <param hue="343" sat="1024"/>
+        <param hue="344" sat="1024"/>
+        <param hue="345" sat="1024"/>
+        <param hue="346" sat="1024"/>
+        <param hue="347" sat="1024"/>
+        <param hue="348" sat="1024"/>
+        <param hue="349" sat="1024"/>
+        <param hue="350" sat="1024"/>
+        <param hue="351" sat="1024"/>
+        <param hue="352" sat="1024"/>
+        <param hue="353" sat="1024"/>
+        <param hue="354" sat="1024"/>
+        <param hue="355" sat="1024"/>
+        <param hue="356" sat="1024"/>
+        <param hue="357" sat="1024"/>
+        <param hue="358" sat="1024"/>
+        <param hue="359" sat="1024"/>
+      </hsv>
+      <cm>
+        <param coef00="1024"/>
+        <param coef01="0"/>
+        <param coef02="0"/>
+        <param coef03="0"/>
+        <param coef10="0"/>
+        <param coef11="1024"/>
+        <param coef12="0"/>
+        <param coef13="0"/>
+        <param coef20="0"/>
+        <param coef21="0"/>
+        <param coef22="1024"/>
+        <param coef23="0"/>
+      </cm>
+      <epf>
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+      </epf>
+      <slp>
+        <param brightness="16"/>
+      </slp>
+      <ltm>
+        <param slp_step_clip="255"/>
+        <param slp_high_clip="40"/>
+        <param slp_low_clip="40"/>
+      </ltm>
+    </reg_table>
+    <reg_table mode="enhance">
+      <hsv>
+        <param hue="0" sat="1024"/>
+        <param hue="1" sat="1024"/>
+        <param hue="2" sat="1024"/>
+        <param hue="3" sat="1024"/>
+        <param hue="4" sat="1024"/>
+        <param hue="5" sat="1024"/>
+        <param hue="6" sat="1024"/>
+        <param hue="7" sat="1024"/>
+        <param hue="8" sat="1024"/>
+        <param hue="9" sat="1024"/>
+        <param hue="10" sat="1024"/>
+        <param hue="11" sat="1024"/>
+        <param hue="12" sat="1024"/>
+        <param hue="13" sat="1024"/>
+        <param hue="14" sat="1024"/>
+        <param hue="15" sat="1024"/>
+        <param hue="16" sat="1024"/>
+        <param hue="17" sat="1024"/>
+        <param hue="18" sat="1024"/>
+        <param hue="19" sat="1024"/>
+        <param hue="20" sat="1024"/>
+        <param hue="21" sat="1024"/>
+        <param hue="22" sat="1024"/>
+        <param hue="23" sat="1024"/>
+        <param hue="24" sat="1024"/>
+        <param hue="25" sat="1024"/>
+        <param hue="26" sat="1024"/>
+        <param hue="27" sat="1024"/>
+        <param hue="28" sat="1024"/>
+        <param hue="29" sat="1024"/>
+        <param hue="30" sat="1024"/>
+        <param hue="31" sat="1024"/>
+        <param hue="32" sat="1024"/>
+        <param hue="33" sat="1024"/>
+        <param hue="34" sat="1024"/>
+        <param hue="35" sat="1024"/>
+        <param hue="36" sat="1024"/>
+        <param hue="37" sat="1024"/>
+        <param hue="38" sat="1024"/>
+        <param hue="39" sat="1024"/>
+        <param hue="40" sat="1024"/>
+        <param hue="41" sat="1024"/>
+        <param hue="42" sat="1024"/>
+        <param hue="43" sat="1024"/>
+        <param hue="44" sat="1024"/>
+        <param hue="45" sat="1024"/>
+        <param hue="46" sat="1024"/>
+        <param hue="47" sat="1024"/>
+        <param hue="48" sat="1024"/>
+        <param hue="49" sat="1024"/>
+        <param hue="50" sat="1024"/>
+        <param hue="51" sat="1024"/>
+        <param hue="52" sat="1024"/>
+        <param hue="53" sat="1024"/>
+        <param hue="54" sat="1024"/>
+        <param hue="55" sat="1024"/>
+        <param hue="56" sat="1024"/>
+        <param hue="57" sat="1024"/>
+        <param hue="58" sat="1024"/>
+        <param hue="59" sat="1024"/>
+        <param hue="60" sat="1024"/>
+        <param hue="61" sat="1024"/>
+        <param hue="62" sat="1024"/>
+        <param hue="63" sat="1024"/>
+        <param hue="64" sat="1024"/>
+        <param hue="65" sat="1024"/>
+        <param hue="66" sat="1024"/>
+        <param hue="67" sat="1024"/>
+        <param hue="68" sat="1024"/>
+        <param hue="69" sat="1024"/>
+        <param hue="70" sat="1024"/>
+        <param hue="71" sat="1024"/>
+        <param hue="72" sat="1024"/>
+        <param hue="73" sat="1024"/>
+        <param hue="74" sat="1024"/>
+        <param hue="75" sat="1024"/>
+        <param hue="76" sat="1024"/>
+        <param hue="77" sat="1024"/>
+        <param hue="78" sat="1024"/>
+        <param hue="79" sat="1024"/>
+        <param hue="80" sat="1024"/>
+        <param hue="81" sat="1024"/>
+        <param hue="82" sat="1024"/>
+        <param hue="83" sat="1024"/>
+        <param hue="84" sat="1024"/>
+        <param hue="85" sat="1024"/>
+        <param hue="86" sat="1024"/>
+        <param hue="87" sat="1024"/>
+        <param hue="88" sat="1024"/>
+        <param hue="89" sat="1024"/>
+        <param hue="90" sat="1024"/>
+        <param hue="91" sat="1024"/>
+        <param hue="92" sat="1024"/>
+        <param hue="93" sat="1024"/>
+        <param hue="94" sat="1024"/>
+        <param hue="95" sat="1024"/>
+        <param hue="96" sat="1024"/>
+        <param hue="97" sat="1024"/>
+        <param hue="98" sat="1024"/>
+        <param hue="99" sat="1024"/>
+        <param hue="100" sat="1024"/>
+        <param hue="101" sat="1024"/>
+        <param hue="102" sat="1024"/>
+        <param hue="103" sat="1024"/>
+        <param hue="104" sat="1024"/>
+        <param hue="105" sat="1024"/>
+        <param hue="106" sat="1024"/>
+        <param hue="107" sat="1024"/>
+        <param hue="108" sat="1024"/>
+        <param hue="109" sat="1024"/>
+        <param hue="110" sat="1024"/>
+        <param hue="111" sat="1024"/>
+        <param hue="112" sat="1024"/>
+        <param hue="113" sat="1024"/>
+        <param hue="114" sat="1024"/>
+        <param hue="115" sat="1024"/>
+        <param hue="116" sat="1024"/>
+        <param hue="117" sat="1024"/>
+        <param hue="118" sat="1024"/>
+        <param hue="119" sat="1024"/>
+        <param hue="120" sat="1024"/>
+        <param hue="121" sat="1024"/>
+        <param hue="122" sat="1024"/>
+        <param hue="123" sat="1024"/>
+        <param hue="124" sat="1024"/>
+        <param hue="125" sat="1024"/>
+        <param hue="126" sat="1024"/>
+        <param hue="127" sat="1024"/>
+        <param hue="128" sat="1024"/>
+        <param hue="129" sat="1024"/>
+        <param hue="130" sat="1024"/>
+        <param hue="131" sat="1024"/>
+        <param hue="132" sat="1024"/>
+        <param hue="133" sat="1024"/>
+        <param hue="134" sat="1024"/>
+        <param hue="135" sat="1024"/>
+        <param hue="136" sat="1024"/>
+        <param hue="137" sat="1024"/>
+        <param hue="138" sat="1024"/>
+        <param hue="139" sat="1024"/>
+        <param hue="140" sat="1024"/>
+        <param hue="141" sat="1024"/>
+        <param hue="142" sat="1024"/>
+        <param hue="143" sat="1024"/>
+        <param hue="144" sat="1024"/>
+        <param hue="145" sat="1024"/>
+        <param hue="146" sat="1024"/>
+        <param hue="147" sat="1024"/>
+        <param hue="148" sat="1024"/>
+        <param hue="149" sat="1024"/>
+        <param hue="150" sat="1024"/>
+        <param hue="151" sat="1024"/>
+        <param hue="152" sat="1024"/>
+        <param hue="153" sat="1024"/>
+        <param hue="154" sat="1024"/>
+        <param hue="155" sat="1024"/>
+        <param hue="156" sat="1024"/>
+        <param hue="157" sat="1024"/>
+        <param hue="158" sat="1024"/>
+        <param hue="159" sat="1024"/>
+        <param hue="160" sat="1024"/>
+        <param hue="161" sat="1024"/>
+        <param hue="162" sat="1024"/>
+        <param hue="163" sat="1024"/>
+        <param hue="164" sat="1024"/>
+        <param hue="165" sat="1024"/>
+        <param hue="166" sat="1024"/>
+        <param hue="167" sat="1024"/>
+        <param hue="168" sat="1024"/>
+        <param hue="169" sat="1024"/>
+        <param hue="170" sat="1024"/>
+        <param hue="171" sat="1024"/>
+        <param hue="172" sat="1024"/>
+        <param hue="173" sat="1024"/>
+        <param hue="174" sat="1024"/>
+        <param hue="175" sat="1024"/>
+        <param hue="176" sat="1024"/>
+        <param hue="177" sat="1024"/>
+        <param hue="178" sat="1024"/>
+        <param hue="179" sat="1024"/>
+        <param hue="180" sat="1024"/>
+        <param hue="181" sat="1024"/>
+        <param hue="182" sat="1024"/>
+        <param hue="183" sat="1024"/>
+        <param hue="184" sat="1024"/>
+        <param hue="185" sat="1024"/>
+        <param hue="186" sat="1024"/>
+        <param hue="187" sat="1024"/>
+        <param hue="188" sat="1024"/>
+        <param hue="189" sat="1024"/>
+        <param hue="190" sat="1024"/>
+        <param hue="191" sat="1024"/>
+        <param hue="192" sat="1024"/>
+        <param hue="193" sat="1024"/>
+        <param hue="194" sat="1024"/>
+        <param hue="195" sat="1024"/>
+        <param hue="196" sat="1024"/>
+        <param hue="197" sat="1024"/>
+        <param hue="198" sat="1024"/>
+        <param hue="199" sat="1024"/>
+        <param hue="200" sat="1024"/>
+        <param hue="201" sat="1024"/>
+        <param hue="202" sat="1024"/>
+        <param hue="203" sat="1024"/>
+        <param hue="204" sat="1024"/>
+        <param hue="205" sat="1024"/>
+        <param hue="206" sat="1024"/>
+        <param hue="207" sat="1024"/>
+        <param hue="208" sat="1024"/>
+        <param hue="209" sat="1024"/>
+        <param hue="210" sat="1024"/>
+        <param hue="211" sat="1024"/>
+        <param hue="212" sat="1024"/>
+        <param hue="213" sat="1024"/>
+        <param hue="214" sat="1024"/>
+        <param hue="215" sat="1024"/>
+        <param hue="216" sat="1024"/>
+        <param hue="217" sat="1024"/>
+        <param hue="218" sat="1024"/>
+        <param hue="219" sat="1024"/>
+        <param hue="220" sat="1024"/>
+        <param hue="221" sat="1024"/>
+        <param hue="222" sat="1024"/>
+        <param hue="223" sat="1024"/>
+        <param hue="224" sat="1024"/>
+        <param hue="225" sat="1024"/>
+        <param hue="226" sat="1024"/>
+        <param hue="227" sat="1024"/>
+        <param hue="228" sat="1024"/>
+        <param hue="229" sat="1024"/>
+        <param hue="230" sat="1024"/>
+        <param hue="231" sat="1024"/>
+        <param hue="232" sat="1024"/>
+        <param hue="233" sat="1024"/>
+        <param hue="234" sat="1024"/>
+        <param hue="235" sat="1024"/>
+        <param hue="236" sat="1024"/>
+        <param hue="237" sat="1024"/>
+        <param hue="238" sat="1024"/>
+        <param hue="239" sat="1024"/>
+        <param hue="240" sat="1024"/>
+        <param hue="241" sat="1024"/>
+        <param hue="242" sat="1024"/>
+        <param hue="243" sat="1024"/>
+        <param hue="244" sat="1024"/>
+        <param hue="245" sat="1024"/>
+        <param hue="246" sat="1024"/>
+        <param hue="247" sat="1024"/>
+        <param hue="248" sat="1024"/>
+        <param hue="249" sat="1024"/>
+        <param hue="250" sat="1024"/>
+        <param hue="251" sat="1024"/>
+        <param hue="252" sat="1024"/>
+        <param hue="253" sat="1024"/>
+        <param hue="254" sat="1024"/>
+        <param hue="255" sat="1024"/>
+        <param hue="256" sat="1024"/>
+        <param hue="257" sat="1024"/>
+        <param hue="258" sat="1024"/>
+        <param hue="259" sat="1024"/>
+        <param hue="260" sat="1024"/>
+        <param hue="261" sat="1024"/>
+        <param hue="262" sat="1024"/>
+        <param hue="263" sat="1024"/>
+        <param hue="264" sat="1024"/>
+        <param hue="265" sat="1024"/>
+        <param hue="266" sat="1024"/>
+        <param hue="267" sat="1024"/>
+        <param hue="268" sat="1024"/>
+        <param hue="269" sat="1024"/>
+        <param hue="270" sat="1024"/>
+        <param hue="271" sat="1024"/>
+        <param hue="272" sat="1024"/>
+        <param hue="273" sat="1024"/>
+        <param hue="274" sat="1024"/>
+        <param hue="275" sat="1024"/>
+        <param hue="276" sat="1024"/>
+        <param hue="277" sat="1024"/>
+        <param hue="278" sat="1024"/>
+        <param hue="279" sat="1024"/>
+        <param hue="280" sat="1024"/>
+        <param hue="281" sat="1024"/>
+        <param hue="282" sat="1024"/>
+        <param hue="283" sat="1024"/>
+        <param hue="284" sat="1024"/>
+        <param hue="285" sat="1024"/>
+        <param hue="286" sat="1024"/>
+        <param hue="287" sat="1024"/>
+        <param hue="288" sat="1024"/>
+        <param hue="289" sat="1024"/>
+        <param hue="290" sat="1024"/>
+        <param hue="291" sat="1024"/>
+        <param hue="292" sat="1024"/>
+        <param hue="293" sat="1024"/>
+        <param hue="294" sat="1024"/>
+        <param hue="295" sat="1024"/>
+        <param hue="296" sat="1024"/>
+        <param hue="297" sat="1024"/>
+        <param hue="298" sat="1024"/>
+        <param hue="299" sat="1024"/>
+        <param hue="300" sat="1024"/>
+        <param hue="301" sat="1024"/>
+        <param hue="302" sat="1024"/>
+        <param hue="303" sat="1024"/>
+        <param hue="304" sat="1024"/>
+        <param hue="305" sat="1024"/>
+        <param hue="306" sat="1024"/>
+        <param hue="307" sat="1024"/>
+        <param hue="308" sat="1024"/>
+        <param hue="309" sat="1024"/>
+        <param hue="310" sat="1024"/>
+        <param hue="311" sat="1024"/>
+        <param hue="312" sat="1024"/>
+        <param hue="313" sat="1024"/>
+        <param hue="314" sat="1024"/>
+        <param hue="315" sat="1024"/>
+        <param hue="316" sat="1024"/>
+        <param hue="317" sat="1024"/>
+        <param hue="318" sat="1024"/>
+        <param hue="319" sat="1024"/>
+        <param hue="320" sat="1024"/>
+        <param hue="321" sat="1024"/>
+        <param hue="322" sat="1024"/>
+        <param hue="323" sat="1024"/>
+        <param hue="324" sat="1024"/>
+        <param hue="325" sat="1024"/>
+        <param hue="326" sat="1024"/>
+        <param hue="327" sat="1024"/>
+        <param hue="328" sat="1024"/>
+        <param hue="329" sat="1024"/>
+        <param hue="330" sat="1024"/>
+        <param hue="331" sat="1024"/>
+        <param hue="332" sat="1024"/>
+        <param hue="333" sat="1024"/>
+        <param hue="334" sat="1024"/>
+        <param hue="335" sat="1024"/>
+        <param hue="336" sat="1024"/>
+        <param hue="337" sat="1024"/>
+        <param hue="338" sat="1024"/>
+        <param hue="339" sat="1024"/>
+        <param hue="340" sat="1024"/>
+        <param hue="341" sat="1024"/>
+        <param hue="342" sat="1024"/>
+        <param hue="343" sat="1024"/>
+        <param hue="344" sat="1024"/>
+        <param hue="345" sat="1024"/>
+        <param hue="346" sat="1024"/>
+        <param hue="347" sat="1024"/>
+        <param hue="348" sat="1024"/>
+        <param hue="349" sat="1024"/>
+        <param hue="350" sat="1024"/>
+        <param hue="351" sat="1024"/>
+        <param hue="352" sat="1024"/>
+        <param hue="353" sat="1024"/>
+        <param hue="354" sat="1024"/>
+        <param hue="355" sat="1024"/>
+        <param hue="356" sat="1024"/>
+        <param hue="357" sat="1024"/>
+        <param hue="358" sat="1024"/>
+        <param hue="359" sat="1024"/>
+      </hsv>
+      <cm>
+        <param coef00="1024"/>
+        <param coef01="0"/>
+        <param coef02="0"/>
+        <param coef03="0"/>
+        <param coef10="0"/>
+        <param coef11="1024"/>
+        <param coef12="0"/>
+        <param coef13="0"/>
+        <param coef20="0"/>
+        <param coef21="0"/>
+        <param coef22="1024"/>
+        <param coef23="0"/>
+      </cm>
+      <epf>
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+      </epf>
+	  <slp>
+        <param brightness="16"/>
+      </slp>
+      <ltm>
+        <param slp_step_clip="255"/>
+        <param slp_high_clip="40"/>
+        <param slp_low_clip="40"/>
+      </ltm>
+    </reg_table>
+    <reg_table mode="standard">
+      <hsv>
+        <param hue="0" sat="1024"/>
+        <param hue="1" sat="1024"/>
+        <param hue="2" sat="1024"/>
+        <param hue="3" sat="1024"/>
+        <param hue="4" sat="1024"/>
+        <param hue="5" sat="1024"/>
+        <param hue="6" sat="1024"/>
+        <param hue="7" sat="1024"/>
+        <param hue="8" sat="1024"/>
+        <param hue="9" sat="1024"/>
+        <param hue="10" sat="1024"/>
+        <param hue="11" sat="1024"/>
+        <param hue="12" sat="1024"/>
+        <param hue="13" sat="1024"/>
+        <param hue="14" sat="1024"/>
+        <param hue="15" sat="1024"/>
+        <param hue="16" sat="1024"/>
+        <param hue="17" sat="1024"/>
+        <param hue="18" sat="1024"/>
+        <param hue="19" sat="1024"/>
+        <param hue="20" sat="1024"/>
+        <param hue="21" sat="1024"/>
+        <param hue="22" sat="1024"/>
+        <param hue="23" sat="1024"/>
+        <param hue="24" sat="1024"/>
+        <param hue="25" sat="1024"/>
+        <param hue="26" sat="1024"/>
+        <param hue="27" sat="1024"/>
+        <param hue="28" sat="1024"/>
+        <param hue="29" sat="1024"/>
+        <param hue="30" sat="1024"/>
+        <param hue="31" sat="1024"/>
+        <param hue="32" sat="1024"/>
+        <param hue="33" sat="1024"/>
+        <param hue="34" sat="1024"/>
+        <param hue="35" sat="1024"/>
+        <param hue="36" sat="1024"/>
+        <param hue="37" sat="1024"/>
+        <param hue="38" sat="1024"/>
+        <param hue="39" sat="1024"/>
+        <param hue="40" sat="1024"/>
+        <param hue="41" sat="1024"/>
+        <param hue="42" sat="1024"/>
+        <param hue="43" sat="1024"/>
+        <param hue="44" sat="1024"/>
+        <param hue="45" sat="1024"/>
+        <param hue="46" sat="1024"/>
+        <param hue="47" sat="1024"/>
+        <param hue="48" sat="1024"/>
+        <param hue="49" sat="1024"/>
+        <param hue="50" sat="1024"/>
+        <param hue="51" sat="1024"/>
+        <param hue="52" sat="1024"/>
+        <param hue="53" sat="1024"/>
+        <param hue="54" sat="1024"/>
+        <param hue="55" sat="1024"/>
+        <param hue="56" sat="1024"/>
+        <param hue="57" sat="1024"/>
+        <param hue="58" sat="1024"/>
+        <param hue="59" sat="1024"/>
+        <param hue="60" sat="1024"/>
+        <param hue="61" sat="1024"/>
+        <param hue="62" sat="1024"/>
+        <param hue="63" sat="1024"/>
+        <param hue="64" sat="1024"/>
+        <param hue="65" sat="1024"/>
+        <param hue="66" sat="1024"/>
+        <param hue="67" sat="1024"/>
+        <param hue="68" sat="1024"/>
+        <param hue="69" sat="1024"/>
+        <param hue="70" sat="1024"/>
+        <param hue="71" sat="1024"/>
+        <param hue="72" sat="1024"/>
+        <param hue="73" sat="1024"/>
+        <param hue="74" sat="1024"/>
+        <param hue="75" sat="1024"/>
+        <param hue="76" sat="1024"/>
+        <param hue="77" sat="1024"/>
+        <param hue="78" sat="1024"/>
+        <param hue="79" sat="1024"/>
+        <param hue="80" sat="1024"/>
+        <param hue="81" sat="1024"/>
+        <param hue="82" sat="1024"/>
+        <param hue="83" sat="1024"/>
+        <param hue="84" sat="1024"/>
+        <param hue="85" sat="1024"/>
+        <param hue="86" sat="1024"/>
+        <param hue="87" sat="1024"/>
+        <param hue="88" sat="1024"/>
+        <param hue="89" sat="1024"/>
+        <param hue="90" sat="1024"/>
+        <param hue="91" sat="1024"/>
+        <param hue="92" sat="1024"/>
+        <param hue="93" sat="1024"/>
+        <param hue="94" sat="1024"/>
+        <param hue="95" sat="1024"/>
+        <param hue="96" sat="1024"/>
+        <param hue="97" sat="1024"/>
+        <param hue="98" sat="1024"/>
+        <param hue="99" sat="1024"/>
+        <param hue="100" sat="1024"/>
+        <param hue="101" sat="1024"/>
+        <param hue="102" sat="1024"/>
+        <param hue="103" sat="1024"/>
+        <param hue="104" sat="1024"/>
+        <param hue="105" sat="1024"/>
+        <param hue="106" sat="1024"/>
+        <param hue="107" sat="1024"/>
+        <param hue="108" sat="1024"/>
+        <param hue="109" sat="1024"/>
+        <param hue="110" sat="1024"/>
+        <param hue="111" sat="1024"/>
+        <param hue="112" sat="1024"/>
+        <param hue="113" sat="1024"/>
+        <param hue="114" sat="1024"/>
+        <param hue="115" sat="1024"/>
+        <param hue="116" sat="1024"/>
+        <param hue="117" sat="1024"/>
+        <param hue="118" sat="1024"/>
+        <param hue="119" sat="1024"/>
+        <param hue="120" sat="1024"/>
+        <param hue="121" sat="1024"/>
+        <param hue="122" sat="1024"/>
+        <param hue="123" sat="1024"/>
+        <param hue="124" sat="1024"/>
+        <param hue="125" sat="1024"/>
+        <param hue="126" sat="1024"/>
+        <param hue="127" sat="1024"/>
+        <param hue="128" sat="1024"/>
+        <param hue="129" sat="1024"/>
+        <param hue="130" sat="1024"/>
+        <param hue="131" sat="1024"/>
+        <param hue="132" sat="1024"/>
+        <param hue="133" sat="1024"/>
+        <param hue="134" sat="1024"/>
+        <param hue="135" sat="1024"/>
+        <param hue="136" sat="1024"/>
+        <param hue="137" sat="1024"/>
+        <param hue="138" sat="1024"/>
+        <param hue="139" sat="1024"/>
+        <param hue="140" sat="1024"/>
+        <param hue="141" sat="1024"/>
+        <param hue="142" sat="1024"/>
+        <param hue="143" sat="1024"/>
+        <param hue="144" sat="1024"/>
+        <param hue="145" sat="1024"/>
+        <param hue="146" sat="1024"/>
+        <param hue="147" sat="1024"/>
+        <param hue="148" sat="1024"/>
+        <param hue="149" sat="1024"/>
+        <param hue="150" sat="1024"/>
+        <param hue="151" sat="1024"/>
+        <param hue="152" sat="1024"/>
+        <param hue="153" sat="1024"/>
+        <param hue="154" sat="1024"/>
+        <param hue="155" sat="1024"/>
+        <param hue="156" sat="1024"/>
+        <param hue="157" sat="1024"/>
+        <param hue="158" sat="1024"/>
+        <param hue="159" sat="1024"/>
+        <param hue="160" sat="1024"/>
+        <param hue="161" sat="1024"/>
+        <param hue="162" sat="1024"/>
+        <param hue="163" sat="1024"/>
+        <param hue="164" sat="1024"/>
+        <param hue="165" sat="1024"/>
+        <param hue="166" sat="1024"/>
+        <param hue="167" sat="1024"/>
+        <param hue="168" sat="1024"/>
+        <param hue="169" sat="1024"/>
+        <param hue="170" sat="1024"/>
+        <param hue="171" sat="1024"/>
+        <param hue="172" sat="1024"/>
+        <param hue="173" sat="1024"/>
+        <param hue="174" sat="1024"/>
+        <param hue="175" sat="1024"/>
+        <param hue="176" sat="1024"/>
+        <param hue="177" sat="1024"/>
+        <param hue="178" sat="1024"/>
+        <param hue="179" sat="1024"/>
+        <param hue="180" sat="1024"/>
+        <param hue="181" sat="1024"/>
+        <param hue="182" sat="1024"/>
+        <param hue="183" sat="1024"/>
+        <param hue="184" sat="1024"/>
+        <param hue="185" sat="1024"/>
+        <param hue="186" sat="1024"/>
+        <param hue="187" sat="1024"/>
+        <param hue="188" sat="1024"/>
+        <param hue="189" sat="1024"/>
+        <param hue="190" sat="1024"/>
+        <param hue="191" sat="1024"/>
+        <param hue="192" sat="1024"/>
+        <param hue="193" sat="1024"/>
+        <param hue="194" sat="1024"/>
+        <param hue="195" sat="1024"/>
+        <param hue="196" sat="1024"/>
+        <param hue="197" sat="1024"/>
+        <param hue="198" sat="1024"/>
+        <param hue="199" sat="1024"/>
+        <param hue="200" sat="1024"/>
+        <param hue="201" sat="1024"/>
+        <param hue="202" sat="1024"/>
+        <param hue="203" sat="1024"/>
+        <param hue="204" sat="1024"/>
+        <param hue="205" sat="1024"/>
+        <param hue="206" sat="1024"/>
+        <param hue="207" sat="1024"/>
+        <param hue="208" sat="1024"/>
+        <param hue="209" sat="1024"/>
+        <param hue="210" sat="1024"/>
+        <param hue="211" sat="1024"/>
+        <param hue="212" sat="1024"/>
+        <param hue="213" sat="1024"/>
+        <param hue="214" sat="1024"/>
+        <param hue="215" sat="1024"/>
+        <param hue="216" sat="1024"/>
+        <param hue="217" sat="1024"/>
+        <param hue="218" sat="1024"/>
+        <param hue="219" sat="1024"/>
+        <param hue="220" sat="1024"/>
+        <param hue="221" sat="1024"/>
+        <param hue="222" sat="1024"/>
+        <param hue="223" sat="1024"/>
+        <param hue="224" sat="1024"/>
+        <param hue="225" sat="1024"/>
+        <param hue="226" sat="1024"/>
+        <param hue="227" sat="1024"/>
+        <param hue="228" sat="1024"/>
+        <param hue="229" sat="1024"/>
+        <param hue="230" sat="1024"/>
+        <param hue="231" sat="1024"/>
+        <param hue="232" sat="1024"/>
+        <param hue="233" sat="1024"/>
+        <param hue="234" sat="1024"/>
+        <param hue="235" sat="1024"/>
+        <param hue="236" sat="1024"/>
+        <param hue="237" sat="1024"/>
+        <param hue="238" sat="1024"/>
+        <param hue="239" sat="1024"/>
+        <param hue="240" sat="1024"/>
+        <param hue="241" sat="1024"/>
+        <param hue="242" sat="1024"/>
+        <param hue="243" sat="1024"/>
+        <param hue="244" sat="1024"/>
+        <param hue="245" sat="1024"/>
+        <param hue="246" sat="1024"/>
+        <param hue="247" sat="1024"/>
+        <param hue="248" sat="1024"/>
+        <param hue="249" sat="1024"/>
+        <param hue="250" sat="1024"/>
+        <param hue="251" sat="1024"/>
+        <param hue="252" sat="1024"/>
+        <param hue="253" sat="1024"/>
+        <param hue="254" sat="1024"/>
+        <param hue="255" sat="1024"/>
+        <param hue="256" sat="1024"/>
+        <param hue="257" sat="1024"/>
+        <param hue="258" sat="1024"/>
+        <param hue="259" sat="1024"/>
+        <param hue="260" sat="1024"/>
+        <param hue="261" sat="1024"/>
+        <param hue="262" sat="1024"/>
+        <param hue="263" sat="1024"/>
+        <param hue="264" sat="1024"/>
+        <param hue="265" sat="1024"/>
+        <param hue="266" sat="1024"/>
+        <param hue="267" sat="1024"/>
+        <param hue="268" sat="1024"/>
+        <param hue="269" sat="1024"/>
+        <param hue="270" sat="1024"/>
+        <param hue="271" sat="1024"/>
+        <param hue="272" sat="1024"/>
+        <param hue="273" sat="1024"/>
+        <param hue="274" sat="1024"/>
+        <param hue="275" sat="1024"/>
+        <param hue="276" sat="1024"/>
+        <param hue="277" sat="1024"/>
+        <param hue="278" sat="1024"/>
+        <param hue="279" sat="1024"/>
+        <param hue="280" sat="1024"/>
+        <param hue="281" sat="1024"/>
+        <param hue="282" sat="1024"/>
+        <param hue="283" sat="1024"/>
+        <param hue="284" sat="1024"/>
+        <param hue="285" sat="1024"/>
+        <param hue="286" sat="1024"/>
+        <param hue="287" sat="1024"/>
+        <param hue="288" sat="1024"/>
+        <param hue="289" sat="1024"/>
+        <param hue="290" sat="1024"/>
+        <param hue="291" sat="1024"/>
+        <param hue="292" sat="1024"/>
+        <param hue="293" sat="1024"/>
+        <param hue="294" sat="1024"/>
+        <param hue="295" sat="1024"/>
+        <param hue="296" sat="1024"/>
+        <param hue="297" sat="1024"/>
+        <param hue="298" sat="1024"/>
+        <param hue="299" sat="1024"/>
+        <param hue="300" sat="1024"/>
+        <param hue="301" sat="1024"/>
+        <param hue="302" sat="1024"/>
+        <param hue="303" sat="1024"/>
+        <param hue="304" sat="1024"/>
+        <param hue="305" sat="1024"/>
+        <param hue="306" sat="1024"/>
+        <param hue="307" sat="1024"/>
+        <param hue="308" sat="1024"/>
+        <param hue="309" sat="1024"/>
+        <param hue="310" sat="1024"/>
+        <param hue="311" sat="1024"/>
+        <param hue="312" sat="1024"/>
+        <param hue="313" sat="1024"/>
+        <param hue="314" sat="1024"/>
+        <param hue="315" sat="1024"/>
+        <param hue="316" sat="1024"/>
+        <param hue="317" sat="1024"/>
+        <param hue="318" sat="1024"/>
+        <param hue="319" sat="1024"/>
+        <param hue="320" sat="1024"/>
+        <param hue="321" sat="1024"/>
+        <param hue="322" sat="1024"/>
+        <param hue="323" sat="1024"/>
+        <param hue="324" sat="1024"/>
+        <param hue="325" sat="1024"/>
+        <param hue="326" sat="1024"/>
+        <param hue="327" sat="1024"/>
+        <param hue="328" sat="1024"/>
+        <param hue="329" sat="1024"/>
+        <param hue="330" sat="1024"/>
+        <param hue="331" sat="1024"/>
+        <param hue="332" sat="1024"/>
+        <param hue="333" sat="1024"/>
+        <param hue="334" sat="1024"/>
+        <param hue="335" sat="1024"/>
+        <param hue="336" sat="1024"/>
+        <param hue="337" sat="1024"/>
+        <param hue="338" sat="1024"/>
+        <param hue="339" sat="1024"/>
+        <param hue="340" sat="1024"/>
+        <param hue="341" sat="1024"/>
+        <param hue="342" sat="1024"/>
+        <param hue="343" sat="1024"/>
+        <param hue="344" sat="1024"/>
+        <param hue="345" sat="1024"/>
+        <param hue="346" sat="1024"/>
+        <param hue="347" sat="1024"/>
+        <param hue="348" sat="1024"/>
+        <param hue="349" sat="1024"/>
+        <param hue="350" sat="1024"/>
+        <param hue="351" sat="1024"/>
+        <param hue="352" sat="1024"/>
+        <param hue="353" sat="1024"/>
+        <param hue="354" sat="1024"/>
+        <param hue="355" sat="1024"/>
+        <param hue="356" sat="1024"/>
+        <param hue="357" sat="1024"/>
+        <param hue="358" sat="1024"/>
+        <param hue="359" sat="1024"/>
+      </hsv>
+      <cm>
+        <param coef00="1024"/>
+        <param coef01="0"/>
+        <param coef02="0"/>
+        <param coef03="0"/>
+        <param coef10="0"/>
+        <param coef11="998"/>
+        <param coef12="0"/>
+        <param coef13="0"/>
+        <param coef20="0"/>
+        <param coef21="0"/>
+        <param coef22="980"/>
+        <param coef23="0"/>
+      </cm>
+      <epf>
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+      </epf>
+	  <slp>
+        <param brightness="16"/>
+      </slp>
+      <ltm>
+        <param slp_step_clip="255"/>
+        <param slp_high_clip="40"/>
+        <param slp_low_clip="40"/>
+      </ltm>
+    </reg_table>
+  </hsv_cm_epf_slp_ltm>
+  <rgb_mapping_table>
+    <item rgb="0" index="0"/>
+    <item rgb="0" index="1"/>
+    <item rgb="0" index="2"/>
+    <item rgb="0" index="3"/>
+    <item rgb="0" index="4"/>
+    <item rgb="0" index="5"/>
+    <item rgb="0" index="6"/>
+    <item rgb="0" index="7"/>
+    <item rgb="0" index="8"/>
+    <item rgb="0" index="9"/>
+  </rgb_mapping_table>
+  <cm_cfg>
+    <reg_table mode="cold">
+      <param coef00="890"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="950"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="warm">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="940"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="880"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="0">
+      <param coef00="890"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="950"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="1">
+      <param coef00="954"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="974"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="2">
+      <param coef00="978"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="998"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="3">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="1024"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="4">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="996"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="976"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="5">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="968"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="928"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="6">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="940"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="880"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="7">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="1024"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="8">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="1024"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+    <reg_table mode="9">
+      <param coef00="1024"/>
+      <param coef01="0"/>
+      <param coef02="0"/>
+      <param coef03="0"/>
+      <param coef10="0"/>
+      <param coef11="1024"/>
+      <param coef12="0"/>
+      <param coef13="0"/>
+      <param coef20="0"/>
+      <param coef21="0"/>
+      <param coef22="1024"/>
+      <param coef23="0"/>
+    </reg_table>
+  </cm_cfg>
+  <sat_config>
+      <param sat_0="0.2"/>
+      <param sat_10="0.2"/>
+      <param sat_20="0.2"/>
+      <param sat_30="0.2"/>
+      <param sat_40="0.2"/>
+      <param sat_50="0.2"/>
+      <param sat_60="0.2"/>
+      <param sat_70="0.2"/>
+      <param sat_80="0.2"/>
+      <param sat_90="0.2"/>
+      <param sat_100="0.2"/>
+      <param sat_110="0.2"/>
+      <param sat_120="0.2"/>
+      <param sat_130="0.2"/>
+      <param sat_140="0.2"/>
+      <param sat_150="0.2"/>
+      <param sat_160="0.2"/>
+      <param sat_170="0.2"/>
+      <param sat_180="0.2"/>
+      <param sat_190="0.2"/>
+      <param sat_200="0.2"/>
+      <param sat_210="0.2"/>
+      <param sat_220="0.2"/>
+      <param sat_230="0.2"/>
+      <param sat_240="0.2"/>
+      <param sat_250="0.2"/>
+      <param sat_260="0.2"/>
+      <param sat_270="0.2"/>
+      <param sat_280="0.2"/>
+      <param sat_290="0.2"/>
+      <param sat_300="0.2"/>
+      <param sat_310="0.2"/>
+      <param sat_320="0.2"/>
+      <param sat_330="0.2"/>
+      <param sat_340="0.2"/>
+      <param sat_350="0.2"/>
+  </sat_config>
+</root>

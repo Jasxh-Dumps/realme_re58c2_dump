@@ -1,0 +1,4 @@
+service  vendor.oemlock-default /vendor/bin/hw/vendor.sprd.hardware.oemlock-service
+    class hal
+    user system
+    group system

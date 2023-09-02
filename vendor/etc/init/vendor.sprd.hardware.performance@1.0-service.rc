@@ -1,0 +1,9 @@
+on property:persist.sys.assert.panic=*
+    setprop persist.vendor.assert.panic ${persist.sys.assert.panic}
+
+# Add 'readproc' for 'proc/pid/task/tid/*'
+service vendor.sprd.hardware.performance@1.0-service /vendor/bin/hw/vendor.sprd.hardware.performance@1.0-service
+    class hal
+    capabilities SYS_PTRACE
+    user root
+    group system readproc

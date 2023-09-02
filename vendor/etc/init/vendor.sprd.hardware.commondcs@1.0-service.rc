@@ -1,0 +1,7 @@
+service vendor.sprd.hardware.commondcs@1.0-service /vendor/bin/hw/vendor.sprd.hardware.commondcs@1.0-service
+#  interface vendor.sprd.hardware.commondcs@1.0::ICommonDcsHalService commondcsservice
+    class hal
+    user system
+    group system
+
+

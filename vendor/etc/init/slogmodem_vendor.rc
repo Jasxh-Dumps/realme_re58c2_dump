@@ -1,0 +1,27 @@
+service vendor.slogmodem /vendor/bin/slogmodem_vendor
+    class main
+    user shell
+    oneshot
+    group system sdcard_rw media_rw audio radio
+    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    mkdir /data/vendor/local/slogmodem 0777 system system
+
+on cali-fs
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/ylog 0770 root system
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/slogmodem 0770 shell system
+
+on cali-start
+   start vendor.slogmodem
+
+on factorytest-fs
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/ylog 0770 shell system
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/slogmodem 0770 shell system
+
+on factorytest-start
+   start vendor.slogmodem

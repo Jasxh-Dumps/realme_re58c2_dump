@@ -1,0 +1,19 @@
+service vendor.dcxsrv /vendor/bin/dcxsrv
+    class core
+    user root
+    group root system radio shell net_bt_admin input audio wifi media camera
+    oneshot
+
+on property:vendor.ro.bootmode=cali
+    start vendor.dcxsrv
+
+on property:vendor.ro.bootmode=autotest
+    start vendor.dcxsrv
+
+on property:ro.bootmode=factorytest
+    start vendor.dcxsrv
+
+on cali-fs
+    chmod 0775 /mnt/vendor
+    chown system system /mnt/vendor
+    mkdir /mnt/vendor/productinfo 0771 system root

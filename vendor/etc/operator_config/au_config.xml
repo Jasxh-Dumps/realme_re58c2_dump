@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array>
+    <item plmn="50501">
+        <qos qos_traffic_class="4"
+             qos_sdu_error_ratio="0e0"
+             qos_residual_bit_error_ratio="0e0"
+             network_type="2">
+        </qos>
+        <fallback_cause
+             special_fallback_cause="0">
+        </fallback_cause>
+    </item>
+  </string-array>
+</resources>

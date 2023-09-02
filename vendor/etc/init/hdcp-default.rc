@@ -1,0 +1,4 @@
+service vendor.hdcp_default /vendor/bin/hw/vendor.sprd.hardware.hdcp-service
+    class hal
+    user system
+    group system

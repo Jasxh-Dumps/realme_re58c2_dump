@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<config>
+<item name="LaunchBlackList">
+</item>
+<!--
+<item name='FlingApp'>
+    <packageName>com.tencent.mm</packageName>
+</item>
+-->
+</config>

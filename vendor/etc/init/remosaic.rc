@@ -1,0 +1,4 @@
+service remosaic_daemon /vendor/bin/remosaic_daemon 
+class late_start 
+user camera 
+group camera

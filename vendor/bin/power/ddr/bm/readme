@@ -1,0 +1,22 @@
+一、功能：抓取ddr带宽数据
+
+二、用法
+连接adb切换root进入shell
+adb root
+adb remount
+./vendor/bin/power/ddr/bm/tool/ddr_bm -t 240
+-t后面接的是测试时间(默认240s)以s为单位
+统计结束将在目录/data/local/tmp下生成qogirl6_ddr_bm.csv的文件
+
+三、示例
+ums9230_1h10:/vendor/bin/power/ddr/bm # ls
+readme tool
+ums9230_1h10:/vendor/bin/power/ddr/bm # ./tool/ddr_bm -t 240
+./ddr_bm -t 240
+accummulate_time is 240(s)
+
+C:\Users\username>adb pull /data/local/tmp/qogirl6_ddr_bm.csv
+
+四、备注
+1、该脚本只适用于userdebug版本
+2、每次抓取带宽之前，必须重启手机

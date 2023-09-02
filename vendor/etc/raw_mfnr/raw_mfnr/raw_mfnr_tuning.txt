@@ -1,0 +1,42 @@
+#
+# SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+#
+# Copyright 2022 Unisoc (Shanghai) Technologies Co., Ltd.
+# Licensed under the Unisoc General Software License, version 1.0 (the License);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+# Software distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+# See the Unisoc General Software License, version 1.0 for more details.
+#
+
+alignmerge_bypass    0
+merge_bypass    0
+factor_down_sample[0    2
+factor_down_sample[1]    4
+factor_down_sample[2]    4
+imresize_mode[0]    1
+imresize_mode[1]    1
+imresize_mode[2]    1
+search_window[0]    1
+search_window[1]    4
+search_window[2]    4
+search_window[3]    4
+tile_scale[0]    16
+tile_scale[1]    16
+tile_scale[2]    16
+tile_scale[3]    8
+const_gain_num    20
+k_thegma    0.5
+k_thr    0.03125
+const_file    const_file.txt
+gain_max    2048
+filter2_thr    0.4
+gf_a_gain    100
+gf_a_ratio    10
+gf_a_thr    5
+gf_b_ratio    10
+gf_b_thr    5
+ref_frame_num    4

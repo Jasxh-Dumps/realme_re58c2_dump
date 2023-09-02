@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+    <sensor_name>ov8856_front_seasons</sensor_name>
+    <versionid>0x000C0019</versionid>
+    <scenario_num>28</scenario_num>
+    <scenario alia="com">
+        <id>0x0000000000000000</id>
+        <block_num>52</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>com</param>
+        </block>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>com</param>
+        </block>
+        <block name="AEM">
+            <block_id>0x400e</block_id>
+            <param>com</param>
+        </block>
+        <block name="AE_ADAPT">
+            <block_id>0x5009</block_id>
+            <param>com</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>com</param>
+        </block>
+        <block name="AF">
+            <block_id>0x4033</block_id>
+            <param>com</param>
+        </block>
+        <block name="AFL_V1">
+            <block_id>0x4019</block_id>
+            <param>com</param>
+        </block>
+        <block name="AFL_V3">
+            <block_id>0x401a</block_id>
+            <param>com</param>
+        </block>
+        <block name="AI_PRO">
+            <block_id>0x5079</block_id>
+            <param>com</param>
+        </block>
+        <block name="ALSC">
+            <block_id>0x402f</block_id>
+            <param>com</param>
+        </block>
+        <block name="ALSC_CTRL">
+            <block_id>0x50a9</block_id>
+            <param>com</param>
+        </block>
+        <block name="ANTIFL">
+            <block_id>0x403b</block_id>
+            <param>com</param>
+        </block>
+        <block name="AWB">
+            <block_id>0x4032</block_id>
+            <param>com</param>
+        </block>
+        <block name="AWBC">
+            <block_id>0x400d</block_id>
+            <param>com</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>com</param>
+        </block>
+        <block name="BCHS">
+            <block_id>0x5065</block_id>
+            <param>com</param>
+        </block>
+        <block name="BEAUTY">
+            <block_id>0x5077</block_id>
+            <param>com</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>com</param>
+        </block>
+        <block name="BPC">
+            <block_id>0x5054</block_id>
+            <param>com</param>
+        </block>
+        <block name="BWUD">
+            <block_id>0x5069</block_id>
+            <param>com</param>
+        </block>
+        <block name="CCE">
+            <block_id>0x4017</block_id>
+            <param>com</param>
+        </block>
+        <block name="CCE_UVDIV">
+            <block_id>0x505a</block_id>
+            <param>com</param>
+        </block>
+        <block name="CFAI">
+            <block_id>0x5059</block_id>
+            <param>com</param>
+        </block>
+        <block name="CMC10_V1">
+            <block_id>0x50aa</block_id>
+            <param>com</param>
+        </block>
+        <block name="CNR3">
+            <block_id>0x5076</block_id>
+            <param>com</param>
+        </block>
+        <block name="CNR">
+            <block_id>0x5064</block_id>
+            <param>com</param>
+        </block>
+        <block name="DRE">
+            <block_id>0x5074</block_id>
+            <param>com</param>
+        </block>
+        <block name="DRE_PRO">
+            <block_id>0x5081</block_id>
+            <param>com</param>
+        </block>
+        <block name="D_ENVI">
+            <block_id>0x4035</block_id>
+            <param>com</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>com</param>
+        </block>
+        <block name="HDR4">
+            <block_id>0x50a1</block_id>
+            <param>com</param>
+        </block>
+        <block name="HIST2">
+            <block_id>0x4022</block_id>
+            <param>com</param>
+        </block>
+        <block name="HIST">
+            <block_id>0x5053</block_id>
+            <param>com</param>
+        </block>
+        <block name="HSV">
+            <block_id>0x508d</block_id>
+            <param>com</param>
+        </block>
+        <block name="IIRCNR">
+            <block_id>0x5062</block_id>
+            <param>com</param>
+        </block>
+        <block name="IMBALANCE">
+            <block_id>0x506e</block_id>
+            <param>com</param>
+        </block>
+        <block name="PDAF4">
+            <block_id>0x50a6</block_id>
+            <param>com</param>
+        </block>
+        <block name="PPE">
+            <block_id>0x5073</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGBGAIN">
+            <block_id>0x4007</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_AFM">
+            <block_id>0x5055</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_DITHER">
+            <block_id>0x5051</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_GAM_V1">
+            <block_id>0x50ae</block_id>
+            <param>com</param>
+        </block>
+        <block name="RGB_LTM">
+            <block_id>0x506b</block_id>
+            <param>com</param>
+        </block>
+        <block name="SW3DNR">
+            <block_id>0x5066</block_id>
+            <param>com</param>
+        </block>
+        <block name="UV_CDN">
+            <block_id>0x505e</block_id>
+            <param>com</param>
+        </block>
+        <block name="UV_POSTCDN">
+            <block_id>0x505f</block_id>
+            <param>com</param>
+        </block>
+        <block name="XTM_V1">
+            <block_id>0x50af</block_id>
+            <param>com</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>com</param>
+        </block>
+        <block name="YNRS">
+            <block_id>0x506c</block_id>
+            <param>com</param>
+        </block>
+        <block name="YUV_NOISEFILTER">
+            <block_id>0x5063</block_id>
+            <param>com</param>
+        </block>
+        <block name="YUV_PRECDN">
+            <block_id>0x505d</block_id>
+            <param>com</param>
+        </block>
+        <block name="Y_GAMMA">
+            <block_id>0x5075</block_id>
+            <param>com</param>
+        </block>
+    </scenario>
+    <scenario alia="prv0">
+        <id>0x0000010000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>prv0</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="prv1">
+        <id>0x0000020000000000</id>
+        <block_num>1</block_num>
+        <imageWidth>1632</imageWidth>
+        <imageHeight>1224</imageHeight>
+        <block name="AE_ADAPT">
+            <block_id>0x5009</block_id>
+            <param>prv1</param>
+        </block>
+    </scenario>
+    <scenario alia="cap0">
+        <id>0x0000050000000000</id>
+        <block_num>3</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>com</param>
+        </block>
+        <block name="AE_ADAPT">
+            <block_id>0x5009</block_id>
+            <param>cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>com</param>
+        </block>
+    </scenario>
+    <scenario alia="cap1">
+        <id>0x0000060000000000</id>
+        <block_num>1</block_num>
+        <imageWidth>1632</imageWidth>
+        <imageHeight>1224</imageHeight>
+        <block name="AE_ADAPT">
+            <block_id>0x5009</block_id>
+            <param>cap1</param>
+        </block>
+    </scenario>
+    <scenario alia="video0">
+        <id>0x0000090000000000</id>
+        <block_num>7</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>video0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>video0</param>
+        </block>
+        <block name="ALSC">
+            <block_id>0x402f</block_id>
+            <param>video0</param>
+        </block>
+        <block name="ALSC_CTRL">
+            <block_id>0x50a9</block_id>
+            <param>video0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>video0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>video0</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>video0</param>
+        </block>
+    </scenario>
+    <scenario alia="video1">
+        <id>0x00000A0000000000</id>
+        <block_num>9</block_num>
+        <imageWidth>1632</imageWidth>
+        <imageHeight>1224</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>video1</param>
+        </block>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>video1</param>
+        </block>
+        <block name="AE_ADAPT">
+            <block_id>0x5009</block_id>
+            <param>video1</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>video1</param>
+        </block>
+        <block name="ALSC">
+            <block_id>0x402f</block_id>
+            <param>video1</param>
+        </block>
+        <block name="ALSC_CTRL">
+            <block_id>0x50a9</block_id>
+            <param>video1</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>video1</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>video1</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>video1</param>
+        </block>
+    </scenario>
+    <scenario alia="prv0_hdr">
+        <id>0x0000010001000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>prv0_hdr</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>prv0_hdr</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>prv0_hdr</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>prv0_hdr</param>
+        </block>
+    </scenario>
+    <scenario alia="cap0_hdr">
+        <id>0x0000050001000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>cap0_hdr</param>
+        </block>
+        <block name="CNR3">
+            <block_id>0x5076</block_id>
+            <param>cap0_hdr</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>cap0_hdr</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>cap0_hdr</param>
+        </block>
+        <block name="YUV_NOISEFILTER">
+            <block_id>0x5063</block_id>
+            <param>cap0_hdr</param>
+        </block>
+    </scenario>
+    <scenario alia="prv0_flash">
+        <id>0x0000010002000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>prv0_flash</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>prv0_flash</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>prv0_flash</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>prv0_flash</param>
+        </block>
+    </scenario>
+    <scenario alia="cap0_flash">
+        <id>0x0000050002000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>cap0_flash</param>
+        </block>
+        <block name="CNR3">
+            <block_id>0x5076</block_id>
+            <param>cap0_flash</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>cap0_flash</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>cap0_flash</param>
+        </block>
+        <block name="YNRS">
+            <block_id>0x506c</block_id>
+            <param>cap0_flash</param>
+        </block>
+    </scenario>
+    <scenario alia="prv0_portrait">
+        <id>0x0000010300000000</id>
+        <block_num>6</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="3DNR">
+            <block_id>0x505b</block_id>
+            <param>prv0_portrait</param>
+        </block>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>prv0_portrait</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>prv0_portrait</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>prv0_portrait</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>prv0_portrait</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>prv0_portrait</param>
+        </block>
+    </scenario>
+    <scenario alia="cap0_portrait">
+        <id>0x0000050300000000</id>
+        <block_num>2</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>cap0_portrait</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>cap0_portrait</param>
+        </block>
+    </scenario>
+    <scenario alia="wechat_prv0">
+        <id>0x0001010000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>wechat_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>wechat_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>wechat_prv0</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>wechat_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>wechat_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="wechat_cap0">
+        <id>0x0001050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>wechat_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>wechat_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>wechat_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>wechat_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="qq_prv0">
+        <id>0x0002010000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>qq_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>qq_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>qq_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>qq_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="qq_cap0">
+        <id>0x0002050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>qq_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>qq_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>qq_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>qq_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="snapchat_prv0">
+        <id>0x0005010000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>snapchat_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>snapchat_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>snapchat_prv0</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>snapchat_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>snapchat_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="snapchat_cap0">
+        <id>0x0005050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>snapchat_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>snapchat_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>snapchat_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>snapchat_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="facebook_prv0">
+        <id>0x0006010000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>facebook_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>facebook_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>facebook_prv0</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>facebook_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>facebook_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="facebook_cap0">
+        <id>0x0006050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>facebook_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>facebook_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>facebook_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>facebook_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="whatsapp_prv0">
+        <id>0x0007010000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>whatsapp_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>whatsapp_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>whatsapp_prv0</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>whatsapp_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>whatsapp_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="whatsapp_cap0">
+        <id>0x0007050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>whatsapp_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>whatsapp_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>whatsapp_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>whatsapp_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="instagram_cap0">
+        <id>0x0008050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>instagram_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>instagram_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>instagram_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>instagram_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="messenger_prv0">
+        <id>0x0009010000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>messenger_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>messenger_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>messenger_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>messenger_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="messenger_cap0">
+        <id>0x0009050000000000</id>
+        <block_num>4</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>messenger_cap0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>messenger_cap0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>messenger_cap0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>messenger_cap0</param>
+        </block>
+    </scenario>
+    <scenario alia="instagram_prv0">
+        <id>0x0008010000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>3264</imageWidth>
+        <imageHeight>2448</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>instagram_prv0</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>instagram_prv0</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>instagram_prv0</param>
+        </block>
+        <block name="BLC">
+            <block_id>0x4002</block_id>
+            <param>instagram_prv0</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>instagram_prv0</param>
+        </block>
+    </scenario>
+    <scenario alia="app-c1_prv1">
+        <id>0x000C020000000000</id>
+        <block_num>5</block_num>
+        <imageWidth>1632</imageWidth>
+        <imageHeight>1224</imageHeight>
+        <block name="AE">
+            <block_id>0x4031</block_id>
+            <param>app-c1_prv1</param>
+        </block>
+        <block name="AE_CTRL">
+            <block_id>0x50a7</block_id>
+            <param>app-c1_prv1</param>
+        </block>
+        <block name="BAYER_NR">
+            <block_id>0x506f</block_id>
+            <param>app-c1_prv1</param>
+        </block>
+        <block name="EE">
+            <block_id>0x5061</block_id>
+            <param>app-c1_prv1</param>
+        </block>
+        <block name="YNR">
+            <block_id>0x5060</block_id>
+            <param>app-c1_prv1</param>
+        </block>
+    </scenario>
+</cfg>

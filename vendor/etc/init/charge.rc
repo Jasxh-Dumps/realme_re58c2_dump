@@ -1,0 +1,46 @@
+on charger-fs
+    mkdir /mnt/vendor 0771 system system
+    mount ext4 /dev/block/by-name/prodnv /mnt/vendor
+    mount_all /vendor/etc/fstab.charge_mode --early
+    chown system system /mnt/vendor
+    chmod 0771 /mnt/vendor
+    chmod 664 /sys/power/wakeup_count
+    chown system system /sys/class/oplus_chg/battery/lcd_mode
+    chmod 0664 /sys/class/oplus_chg/battery/lcd_mode
+
+on charger-apexd
+    # Make sure that apexd is started in the default namespace
+    enter_default_mount_ns
+
+    start apexd
+
+    # Wait for apexd to finish activating APEXes before starting more processes.
+    wait_for_prop apexd.status activated
+    perform_apex_config
+
+on property:ro.debuggable=1
+    start console
+
+on charger
+    trigger charger-apexd
+    trigger charger-fs
+    wait_for_prop vendor.all.modules.ready 1
+    start vendor.charge
+    class_start thermal
+    class_start charged_server
+
+
+service vendor.charge /vendor/bin/charge
+    group input system
+    user root
+    oneshot
+
+service vendor.thermald.chg /vendor/bin/thermald
+    class thermal
+    user root
+    group system
+
+service vendor.charged.server /vendor/bin/charged
+    class charged_server
+    user root
+    group system

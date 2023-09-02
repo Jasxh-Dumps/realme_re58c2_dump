@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <enhance major_version="13"/>
+  <enhance version="2206281452"/>
+  <cm_config>
+    <reg_table mode="default">
+      <cm>
+        <param coef00="1024"/>
+        <param coef01="0"/>
+        <param coef02="0"/>
+        <param coef03="0"/>
+        <param coef10="0"/>
+        <param coef11="1024"/>
+        <param coef12="0"/>
+        <param coef13="0"/>
+        <param coef20="0"/>
+        <param coef21="0"/>
+        <param coef22="1024"/>
+        <param coef23="0"/>
+      </cm>
+      <range>
+        <param rmin="0"/>
+        <param rmax="0"/>
+        <param gmin="50"/>
+        <param gmax="124"/>
+        <param bmin="200"/>
+        <param bmax="370"/>
+      </range>
+    </reg_table>
+  </cm_config>
+</root>

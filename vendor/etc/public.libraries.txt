@@ -1,0 +1,11 @@
+# vendor public libraries
+libBokeh2Frames.so
+libbokeh_gaussian_cap.so
+libsprdbokeh.so
+libSegLite.so
+libjpeg_hw_sprd.so
+libOpenCL.so
+libOpenCL.so.1
+libOpenCL.so.1.1
+libOpenCL.so.1.2
+libDefog.so

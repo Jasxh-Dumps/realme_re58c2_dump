@@ -1,0 +1,28 @@
+一、功能
+抓取gpu loading数据
+
+二、使用方法
+连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/gpu/loading/gpu_loading -t 60
+-t 测试时间(默认为60s)以s为单位
+
+三、示例
+ums9230_1h10:/ # ./vendor/bin/power/gpu/loading/gpu_loading -t 10
+****************gpu_start_testing****************
+GPUINFO         384000000       512000000       614400000       768000000       850000000
+FreqTime        0.83%           0.00%           25.62%          34.48%          39.07%
+FreqLoading     0.24%           0.00%           2.41%           11.70%          11.45%
+
+polling interval is 50(ms)
+counts is 200
+384: 196                512: 0          614: 4          768: 0          850: 0
+
+384: 98.00%      utili:0.00%
+614: 2.00%       utili:0.00%
+Averag GPU Utili:0.00%
+
+四、备注
+1、只适用于userdebug版本

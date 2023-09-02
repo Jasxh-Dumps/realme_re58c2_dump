@@ -1,0 +1,10 @@
+service vendor.cplog_svc-default /vendor/bin/hw/vendor.sprd.hardware.cplog_svc-service
+    class hal
+    user system
+    group system radio root audio
+
+
+on post-fs-data
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/cplog_svc 0777 system system

@@ -1,0 +1,24 @@
+一、功能
+统计一段时间gpu频点变换表
+
+二、用法
+连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/gpu/trans_table/gpu_trans_table -t 60
+-t 测试时间(默认测试60s)
+
+三、示例
+uums9230_1h10:/ # ./vendor/bin/power/gpu/trans_table/gpu_trans_table -t 10
+accumulate_time is 10
+counts is 500
+        384     512     614     768     850
+384     0       0       0       0       0
+512     0       499     0       0       0
+614     0       0       0       0       0
+768     0       0       0       0       0
+850     0       0       0       0       0
+
+四、备注
+1、只适用userdebug版本

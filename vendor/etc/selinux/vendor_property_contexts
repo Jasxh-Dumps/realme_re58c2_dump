@@ -1,0 +1,230 @@
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/sepolicy/vendor/security/property_contexts"
+vendor.sprd.storageproxyd.                    u:object_r:vendor_storageproxyd_default_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/sepolicy/vendor/property_contexts"
+persist.vendor.avc.               u:object_r:vendor_avc_prop:s0
+
+##########################
+# property service keys
+#
+#persist.vendor.delta.time u:object_r:system_prop:s0
+persist.vendor.ylog_lite.   u:object_r:vendor_ylog_lite_pprop:s0
+vendor.ylog_lite.   u:object_r:vendor_ylog_lite_prop:s0
+persist.vendor.radio.    u:object_r:vendor_radio_prop:s0
+ro.vendor.modem.         u:object_r:vendor_radio_prop:s0
+ro.vendor.radio.         u:object_r:vendor_radio_prop:s0
+vendor.radio.            u:object_r:vendor_radio_prop:s0
+vendor.ril.              u:object_r:vendor_radio_prop:s0
+vendor.sim.              u:object_r:vendor_radio_prop:s0
+vendor.data.             u:object_r:vendor_radio_prop:s0
+vendor.net.              u:object_r:vendor_radio_prop:s0
+vendor.gsm.serial        u:object_r:vendor_radio_prop:s0
+vendor.bluetooth.        u:object_r:vendor_bt_prop:s0
+persist.vendor.sys.      u:object_r:vendor_sys_prop:s0
+vendor.sys.              u:object_r:vendor_sys_prop:s0
+ro.vendor.media          u:object_r:vendor_video_prop:s0
+vendor.h264dec           u:object_r:vendor_video_prop:s0
+vendor.h264enc           u:object_r:vendor_video_prop:s0
+vendor.m4vdec            u:object_r:vendor_video_prop:s0
+persist.vendor.sysdump   u:object_r:vendor_systemdebuggerd_prop:s0
+vendor.debug.sysdump.enabled   u:object_r:vendor_systemdebuggerd_prop:s0
+persist.vendor.modem.nr.enable u:object_r:vendor_media_prop:s0
+# For thermal
+
+# For Power
+persist.vendor.power.            u:object_r:vendor_power_prop:s0
+
+# For aprd
+persist.vendor.aprservice.enabled       u:object_r:vendor_aprd_prop:s0
+# For Camera
+vendor.cam.            u:object_r:vendor_camera_prop:s0
+ro.vendor.cam.         u:object_r:vendor_camera_prop:s0
+persist.vendor.cam.    u:object_r:vendor_camera_prop:s0
+# For FaceID
+persist.vendor.faceid.       u:object_r:vendor_faceid_prop:s0
+ro.vendor.faceid.            u:object_r:vendor_faceid_prop:s0
+#For Fingerprint
+ro.vendor.fps.      u:object_r:vendor_fps_prop:s0
+# For Hwui
+ro.vendor.hwui.    u:object_r:vendor_hwui_prop:s0
+# For Wcnd
+persist.vendor.wcnd.   u:object_r:vendor_wcnd_prop:s0
+# For slogmodem
+persist.vendor.modem.  u:object_r:vendor_modem_prop:s0
+vendor.modem.          u:object_r:vendor_modem_prop:s0
+ro.vendor.phy.log      u:object_r:vendor_modem_prop:s0
+ro.vendor.ag.          u:object_r:vendor_ag_prop:s0
+ro.vendor.sp.          u:object_r:vendor_sp_prop:s0
+ro.vendor.ch.          u:object_r:vendor_ch_prop:s0
+ro.vendor.product.partitionpath    u:object_r:vendor_product_prop:s0
+# For engineerMode
+persist.vendor.eng.   u:object_r:vendor_eng_prop:s0
+
+vendor.hwc.drm.device  u:object_r:vendor_hwc_prop:s0
+# For GPU
+ro.vendor.gpu.boost             u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.path        u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.sf          u:object_r:vendor_gpu_prop:s0
+ro.vendor.gpu.boost.sf.level    u:object_r:vendor_gpu_prop:s0
+ro.vendor.arm.                  u:object_r:vendor_arm_prop:s0
+vendor.mali.                    u:object_r:vendor_arm_prop:s0
+ro.vendor.hwui.platform     u:object_r:vendor_hwui_prop:s0
+# For powerhint
+# ro.vendor.powerhint.enable u:object_r:vendor_powerhint_prop:s0
+
+# For sf
+ro.vendor.sf.   u:object_r:vendor_sf_prop:s0
+ro.vendor.gpu.   u:object_r:vendor_gpu_prop:s0
+
+ro.vendor.sf.fbc  u:object_r:vendor_sf_fbc_prop:s0
+ro.vendor.gpu.fbc  u:object_r:vendor_gpu_fbc_prop:s0
+ro.vendor.vsp.fbc  u:object_r:vendor_vsp_fbc_prop:s0
+ro.vendor.whale2.afbc  u:object_r:vendor_whale2_afbc_prop:s0
+
+vendor.all.modules.ready                        u:object_r:vendor_device_prop:s0
+
+#For ro.vendor.soc.*
+vendor.soc.manufacturer    u:object_r:vendor_soc_prop:s0
+vendor.soc.model           u:object_r:vendor_soc_prop:s0
+
+#For wifionly
+ro.vendor.radio.noril    u:object_r:vendor_radio_noril_prop:s0
+ro.vendor.radio.hasmodem    u:object_r:vendor_radio_hasmodem_prop:s0
+
+#For dataonly
+ro.vendor.radio.dataonly    u:object_r:vendor_radio_dataonly_prop:s0
+
+#For audio
+ro.vendor.audio.whale_hal          u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.hifi_enabled  u:object_r:vendor_audio_prop:s0
+ro.vendor.af.bt_fc_multiplier      u:object_r:vendor_audio_prop:s0
+ro.vendor.af.dup_multiplier        u:object_r:vendor_audio_prop:s0
+ro.vendor.af.raise_bt_thread_prio  u:object_r:vendor_audio_prop:s0
+
+#for wfd
+ro.vendor.media.wfd.resolution        u:object_r:vendor_wfd_prop:s0
+
+#for fingerprint dynamic log
+persist.vendor.debug.fp.support  u:object_r:vendor_fp_prop:s0
+
+#For logcat2kmsg
+persist.vendor.logcat2kmsg u:object_r:vendor_logcat_prop:s0
+
+#For DynamicLog
+persist.vendor.camera.bypass.pdaf  u:object_r:vendor_camera_prop:s0
+persist.vendor.fdtop.fdv3  u:object_r:vendor_fdtop_prop:s0
+
+#For Coloros prop
+ro.vendor.oplus.regionmark      u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.operator        u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.euex.country    u:object_r:vendor_oplus_prop:s0
+
+#for display
+ro.vendor.display.multidisplay  u:object_r:vendor_display_prop:s0
+ro.vendor.displayenhance  u:object_r:vendor_display_prop:s0
+ro.vendor.nightdisplay.enhance  u:object_r:vendor_display_prop:s0
+persist.vendor.hwc.display.modeid u:object_r:vendor_hwc_prop:s0
+persist.vendor.bl.max  u:object_r:vendor_display_prop:s0
+persist.vendor.feature.Cabc  u:object_r:vendor_display_prop:s0
+persist.vendor.slider.duration  u:object_r:vendor_display_prop:s0
+persist.vendor.brightness.doze  u:object_r:vendor_display_prop:s0
+persist.vendor.assert.panic u:object_r:vendor_assert_panic_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/audio/msepolicy/vendor/property_contexts"
+#auido sub-system use
+persist.vendor.media.dump.path u:object_r:vendor_audio_prop:s0
+persist.vendor.media.dump.switch u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audiofw.devices.dump u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audiofw.dump u:object_r:vendor_audio_prop:s0
+persist.vendor.audioloop.test.result  u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.t.enable  u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.w.enable  u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.tl.enable  u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.lf.enable  u:object_r:vendor_audio_prop:s0
+persist.vendor.modem.l.enable  u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.nv  u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.usb.period_us u:object_r:vendor_audio_prop:s0
+ro.vendor.audio_tunning.nr u:object_r:vendor_audio_prop:s0
+ro.vendor.audio_tunning.dual_spk u:object_r:vendor_audio_prop:s0
+ro.vendor.digital.fm.support  u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.product.hardware  u:object_r:vendor_audio_prop:s0
+persist.vendor.media.audio.dump  u:object_r:vendor_audio_prop:s0
+persist.vendor.media.systemready.state u:object_r:vendor_audio_prop:s0
+persist.vendor.audio.boot_completed  u:object_r:vendor_audio_prop:s0
+
+# For dirac
+persist.odm.dirac.acs.controller        u:object_r:vendor_audio_prop:s0
+persist.odm.dirac.afm.mode              u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.path                       u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.poolsize                   u:object_r:vendor_audio_prop:s0
+odm.dirac.acs.storeSettings             u:object_r:vendor_audio_prop:s0
+persist.odm.dirac.acs.storeSettings     u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.acs.storeSettings          u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.config                     u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.max_active.headset         u:object_r:vendor_audio_prop:s0
+ro.odm.dirac.max_active.powersound      u:object_r:vendor_audio_prop:s0
+persist.odm.dirac.acs.ignore_error      u:object_r:vendor_audio_prop:s0
+persist.odm.dirac.acs.startAtBoot       u:object_r:vendor_audio_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/camera/msepolicy/vendor/property_contexts"
+persist.vendor.cam.ip                      u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.req.fmq.size              u:object_r:vendor_camera_ro_prop:s0
+ro.vendor.camera.res.fmq.size              u:object_r:vendor_camera_ro_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/ota/mfeature/ota/v-ab/msepolicy/vendor/property_contexts"
+ro.vendor.secure.boot.kce_ota  u:object_r:vendor_kce_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/thermal/msepolicy/vendor/property_contexts"
+persist.vendor.thermal. u:object_r:vendor_thermald_prop:s0
+persist.vendor.bsservice. u:object_r:vendor_thermald_prop:s0
+vendor.thermal. u:object_r:vendor_thermald_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/gpu/msepolicy/vendor/property_contexts"
+# For hal_graphics_composer_default
+
+# For hal_graphics_allocator_default
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/memory/msepolicy/vendor/property_contexts"
+ro.vendor.lmk. u:object_r:vendor_lmk_prop:s0
+#For zramwb
+vendor.zram. u:object_r:vendor_zramwb_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/power/msepolicy/vendor/property_contexts"
+ro.vendor.minui.hwrotation  u:object_r:vendor_hwrotation_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/wcn/msepolicy/vendor/property_contexts"
+vendor.wlan.driver.version                      u:object_r:vendor_wifi_version:s0
+vendor.wlan.firmware.version                    u:object_r:vendor_wifi_version:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/app/msepolicy/vendor/property_contexts"
+##########################
+# property service keys
+#
+#persist.vendor.delta.time u:object_r:system_prop:s0
+
+# For Video
+vendor.av1dec            u:object_r:vendor_video_prop:s0
+vendor.h265dec           u:object_r:vendor_video_prop:s0
+vendor.vp9dec            u:object_r:vendor_video_prop:s0
+vendor.vpxdec            u:object_r:vendor_video_prop:s0
+vendor.h265enc           u:object_r:vendor_video_prop:s0
+vendor.m4venc            u:object_r:vendor_video_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/device/sprd/mpool/module/vendor/engpc/msepolicy/vendor/property_contexts"
+# For engpc
+vendor.flag.engpc.onemodem.enable       u:object_r:vendor_engpc_prop:s0
+vendor.flag.sys.usb.config              u:object_r:vendor_engpc_prop:s0
+vendor.ro.bootmode                      u:object_r:vendor_engpc_prop:s0
+persist.vendor.modem.log_dest           u:object_r:vendor_engpc_prop:s0
+persist.vendor.wcn.log_dest             u:object_r:vendor_engpc_prop:s0
+ro.vendor.modem.support                 u:object_r:vendor_engpc_prop:s0
+vendor.flag.engpc.restart               u:object_r:vendor_engpc_prop:s0
+
+persist.vendor.gnss.tool.test           u:object_r:vendor_engpc_prop:s0
+
+#For 5G
+vendor.flag.sys.5gusb.config            u:object_r:vendor_engpc_prop:s0
+
+persist.vendor.exit.activity            u:object_r:vendor_engpc_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/nxp/pn8xt/sepolicy/property_contexts"
+# NFC properties
+persist.vendor.nfc.            u:object_r:vendor_nfc_prop:s0
+
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/vendor/oplus/secure/fingerprints/sepolicy/jiiov/property_contexts"
+vendor.oplus.fingerprint.qrcode.value u:object_r:vendor_qr_code_porp:s0
+vendor.fingerprint.cali u:object_r:vendor_cali_prop:s0
+vendor.oplus.fingerprint.gf.package.version u:object_r:vendor_gf_package_prop:s0
+vendor.oplus.fingerprint.qrcode.support u:object_r:vendor_qr_code_support_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/vendor_property_contexts/android_common/gen/namespace_checked/system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.

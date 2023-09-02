@@ -1,0 +1,19 @@
+user=system seinfo=platform name=com.yha.factory domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.yha.runtime domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.bd5.botovision domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.yha.engineersecret domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.oppo.engineermode domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.oppo.engineermode.camera domain=oppo_engineermode_camera type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.tencent.soter.soterserver domain=app_soterserver levelFrom=user
+user=system seinfo=platform name=com.sprd.validationtools domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.runtime domain=sprd_validationtools_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.autoslt domain=sprd_autoslt_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.sprd.logmanager domain=sprd_logmanager_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.unisoc.gnsstool domain=unisoc_gnsstool_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.engineerinternal domain=sprd_engineerinternal_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.engineermode domain=sprd_engineermode_app type=system_app_data_file levelFrom=user
+user=_app seinfo=platform name=com.sprd.cameraipcontrol domain=sprd_cameraipcontrol_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.spreadst.validator domain=sprd_validator_app type=system_app_data_file levelFrom=user
+user=_app seinfo=platform name=com.spreadtrum.sgps domain=sprd_sgps_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.bmte.coulomb domain=sprd_coulomb_app type=app_data_file levelFrom=user
+user=system seinfo=platform name=com.sprd.camta domain=sprd_camta_app type=system_app_data_file levelFrom=user

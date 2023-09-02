@@ -1,0 +1,15 @@
+service yloglite /vendor/bin/yloglite
+    class main
+    user root
+    group system media_rw sdcard_rw everybody cache
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    mkdir /data/vendor/ylog 0777
+
+on property:persist.sys.log.yloglite=1
+    start yloglite
+
+on property:persist.sys.log.yloglite=0
+    stop yloglite

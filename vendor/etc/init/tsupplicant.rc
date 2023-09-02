@@ -1,0 +1,18 @@
+on factorytest
+    setprop vendor.sprd.tsupplicant.enabled 1
+
+on property:ro.bootmode=cali
+    start vendor.tsupplicant-cali
+
+on property:vendor.sprd.tsupplicant.enabled=1
+    start vendor.tsupplicant
+
+service vendor.tsupplicant /vendor/bin/tsupplicant firmware
+    class core
+    user system
+    group system
+
+service vendor.tsupplicant-cali /vendor/bin/tsupplicant firmware
+    class cali
+    user root
+    group root

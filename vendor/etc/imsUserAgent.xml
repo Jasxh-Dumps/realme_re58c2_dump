@@ -1,0 +1,52 @@
+<imsUserAgent version="1.0" type="device">
+    <config value="1">
+        <element>46000</element>
+        <element>46001</element>
+        <element>50218</element>
+    </config>
+    <config value="2">
+        <element>46002</element>
+        <element>46003</element>
+    </config>
+    <config value="3">
+        <element>65501</element>
+        <element>65502</element>
+    </config>
+    <config value="4">
+        <element>72402</element>
+        <element>72403</element>
+    </config>
+    <config value="5">
+        <element>46605</element>
+        <element>26001</element>
+        <element>26012</element>
+        <element>26004</element>
+        <element>26015</element>
+        <element>26016</element>
+        <element>26017</element>
+        <element>26002</element>
+        <element>26006</element>
+        <element>26098</element>
+        <element>25099</element>
+        <element>74000</element>
+        <element>22005</element>
+    </config>
+    <config value="6">
+        <element>26003</element>
+        <element>26005</element>
+        <element>20801</element>
+    </config>
+    <config value="7">
+        <element>732101</element>
+        <element>33402</element>
+        <element>334020</element>
+        <element>71610</element>
+        <element>73003</element>
+    </config>
+    <config value="8">
+        <element>42402</element>
+        <element>33402</element>
+        <element>334020</element>
+    </config>
+
+</imsUserAgent>

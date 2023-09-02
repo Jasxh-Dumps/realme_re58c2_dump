@@ -1,0 +1,65 @@
+import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
+import /vendor/etc/init/hw/init.ram.rc
+import /vendor/etc/init/hw/init.storage.rc
+import /vendor/etc/init/hw/init.cali.rc
+
+on init
+    start watchdogd
+    chmod 0660 /sys/power/wakeup_count
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+    # setprop debug.sf.latch_unsignaled 1
+    insmod ${ro.vendor.ko.mount.point}/socko/akm4377.ko
+
+# Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
+service watchdogd /system/bin/watchdogd 10 30
+    class core
+    oneshot
+    seclabel u:r:watchdogd:s0
+
+on boot
+#UNISOC: Support aging test charging limit function
+    chown system system /sys/class/power_supply/battery/charger.0/stop_charge
+    chmod 0664 /sys/class/power_supply/battery/charger.0/stop_charge
+
+# for devfreq mm
+    chmod 660 /sys/class/devfreq/isp-dvfs/isp_governor/set_work_freq
+    chown cameraserver system /sys/class/devfreq/isp-dvfs/isp_governor/set_work_freq
+    chmod 660 /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_work_freq
+    chown cameraserver system /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_work_freq
+    chmod 660 /sys/class/devfreq/isp-dvfs/isp_governor/set_work_index
+    chown cameraserver system /sys/class/devfreq/isp-dvfs/isp_governor/set_work_index
+    chmod 660 /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_work_index
+    chown cameraserver system /sys/class/devfreq/dcam-if-dvfs/dcam-if_governor/set_work_index
+    chmod 660 /sys/class/devfreq/isp-dvfs/isp_governor/set_hw_dvfs_en
+    chown cameraserver system /sys/class/devfreq/isp-dvfs/isp_governor/set_hw_dvfs_en
+    chmod 660 /sys/class/devfreq/fd-dvfs/fd_governor/set_work_index
+    chown cameraserver system /sys/class/devfreq/fd-dvfs/fd_governor/set_work_index
+
+on early-boot
+    # Wait for insmod_sh to finish all modules
+    # comment out for bringup
+    # wait_for_prop vendor.all.modules.ready 1
+
+on early-init
+    start insmod-sh
+
+service insmod-sh /vendor/bin/init.insmod.sh /vendor/lib/modules/init.insmod.cfg ${ro.bootmode}
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    write /sys/bus/platform/drivers/sprd_serial/200a0000.serial/uart_gpio_ctrl 1
+
+on property:dev.bootcomplete=1
+    start mmc_ffu
+
+service mmc_ffu /vendor/bin/mmc_ffu do
+    class main
+    user root
+    disabled
+    oneshot

@@ -1,0 +1,27 @@
+一、功能:
+固定cpu大小核频率
+
+二、用法:
+连接adb切换root账户进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/cpu/fix_freq/fix_cpu_freq
+根据提示选择需要固定的freq
+
+三、示例:
+ums9230_1h10:/ # ./vendor/bin/power/cpu/fix_freq/fix_cpu_freq
+lit core
+614400  768000  884000  1040000 1228800 1378000 1536000 1612000 1716000 1820000
+input fix freq
+1228800
+cur_freq:1228800
+
+big core
+768000  1040000 1228800 1404000 1536000 1690000 1820000 1898000 2002000
+input fix freq
+1228800
+cur_freq:1228800
+
+四、备注:
+1、只适用于userdebug版本

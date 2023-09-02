@@ -1,0 +1,32 @@
+一、功能
+获取dvfs_table
+
+二、使用方法
+连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/cpu/dvfs/dvfs_table
+
+三、示例
+ums9230_1h10:/vendor/bin/power/cpu/dvfs # ./dvfs_table
+lit core:
+/* kHz  uV */
+768000  923
+884000  987
+1000000 1039
+1100000 1077
+1200000 1128
+
+big core:
+/* kHz  uV */
+768000  900
+1050000 921
+1225000 984
+1400000 1050
+1500000 1084
+1600000 1121
+
+四、备注
+1、仅适用于userdebug版本
+2、每次获取dvfs_table后续要重启手机

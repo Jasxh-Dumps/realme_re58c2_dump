@@ -1,0 +1,10 @@
+service neuralnetworks_hal_service_armnn-gpu /vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn-gpu -c GpuAcc &
+    interface android.hardware.neuralnetworks@1.0::IDevice armnn-gpu
+    interface android.hardware.neuralnetworks@1.1::IDevice armnn-gpu
+    interface android.hardware.neuralnetworks@1.2::IDevice armnn-gpu
+    interface android.hardware.neuralnetworks@1.3::IDevice armnn-gpu
+    oneshot
+    disabled
+    class hal
+    user system
+    group system

@@ -1,0 +1,6 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.tui</name>
+	<fqname>ITui/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,66 @@
+#line 1 "device/sprd/mpool/sepolicy/vendor/security/service_contexts"
+vendor.sprd.hardware.trusty.ITrustyClientProvider/default u:object_r:hal_trustyclientaidl_service:s0
+
+#for fingerprint apk mmi
+vendor.sprd.hardware.fingerprintmmi.IFingerprintmmi/default               u:object_r:hal_fingerprintmmi_service:s0
+#line 1 "device/sprd/mpool/sepolicy/vendor/service_contexts"
+#phasechecknative                          u:object_r:phasecheck_service:s0
+#addon                                     u:object_r:addon_service:s0
+#phone_ex                                  u:object_r:radio_service:s0
+#ismsEx                                    u:object_r:radio_service:s0
+#iphonesubinfoEx                           u:object_r:radio_service:s0
+#ims_ex                                    u:object_r:radio_service:s0
+#ims_ut_ex                                 u:object_r:radio_service:s0
+#atchannel                                 u:object_r:radio_service:s0
+# move fm to plat_sepolicy
+
+#simphonebookEx                            u:object_r:radio_service:s0
+#sprd_phone                                u:object_r:radio_service:s0
+#iglobalconfig                             u:object_r:radio_service:s0
+#irit                                      u:object_r:radio_service:s0
+#carrier_config_ex                         u:object_r:radio_service:s0
+#powerguru                                 u:object_r:powerguru_service:s0
+#power_ex                                  u:object_r:power_ex_service:s0
+android.hardware.drm.IDrmFactory/widevine  u:object_r:hal_drm_service:s0
+
+vendor.unisoc.hardware.radio.modem.IExtRadioModem/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.modem.IExtRadioModem/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.sim.IExtRadioSim/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.sim.IExtRadioSim/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.network.IExtRadioNetwork/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.network.IExtRadioNetwork/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.data.IExtRadioData/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.data.IExtRadioData/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.voice.IExtRadioVoice/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.voice.IExtRadioVoice/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.messaging.IExtRadioMessaging/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.messaging.IExtRadioMessaging/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.ims.IImsRadio/slot1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.ims.IImsRadio/slot2      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.lite.ILiteRadio/liteservice1      u:object_r:ext_radio_service:s0
+vendor.unisoc.hardware.radio.lite.ILiteRadio/liteservice2      u:object_r:ext_radio_service:s0
+
+#line 1 "device/sprd/mpool/module/vendor/display/msepolicy/vendor/service_contexts"
+vendor.sprd.hardware.enhance.IEnhance/default    u:object_r:hal_enhanceaidl_service:s0
+#line 1 "device/sprd/mpool/module/vendor/security/msepolicy/vendor/service_contexts"
+vendor.sprd.hardware.tui.ITui/default  u:object_r:hal_tui_service:s0
+vendor.sprd.hardware.hdcp.IHDCP/default  u:object_r:hal_hdcp_service:s0
+vendor.sprd.hardware.ifaa.IIfaa/default  u:object_r:hal_ifaaaidl_service:s0
+vendor.sprd.hardware.soter.ISoter/default  u:object_r:hal_soter_service:s0
+#line 1 "device/sprd/mpool/module/vendor/media/msepolicy/vendor/service_contexts"
+#fm                                        u:object_r:mediaserver_service:s0
+#line 1 "device/sprd/mpool/module/vendor/apr/msepolicy/vendor/service_contexts"
+vendor.sprd.hardware.aprd.IAprdInfoSync/default     u:object_r:hal_aprdaidl_service:s0
+#line 1 "device/sprd/mpool/module/vendor/net/msepolicy/vendor/service_contexts"
+#for network
+vendor.sprd.hardware.network.INetworkControl/default             u:object_r:hal_networkaidl_service:s0
+#line 1 "device/sprd/mpool/module/vendor/log/msepolicy/vendor/service_contexts"
+vendor.sprd.hardware.log.ILogControl/default     u:object_r:hal_logaidl_service:s0
+vendor.sprd.hardware.cplog_svc.ILogTransportInductor/default     u:object_r:hal_cplog_svcaidl_service:s0
+vendor.sprd.hardware.cplog_svc.ISysLogControl/default     u:object_r:hal_cplog_svcaidl_service:s0
+#line 1 "device/sprd/mpool/module/vendor/ai/ai_engine/msepolicy/vendor/service_contexts"
+vendor.unisoc.hardware.ai_engine.IAIEngineControl/default u:object_r:hal_ai_engine_service:s0
+#line 1 "system/sepolicy/reqd_mask/service_contexts"
+# empty service_contexts file - this file is used to generate an empty
+# non-platform service_context for devices without any service_contexts
+# customizations.

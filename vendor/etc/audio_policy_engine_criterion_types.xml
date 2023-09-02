@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<criterion_types>
+	<criterion_type name="OutputDevicesMaskType" type="inclusive">
+		<values>
+			<value numerical="1" literal="Earpiece" android_type="0x1"/>
+			<value numerical="2" literal="Speaker" android_type="0x2"/>
+			<value numerical="4" literal="WiredHeadset" android_type="0x4"/>
+			<value numerical="8" literal="WiredHeadphone" android_type="0x8"/>
+			<value numerical="16" literal="BluetoothSco" android_type="0x10"/>
+			<value numerical="32" literal="BluetoothScoHeadset" android_type="0x20"/>
+			<value numerical="64" literal="BluetoothScoCarkit" android_type="0x40"/>
+			<value numerical="128" literal="BluetoothA2dp" android_type="0x80"/>
+			<value numerical="256" literal="BluetoothA2dpHeadphones" android_type="0x100"/>
+			<value numerical="512" literal="BluetoothA2dpSpeaker" android_type="0x200"/>
+			<value numerical="1024" literal="Hdmi" android_type="0x400"/>
+			<value numerical="2048" literal="AnlgDockHeadset" android_type="0x800"/>
+			<value numerical="4096" literal="DgtlDockHeadset" android_type="0x1000"/>
+			<value numerical="8192" literal="UsbAccessory" android_type="0x2000"/>
+			<value numerical="16384" literal="UsbDevice" android_type="0x4000"/>
+			<value numerical="32768" literal="RemoteSubmix" android_type="0x8000"/>
+			<value numerical="65536" literal="TelephonyTx" android_type="0x10000"/>
+			<value numerical="131072" literal="Line" android_type="0x20000"/>
+			<value numerical="262144" literal="HdmiArc" android_type="0x40000"/>
+			<value numerical="524288" literal="Spdif" android_type="0x80000"/>
+			<value numerical="1048576" literal="Fm" android_type="0x100000"/>
+			<value numerical="2097152" literal="AuxLine" android_type="0x200000"/>
+			<value numerical="4194304" literal="SpeakerSafe" android_type="0x400000"/>
+			<value numerical="8388608" literal="Ip" android_type="0x800000"/>
+			<value numerical="16777216" literal="Bus" android_type="0x1000000"/>
+			<value numerical="33554432" literal="Proxy" android_type="0x2000000"/>
+			<value numerical="67108864" literal="UsbHeadset" android_type="0x4000000"/>
+			<value numerical="134217728" literal="HearingAid" android_type="0x8000000"/>
+			<value numerical="268435456" literal="EchoCanceller" android_type="0x10000000"/>
+			<value numerical="536870912" literal="BleHeadset" android_type="0x20000000"/>
+			<value numerical="1073741824" literal="Default" android_type="0x40000000"/>
+			<value numerical="4294967296" literal="HdmiEarc" android_type="0x40001"/>
+			<value numerical="8589934592" literal="BleSpeaker" android_type="0x20000001"/>
+			<value numerical="17179869184" literal="BleBroadcast" android_type="0x20000002"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="InputDevicesMaskType" type="inclusive">
+		<values>
+			<value numerical="1" literal="Communication" android_type="0x80000001"/>
+			<value numerical="2" literal="Ambient" android_type="0x80000002"/>
+			<value numerical="4" literal="BuiltinMic" android_type="0x80000004"/>
+			<value numerical="8" literal="BluetoothScoHeadset" android_type="0x80000008"/>
+			<value numerical="16" literal="WiredHeadset" android_type="0x80000010"/>
+			<value numerical="32" literal="Hdmi" android_type="0x80000020"/>
+			<value numerical="64" literal="TelephonyRx" android_type="0x80000040"/>
+			<value numerical="128" literal="BackMic" android_type="0x80000080"/>
+			<value numerical="256" literal="RemoteSubmix" android_type="0x80000100"/>
+			<value numerical="512" literal="AnlgDockHeadset" android_type="0x80000200"/>
+			<value numerical="1024" literal="DgtlDockHeadset" android_type="0x80000400"/>
+			<value numerical="2048" literal="UsbAccessory" android_type="0x80000800"/>
+			<value numerical="4096" literal="UsbDevice" android_type="0x80001000"/>
+			<value numerical="8192" literal="FmTuner" android_type="0x80002000"/>
+			<value numerical="16384" literal="TvTuner" android_type="0x80004000"/>
+			<value numerical="32768" literal="Line" android_type="0x80008000"/>
+			<value numerical="65536" literal="Spdif" android_type="0x80010000"/>
+			<value numerical="131072" literal="BluetoothA2dp" android_type="0x80020000"/>
+			<value numerical="262144" literal="Loopback" android_type="0x80040000"/>
+			<value numerical="524288" literal="Ip" android_type="0x80080000"/>
+			<value numerical="1048576" literal="Bus" android_type="0x80100000"/>
+			<value numerical="16777216" literal="Proxy" android_type="0x81000000"/>
+			<value numerical="33554432" literal="UsbHeadset" android_type="0x82000000"/>
+			<value numerical="67108864" literal="BluetoothBle" android_type="0x84000000"/>
+			<value numerical="134217728" literal="HdmiArc" android_type="0x88000000"/>
+			<value numerical="268435456" literal="EchoReference" android_type="0x90000000"/>
+			<value numerical="536870912" literal="BleHeadset" android_type="0xa0000000"/>
+			<value numerical="1073741824" literal="Default" android_type="0xC0000000"/>
+			<value numerical="4294967296" literal="HdmiEarc" android_type="0x88000001"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="OutputDevicesAddressesType" type="inclusive">
+		<values>
+			<value literal="0" numerical="1"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="InputDevicesAddressesType" type="inclusive">
+		<values>
+			<value literal="0" numerical="1"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="AndroidModeType" type="exclusive">
+		<values>
+			<value numerical="0" literal="Normal"/>
+			<value numerical="1" literal="Ringtone"/>
+			<value numerical="2" literal="InCall"/>
+			<value numerical="3" literal="InCommunication"/>
+			<value numerical="4" literal="CallScreen"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="BooleanType" type="exclusive">
+		<values>
+			<value literal="False" numerical="0"/>
+			<value literal="True" numerical="1"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForCommunicationType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceSpeaker" numerical="1"/>
+			<value literal="ForceBtSco" numerical="3"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForMediaType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceSpeaker" numerical="1"/>
+			<value literal="ForceHeadphones" numerical="2"/>
+			<value literal="ForceBtA2dp" numerical="4"/>
+			<value literal="ForceWiredAccessory" numerical="5"/>
+			<value literal="ForceAnalogDock" numerical="8"/>
+			<value literal="ForceDigitalDock" numerical="9"/>
+			<value literal="ForceNoBtA2dp" numerical="10"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForRecordType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceBtSco" numerical="3"/>
+			<value literal="ForceWiredAccessory" numerical="5"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForDockType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceWiredAccessory" numerical="5"/>
+			<value literal="ForceBtCarDock" numerical="6"/>
+			<value literal="ForceBtDeskDock" numerical="7"/>
+			<value literal="ForceAnalogDock" numerical="8"/>
+			<value literal="ForceDigitalDock" numerical="9"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForSystemType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceSystemEnforced" numerical="11"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForHdmiSystemAudioType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceHdmiSystemEnforced" numerical="12"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForEncodedSurroundType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceEncodedSurroundNever" numerical="13"/>
+			<value literal="ForceEncodedSurroundAlways" numerical="14"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForVibrateRingingType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceBtSco" numerical="3"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="ForceUseForFmType" type="exclusive">
+		<values>
+			<value literal="ForceNone" numerical="0"/>
+			<value literal="ForceSpeaker" numerical="1"/>
+			<value literal="ForceHeadphones" numerical="2"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="OffloadmodeType" type="exclusive">
+		<values>
+			<value literal="Normal" numerical="0"/>
+			<value literal="InCall" numerical="1"/>
+		</values>
+	</criterion_type>
+	<criterion_type name="FmModeType" type="exclusive">
+		<values>
+			<value literal="Normal" numerical="0"/>
+			<value literal="Active" numerical="1"/>
+		</values>
+	</criterion_type>
+</criterion_types>

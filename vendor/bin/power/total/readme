@@ -1,0 +1,101 @@
+一、功能
+一次性获取6个脚本所抓取的数据，包括：
+cpu_loading,gpu_loading,ddr_loading,tops,interrupt,fps
+
+二、用法
+正常连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+cd vendor/bin/power/total/tool
+sh total.sh -c 1 -g 1 -d 1 -t 1 -i 1 -f 1
+
+注意：
+参数c、g、d、t、i、f分别表示cpu_loading,gpu_loading,ddr_loading,tops,interrupt,fps六个脚本
+1为示例运行时间，可自定义，前五个脚本运行时间单位为秒（s），最后一个fps脚本运行时间单位为分（min）
+
+三、示例
+ums9230_1h10:/ # cd vendor/bin/power/total/tool/
+ums9230_1h10:/vendor/bin/power/total/tool # sh total.sh -c 1 -g 1 -d 1 -t 10 -i 1 -f 1
+
+cpu_loading:
+testing 1s
+
+cpuN    614400  768000  884000  1040000 1228800 1378000 1536000 1612000 1716000 1820000 online    idle
+cpu0    9.82%   0.23%   0.00%   0.00%   0.23%   0.23%   0.00%   0.00%   0.00%   12.10%  22.83%    77.17%
+cpu1    10.63%  0.25%   0.00%   0.00%   0.25%   0.25%   0.00%   0.00%   0.00%   13.11%  24.73%    75.27%
+cpu2    5.70%   0.13%   0.00%   0.00%   0.13%   0.13%   0.00%   0.00%   0.00%   7.03%   13.27%    86.73%
+cpu3    9.31%   0.22%   0.00%   0.00%   0.22%   0.22%   0.00%   0.00%   0.00%   11.47%  21.65%    78.35%
+cpu4    2.58%   0.06%   0.00%   0.00%   0.06%   0.06%   0.00%   0.00%   0.00%   3.18%   6.00%    94.00%
+cpu5    2.13%   0.05%   0.00%   0.00%   0.05%   0.05%   0.00%   0.00%   0.00%   2.62%   4.95%    95.05%
+Freq    43.00%  1.00%   0.00%   0.00%   1.00%   1.00%   0.00%   0.00%   0.00%   53.00%
+sum:    1179497.13kHZ
+power:  0.00
+
+
+cpuN    768000  1040000 1228800 1404000 1536000 1690000 1820000 1898000 2002000 online    idle
+cpu6    7.77%   0.19%   0.00%   0.19%   0.00%   0.00%   0.00%   0.00%   1.23%   9.47%    90.53%
+cpu7    0.00%   0.00%   0.00%   0.00%   0.00%   0.00%   0.00%   0.00%   0.00%   0.00%    100.00%
+Freq    82.00%  2.00%   0.00%   2.00%   0.00%   0.00%   0.00%   0.00%   13.00%
+sum:    88948.42kHZ
+power:  0.00
+
+
+sum_total:      1268445.55KHZ
+power_total:    0.00
+
+
+gpu_loading:
+****************gpu_start_testing****************
+GPUINFO         384000000       512000000       614400000       768000000       850000000
+FreqTime        73.27%          0.00%           0.00%           0.00%           26.73%
+FreqLoading     11.75%          0.00%           0.00%           0.00%           12.25%
+
+polling interval is 50(ms)
+counts is 20
+384: 20         512: 0          614: 0          768: 0          850: 0
+
+384: 100.00%     utili:21.60%
+Averag GPU Utili:21.60%
+
+ddr_loading:
+
+DDRFreq         256Mhz  384Mhz  512Mhz  768Mhz  1024Mhz 1333Mhz 1536Mhz 1866Mhz
+FreqRatio       0.00%   0.00%   0.00%   100.00% 0.00%   0.00%   0.00%   0.00%
+
+DDRState        idle_time:      write_time:     read_time:      sref_time:      light_time:
+StateRatio      6.25%           0.56%           5.58%           46.20%          41.41%
+
+thread_top:
+Can't delete the file
+mkdir: '/data/local/tmp': File exists
+%[CPU]  ARGS
+49.9    android.hardware.audio.service
+ 24.1   com.android.launcher3
+ 17.2   surfaceflinger
+ 13.7   [irq/91-fts_ts]
+ 13.7   android.hardware.graphics.composer@2.1-service
+ 8.5    system_server
+ 6.8    [kworker/u16:5]
+ 6.6    audioserver
+ 3.4    [kworker/6:1]
+ 3.4    [kworker/1:2]
+
+interrupts:
+        CPU0           CPU1           CPU2           CPU3           CPU4           CPU5           CPU6           CPU7                TOTAL
+   2:   41             14             12             4              0              0              6              0                      77      GICv3           103                     /soc/aon/timer@64470000
+    4:  89             33             20             20             0              0              13             0                     175      GICv3           30                      arch_timer
+   21:  1              0              0              0              0              0              0              0                       1      GICv3           179                     ufshcd
+   43:  10             0              0              0              0              0              0              0                      10      GICv3           92                      23100000.gpu, 23100000.gpu, 23100000.gpu
+   45:  119            0              0              0              0              0              0              0                     119      GICv3           59                      DISPC
+   46:  1              0              0              0              0              0              0              0                       1      GICv3           58                      GSP0
+ IPI0:  40             37             22             16             0              2              1              0                     118      Rescheduling interrupts
+ IPI4:  3              8              8              8              0              1              1              1                      30      Timer broadcast interrupts
+ IPI5:  8              3              1              1              0              0              1              0                      14      IRQ work interrupts
+
+fps:
+accumulate_time is 1
+average fps : 1.09
+
+四、备注
+1、仅适用于userdebug版本

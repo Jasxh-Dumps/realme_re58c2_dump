@@ -1,0 +1,16 @@
+#wcnd service
+service vendor.wcnd /vendor/bin/connmgr
+    class late_start
+    user system
+    group system readproc inet wifi shell bluetooth net_bt_admin
+
+#wcnd eng service
+service vendor.wcnd_eng /vendor/bin/connmgr -G
+     class late_start
+     group system shell wifi inet bluetooth net_bt_admin
+     disabled
+     oneshot
+on property:persist.vendor.wcnd.eng.enable=1
+     start vendor.wcnd_eng
+on property:persist.vendor.wcnd.eng.enable=0
+     stop vendor.wcnd_eng

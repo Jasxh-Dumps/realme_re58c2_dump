@@ -1,0 +1,7 @@
+service vendor.ai_engine-default /vendor/bin/hw/vendor.unisoc.hardware.ai_engine-service
+    interface aidl vendor.unisoc.hardware.ai_engine.IAIEngineControl/default
+    class hal
+    user root
+    group system
+    oneshot
+    disabled

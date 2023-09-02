@@ -1,0 +1,5 @@
+service vendor.rpmbsvr /vendor/bin/rpmbserver -r /dev/mmcblk0rpmb
+    class cali
+    socket rpmbserver stream 0666 system system
+    group system root
+    seclabel u:r:tee:s0

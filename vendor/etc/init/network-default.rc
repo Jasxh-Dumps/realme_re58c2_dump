@@ -1,0 +1,4 @@
+service vendor.network-default /vendor/bin/hw/vendor.sprd.hardware.network-service
+    class hal
+    user system
+    group system

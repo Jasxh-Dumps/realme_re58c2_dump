@@ -1,0 +1,7 @@
+service vendor.fingerprintmmi-default /vendor/bin/hw/vendor.sprd.hardware.fingerprintmmi-service
+  class hal
+  user system
+  group system
+  interface aidl vendor.sprd.hardware.fingerprintmmi.IFingerprintmmi/default
+  oneshot
+  disabled

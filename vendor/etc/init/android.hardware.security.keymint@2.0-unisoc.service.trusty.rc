@@ -1,0 +1,4 @@
+service vendor.keymint-unisoc-2.0 /vendor/bin/hw/android.hardware.security.keymint@2.0-unisoc.service.trusty
+    class early_hal
+    user system
+    group system drmrpc

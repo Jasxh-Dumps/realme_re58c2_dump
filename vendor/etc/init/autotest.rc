@@ -1,0 +1,38 @@
+on property:vendor.ro.bootmode=autotest && property:init.svc.surfaceflinger=running
+    stop surfaceflinger
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.zygote=running
+    stop zygote
+
+on property:vendor.ro.bootmode=autotest && property:vendor.flag.sys.usb.config=1
+   setprop sys.usb.config vser
+
+on property:vendor.ro.bootmode=autotest && property:sys.usb.state=vser
+    setprop vendor.sys.usb.state vser
+
+#Add for backlight test issue.
+on property:vendor.ro.bootmode=autotest
+   chmod 0666 /sys/class/backlight/sprd_backlight/brightness
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.vendor.hwcomposer-2-1=running
+    stop vendor.hwcomposer-2-1
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.vendor.hwcomposer-2-3=running
+    stop vendor.hwcomposer-2-3
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.vendor.hwcomposer-2-4=running
+    stop vendor.hwcomposer-2-4
+
+
+on ft-mount-sdcard
+    mkdir /mnt/media_rw 0777 root root
+    mkdir /mnt/media_rw/87EE-18F4 0777 media_rw media_rw
+    mount vfat /dev/block/mmcblk1p1 /mnt/media_rw/87EE-18F4
+    symlink /mnt/media_rw/87EE-18F4 /storage/87EE-18F4
+    chmod 777 /storage/87EE-18F4
+
+on property:vendor.ro.bootmode=autotest
+    trigger ft-mount-sdcard
+
+on property:vendor.ro.bootmode=cali
+    trigger ft-mount-sdcard

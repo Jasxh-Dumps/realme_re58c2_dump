@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<config>
+<wl n="com.tencent.mm" />
+<wl n="com.sina.weibo" />
+<wl n="com.tencent.mobileqq" />
+<wl n="com.skype.raider" />
+<wl n="com.skype.m2" />
+<wl n="com.bbm" />
+<wl n="com.facebook.katana" />
+<wl n="com.whatsapp" />
+<wl n="jp.naver.line.android" />
+<wl n="com.twitter.android" />
+<wl n="com.instagram.android" />
+<wl n="com.facebook.orca" />
+</config>

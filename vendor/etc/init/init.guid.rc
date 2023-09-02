@@ -1,0 +1,8 @@
+on boot
+    chown system root /mnt/vendor/productinfo/GUID
+    chmod 664 /mnt/vendor/productinfo/GUID
+
+on cali-fs
+    chown system root /mnt/vendor/productinfo/GUID
+    chmod 664 /mnt/vendor/productinfo/GUID
+

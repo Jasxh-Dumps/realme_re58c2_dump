@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capabilities xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' version='1.40.0'>
+    <ip_capabilities ip="GPU">
+        <feature name="AFBC_16X16" Permission="RW"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" Permission="RW"></feature>
+        <feature name="AFBC_32X8" Permission="RW"></feature>
+        <feature name="AFBC_YUV" Permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" Permission="RW"></feature>
+        <feature name="FORMAT_R10G10B10A2" Permission="RW"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" Permission="RW"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="DPU">
+        <feature name="AFBC_16X16" Permission="RO"></feature>
+		<feature name="AFBC_32X8" Permission="RO"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" Permission="RO"></feature>
+        <feature name="AFBC_YUV" Permission="RO"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" Permission="RO"></feature>
+        <feature name="FORMAT_R10G10B10A2" Permission="RO"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" Permission="RO"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="DPU_AEU">
+        <feature name="AFBC_16X16" Permission="RW"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" Permission="RW"></feature>
+        <feature name="AFBC_YUV" Permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" Permission="RW"></feature>
+        <feature name="FORMAT_R10G10B10A2" Permission="RW"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" Permission="RW"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="VPU">
+        <feature name="AFBC_16X16" Permission="RW"></feature>
+        <feature name="AFBC_YUV" Permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" Permission="RW"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="CAM"></ip_capabilities>
+</capabilities>

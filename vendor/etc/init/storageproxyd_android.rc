@@ -1,0 +1,53 @@
+#start storageproxyd must restorecon /data,
+#not start storageproxyd on cali mode (not trigger post-fs-data)
+on post-fs-data
+    mkdir /data/vendor/sprd_ss 0770 system system
+    mkdir /data/vendor/sprd_tee_ss 0770 system system
+#    mkdir /productinfo/sprd_ss 0770 system system
+
+on factorytest
+    setprop vendor.sprd.storageproxyd.enabled 1
+
+#on cali mode set sprd.storageproxyd.enabled=1 in production tools
+on property:vendor.sprd.storageproxyd.enabled=1
+    mkdir /data/vendor/sprd_ss 0770 system system
+#    mkdir /productinfo/sprd_ss 0770 system system
+    start vendor.rpmbproxy
+    start vendor.nsproxy
+#    start vendor.prodproxy
+#    start vendor.emmcproxy
+#    start vendor.plaintext
+on property:ro.vendor.tee.gpapi.support=true
+    mkdir /data/vendor/sprd_tee_ss 0770 system system
+    start vendor.teensproxy
+
+#service name must be < 16
+service vendor.rpmbproxy /vendor/bin/sprdstorageproxyd -f rpmb -d /dev/trusty-ipc-dev0 -p /data/vendor/sprd_ss -r /dev/mmcblk0rpmb
+    class core
+    group system
+    oneshot
+    seclabel u:r:tee:s0
+
+service vendor.nsproxy /vendor/bin/sprdstorageproxyd -f ns -d /dev/trusty-ipc-dev0 -p /data/vendor/sprd_ss -r /dev/mmcblk0rpmb
+    class core
+    group system
+    seclabel u:r:tee:s0
+
+#service vendor.prodproxy /vendor/bin/sprdstorageproxyd -f prodnv -d /dev/trusty-ipc-dev0 -p /productinfo/sprd_ss
+#    class late_start
+#    group system
+#    seclabel u:r:tee:s0
+
+#service vendor.emmcproxy /vendor/bin/sprdstorageproxyd -f emmc -d /dev/trusty-ipc-dev0
+#    class core
+#    group system
+#    seclabel u:r:tee:s0
+
+#service vendor.plaintext /vendor/bin/sprdstorageproxyd -f plaintext -d /dev/trusty-ipc-dev0 -p /data/vendor/sprd_ss -r /dev/mmcblk0rpmb
+#    class late_start
+#    group system
+#    seclabel u:r:tee:s0
+
+service vendor.teensproxy /vendor/bin/sprdstorageproxyd -f teens -d /dev/trusty-ipc-dev0 -p /data/vendor/sprd_tee_ss
+    group system
+    seclabel u:r:tee:s0

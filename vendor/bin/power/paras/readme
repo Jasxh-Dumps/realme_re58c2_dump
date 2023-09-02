@@ -1,0 +1,24 @@
+一、功能
+获取功耗相关参数
+
+二、用法
+正常连接adb进入shell
+./vendor/bin/power/paras/tool/paras > /vendor/bin/power/paras/tool/para.txt
+扫描结束将在/vendor/bin/power/paras生成para.txt的结果文件
+
+三、示例
+ums9230_1h10:/vendor/bin/power/paras # ls
+ls
+readme tool
+ums9230_1h10:/vendor/bin/power/paras # ./tool/paras > para.txt
+./tool/paras > para.txt
+ums9230_1h10:/vendor/bin/power/paras # ls
+ls
+para.txt readme tool
+ums9230_1h10:/vendor/bin/power/paras # exit
+exit
+
+C:\Users\username>adb pull /vendor/bin/power/paras/para.txt
+
+四、备注
+1、仅适用于userdebug版本

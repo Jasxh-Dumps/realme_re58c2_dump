@@ -1,0 +1,13 @@
+#cp_diskserver
+service vendor.cp_diskserver /vendor/bin/cp_diskserver
+    class cali
+    user root
+    group root system radio shell wakelock
+    disabled
+
+
+on property:ro.bootmode=cali
+   start vendor.cp_diskserver
+
+on property:ro.bootmode=factorytest
+   start vendor.cp_diskserver

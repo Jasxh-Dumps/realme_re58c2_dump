@@ -1,0 +1,414 @@
+#!/system/bin/sh
+#########################################################################
+#** Copyright (C), 2008-2019, OPPO Mobile Comm Corp., Ltd.
+#** ODM_HQ_EDIT
+#** File: - AudioTest
+#** Description: for ODM HQ use audio auto test
+#** Version: 1.0
+#** Date : 2018/10/13
+#** Author: fanxiongnan@ODM_HQ.Multimedia.Audio.Factory
+#-------------------------------
+#** <author> <data> <version > <desc>
+#** fanxiongnan 2018/10/13 1.0 create
+#** fanxiongnan 2019/10/16 2.0 modified for Nemo
+#** fanxiongnan 2019/11/09 2.1 modified for test fail
+#** sunjingtao  2020/03/09 3.0 modified for Euler
+#########################################################################
+
+
+#HQ:tanyang
+#input:    MainMic = 1, sub mic = 2, headset mic = 3
+#output:   receiver =1, headset = 2, speaker = 3
+#on-off:   on = 1, off =0
+
+
+function print_usage(){
+    echo "Usage:"$0" input output on-off"
+    echo "input    [MainMic = 1]  [sub mic = 2] [headset mic = 3]"
+    echo "output   [receiver = 1] [headset = 2] [speaker = 3]"
+    echo "on-off   [on = 1]       [off = 0]"
+}
+
+case $1 in
+    "1") #Main Mic
+    case $2 in
+        "1") #receiver
+             case $3 in
+             "1")
+              AudioSetParam SET_LOOPBACK_TYPE=1,1;
+              tinymix Handset_PGA_GAIN 3;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open MainMic to receiver loopback";
+              ;;
+             "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close MainMic to receiver loopback";
+              ;;
+            *)
+              print_usage
+                  exit 1
+              ;;
+          esac
+         ;;
+        "2") #headset
+             case $3 in
+             "1")
+              AudioSetParam SET_LOOPBACK_TYPE=1,2;
+              tinymix Headset_PGAL_GAIN 0;
+              tinymix Headset_PGAR_GAIN 0;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open MainMic to headset loopback";
+              ;;
+             "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close MainMic to headset loopback";
+              ;;
+            *)
+              print_usage
+                  exit 1
+              ;;
+          esac
+         ;;
+        "3") #speaker
+             case $3 in
+             "1")
+              AudioSetParam SET_LOOPBACK_TYPE=1,3;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open MainMic to speaker loopback";
+              ;;
+             "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close MainMic to speaker loopback";
+              ;;
+            *)
+              print_usage
+                  exit 1
+              ;;
+          esac
+         ;;
+         *)
+            print_usage
+            exit 1
+         ;;
+    esac
+    ;;
+    "2") # SubMic for playback test and mic recording test
+        case $2 in
+            "1") # Receiver playback test
+                case $3 in
+                    "1")
+                        tinymix "agdsp_access_en" 1
+                        tinymix "ag_iis0_ext_sel_v1" "top_dac_iis"
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" "1"
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" "1"
+                        tinymix "S_FAST_P_CODEC SWITCH" "1"
+                        tinymix "S_OFFLOAD_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_P_CODEC SWITCH" "1"
+                        tinymix "S_VOIP_P_CODEC SWITCH" "1"
+                        tinymix "S_FM_CODEC SWITCH" "1"
+                        tinymix "S_LOOP_P_CODEC SWITCH" "1"
+                        tinymix "S_FM_DSP_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_PCM_P SWITCH" "1"
+                        tinymix "EAR Mixer DACLEAR Switch" "1"
+                        tinymix "Earpiece Function" "1"
+                        tinymix "EAR Gain EAR Playback Volume" 3
+                        tinyplay vendor/etc/AudioTest_hq/receiver.wav
+                        echo "receiver playback test"
+                    ;;
+                    "0")
+                        tinymix "agdsp_access_en" "0"
+                        tinymix "EAR Mixer DACLEAR Switch" "0"
+                        tinymix "Earpiece Function" "0"
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" "0"
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" "0"
+                        tinymix "S_FAST_P_CODEC SWITCH" "0"
+                        tinymix "S_OFFLOAD_CODEC SWITCH" "0"
+                        tinymix "S_VOICE_P_CODEC SWITCH" "0"
+                        tinymix "S_VOIP_P_CODEC SWITCH" "0"
+                        tinymix "S_FM_CODEC SWITCH" "0"
+                        tinymix "S_LOOP_P_CODEC SWITCH" "0"
+                        tinymix "S_FM_DSP_CODEC SWITCH" "0"
+                        tinymix "S_VOICE_PCM_P SWITCH" "0"
+                        tinymix "EAR Gain EAR Playback Volume" 15
+                    ;;
+                esac
+            ;;
+            "2") # Headset playback test
+                case $3 in
+                    "1")
+                        tinymix "agdsp_access_en" 1
+                        tinymix "ag_iis0_ext_sel_v1" "top_dac_iis"
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" "1"
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" "1"
+                        tinymix "S_FAST_P_CODEC SWITCH" "1"
+                        tinymix "S_OFFLOAD_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_P_CODEC SWITCH" "1"
+                        tinymix "S_VOIP_P_CODEC SWITCH" "1"
+                        tinymix "S_FM_CODEC SWITCH" "1"
+                        tinymix "S_LOOP_P_CODEC SWITCH" "1"
+                        tinymix "S_FM_DSP_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_PCM_P SWITCH" "1"
+                        tinymix "HPL EAR Sel" HPL
+                        tinymix "HPL Mixer DACLHPL Switch"  1
+                        tinymix "HPR Mixer DACRHPR Switch"  1
+                        tinymix "HeadPhone Function" 1
+                        tinymix "HP mix mode" 0
+                        tinymix "HP_CROSSTALK_EN" 1
+                        tinymix "DAC LRCLK Select" invert
+                        tinymix "HPR Pin Switch" 1
+                        tinymix "HP_CROSSTALK_GAIN" 13500
+                        tinymix VBC_IIS_TX0_WD_SEL  WD_24BIT
+                        tinymix VBC_IIS_TX1_WD_SEL  WD_24BIT
+                        tinymix VBC_IIS_TX0_LRMOD_SEL  RIGHT_HIGH
+                        tinymix VBC_MUX_DAC0_IIS_PORT_SEL  VBC_IIS_PORT_IIS0
+                        tinymix VBC_MUX_DAC1_IIS_PORT_SEL  VBC_IIS_PORT_IIS0
+                        tinymix VBC_MUX_IIS0_PORT_DO_SEL  IIS_DO_VAL_DAC0
+                        tinymix VBC_MUX_IIS2_PORT_DO_SEL  IIS_DO_VAL_DAC2
+                        tinymix VBC_MUX_IIS3_PORT_DO_SEL  IIS_DO_VAL_DAC2
+                        tinyplay /vendor/etc/AudioTest_hq/spk.wav
+                        echo "headset playback test"
+                    ;;
+                    "0")
+                        tinymix "HP_CROSSTALK_EN" 0
+                        tinymix "DAC LRCLK Select" normal
+                        tinymix "HPR Pin Switch" 0
+                        tinymix "HP mix mode" 1
+                        tinymix "HP_CROSSTALK_GAIN" 0
+                        tinymix "HPL EAR Sel" "EAR"
+                        tinymix "HPL Mixer DACLHPL Switch"  "0"
+                        tinymix "HPR Mixer DACRHPR Switch"  "0"
+                        tinymix "HeadPhone Function"  "0"
+                        tinymix "agdsp_access_en" 0
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" 0
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" 0
+                        tinymix "S_FAST_P_CODEC SWITCH" 0
+                        tinymix "S_OFFLOAD_CODEC SWITCH" 0
+                        tinymix "S_VOICE_P_CODEC SWITCH" 0
+                        tinymix "S_VOIP_P_CODEC SWITCH" 0
+                        tinymix "S_FM_CODEC SWITCH" 0
+                        tinymix "S_LOOP_P_CODEC SWITCH" 0
+                        tinymix "S_FM_DSP_CODEC SWITCH" 0
+                        tinymix "S_VOICE_PCM_P SWITCH" 0
+                        tinymix VBC_IIS_TX0_LRMOD_SEL  LEFT_HIGH
+                        echo "close Headset playback"
+                    ;;
+                esac
+            ;;
+            "3") # Speaker playback test
+                case $3 in
+                    "1")
+                        #am start -n com.huaqin.audiotestplayback/.MainActivity
+                        tinymix "agdsp_access_en" 1
+                        tinymix "ag_iis0_ext_sel_v1" "top_dac_iis"
+                        tinymix "SPKL Mixer DACLSPKL Switch"  "1"
+                        tinymix "Speaker Function" "1"
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" 1
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" 1
+                        tinymix "S_FAST_P_CODEC SWITCH" 1
+                        tinymix "S_OFFLOAD_CODEC SWITCH" 1
+                        tinymix "S_VOICE_P_CODEC SWITCH" 1
+                        tinymix "S_VOIP_P_CODEC SWITCH" 1
+                        tinymix "S_FM_CODEC SWITCH" 1
+                        tinymix "S_LOOP_P_CODEC SWITCH" 1
+                        tinymix "S_FM_DSP_CODEC SWITCH" 1
+                        tinymix "S_VOICE_PCM_P SWITCH" 1
+                        tinyplay vendor/etc/AudioTest_hq/spk.wav
+                        echo "speaker playback test"
+                    ;;
+                    "0")
+                        tinymix "SPKL Mixer DACLSPKL Switch"  "0"
+                        tinymix "Speaker Function" "0"
+                        tinymix "agdsp_access_en" "0"
+                        tinymix "S_NORMAL_AP01_P_CODEC SWITCH" 0
+                        tinymix "S_NORMAL_AP23_P_CODEC SWITCH" 0
+                        tinymix "S_FAST_P_CODEC SWITCH" 0
+                        tinymix "S_OFFLOAD_CODEC SWITCH" 0
+                        tinymix "S_VOICE_P_CODEC SWITCH" 0
+                        tinymix "S_VOIP_P_CODEC SWITCH" 0
+                        tinymix "S_FM_CODEC SWITCH" 0
+                        tinymix "S_LOOP_P_CODEC SWITCH" 0
+                        tinymix "S_FM_DSP_CODEC SWITCH" 0
+                        tinymix "S_VOICE_PCM_P SWITCH" 0
+                        echo "close Speaker playback"
+                    ;;
+                esac
+            ;;
+            "4") # Main mic recording test
+                case $3 in
+                    "1")
+                        am broadcast -p com.huaqin.audiotestrecord -a com.huaqin.testrecord --es value "start"
+                        echo "open main mic record"
+                        sleep 0.5
+                    ;;
+                    "0")
+                        am broadcast -p com.huaqin.audiotestrecord -a com.huaqin.testrecord --es value "stop"
+                        echo "close main mic record"
+                    ;;
+                esac
+            ;;
+            "5") # Main mic tinycap test
+                case $3 in
+                    "1")
+                        tinymix "ADC LRCLK Select" "1"
+                        tinymix "ADC1 LRCLK Select" "1"
+                        tinymix "ADCL Mixer MainMICADCL Switch" "1"
+                        tinymix "AUD ADC0L Switch" "1"
+                        tinymix "AUD ADC0R Switch" "1"
+                        tinymix "Mic Function" "1"
+                        tinymix "agdsp_access_en" 1
+                        tinymix "ag_iis1_ext_sel_v1" "top_adc_iis0"
+                        tinymix "S_NORMAL_AP01_C_CODEC SWITCH" "1"
+                        tinymix "S_NORMAL_AP23_C_CODEC SWITCH" "1"
+                        tinymix "S_CAPTURE_DSP_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_C_CODEC SWITCH" "1"
+                        tinymix "S_VOIP_C_CODEC SWITCH" "1"
+                        tinymix "S_LOOP_C_CODEC SWITCH" "1"
+                        tinymix "S_OFFLOAD_CODEC SWITCH" "1"
+                        tinymix "S_FM_DSP_CODEC SWITCH" "1"
+                        tinymix "S_FM_CODEC SWITCH" "1"
+                        tinymix "S_VOICE_PCM_P SWITCH" "1"
+                        tinymix "ADCL Gain ADCL Capture Volume" 7
+                        tinymix "ADCR Gain ADCR Capture Volume" 7
+                        tinycap /sdcard/mm-tinycap.wav -D 0 -d 2 -r 44100 -b 16 -T 3
+                    ;;
+                    "0")
+                        echo "close main mic tinycap"
+                        tinymix "ADC LRCLK Select" "0"
+                        tinymix "ADC1 LRCLK Select" "0"
+                        tinymix "ADCL Mixer MainMICADCL Switch" "0"
+                        tinymix "AUD ADC0L Switch" "0"
+                        tinymix "AUD ADC0R Switch" "0"
+                        tinymix "Mic Function" "0"
+                        tinymix "agdsp_access_en" "0"
+                        tinymix "S_NORMAL_AP01_C_CODEC SWITCH" "0"
+                        tinymix "S_NORMAL_AP23_C_CODEC SWITCH" "0"
+                        tinymix "S_CAPTURE_DSP_CODEC SWITCH" "0"
+                        tinymix "S_VOICE_C_CODEC SWITCH" "0"
+                        tinymix "S_VOIP_C_CODEC SWITCH" "0"
+                        tinymix "S_LOOP_C_CODEC SWITCH" "0"
+                        tinymix "ag_iis1_ext_sel_v1" "l5_top"
+                    ;;
+                esac
+            ;;
+            "6") # Headset mic tinycap test
+                case $3 in
+                    "1")
+                        tinymix VBC_IIS_RX0_WD_SEL  WD_24BIT
+                        tinymix VBC_IIS_RX1_WD_SEL  WD_24BIT
+                        tinymix VBC_IIS_RX2_WD_SEL  WD_24BIT
+                        tinymix VBC_MUX_ADC0_IIS_PORT_SEL  VBC_IIS_PORT_IIS1
+                        tinymix VBC_MUX_ADC1_IIS_PORT_SEL  VBC_IIS_PORT_IIS1
+                        tinymix VBC_MUX_ADC2_IIS_PORT_SEL  VBC_IIS_PORT_IIS1
+                        tinymix "ag_iis1_ext_sel_v1"  top_adc_iis0
+                        tinymix "S_NORMAL_AP01_C_CODEC SWITCH"  1
+                        tinymix "S_NORMAL_AP23_C_CODEC SWITCH"  1
+                        tinymix "S_CAPTURE_DSP_CODEC SWITCH"  1
+                        tinymix "S_VOICE_C_CODEC SWITCH"  1
+                        tinymix "S_VOIP_C_CODEC SWITCH"  1
+                        tinymix "S_LOOP_C_CODEC SWITCH"  1
+                        tinymix "ADCL Mixer HPMICADCL Switch" 1
+                        tinymix "ADCR Mixer HPMICADCR Switch" 1
+                        tinymix "HP Mic Function" 1
+                        tinymix "AUD ADC0L Switch"  1
+                        tinymix "AUD ADC0R Switch"  1
+                        echo "headset mic tinycaping, please waiting 5 seconds"
+                        tinycap /sdcard/hm-tinycap.wav -D 0 -d 1 -c 1 -r 44100 -b 16 -T 5
+                    ;;
+                    "0")
+                        echo "close headset mic tinycaping"
+                        tinymix "ag_iis1_ext_sel_v1"  l5_top
+                        tinymix "S_NORMAL_AP01_C_CODEC SWITCH"  0
+                        tinymix "S_NORMAL_AP23_C_CODEC SWITCH"  0
+                        tinymix "S_CAPTURE_DSP_CODEC SWITCH"  0
+                        tinymix "S_VOICE_C_CODEC SWITCH"  0
+                        tinymix "S_VOIP_C_CODEC SWITCH"  0
+                        tinymix "S_LOOP_C_CODEC SWITCH"  0
+                        tinymix "AUD ADC0L Switch"  0
+                        tinymix "AUD ADC0R Switch"  0
+                        tinymix "ADCL Mixer HPMICADCL Switch" 0
+                        tinymix "ADCR Mixer HPMICADCR Switch" 0
+                        tinymix "HP Mic Function" 0
+                    ;;
+                esac
+            ;;
+            *)
+                print_usage
+                exit 1
+                ;;
+        esac
+    ;;
+    "3") #headset mic
+    case $2 in
+        "1") #receiver
+             case $3 in
+             "1")
+              AudioSetParam SET_LOOPBACK_TYPE=2,1;
+              tinymix Handset_PGA_GAIN 3;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open headset mic to receiver loopback";
+              ;;
+             "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close headset mic to receiver loopback";
+              ;;
+               *)
+              print_usage
+              exit 1
+              ;;
+          esac
+         ;;
+        "2") #headset
+            case $3 in
+            "1")
+              AudioSetParam SET_LOOPBACK_TYPE=2,2;
+              #tinymix Headset_PGAL_GAIN 5;
+              #tinymix Headset_PGAR_GAIN 5;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open headset mic to headset loopback";
+              ;;
+            "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close headset mic to headset loopback";
+              ;;
+            *)
+              print_usage
+              exit 1
+              ;;
+            esac
+        ;;
+        "3") #speaker
+             case $3 in
+             "1")
+              AudioSetParam SET_LOOPBACK_TYPE=2,3;
+              tinymix Audio_PGA1_Setting 3;
+              tinymix Audio_PGA2_Setting 3;
+              echo "open headset mic to speaker loopback";
+              ;;
+             "0")
+              AudioSetParam SET_LOOPBACK_TYPE=0;
+              echo "close headset mic to speaker loopback";
+              ;;
+              *)
+              print_usage
+                  exit 1
+              ;;
+          esac
+         ;;
+         *)
+        print_usage
+        exit 1
+         ;;
+    esac
+     ;;
+    *)
+        print_usage
+        exit 1
+    ;;
+esac
+
+exit 0

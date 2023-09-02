@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modem_info>
+	<product val="qogirl6"/>
+	<modem_name val="cp"/>
+	<partion_cnt val="10"/>
+	<ioctl_path val="dev/modem"/>
+	<src_path val="/dev/block/by-name/"/>
+	<modem_range base="0x89600000" size="0x4900000"/>
+	<all_range base="0x87800000" size="0x7100000"/>
+	<!--dst_path val="/proc/cptl/"/-->
+	<!-- special: bit0 sec,  bit1 nv, bit2 boot iram, bit3 cmdline;
+	     miniap: bit4 spl,  bit5 sml, bit6 uboot, bit7 boot;
+	     modem: bit8 modem head, bit9 modem, bit10 mode dsp, bit11 other modem
+	     pmsys:  bit12 pm, bit13 pm cali
+	     audio:  bit16 adsp
+	     chsys:  bit20 ch, bit21 ch cali
+	     bit 31 clear -->
+	<partion_item>
+		<partition00 name="modem"      src_file="l_modem"      dst_file="modem"     flag="0x00000201"/>
+		<partition01 name="deltanv"     src_file="l_deltanv"      dst_file="deltanv"     flag="0x00000201"/>
+		<partition02 name="gdsp"     src_file="l_gdsp"      dst_file="gdsp"     flag="0x00000401"/>
+		<partition03 name="ldsp"     src_file="l_ldsp"      dst_file="ldsp"     flag="0x00000401"/>
+		<partition04 name="cdsp"     src_file="l_cdsp"      dst_file="cdsp"     flag="0x00000401"/>
+		<partition05 name="warm"     src_file="l_warm"      dst_file="warm"     flag="0x00000401"/>
+		<partition06 name="cpcmdline" src_file="cmdline"       dst_file="cpcmdline" flag="0x00000808"/>
+		<partition07 name="fixnv"     src_file="l_fixnv"      dst_file="fixnv"     flag="0x00000802"/>
+		<partition08 name="runnv"     src_file="l_runtimenv"  dst_file="runnv"     flag="0x00000802"/>
+		<partition09 base="0x65003400" size="0x1000" name="modem_bootcode" src_file="NULL"      dst_file="boot_code" flag="0x00000104"/>
+	</partion_item>
+</modem_info>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array>
+    <item plmn="40410">
+        <qos qos_traffic_class="4"
+             qos_sdu_error_ratio="0"
+             qos_residual_bit_error_ratio="0"
+             network_type="2,4,5,6,15">
+        </qos>
+    </item>
+  </string-array>
+</resources>

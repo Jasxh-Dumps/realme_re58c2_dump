@@ -1,0 +1,5 @@
+# SRT server
+service vendor.srtd /vendor/bin/srtd
+    class main
+    user system
+    group system readproc

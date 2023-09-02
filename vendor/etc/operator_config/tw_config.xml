@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array>
+    <item plmn="46692">
+        <timer_delay
+            idleSib2_ToConn_timer_delay="15">
+        </timer_delay>
+    </item>
+  </string-array>
+</resources>

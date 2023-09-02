@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources>
+    <file path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" name="cluster0_freq_min" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" name="cluster0_freq_max" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" name="cluster1_freq_min" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" name="cluster1_freq_max" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" name="cluster0_min_cpus" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="max_cpus" name="cluster0_max_cpus" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster1" file="min_cpus" name="cluster1_min_cpus" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster1" file="max_cpus" name="cluster1_max_cpus" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" name="scene_boost_dfs" no_has_def="1" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="devfreq_ddr_set" />
+        <attr name="clear_func"   value="devfreq_ddr_clear" />
+    </file>
+    <file path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" name="backdoor" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+        <attr name="def_value"    value="0" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy0/schedutil/" file="freq_margin" name="cluster0_freq_margin" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpufreq/policy6/schedutil/" file="freq_margin" name="cluster1_freq_margin" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/proc/sys/vm" file="watermark_scale_factor" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/proc/sys/vm" file="swappiness" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+	<file path="/proc/sys/vm" file="dirty_background_ratio" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/proc/sys/vm" file="dirty_expire_centisecs" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/proc/sys/vm" file="dirty_writeback_centisecs" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/block/mmcblk0/queue" file="read_ahead_kb" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/block/mmcblk0/queue/iosched" file="read_expire" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+   </file>
+    <file path="subsys" file="uclamp" name="uclamp" >
+        <attr name="comp_func"    value="common_subsys_comp" />
+        <attr name="set_func"     value="common_subsys_set" />
+        <attr name="clear_func"   value="common_subsys_clear" />
+        <attr name="def_value"    value="conf_1" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu0/cpuidle/state1" file="disable" name="cpu0_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu1/cpuidle/state1" file="disable" name="cpu1_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu2/cpuidle/state1" file="disable" name="cpu2_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu3/cpuidle/state1" file="disable" name="cpu3_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu4/cpuidle/state1" file="disable" name="cpu4_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu5/cpuidle/state1" file="disable" name="cpu5_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu6/cpuidle/state1" file="disable" name="cpu6_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file>
+    <file path="/sys/devices/system/cpu/cpu7/cpuidle/state1" file="disable" name="cpu7_idle_disable" >
+        <attr name="comp_func"    value="common_comp_ascend_order" />
+        <attr name="set_func"     value="common_set" />
+        <attr name="clear_func"   value="common_clear" />
+    </file> 
+    <subsys name="uclamp" >
+        <inode path="/dev/cpuctl/top-app" file="cpu.uclamp.latency_sensitive" name="top-app_latency_sensitive" />
+        <inode path="/dev/cpuctl/top-app" file="cpu.uclamp.min" name="top-app_min" />
+        <inode path="/dev/cpuctl/top-app" file="cpu.uclamp.max" name="top-app_max" />
+        <inode path="/dev/cpuctl/foreground" file="cpu.uclamp.latency_sensitive" name="foreground_latency_sensitive" />
+        <inode path="/dev/cpuctl/foreground" file="cpu.uclamp.min" name="foreground_min" />
+        <inode path="/dev/cpuctl/foreground" file="cpu.uclamp.max" name="foreground_max" />
+        <inode path="/dev/cpuctl/background" file="cpu.uclamp.latency_sensitive" name="background_latency_sensitive" />
+        <inode path="/dev/cpuctl/background" file="cpu.uclamp.min" name="background_min" />
+        <inode path="/dev/cpuctl/background" file="cpu.uclamp.max" name="background_max" />
+        <inode path="/dev/cpuctl/system" file="cpu.uclamp.latency_sensitive" name="system_latency_sensitive" />
+        <inode path="/dev/cpuctl/system" file="cpu.uclamp.min" name="system_min" />
+        <inode path="/dev/cpuctl/system" file="cpu.uclamp.max" name="system_max" />
+        <inode path="/dev/cpuctl/system" file="cpu.shares" name="system_cpu_shares" />
+        <inode path="/dev/cpuctl/system-background" file="cpu.uclamp.latency_sensitive" name="system-background_latency_sensitive" />
+        <inode path="/dev/cpuctl/system-background" file="cpu.uclamp.min" name="system-background_min" />
+        <inode path="/dev/cpuctl/system-background" file="cpu.uclamp.max" name="system-background_max" />
+        <inode path="/dev/cpuctl/system-background" file="cpu.shares" name="sys_background_cpu_shares" />
+        <inode path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.latency_sensitive" name="camera-daemon_latency_sensitive" />
+        <inode path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.min" name="camera-daemon_min" />
+        <inode path="/dev/cpuctl/camera-daemon" file="cpu.uclamp.max" name="camera-daemon_max" />
+        <inode path="/dev/cpuctl/top-app" file="cpu.shares" name="top-app_cpu_shares" />
+        <inode path="/dev/cpuctl/foreground" file="cpu.shares" name="foreground_cpu_shares" />
+        <inode path="/dev/cpuctl/background" file="cpu.shares" name="background_cpu_shares" />
+        <conf name="conf_2" >
+            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="30" />
+            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.max" value="50" />
+        </conf>
+        <conf name="conf_1" >
+        </conf>
+        <conf name="conf_3">
+            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="35"/>
+        </conf>
+        <conf name="conf_4">
+            <set path="/dev/cpuctl/top-app" file="cpu.shares" value="5120"/>
+            <set path="/dev/cpuctl/foreground" file="cpu.shares" value="5120"/>
+            <set path="/dev/cpuctl/background" file="cpu.shares" value="512"/>
+            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="50"/>
+        </conf>
+        <conf name="conf_5" >
+            <set path="/dev/cpuctl/top-app" file="cpu.uclamp.min" value="30" />
+        </conf>
+        <conf name="conf_8" >
+            <set path="/dev/cpuctl/background" file="cpu.shares" value="512"/>
+            <set path="/dev/cpuctl/camera-daemon" file="cpu.shares" value="5120"/>
+            <set path="/dev/cpuctl/system-background" file="cpu.shares" value="512"/>
+            <set path="/dev/cpuctl/system" file="cpu.shares" value="768"/>
+        </conf>
+    </subsys>
+</resources>

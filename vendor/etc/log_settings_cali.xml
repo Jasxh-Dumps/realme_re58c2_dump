@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!-- Subsystem log settings -->
+<subsys_settings>
+
+  <cellular_modem>
+    <log_mode>none</log_mode>
+    <dest>usb</dest>
+    <compression>none</compression>
+    <ps>off</ps>
+    <ps_level>0</ps_level>
+    <ps_pcm>off</ps_pcm>
+    <ip>off</ip>
+    <ip_len>60</ip_len>
+    <dump>on</dump>
+    <minidump>on</minidump>
+    <etb>off</etb>
+    <phy_dest>ps</phy_dest>
+    <phy>off</phy>
+    <phy_level>1</phy_level>
+    <phy_pcm>off</phy_pcm>
+    <iq>off</iq>
+    <iq_item>0</iq_item>
+    <iq_pos>0</iq_pos>
+    <io>
+      <avg_ratio>48</avg_ratio>
+      <log_rate>15</log_rate>
+      <buf_size>256</buf_size>
+      <buf_num>24</buf_num>
+      <log_commit_threshold>128</log_commit_threshold>
+      <buf_commit_threshold>224</buf_commit_threshold>
+    </io>
+    <storage>
+      <ext_cap>0</ext_cap>
+      <int_cap>1024</int_cap>
+      <file>256</file>
+      <recycle>on</recycle>
+    </storage>
+    <fnodel>off</fnodel>
+  </cellular_modem>
+
+  <connectivity>
+    <dest>usb</dest>
+    <compression>none</compression>
+    <wifi_bt>off</wifi_bt>
+    <wifi_bt_level>0</wifi_bt_level>
+    <gnss>off</gnss>
+    <storage>
+      <ext_cap>0</ext_cap>
+      <int_cap>512</int_cap>
+      <file>128</file>
+      <recycle>on</recycle>
+    </storage>
+  </connectivity>
+
+  <audio_dsp>
+    <log>off</log>
+    <pcm>off</pcm>
+    <dest>usb</dest>
+    <agdspdest>ap</agdspdest>
+    <storage>
+      <ext_cap>0</ext_cap>
+      <int_cap>256</int_cap>
+      <file>128</file>
+      <recycle>on</recycle>
+    </storage>
+  </audio_dsp>
+
+  <pmsh>
+    <log>off</log>
+    <compression>none</compression>
+    <storage>
+      <ext_cap>0</ext_cap>
+      <int_cap>256</int_cap>
+      <file>128</file>
+      <recycle>on</recycle>
+    </storage>
+  </pmsh>
+
+  <sensor_hub>
+    <log>off</log>
+    <compression>none</compression>
+    <storage>
+      <ext_cap>0</ext_cap>
+      <int_cap>256</int_cap>
+      <file>128</file>
+      <recycle>on</recycle>
+    </storage>
+  </sensor_hub>
+
+</subsys_settings>

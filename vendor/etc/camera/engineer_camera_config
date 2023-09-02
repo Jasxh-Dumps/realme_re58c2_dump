@@ -1,0 +1,1644 @@
+[
+    {
+        "VendorTag": "com.oppo.eng.flash.light.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.single.flash.light.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.flash.light.front.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.flash.light.auto.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.second.back.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.third.rear.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.fourth.rear.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.new.triple.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.new.triple.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.interference.video.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.ois.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.focus.motor.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.ae.sync.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.ois.noise.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.pdaf.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.laser.focus.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.third.rear.camera.ois.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.eis.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.aperture.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.tof.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.tof.depth.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.tof.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.tof.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.ir.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.ir.camera.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.dual.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.dual.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.triple.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.triple.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.zoom.loop.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verificate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.aftersale.top.tip.array",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "543,280"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.aftersale.bottom.tip.array",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "543,1180"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.triple.calibrate.aftersale.focus.lens",
+        "Type": "Int32",
+        "Count": "1",
+        "Value": "3000"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.dual.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.triple.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "4624x3472"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibrate.second.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "3264x2448"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibrate.third.rear.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "1600x1200"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.portrait.size",
+        "Type": "Int32",
+        "Count": "2",
+        "Value": "4624x3472"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.dual.calibration.input.yuv.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.dual.calibration.buffer.lost.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.aftersale.chart.size.array",
+        "Type": "Int32",
+        "Count": "4",
+        "Value": "295,475,785,965"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.second.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.third.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.fourth.rear.flash.light.calibrate.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.performance",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.portrait.fullbody.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.hidl.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibrate.project.name",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "E"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.algo",
+        "Type": "String",
+        "Count": "1",
+        "Value": "cp"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.params.name",
+        "Type": "String",
+        "Count": "1",
+        "Value": "CalibrationOppoC.json"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.verification.params.name",
+        "Type": "String",
+        "Count": "1",
+        "Value": "VerificationOppoC.json"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.yshift",
+        "Type": "Float",
+        "Count": "1",
+        "Value": "10.15"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.zshift",
+        "Type": "Float",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.roll",
+        "Type": "Float",
+        "Count": "1",
+        "Value": "1.45"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.calibration.multi.mode.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.portrait.test.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verification.T_avg1",
+        "Type": "String",
+        "Count": "1",
+        "Value": "8"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verification.T_max1",
+        "Type": "String",
+        "Count": "1",
+        "Value": "12"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verification.T_rang1",
+        "Type": "String",
+        "Count": "1",
+        "Value": "13"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verification.T_avg2",
+        "Type": "String",
+        "Count": "1",
+        "Value": "35"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.verification.T_max2",
+        "Type": "String",
+        "Count": "1",
+        "Value": "47"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.calibration.success.show.dialog.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.enable.remosaice.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.new.sfr.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.sfr.fov",
+        "Type": "Float",
+        "Count": "20",
+        "Value": "0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.sfr.fov.selected",
+        "Type": "Float",
+        "Count": "7",
+        "Value": "0,0.4,0.6,0.8,0.25,0.3,0.8"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.sfr.offset",
+        "Type": "Float",
+        "Count": "2",
+        "Value": "0,0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.sfr.crop.size",
+        "Type": "Int32",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.front.sfr.fov",
+        "Type": "Float",
+        "Count": "20",
+        "Value": "0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.rear.sfr.roi.count",
+        "Type": "Int32",
+        "Count": "1",
+        "Value": "19"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.front.sfr.fov.selected",
+        "Type": "Float",
+        "Count": "7",
+        "Value": "0,0.4,0.6,0.8,0.25,0.3,0.8"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.front.sfr.offset",
+        "Type": "Float",
+        "Count": "2",
+        "Value": "0,0"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.front.sfr.crop.size",
+        "Type": "Int32",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.flash.light.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.front.sfr.roi.count",
+        "Type": "Int32",
+        "Count": "1",
+        "Value": "19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.single.flash.light.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.flash.light.front.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.flash.light.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.flash.light.auto.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.back.camera.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.camera.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.fourth.rear.camera.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.front.camera.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.new.triple.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.new.triple.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.interference.video.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ois.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.focus.motor.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ae.sync.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ois.noise.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.pdaf.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.laser.focus.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.camera.ois.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.eis.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.aperture.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.tof.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.tof.depth.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.tof.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.tof.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ir.camera.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dual.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dual.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.dual.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.dual.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.triple.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.triple.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.zoom.loop.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.verificate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.aftersale.top.tip.array",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"543,280"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.aftersale.bottom.tip.array",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"543,1180"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.triple.calibrate.aftersale.focus.lens",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"3000"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dual.calibrate.aftersale.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.triple.calibrate.aftersale.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4000x3000"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibrate.third.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"1600x1200"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.portrait.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4608x3456"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.first.front.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"2304x1728"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.second.front.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"1600x1200"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ae.sync.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4000x3000"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ae.sync.second.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"3264x2448"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.ae.sync.third.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4000x3000"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dual.calibration.input.yuv.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dual.calibration.buffer.lost.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.aftersale.chart.size.array",
+        "Type":"Int32",
+        "Count":"4",
+        "Value":"265,445,815,995"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.flash.light.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.flash.light.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.fourth.rear.flash.light.calibrate.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.performance",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.portrait.fullbody.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.hidl.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibrate.project.name",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.algo",
+        "Type":"String",
+        "Count":"1",
+        "Value":"cp"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.params.name",
+        "Type":"String",
+        "Count":"1",
+        "Value":"CalibrationOppoC.json"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.verification.params.name",
+        "Type":"String",
+        "Count":"1",
+        "Value":"VerificationOppoC.json"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.yshift",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"10.15"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.zshift",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.roll",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"1.45"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.oiscalibration.params.name",
+        "Type":"String",
+        "Count":"1",
+        "Value":""
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.oiscalibration.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4608x3456"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.oiscalibrate.second.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"2592x1940"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.oisverification.params.name",
+        "Type":"String",
+        "Count":"1",
+        "Value":""
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.debugmode",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"2"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.far.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.far.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"60"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.far.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"60"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.far.fieldspec",
+        "Value": " 45, 45, 34,34,34,34,34,34,34,34,34,34,34,34,21,21,21,21,21,21,21,21,16,16,16,16,16,16,16,16,10,10,10,10,10,10,10,10 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.far.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.near.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.near.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"60"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.near.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"60"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.near.fieldspec",
+        "Value": " 35, 35, 20,20,20,20,20,20,20,20,20,20,20,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.near.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.sfr.fov",
+        "Value":"0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.sfr.fov.selected",
+        "Value":"0,0.3,0.5,0.7,0.8"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.sfr.offset",
+        "Value":"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.sfr.crop.size",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.boxnum",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"2"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.rear.binarythreshold",
+        "Type": "Int32",
+        "Count": "1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.far.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.far.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"40"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.far.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"40"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.far.fieldspec",
+        "Value": "40,40,33,33,33,33,33,33,33,33,33,33,33,33,30,30,30,30,30,30,30,30,22,22,22,22,22,22,22,22,18,18,18,18,18,18,18,18"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.far.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.near.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.near.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"40"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.near.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"40"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.near.fieldspec",
+        "Value": "40,40,33,33,33,33,33,33,33,33,33,33,33,33,30,30,30,30,30,30,30,30,22,22,22,22,22,22,22,22,18,18,18,18,18,18,18,18"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.near.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.sfr.fov",
+        "Value":"0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.sfr.fov.selected",
+        "Value":"0,0.3,0.5,0.7,0.8"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.sfr.offset",
+        "Value":"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.sfr.crop.size",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.boxnum",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"2"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.front.binarythreshold",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"40"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.far.sfr.roi.count",
+        "Value":"11"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.far.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.far.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.far.fieldspec",
+        "Value": " 35, 35, 20,20,20,20,20,20,20,20,20,20,20,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.far.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.near.sfr.roi.count",
+        "Value":"11"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.near.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.near.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.near.fieldspec",
+        "Value": " 35, 35, 20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,15,15,15,15,15,15,15,15,0,0,0,0,0,0,0,0 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.near.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.sfr.fov",
+        "Value":"0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.sfr.fov.selected",
+        "Value":"0,0.25,0.3,0.4,0.6,0.8"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.sfr.offset",
+        "Value":"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.sfr.crop.size",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.second.rear.boxnum",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"2"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.sfr.rear.binarythreshold",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"50"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.far.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.far.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"30"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.far.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"30"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.far.fieldspec",
+        "Value": " 40, 40, 20,20,20,20,20,20,20,20,20,20,20,20,10,10,10,10,10,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.far.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.near.sfr.roi.count",
+        "Value":"19"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.near.roi.width",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"30"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.near.roi.height",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"30"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.near.fieldspec",
+        "Value": " 40, 40, 20,20,20,20,20,20,20,20,20,20,20,20,10,10,10,10,10,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 "
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.near.spatialfrequency",
+        "Type":"Float",
+        "Count":"1",
+        "Value":"4.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.sfr.fov",
+        "Value":"0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.sfr.fov.selected",
+        "Value":"0,0.25,0.3,0.4,0.6,0.8"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.sfr.offset",
+        "Value":"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.sfr.crop.size",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.sfr.third.rear.boxnum",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"2"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.sfr.rear.binarythreshold",
+        "Type":"Int32",
+        "Count":"1",
+        "Value":"75"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.cal.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.ver.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibrate.second.rear.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"1600x1200"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.main.sencond.thresholds",
+        "Type":"Int32",
+        "Count":"8",
+        "Value":"3.0,3.0,3.0,7.0,10.0,11.0,30.0,40.0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.single.cal.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.single.ver.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.autotest.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dualcam.calibrate.rear.sat.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.dualcam.calibrate.rear.wide.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.fourth.rear.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.front.camera.info.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.second.rear.camera.sfr.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.third.rear.camera.sfr.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.single.rear.portrait.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.rear.iso",
+        "Type":"INT32",
+        "Count":"1",
+        "Value":"400"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.second.rear.iso",
+        "Type":"INT32",
+        "Count":"1",
+        "Value":"100"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.calibration.rear.exposure.time",
+        "Type":"INT32",
+        "Count":"1",
+        "Value":"1000000"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.portrait.bokeh.test.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.arcsoft.dual.calibrate.aftersale.support",
+        "Type":"Byte",
+        "Count":"1",
+        "Value":"1"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.first.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4080x3072"
+    },
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.second.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"1600x1200"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.third.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"640x480"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.first.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"3264x2448"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.front.second.size",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"2304x1728"
+    },
+
+    {
+        "VendorTag": "com.oplus.engineercamera.configure.new.sfr.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.qvga.test.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "1"
+    },
+
+    {
+        "VendorTag": "com.oppo.eng.camera.arcsoft.calibrate.aftersale.support",
+        "Type": "Byte",
+        "Count": "1",
+        "Value": "0"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.first.size.first.supply",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4080x3072"
+    },
+
+    {
+        "VendorTag":"com.oplus.engineercamera.configure.rear.first.size.second.supply",
+        "Type":"Int32",
+        "Count":"2",
+        "Value":"4096x3072"
+    }
+]

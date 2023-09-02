@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright  2022 UNISOC Technologies Co.,Ltd.
+*/
+-->
+<debug_config>
+    <boolean name="key_debug_restart_work_config" value="true"/>
+    <string name="key_debug_ams_activity">atms:DEBUG_VISIBILITY;DEBUG_SWITCH;DEBUG_IDLE;DEBUG_RELEASE;DEBUG_ACTIVITY_STARTS;DEBUG_RESULTS;DEBUG_METRICS;DEBUG_ROOT_TASK;DEBUG_USER_LEAVING/app:DEBUG_LIFECYCLE;DEBUG_ORDER;DEBUG_RESOLVER;DEBUG_ACTIVITY;DEBUG_RESULTS;DEBUG_CONFIGURATION</string>
+    <string name="key_debug_ams_recent">atms:DEBUG_RECENTS;DEBUG_RECENTS_TRIM_TASKS</string>
+    <string name="key_debug_ams_permission">ams:DEBUG_PERMISSIONS_REVIEW/atms:DEBUG_PERMISSIONS_REVIEW</string>
+    <string name="key_debug_ams_transition">atms:DEBUG_TRANSITION</string>
+    <string name="key_debug_ams_service">ams:DEBUG_SERVICE;DEBUG_FOREGROUND_SERVICE;DEBUG_SERVICE_EXECUTIND/app:DEBUG_SERVICE;DEBUG_LOADEDAPK</string>
+    <string name="key_debug_ams_broadcast">ams:DEBUG_BROADCAST;DEBUG_BROADCAST_RECEIVER/app:DEBUG_BROADCAST</string>
+    <string name="key_debug_ams_process">ams:DEBUG_LRU;DEBUG_PSS;DEBUG_PROCESSES;DEBUG_PROCESS_OBSERVERS;DEBUG_OOM_ADJ;DEBUG_OOM_ADJ_REASON;DEBUG_FREEZER</string>
+    <string name="key_debug_ams_uid">ams:DEBUG_UID_OBSERVERS</string>
+    <string name="key_debug_ams_anr">ams:DEBUG_ANR</string>
+    <string name="key_debug_ams_compaction">ams:DEBUG_COMPACTION;DEBUG_FREEZER</string>
+    <string name="key_debug_ams_backup">ams:DEBUG_BACKUP/atms:DEBUG_CLEANUP/app:DEBUG_BACKUP</string>
+    <string name="key_debug_ams_power">ams:DEBUG_POWER;DEBUG_POWER_QUICK;DEBUG_BACKGROUND_CHECK</string>
+    <string name="key_debug_ams_network">ams:DEBUG_NETWORK</string>
+    <string name="key_debug_ams_usage">ams:DEBUG_USAGE_STATS</string>
+    <string name="key_debug_ams_allowlist">ams:DEBUG_ALLOWLISTS</string>
+    <string name="key_debug_ams_provider">ams:DEBUG_PROVIDER/ATMS:DEBUG_PROVIDER;DEBUG_MU</string>
+    <string name="key_debug_ams_memory_trim">app:DEBUG_MEMORY_TRIM</string>
+    <string name="key_debug_ams_messages">app:DEBUG_MESSAGES</string>
+    <string name="key_debug_ams_dump">dump:activity</string>
+    <string name="key_debug_wms_starting_window">wms:DEBUG_STARTING_WINDOW_VERBOSE</string>
+    <string name="key_debug_wms_animation">wms:DEBUG_ANIM</string>
+    <string name="key_debug_wms_visibility">wms:DEBUG_VISIBILITY;DEBUG_UNKNOWN_APP_VISIBILITY</string>
+    <string name="key_debug_wms_show">wms:SHOW_VERBOSE_TRANSACTIONS;SHOW_LIGHT_TRANSACTIONS;SHOW_STACK_CRAWLS</string>
+    <string name="key_debug_wms_display">wms:DEBUG_DISPLAY</string>
+    <string name="key_debug_wms_layout">wms:DEBUG_LAYOUT;DEBUG_LAYOUT_REPEATS</string>
+    <string name="key_debug_wms_input">wms:DEBUG_INPUT;DEBUG_INPUT_METHOD</string>
+    <string name="key_debug_wms_draw">wms:DEBUG_DRAW</string>
+    <string name="key_debug_wms_layers">wms:DEBUG_LAYERS</string>
+    <string name="key_debug_wms_configurations">wms:DEBUG_CONFIGURATION</string>
+    <string name="key_debug_wms_screen_shot">wms:DEBUG_SCREENSHOT</string>
+    <string name="key_debug_wms_task">wms:DEBUG_TASK_MOVEMENT;DEBUG_TASK_POSITIONING;DEBUG_ROOT_TASK</string>
+    <string name="key_debug_wms_power">wms:DEBUG_POWER</string>
+    <string name="key_debug_wms_wallpaper">wms:DEBUG_WALLPAPER</string>
+    <string name="key_debug_wms_proto">proto:wms</string>
+    <string name="key_debug_view_surfaceview">prop:persist.sys.surfaceview</string>
+    <string name="key_debug_view_surface">prop:persist.sys.surface</string>
+    <string name="key_debug_view_layout">prop:persist.sys.requestlayout;persist.sys.view_layout;persist.sys.viewroot_layout;persist.sys.view_layout</string>
+    <string name="key_debug_view_schedule_traversals">prop:persist.sys.scheduletraversals</string>
+    <string name="key_debug_view_lifecycle">prop:persist.sys.lifecycle</string>
+    <string name="key_debug_view_input">prop:persist.sys.dispatch_input</string>
+    <string name="key_debug_view_focus">prop:persist.sys.view_focus</string>
+    <string name="key_debug_view_measure">prop:persist.sys.view_measure</string>
+    <string name="key_debug_view_draw">prop:persist.sys.view_draw;persist.sys.view_draw;persist.sys.view_draw_frame;persist.sys.viewroot_draw</string>
+    <string name="key_debug_surface_dump">dump:SurfaceFlinger</string>
+    <string name="key_debug_wms_dump">dump:window</string>
+    <string name="key_debug_input_debug">prop:persist.sys.input.log</string>
+    <string name="key_debug_pms_debug">pkg:android;PMS-COMMON;PMS-PERMISSION;PMS-QUERY</string>
+    <string name="key_debug_alarm_debug">pkg:android;ALMS-COMMON</string>
+    <string name="key_debug_systemui_debug">pkg:com.android.systemui;DEBUG_DEBUG</string>
+</debug_config>

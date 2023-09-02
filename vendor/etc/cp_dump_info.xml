@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modem_info>
+	<partion_cnt val="5"/>
+	<partion_item>
+		<partition00 base="0x4400"     size="0x1000"   name="cp_boot"	  mini_dump_flag="0"/>
+		<partition01 base="0x87800000" size="0x800000" name="pubcp_ddr"   mini_dump_flag="0"/>
+		<partition02 base="0x88040000" size="0x100000 " name="sp_ddr"	  mini_dump_flag="0"/>
+		<partition03 base="0x62010000" size="0x4e000"  name="sp_aon_iram" mini_dump_flag="1"/>
+		<partition04 base="0x6500a400"     size="0x2000"   name="sp_aon_sipc"    mini_dump_flag="1"/>
+	</partion_item>
+</modem_info>

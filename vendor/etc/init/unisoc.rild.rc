@@ -1,0 +1,15 @@
+service vendor.ril-daemon /vendor/bin/hw/urild
+    class core
+    user radio
+    group radio cache inet misc audio log readproc wakelock sdcard_rw shell system dhcp
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+#STK BIP IPV6
+service vendor.stk /vendor/bin/netbox.sh stk
+    user root
+    disabled
+    oneshot
+
+on boot
+     chown system /mnt/vendor/productinfo/imei_res
+     chmod 664 /mnt/vendor/productinfo/imei_res

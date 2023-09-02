@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<ComponentTypeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schemas/ComponentTypeSet.xsd">
+	<ComponentType Name="ProductStrategies" Description="">
+		<Component Name="phone" Type="ProductStrategy" Mapping="Name:STRATEGY_PHONE"/>
+		<Component Name="sonification" Type="ProductStrategy" Mapping="Name:STRATEGY_SONIFICATION"/>
+		<Component Name="enforced_audible" Type="ProductStrategy" Mapping="Name:STRATEGY_ENFORCED_AUDIBLE"/>
+		<Component Name="accessibility" Type="ProductStrategy" Mapping="Name:STRATEGY_ACCESSIBILITY"/>
+		<Component Name="sonification_respectful" Type="ProductStrategy" Mapping="Name:STRATEGY_SONIFICATION_RESPECTFUL"/>
+		<Component Name="media" Type="ProductStrategy" Mapping="Name:STRATEGY_MEDIA"/>
+		<Component Name="dtmf" Type="ProductStrategy" Mapping="Name:STRATEGY_DTMF"/>
+		<Component Name="transmitted_through_speaker" Type="ProductStrategy" Mapping="Name:STRATEGY_TRANSMITTED_THROUGH_SPEAKER"/>
+	</ComponentType>
+</ComponentTypeSet>

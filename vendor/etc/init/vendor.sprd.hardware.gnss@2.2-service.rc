@@ -1,0 +1,4 @@
+service vendor.gnss_service_sprd /vendor/bin/hw/vendor.sprd.hardware.gnss@2.2-service
+    class main
+    user system
+    group system gps radio inet

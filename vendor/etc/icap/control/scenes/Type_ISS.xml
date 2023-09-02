@@ -1,0 +1,49 @@
+<type>
+<!--
+     SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+     Copyright 2022 Unisoc (Shanghai) Technologies Co., Ltd.
+     Licensed under the Unisoc General Software License, version 1.0 (the License);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+     Software distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+     See the Unisoc General Software License, version 1.0 for more details.
+-->
+	<name>ISS</name>
+	<trigger>false</trigger>
+	<manual>
+		<item auto="Data Type">8</item>
+		<item auto="ComInfo">1</item>
+		<item auto="YUV">1</item>
+                <item auto="YUV-Preview">0</item>
+		<item auto="YUV-Video">0</item>
+                <item auto="YUV-Capture">1</item>
+		<item auto="JPEG">1</item>
+		<item auto="Sensor RAW">1</item>
+		<item auto="DCAM RAW">1</item>
+		<item name="14bit RAW">1</item>
+		<item auto="ISS Info">1</item>
+		<item name="Debug Info">1</item>
+		<item name="Postprocess Data">1</item>
+		<item name="MFNR Info">1</item>
+		<item name="HDR Info">1</item>
+		<item name="YnrCnr Info">1</item>
+		<item name="PM Statics Data">1</item>
+		<item name="AEM Info">1</item>
+		<item name="HIST Info">1</item>
+		<item name="HIST2 Info">1</item>
+		<item name="GTM Info">1</item>
+		<item name="LSCM Info">1</item>
+		<item name="AFM Info">1</item>
+		<item name="PDAF Info">1</item>
+		<item name="Quick Display">1</item>
+		<item name="PM Pipeline Data">1</item>
+		<item name="Pre">1</item>
+		<item name="Cap">1</item>
+		<item name="Raw Cap">0</item>
+		<item name="Offline Cap">0</item>
+	</manual>
+</type>

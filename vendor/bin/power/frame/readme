@@ -1,0 +1,30 @@
+一、功能
+查看一段时间的帧率
+
+二、用法
+连接adb进入shell
+adb shell
+./vendor/bin/power/frame/fps_sf -t 1
+-t时长(默认1min)以分钟为单位
+
+三、示例
+ums9230_1h10:/vendor/bin/power/frame # ./fps_sf
+fps: 60.46
+fps: 59.77
+fps: 59.70
+fps: 58.91
+fps: 60.45
+fps: 60.31
+..........
+fps: 59.71
+fps: 60.69
+fps: 60.59
+fps: 59.76
+fps: 58.18
+fps: 60.51
+fps: 60.86
+fps: 59.40
+average fps : 59.91
+
+四、备注
+1、user和userdebug版本均可用

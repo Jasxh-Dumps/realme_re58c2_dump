@@ -1,0 +1,16 @@
+#!/vendor/bin/sh
+
+apply_sar() {
+    if [ "$1" = 0 -o "$1" = 40 ];
+    then
+        cmd="/vendor/bin/iwnpi wlan0 set_sar_power 0 1 7"
+    else
+        cmd="/vendor/bin/iwnpi wlan0 set_sar_power 2 $1 7"
+    fi
+
+    echo "$cmd"
+
+    $cmd
+}
+backoff_power=$(getprop "persist.vendor.wifi.sar" "0")
+apply_sar $backoff_power

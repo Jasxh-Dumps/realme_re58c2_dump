@@ -1,0 +1,21 @@
+service systemDebuggerd /vendor/bin/systemDebuggerd
+    # Don't start systemDebuggerd until after the real /data is mounted.
+    class late_start
+    user system
+    oneshot
+
+on property:vendor.debug.sysdump.enabled=true
+    start systemDebuggerd
+    write /proc/sprd_sysdump "on"
+    setprop persist.vendor.sysdump on
+
+on property:vendor.debug.sysdump.enabled=false
+    start systemDebuggerd
+    write /proc/sprd_sysdump "off"
+    setprop persist.vendor.sysdump off
+
+on property:debug.vendor.sysdump.enabled=true
+    setprop vendor.debug.sysdump.enabled true
+
+on property:debug.vendor.sysdump.enabled=false
+    setprop vendor.debug.sysdump.enabled false

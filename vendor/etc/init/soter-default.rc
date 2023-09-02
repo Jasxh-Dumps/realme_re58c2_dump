@@ -1,0 +1,8 @@
+service vendor.soter-default /vendor/bin/hw/vendor.sprd.hardware.soter-service
+     class hal
+     user system
+     group system
+     disabled
+
+on property:ro.vendor.soter.support=true
+     start vendor.soter-default

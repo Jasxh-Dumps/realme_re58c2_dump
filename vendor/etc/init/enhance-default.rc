@@ -1,0 +1,4 @@
+service vendor.enhance-default /vendor/bin/hw/vendor.sprd.hardware.enhance-service
+    class hal
+    user root
+    group system

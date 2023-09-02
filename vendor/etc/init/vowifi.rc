@@ -1,0 +1,9 @@
+# Enable prop persist.dbg.wfc_avail_ovr
+on property:persist.sys.vowifi.whitelist=true
+    setprop persist.dbg.wfc_avail_ovr 1
+
+on property:persist.sys.vowifi.lab.sim=true
+    setprop persist.dbg.wfc_avail_ovr 1
+
+on property:persist.sys.vowifi.lab.sim=false && property:persist.sys.vowifi.whitelist=false
+    setprop persist.dbg.wfc_avail_ovr 0

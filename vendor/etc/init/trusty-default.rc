@@ -1,0 +1,4 @@
+service vendor.sprd.hardware.trusty-service /vendor/bin/hw/vendor.sprd.hardware.trusty-service
+    class hal
+    user system
+    group system

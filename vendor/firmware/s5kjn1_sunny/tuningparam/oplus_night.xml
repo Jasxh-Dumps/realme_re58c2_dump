@@ -1,0 +1,347 @@
+<root>
+	<Triggers name="00_NightMonitorSASatTargetStart">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="-650" para="bv" name="struct1">0</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">1</Trigger>
+			<Trigger start="-350" end="-150" para="bv" name="struct1">2</Trigger>
+			<Trigger start="-100" end="50" para="bv" name="struct1">3</Trigger>
+			<Trigger start="100" end="200" para="bv" name="struct1">4</Trigger>
+			<Trigger start="250" end="450" para="bv" name="struct1">5</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">6</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="-650" para="bv" name="struct1">7</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">8</Trigger>
+			<Trigger start="-350" end="-150" para="bv" name="struct1">9</Trigger>
+			<Trigger start="-100" end="50" para="bv" name="struct1">10</Trigger>
+			<Trigger start="100" end="200" para="bv" name="struct1">11</Trigger>
+			<Trigger start="250" end="450" para="bv" name="struct1">12</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">13</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="01_NightMonitorSASatTargetEnd">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="400" para="bv" name="">
+				<Trigger start="-1000" end="0" para="CUS_T1" name="struct1">0</Trigger>
+				<Trigger start="0.001" end="0.01" para="CUS_T1" name="struct1">1</Trigger>
+				<Trigger start="0.02" end="0.05" para="CUS_T1" name="struct1">2</Trigger>
+				<Trigger start="0.1" end="1000" para="CUS_T1" name="struct1">3</Trigger>
+			</Trigger>
+			<Trigger start="400" end="5000" para="bv" name="">
+				<Trigger start="-1000" end="0" para="CUS_T1" name="struct1">4</Trigger>
+				<Trigger start="0.001" end="0.01" para="CUS_T1" name="struct1">5</Trigger>
+				<Trigger start="0.02" end="0.05" para="CUS_T1" name="struct1">6</Trigger>
+				<Trigger start="0.1" end="1000" para="CUS_T1" name="struct1">7</Trigger>
+			</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="400" para="bv" name="">
+				<Trigger start="-1000" end="0" para="CUS_T1" name="struct1">8</Trigger>
+				<Trigger start="0.001" end="0.01" para="CUS_T1" name="struct1">9</Trigger>
+				<Trigger start="0.02" end="0.05" para="CUS_T1" name="struct1">10</Trigger>
+				<Trigger start="0.1" end="1000" para="CUS_T1" name="struct1">11</Trigger>
+			</Trigger>
+			<Trigger start="400" end="5000" para="bv" name="">
+				<Trigger start="-1000" end="0" para="CUS_T1" name="struct1">12</Trigger>
+				<Trigger start="0.001" end="0.01" para="CUS_T1" name="struct1">13</Trigger>
+				<Trigger start="0.02" end="0.05" para="CUS_T1" name="struct1">14</Trigger>
+				<Trigger start="0.1" end="1000" para="CUS_T1" name="struct1">15</Trigger>
+			</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="02_NightMonitorSADarkTargetStart">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="-650" para="bv" name="struct1">0</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">1</Trigger>
+			<Trigger start="-350" end="-150" para="bv" name="struct1">2</Trigger>
+			<Trigger start="-100" end="50" para="bv" name="struct1">3</Trigger>
+			<Trigger start="100" end="200" para="bv" name="struct1">4</Trigger>
+			<Trigger start="250" end="450" para="bv" name="struct1">5</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">6</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="-650" para="bv" name="struct1">7</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">8</Trigger>
+			<Trigger start="-350" end="-150" para="bv" name="struct1">9</Trigger>
+			<Trigger start="-100" end="50" para="bv" name="struct1">10</Trigger>
+			<Trigger start="100" end="200" para="bv" name="struct1">11</Trigger>
+			<Trigger start="250" end="450" para="bv" name="struct1">12</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">13</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="03_NightMonitorSADarkTargetEnd">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="400" para="bv" name="struct1">0</Trigger>
+			<Trigger start="400" end="5000" para="bv" name="struct1">1</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="400" para="bv" name="struct1">2</Trigger>
+			<Trigger start="400" end="5000" para="bv" name="struct1">3</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="04_NightMonitorSAInitSafeTgt">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="-1000" para="bv" name="struct1">0</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">1</Trigger>
+			<Trigger start="-350" end="-50" para="bv" name="struct1">2</Trigger>
+			<Trigger start="0" end="300" para="bv" name="struct1">3</Trigger>
+			<Trigger start="400" end="900" para="bv" name="struct1">4</Trigger>
+			<Trigger start="1000" end="5000" para="bv" name="struct1">5</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="-1000" para="bv" name="struct1">6</Trigger>
+			<Trigger start="-600" end="-400" para="bv" name="struct1">7</Trigger>
+			<Trigger start="-350" end="-50" para="bv" name="struct1">8</Trigger>
+			<Trigger start="0" end="300" para="bv" name="struct1">9</Trigger>
+			<Trigger start="400" end="900" para="bv" name="struct1">10</Trigger>
+			<Trigger start="1000" end="5000" para="bv" name="struct1">11</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="05_NightMonitorSAInitSafeTgtAdjStart">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">0</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">1</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">2</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">3</Trigger>
+		</Trigger>
+	</Triggers>
+	<Triggers name="06_NightMonitorSAInitSafeTgtAdjEnd">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">0</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">1</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">2</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">3</Trigger>
+		</Trigger>
+	</Triggers>
+	<ConstData>
+		<Parameter index="" name="NightEVMinusThresh" des="description" level="1" range="[0,100]" type="float" length="1">0.125</Parameter>
+		<Parameter index="" name="NightMonitorSatStatsPctThresh" des="description" level="1" range="[0,100]" type="float" length="1">0.005</Parameter>
+		<Parameter index="" name="NightBVThresh" des="description" level="1" range="[0,100]" type="float" length="1">400</Parameter>
+		<Parameter index="" name="NightEVMinusLimitStart" des="description" level="1" range="[0,100]" type="float" length="1">0.0156</Parameter>
+		<Parameter index="" name="NightEVMinusLimitEnd" des="description" level="1" range="[0,100]" type="float" length="1">0.5</Parameter>
+		<Parameter index="" name="NightEV0LimitStart" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		<Parameter index="" name="NightEV0LimitEnd" des="description" level="1" range="[0,100]" type="float" length="1">2</Parameter>
+	</ConstData>
+	<Parameters name="00_NightMonitorSASatTargetStart">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">410</Parameter>
+		</Parameter>
+		<Parameter index="4" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="5" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="6" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">388</Parameter>
+		</Parameter>
+		<Parameter index="7" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="8" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="9" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="10" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="11" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="12" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="13" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="00_NightMonitorSASatTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">715</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="01_NightMonitorSASatTargetEnd">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">2</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">4</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">6</Parameter>
+		</Parameter>
+		<Parameter index="4" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">3</Parameter>
+		</Parameter>
+		<Parameter index="5" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">3</Parameter>
+		</Parameter>
+		<Parameter index="6" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">5</Parameter>
+		</Parameter>
+		<Parameter index="7" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">10</Parameter>
+		</Parameter>
+		<Parameter index="8" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="9" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="10" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="11" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="12" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="13" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="14" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+		<Parameter index="15" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="01_NightMonitorSASatTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">1</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="02_NightMonitorSADarkTargetStart">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">239</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">410</Parameter>
+		</Parameter>
+		<Parameter index="4" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="5" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="6" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">388</Parameter>
+		</Parameter>
+		<Parameter index="7" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">315</Parameter>
+		</Parameter>
+		<Parameter index="8" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="9" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="10" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="11" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="12" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">600</Parameter>
+		</Parameter>
+		<Parameter index="13" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="02_NightMonitorSADarkTargetStart" des="description" level="1" range="[0,100]" type="float" length="1">715</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="03_NightMonitorSADarkTargetEnd">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="03_NightMonitorSADarkTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">100</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="03_NightMonitorSADarkTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">100</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="03_NightMonitorSADarkTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">100</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="03_NightMonitorSADarkTargetEnd" des="description" level="1" range="[0,100]" type="float" length="1">100</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="04_NightMonitorSAInitSafeTgt">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="4" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="5" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="6" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="7" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="8" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="9" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="10" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+		<Parameter index="11" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="04_NightMonitorSAInitSafeTgt" des="description" level="1" range="[0,100]" type="float" length="1">20</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="05_NightMonitorSAInitSafeTgtAdjStart">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="05_NightMonitorSAInitSafeTgtAdjStart" des="description" level="1" range="[0,100]" type="float" length="1">0.6</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="05_NightMonitorSAInitSafeTgtAdjStart" des="description" level="1" range="[0,100]" type="float" length="1">0.7</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="05_NightMonitorSAInitSafeTgtAdjStart" des="description" level="1" range="[0,100]" type="float" length="1">0.7</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="05_NightMonitorSAInitSafeTgtAdjStart" des="description" level="1" range="[0,100]" type="float" length="1">0.8</Parameter>
+		</Parameter>
+	</Parameters>
+	<Parameters name="06_NightMonitorSAInitSafeTgtAdjEnd">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="06_NightMonitorSAInitSafeTgtAdjEnd" des="description" level="1" range="[0,100]" type="float" length="1">1.55</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="06_NightMonitorSAInitSafeTgtAdjEnd" des="description" level="1" range="[0,100]" type="float" length="1">1.2</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="06_NightMonitorSAInitSafeTgtAdjEnd" des="description" level="1" range="[0,100]" type="float" length="1">1.2</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="06_NightMonitorSAInitSafeTgtAdjEnd" des="description" level="1" range="[0,100]" type="float" length="1">1.28</Parameter>
+		</Parameter>
+	</Parameters>
+</root>

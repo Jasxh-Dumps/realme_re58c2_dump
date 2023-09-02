@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <enhance major_version="13"/>
+  <enhance version="218271454"/>
+  <epf_config>
+    <sunlight_protector>
+      <config mode="normal">
+        <number index="0">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="1">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="2">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="3">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="4">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="5">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+      </config>
+      <config mode="low power">
+        <number index="0">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="1">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="2">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="3">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="4">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="5">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+      </config>
+    </sunlight_protector>
+    <super_resolution>
+      <config mode="normal">
+        <number index="0">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="1">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="2">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="3">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="4">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="5">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+      </config>
+      <config mode="low power">
+        <number index="0">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="1">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="2">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="3">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="4">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+        <number index="5">
+          <param epsilon0="100"/>
+          <param epsilon1="300"/>
+          <param gain0="0"/>
+          <param gain1="-8"/>
+          <param gain2="20"/>
+          <param gain3="52"/>
+          <param gain4="48"/>
+          <param gain5="20"/>
+          <param gain6="80"/>
+          <param gain7="130"/>
+          <param max_diff="10"/>
+          <param min_diff="16"/>
+        </number>
+      </config>
+    </super_resolution>
+  </epf_config>
+  <slp_config>
+    <config mode="normal">
+      <param hist_exb_no="3"/>
+      <param hist_exb_percent="0"/>
+      <param hist9_index0="0"/>
+      <param hist9_index1="32"/>
+      <param hist9_index2="64"/>
+      <param hist9_index3="128"/>
+      <param hist9_index4="160"/>
+      <param hist9_index5="180"/>
+      <param hist9_index6="200"/>
+      <param hist9_index7="235"/>
+      <param hist9_index8="252"/>
+      <param glb_x1="20"/>
+      <param glb_x2="60"/>
+      <param glb_x3="220"/>
+      <param glb_s1="180"/>
+      <param glb_s2="0"/>
+      <param glb_s3="0"/>
+      <param fast_ambient_th="100"/>
+      <param screen_change_percent_th="80"/>
+      <param mask_height="0"/>
+         <number index="0">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="1">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="2">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="3">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="4">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="5">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+       </config>
+       <config mode="low power">
+      <param hist_exb_no="3"/>
+      <param hist_exb_percent="0"/>
+      <param hist9_index0="0"/>
+      <param hist9_index1="32"/>
+      <param hist9_index2="64"/>
+      <param hist9_index3="128"/>
+      <param hist9_index4="160"/>
+      <param hist9_index5="180"/>
+      <param hist9_index6="200"/>
+      <param hist9_index7="235"/>
+      <param hist9_index8="252"/>
+      <param glb_x1="20"/>
+      <param glb_x2="60"/>
+      <param glb_x3="220"/>
+      <param glb_s1="180"/>
+      <param glb_s2="0"/>
+      <param glb_s3="0"/>
+      <param fast_ambient_th="100"/>
+      <param screen_change_percent_th="80"/>
+      <param mask_height="0"/>
+         <number index="0">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="1">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="2">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="3">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="4">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+         <number index="5">
+      <param brightness="32"/>
+      <param brightness_step="256"/>
+      <param first_max_bright_th="64"/>
+      <param first_max_bright_th_step0="0"/>
+      <param first_max_bright_th_step1="0"/>
+      <param first_max_bright_th_step2="0"/>
+      <param first_max_bright_th_step3="0"/>
+      <param first_max_bright_th_step4="0"/>
+      <param local_weight="0"/>
+      <param first_percent_th="0"/>
+      <param first_pth_index0="0"/>
+      <param first_pth_index1="0"/>
+      <param first_pth_index2="0"/>
+      <param first_pth_index3="0"/>
+         </number>
+       </config>
+     </slp_config>
+   <ltm_config>
+     <config mode="normal">
+       <number index="0">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="1">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="2">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="3">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="4">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="5">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+     </config>
+     <config mode="low power">
+       <number index="0">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="1">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="2">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="3">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="4">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+       <number index="5">
+         <param slp_step_clip="64"/>
+         <param slp_high_clip="0"/>
+         <param slp_low_clip="0"/>
+       </number>
+     </config>
+   </ltm_config>
+  <slp_mapping_table>
+    <table mode="normal">
+      <number index="0">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="1">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="2">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="3">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="4">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="5">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+    </table>
+    <table mode="low power">
+      <number index="0">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="1">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="2">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="3">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="4">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+      <number index="5">
+        <item ambient="4000" brightness="32"/>
+        <item ambient="6000" brightness="34"/>
+        <item ambient="8000" brightness="36"/>
+        <item ambient="10000" brightness="38"/>
+        <item ambient="15000" brightness="40"/>
+        <item ambient="20000" brightness="41"/>
+        <item ambient="25000" brightness="42"/>
+        <item ambient="30000" brightness="43"/>
+        <item ambient="40000" brightness="44"/>
+      </number>
+    </table>
+  </slp_mapping_table>
+</root>

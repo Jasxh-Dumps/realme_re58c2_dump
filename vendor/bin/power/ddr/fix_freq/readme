@@ -1,0 +1,20 @@
+一、功能
+固定ddr的频率
+
+二、用法:
+连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/ddr/fix_freq/fix_ddr_freq
+
+三、示例
+ums9230_1h10:/ # ./vendor/bin/power/ddr/fix_freq/fix_ddr_freq
+ddr avalible freq:
+256     384     512     768     1024    1333    1536    1866
+input fix freq
+768
+cur_freq:768
+
+四、备注:
+1、只适用于userdebug版本

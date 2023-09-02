@@ -1,0 +1,8 @@
+service vendor.sprd.hardware.tui-service /vendor/bin/hw/vendor.sprd.hardware.tui-service
+    class hal
+    user system
+    group system root
+    disabled
+
+on property:ro.vendor.tui.support=true
+    start vendor.sprd.hardware.tui-service

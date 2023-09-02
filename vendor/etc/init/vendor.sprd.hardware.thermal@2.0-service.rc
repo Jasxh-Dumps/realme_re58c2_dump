@@ -1,0 +1,4 @@
+service vendor.thermal-hal-2-0 /vendor/bin/hw/vendor.sprd.hardware.thermal@2.0-service
+    class hal
+    user system
+    group system

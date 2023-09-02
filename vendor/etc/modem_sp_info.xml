@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modem_info>
+	<product val="qogirl6"/>
+	<modem_name val="sp"/>
+	<partion_cnt val="2"/>
+	<ioctl_path val="/dev/pmsys"/>
+	<src_path val="/dev/block/by-name/"/>
+	<modem_range base="0x62010000" size="0x4e000"/>
+	<all_range base="0x88040000" size="0x300000"/>
+	<!--dst_path val="/proc/pmic/"/-->
+	<!-- special: bit0 sec,  bit1 nv, bit2 boot iram, bit3 cmdline;
+	     miniap: bit4 spl,  bit5 sml, bit6 uboot, bit7 boot;
+	     modem: bit8 modem head, bit9 modem, bit10 mode dsp, bit11 other modem
+	     pmsys:  bit12 pm, bit13 pm cali
+	     audio:  bit16 adsp
+	     chsys:  bit20 ch, bit21 ch cali
+	     bit 31 clear -->
+	<partion_item>
+		<partition00 base="0x88040000" size="0x200000" name="pmsys" src_file="pm_sys" dst_file="pmsys" flag="0x00001001"/>
+		<partition01 base="0x62010000" size="0x1000" name="pm_sys_bootcode" src_file="NULL" dst_file="boot_code" flag="0x00001004" bootcode="0x3800 0x9 0xf44f4818 0xf44f2380 0xf04f06c0 0x1d026800 0x1440f44f 0x5a0f44f 0x7e0f44f 0x900f44f 0xc10f44f 0x8024f8c0 0x12f8e882 0xf8df6c02 0xea42a038 0x6402020a 0x527cea4f 0x490b6582 0xe04f101 0x8024f8c1 0x12f8e88e 0xea436c0b 0x640b030a 0xf240658a 0x60022202 0x4804600a 0x4687 0x61600000 0x20000002 0x61400000 0x10040000"/>
+	</partion_item>
+</modem_info>

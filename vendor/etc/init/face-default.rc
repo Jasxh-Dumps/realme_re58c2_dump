@@ -1,0 +1,12 @@
+service vendor.face-default /vendor/bin/hw/vendor.sprd.hardware.biometrics.face-service
+    class hal
+    user system
+    group system media
+    disabled
+
+on post-fs-data
+    mkdir /data/vendor/faceid 0744 system system
+
+on property:ro.vendor.faceid.support=true
+    start vendor.face-default
+

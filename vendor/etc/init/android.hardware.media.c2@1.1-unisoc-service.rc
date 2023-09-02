@@ -1,0 +1,6 @@
+service media.unisoc.codec2 /vendor/bin/hw/android.hardware.media.c2@1.1-unisoc-service
+    class hal
+    user mediacodec
+    group system camera mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

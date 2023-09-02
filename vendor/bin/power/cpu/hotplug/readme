@@ -1,0 +1,25 @@
+一、功能:cpu热插拔
+
+二、用法:
+连接adb切换root进入shell
+adb root
+adb remount
+adb shell
+./vendor/bin/power/hotplug/cpu_hotplug
+
+三、示例
+ums9230_1h10:/vendor/bin/power/hotplug # ./cpu_hotplug
+./cpu_hotplug
+online: 0-1,4-7
+offline: 2-3
+please choose 0(off)/1(on)
+0
+0
+please choose close core [0-7]
+4
+4
+online: 0-1,5-7
+offline: 2-4
+
+四、备注:
+1、只适用于userdebug版本

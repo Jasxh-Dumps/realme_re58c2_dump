@@ -1,0 +1,181 @@
+<icapitemlist>
+<!--
+     SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+     Copyright 2022 Unisoc (Shanghai) Technologies Co., Ltd.
+     Licensed under the Unisoc General Software License, version 1.0 (the License);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+     Software distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+     See the Unisoc General Software License, version 1.0 for more details.
+-->
+	<item>
+		<name>ComInfo</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.save.otp.raw.data</prop>
+	</item>
+	<item>
+		<name>Data Type</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.dump.data.type</prop>
+		<value>0,2,4,8</value>
+	</item>
+	<item>
+		<name>Debug Info</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.pm.debuginfo.eb</prop>
+	</item>
+	<item>
+		<name>YUV</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.dump.yuv.enable</prop>
+	</item>
+	<item>
+		<name>YUV-Preview</name>
+		<parentitem>YUV</parentitem>
+		<prop>persist.vendor.cam.icap.dump.yuv.prev.enable</prop>
+	</item>
+	<item>
+		<name>YUV-Video</name>
+		<parentitem>YUV</parentitem>
+		<prop>persist.vendor.cam.icap.dump.yuv.video.enable</prop>
+	</item>
+	<item>
+		<name>YUV-Capture</name>
+		<parentitem>YUV</parentitem>
+		<prop>persist.vendor.cam.icap.dump.yuv.cap.enable</prop>
+	</item>
+	<item>
+		<name>JPEG</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.dump.jpeg.enable</prop>
+	</item>
+	<item>
+		<name>Sensor RAW</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.dump.sensor.raw.enable</prop>
+	</item>
+	<item>
+		<name>DCAM RAW</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.dump.dcam.raw.enable</prop>
+	</item>
+	<item>
+		<name>14bit RAW</name>
+		<parentitem>DCAM RAW</parentitem>
+		<prop>persist.vendor.cam.icap.dump.dcam.raw.14bits</prop>
+	</item>
+	<item>
+		<name>ISS Info</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.iss.dump.enable</prop>
+	</item>
+	<item>
+		<name>Pipeline Block Info</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.pm.pipeline.eb</prop>
+	</item>
+	<item>
+		<name>PS Info</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.ps.eb</prop>
+	</item>
+	<item>
+		<name>3A Info</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.pm.3a.eb</prop>
+	</item>
+	<item>
+		<name>PM Statics Data</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.pm.statics.eb</prop>
+	</item>
+	<item>
+		<name>AEM Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.aem.eb</prop>
+	</item>
+	<item>
+		<name>HIST Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.hist.eb</prop>
+	</item>
+	<item>
+		<name>HIST2 Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.hist2.eb</prop>
+	</item>
+	<item>
+		<name>GTM Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.gtm.eb</prop>
+	</item>
+	<item>
+		<name>LSCM Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.lscm.eb</prop>
+	</item>
+	<item>
+		<name>AFM Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.afm.eb</prop>
+	</item>
+	<item>
+		<name>PDAF Info</name>
+		<parentitem>PM Statics Data</parentitem>
+		<prop>persist.vendor.cam.icap.pm.pdaf.eb</prop>
+	</item>
+	<item>
+		<name>Postprocess Data</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.icap.postproc.eb</prop>
+	</item>
+	<item>
+		<name>MFNR Info</name>
+		<parentitem>Postprocess Data</parentitem>
+		<prop>persist.vendor.cam.icap.postproc.mfnr.eb</prop>
+	</item>
+	<item>
+		<name>HDR Info</name>
+		<parentitem>Postprocess Data</parentitem>
+		<prop>persist.vendor.cam.icap.postproc.hdr.eb</prop>
+	</item>
+	<item>
+		<name>YnrCnr Info</name>
+		<parentitem>Postprocess Data</parentitem>
+		<prop>persist.vendor.cam.icap.postproc.cynr.eb</prop>
+	</item>
+	<item>
+		<name>Quick Display</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.auto.fast.thumb</prop>
+	</item>
+	<item>
+		<name>PM Pipeline Data</name>
+		<parentitem></parentitem>
+		<prop>persist.vendor.cam.pm.dump.top</prop>
+	</item>
+	<item>
+		<name>Pre</name>
+		<parentitem>PM Pipeline Data</parentitem>
+		<prop>debug.vendor.cam.pm.dump.context.pre</prop>
+	</item>
+	<item>
+		<name>Cap</name>
+		<parentitem>PM Pipeline Data</parentitem>
+		<prop>debug.vendor.cam.pm.dump.context.cap</prop>
+	</item>
+	<item>
+		<name>Raw Cap</name>
+		<parentitem>PM Pipeline Data</parentitem>
+		<prop>debug.vendor.cam.pm.dump.context.raw.cap</prop>
+	</item>
+	<item>
+		<name>Offline Cap</name>
+		<parentitem>PM Pipeline Data</parentitem>
+		<prop>debug.vendor.cam.pm.dump.offline.cap</prop>
+	</item>
+</icapitemlist>

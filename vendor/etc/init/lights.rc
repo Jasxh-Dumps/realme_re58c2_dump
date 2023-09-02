@@ -1,0 +1,5 @@
+service vendor.sprd.hardware.lights-service  /vendor/bin/hw/vendor.sprd.hardware.lights-service
+    class hal
+    user system
+    group system
+    shutdown critical

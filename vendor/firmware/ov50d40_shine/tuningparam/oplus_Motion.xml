@@ -1,0 +1,43 @@
+<root>
+	<Triggers name="MDBypassEnable">
+		<Trigger start="0" end="0" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">0</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">1</Trigger>
+		</Trigger>
+		<Trigger start="1" end="1" para="face" name="">
+			<Trigger start="-5000" end="500" para="bv" name="struct1">2</Trigger>
+			<Trigger start="500" end="5000" para="bv" name="struct1">3</Trigger>
+		</Trigger>
+	</Triggers>
+	<ConstData>
+		<Parameter index="" name="MDLumaThreshold" des="description" level="1" range="[0,100]" type="float" length="1">24.0</Parameter>
+		<Parameter index="" name="MDVotingCntThreshold" des="description" level="1" range="[0,100]" type="float" length="1">1500.0</Parameter>
+		<Parameter index="" name="MDVotingCntThresholdTriod" des="description" level="1" range="[0,100]" type="float" length="1">1200.0</Parameter>
+		<Parameter index="" name="MDLeaveHodingFrameTripod" des="description" level="1" range="[0,100]" type="float" length="1">2.0</Parameter>
+		<Parameter index="" name="MDLeaveHodingFrame" des="description" level="1" range="[0,100]" type="float" length="1">2.0</Parameter>
+		<Parameter index="" name="MDEnterHodingFrame" des="description" level="1" range="[0,100]" type="float" length="1">2.0</Parameter>
+		<Parameter index="" name="MDFastMovingHoldingFrame" des="description" level="1" range="[0,100]" type="float" length="1">4.0</Parameter>
+		<Parameter index="" name="MDFastThreshold" des="description" level="1" range="[0,100]" type="float" length="1">3000.0</Parameter>
+		<Parameter index="" name="MDLumaGlobalThreshold" des="description" level="1" range="[0,100]" type="float" length="1">5.0</Parameter>
+		<Parameter index="" name="MDVotingGlobalCntThreshold" des="description" level="1" range="[0,100]" type="float" length="1">2600.0</Parameter>
+		<Parameter index="" name="MDQuaterGlobalCntThreshold" des="description" level="1" range="[0,100]" type="float" length="1">1768.0</Parameter>
+		<Parameter index="" name="MDGyroThresholdLow" des="description" level="1" range="[0,100]" type="float" length="1">0.45</Parameter>
+	    <Parameter index="" name="MDGyroThresholdHigh" des="description" level="1" range="[0,100]" type="float" length="1">0.60</Parameter>
+		<Parameter index="" name="MDAsdMdValueHoldingFrame" des="description" level="1" range="[0,100]" type="float" length="1">0.0</Parameter>
+		<Parameter index="" name="MDAsdMdValueThreshold " des="description" level="1" range="[0,100]" type="float" length="1">0.0</Parameter>
+	</ConstData>
+	<Parameters name="MDBypassEnable">
+		<Parameter index="0" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="MDBypassEnable" des="description" level="1" range="[0,100]" type="float" length="1">1.0</Parameter>
+		</Parameter>
+		<Parameter index="1" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="MDBypassEnable" des="description" level="1" range="[0,100]" type="float" length="1">1.0</Parameter>
+		</Parameter>
+		<Parameter index="2" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="MDBypassEnable" des="description" level="1" range="[0,100]" type="float" length="1">1.0</Parameter>
+		</Parameter>
+		<Parameter index="3" name="name1" des="description" level="1" range="[0,100]" type="float" length="1">
+			<Parameter index="0" name="MDBypassEnable" des="description" level="1" range="[0,100]" type="float" length="1">1.0</Parameter>
+		</Parameter>
+	</Parameters>
+</root>

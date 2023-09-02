@@ -1,0 +1,4 @@
+service vendor.power-default /vendor/bin/hw/vendor.unisoc.hardware.power-service
+    class hal
+    user root
+    group system
