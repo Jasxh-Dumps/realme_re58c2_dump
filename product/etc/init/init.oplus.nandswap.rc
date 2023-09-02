@@ -1,0 +1,106 @@
+service init.oplus.nandswap.sh /product/bin/init.oplus.nandswap.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    restorecon_recursive /data/nandswap
+    exec - root system -- /bin/rm -rf /data/nandswap
+    mkdir /data/nandswap 0700 root root encryption=Require key=per_boot_ref
+
+    chown root system /dev/memcg/memory.active_app_info_list
+    chmod 0440 /dev/memcg/memory.active_app_info_list
+    chown root system /dev/memcg/memory.zram_wm_ratio
+    chmod 0660 /dev/memcg/memory.zram_wm_ratio
+    chown root system /dev/memcg/memory.compress_ratio
+    chmod 0660 /dev/memcg/memory.compress_ratio
+    chown root system /dev/memcg/memory.swapd_pid
+    chmod 0440 /dev/memcg/memory.swapd_pid
+    chown root system /dev/memcg/memory.avail_buffers
+    chmod 0660 /dev/memcg/memory.avail_buffers
+    chown root system /dev/memcg/memory.swapd_max_reclaim_size
+    chmod 0660 /dev/memcg/memory.swapd_max_reclaim_size
+    chown root system /dev/memcg/memory.area_anon_refault_threshold
+    chmod 0660 /dev/memcg/memory.area_anon_refault_threshold
+    chown root system /dev/memcg/memory.empty_round_skip_interval
+    chmod 0660 /dev/memcg/memory.empty_round_skip_interval
+    chown root system /dev/memcg/memory.max_skip_interval
+    chmod 0660 /dev/memcg/memory.max_skip_interval
+    chown root system /dev/memcg/memory.empty_round_check_threshold
+    chmod 0660 /dev/memcg/memory.empty_round_check_threshold
+    chown root system /dev/memcg/memory.anon_refault_snapshot_min_interval
+    chmod 0660 /dev/memcg/memory.anon_refault_snapshot_min_interval
+    chown root system /dev/memcg/memory.swapd_memcgs_param
+    chmod 0660 /dev/memcg/memory.swapd_memcgs_param
+    chown root system /dev/memcg/memory.zram_critical_threshold
+    chmod 0660 /dev/memcg/memory.zram_critical_threshold
+    chown root system /dev/memcg/memory.cpuload_threshold
+    chmod 0660 /dev/memcg/memory.cpuload_threshold
+    chown root system /dev/memcg/memory.reclaim_exceed_sleep_ms
+    chmod 0660 /dev/memcg/memory.reclaim_exceed_sleep_ms
+    chown root system /dev/memcg/memory.swapd_bind
+    chmod 0660 /dev/memcg/memory.swapd_bind
+    chown root system /dev/memcg/memory.max_reclaimin_size_mb
+    chmod 0660 /dev/memcg/memory.max_reclaimin_size_mb
+    chown root system /dev/memcg/memory.swapd_shrink_parameter
+    chmod 0660 /dev/memcg/memory.swapd_shrink_parameter
+    chown root system /dev/memcg/memory.swapd_nap_jiffies
+    chmod 0660 /dev/memcg/memory.swapd_nap_jiffies
+    chown root system /dev/memcg/memory.total_info_per_app
+    chmod 0440 /dev/memcg/memory.total_info_per_app
+    chown root system /dev/memcg/apps/memory.swap_stat
+    chmod 0440 /dev/memcg/apps/memory.swap_stat
+    chown root system /dev/memcg/system/memory.swap_stat
+    chmod 0440 /dev/memcg/system/memory.swap_stat
+    chown root system /dev/memcg/memory.swap_stat
+    chmod 0440 /dev/memcg/memory.swap_stat
+    chown root system /dev/memcg/memory.app_score
+    chmod 0660 /dev/memcg/memory.app_score
+    chown root system /dev/memcg/apps/memory.app_score
+    chmod 0660 /dev/memcg/apps/memory.app_score
+    chown root system /dev/memcg/system/memory.app_score
+    chmod 0660 /dev/memcg/system/memory.app_score
+    chown root system /dev/memcg/memory.app_uid
+    chmod 0660 /dev/memcg/memory.app_uid
+    chown root system /dev/memcg/apps/memory.app_uid
+    chmod 0660 /dev/memcg/apps/memory.app_uid
+    chown root system /dev/memcg/system/memory.app_uid
+    chmod 0660 /dev/memcg/system/memory.app_uid
+    chown root system /dev/memcg/memory.ub_ufs2zram_ratio
+    chmod 0660 /dev/memcg/memory.ub_ufs2zram_ratio
+    chown root system /dev/memcg/apps/memory.ub_ufs2zram_ratio
+    chmod 0660 /dev/memcg/apps/memory.ub_ufs2zram_ratio
+    chown root system /dev/memcg/system/memory.ub_ufs2zram_ratio
+    chmod 0660 /dev/memcg/system/memory.ub_ufs2zram_ratio
+    chown root system /dev/memcg/memory.psi
+    chmod 0440 /dev/memcg/memory.psi
+    chown root system /dev/memcg/apps/memory.psi
+    chmod 0440 /dev/memcg/apps/memory.psi
+    chown root system /dev/memcg/system/memory.psi
+    chmod 0440 /dev/memcg/system/memory.psi
+    chown root system /dev/memcg/memory.stored_wm_ratio
+    chmod 0660 /dev/memcg/memory.stored_wm_ratio
+    chown root system /dev/memcg/apps/memory.stored_wm_ratio
+    chmod 0660 /dev/memcg/apps/memory.stored_wm_ratio
+    chown root system /dev/memcg/system/memory.stored_wm_ratio
+    chmod 0660 /dev/memcg/system/memory.stored_wm_ratio
+    chown root system /dev/memcg/memory.swapd_single_memcg_param
+    chmod 0440 /dev/memcg/memory.swapd_single_memcg_param
+    chown root system /dev/memcg/apps/memory.swapd_single_memcg_param
+    chmod 0440 /dev/memcg/apps/memory.swapd_single_memcg_param
+    chown root system /dev/memcg/system/memory.swapd_single_memcg_param
+    chmod 0440 /dev/memcg/system/memory.swapd_single_memcg_param
+
+    chown root system /proc/nandswap/swap_ctl
+    chmod 0660 /proc/nandswap/swap_ctl
+    chown root system /proc/nandswap/fn_enable
+    chmod 0660 /proc/nandswap/fn_enable
+    chown root system /proc/nandswap/life_protect
+    chmod 0440 /proc/nandswap/life_protect
+    chown root system /proc/nandswap/stat_info
+    chmod 0440 /proc/nandswap/stat_info
+    chmod 0200 /proc/nandswap/swap_limit
+    chmod 0200 /proc/nandswap/dev_life
+
+    start init.oplus.nandswap.sh

@@ -1,0 +1,136 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_Professional_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode4"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_Professional_YnrCnr"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_Professional_WaterMark"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "VdBlurless4Node",
+            "vendor": "VD",
+            "id": "cap_VDBlurless"
+        }
+    ],
+    "rootNodes": ["SourceNode0", "SourceNode2", "SourceNode3", "SourceNode4"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode4",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_VDBlurless",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Professional_YnrCnr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Professional_YnrCnr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Professional_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Professional_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

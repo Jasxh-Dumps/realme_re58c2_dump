@@ -1,0 +1,86 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Ultrawide_Video",
+    "stream": "video_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "video_DeWarping"
+        },
+        {
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+            "id": "video_ModeRouter"
+        },
+        {
+            "type": "EISNode",
+            "vendor": "SPRD",
+            "id": "video_EIS"
+        }
+    ],
+    "rootNodes": ["SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "video_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "video_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_ModeRouter",
+                "port": "normal"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_ModeRouter",
+                "port": "eis"
+            },
+            "to": {
+                "name": "video_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_EIS",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

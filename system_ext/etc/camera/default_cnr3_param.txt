@@ -1,0 +1,20 @@
+#
+#  SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+#  SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+#
+#  Copyright 2022 Unisoc (Shanghai) Technologies Co., Ltd.
+#  Licensed under the Unisoc General Software License, version 1.0 (the License);
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#  https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+#  Software distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+#  See the Unisoc General Software License, version 1.0 for more details.
+#
+[VERSION] for bug 000001
+GAIN1 {BY_PASS(0),1_LAYER(1,1,1024,256,500,70,180,6,5,4,20,15,15),2_LAYER(1,1,1024,256,500,70,180,6,5,4,20,15,15),3_LAYER(1,1,1024,256,500,70,180,6,5,4,15,10,10),4_LAYER(1,1,1024,256,500,70,180,6,5,4,15,10,10),5_LAYER(1,1,1024,256,500,70,180,6,5,4,15,10,10)}
+GAIN2 {BY_PASS(0),1_LAYER(1,1,146,512,500,70,180,6,5,4,8,9,10),2_LAYER(1,1,205,256,500,70,180,6,5,4,7,8,10),3_LAYER(1,1,140,256,500,70,180,6,5,4,7,8,10),4_LAYER(1,1,175,256,500,70,180,6,5,4,6,7,8),5_LAYER(1,0,76,256,500,70,180,6,5,4,5,6,7)}
+GAIN3 {BY_PASS(0),1_LAYER(1,1,146,256,500,70,180,6,5,4,6,7,8),2_LAYER(1,1,205,512,300,70,180,6,5,4,6,7,8),3_LAYER(1,1,140,300,500,70,180,6,5,4,5,6,7),4_LAYER(1,0,175,256,500,70,180,6,5,4,4,5,6),5_LAYER(1,0,50,256,500,70,180,6,5,4,3,4,5)}
+GAIN4 {BY_PASS(0),1_LAYER(1,1,146,256,500,70,180,6,5,4,6,7,8),2_LAYER(1,1,205,512,300,70,180,6,5,4,6,7,8),3_LAYER(1,1,140,300,500,70,180,6,5,4,5,6,7),4_LAYER(1,0,175,256,500,70,180,6,5,4,4,5,6),5_LAYER(1,0,50,256,500,70,180,6,5,4,3,4,5)}
+GAIN5 {BY_PASS(0),1_LAYER(1,1,146,256,500,70,180,6,5,4,10,11,12),2_LAYER(1,1,205,512,300,70,180,6,5,4,9,10,11),3_LAYER(1,1,300,300,500,70,180,6,5,4,8,9,10),4_LAYER(1,0,175,256,500,70,180,6,5,4,7,8,9),5_LAYER(1,0,76,256,500,70,180,6,5,4,6,7,8)}
+

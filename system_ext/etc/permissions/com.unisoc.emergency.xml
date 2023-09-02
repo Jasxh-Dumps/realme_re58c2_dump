@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UNISOC: SR.254.0173.0739 JIO subsidylock -->
+<permissions>
+    <privapp-permissions package="com.android.emergency">
+        <!-- UNISOC: SR.254.0173.0739 JIO subsidylock. Add for 1655434/1656434 -->
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+</permissions>

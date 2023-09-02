@@ -1,0 +1,33 @@
+service slogmodem /system_ext/bin/slogmodem
+    class main
+    user system
+    group system sdcard_rw media_rw audio radio everybody external_storage root
+    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    mkdir /data/local/slogmodem 0777 system system
+    mkdir /data/oppo 0777 system system
+    chmod 0660 /dev/block/mmcblk0p22
+    chown system system /dev/block/mmcblk0p22
+
+on cali-fs
+    chmod 0660 /dev/block/mmcblk0p22
+    chown system system /dev/block/mmcblk0p22
+    mkdir /data/local 0751 root root
+    mkdir /data/ylog 0770 root system
+    mkdir /data/oppo 0777 root system
+    mkdir /data/local/slogmodem 0770 root system
+
+on cali-start
+   start slogmodem
+
+on factorytest-fs
+    chmod 0660 /dev/block/mmcblk0p22
+    chown system system /dev/block/mmcblk0p22
+    mkdir /data/local 0751 root root
+    mkdir /data/ylog 0770 root system
+    mkdir /data/oppo 0777 root system
+    mkdir /data/local/slogmodem 0770 root system
+
+on factorytest-start
+   start slogmodem

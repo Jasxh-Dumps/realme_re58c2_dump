@@ -1,0 +1,49 @@
+service vendor.rps_on /system_ext/bin/data_rps.sh on
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.rps_off /system_ext/bin/data_rps.sh off
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.sfp_on /system_ext/bin/data_rps.sh sfp_on
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.sfp_off /system_ext/bin/data_rps.sh sfp_off
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.lockfreq_on /system_ext/bin/data_rps.sh lockfreq_on
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.lockfreq_off /system_ext/bin/data_rps.sh lockfreq_off
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.rps_roc_m /system_ext/bin/data_rps.sh roc_m
+    user root
+    group system root
+    disabled
+    oneshot
+
+service vendor.rps_roc_h /system_ext/bin/data_rps.sh roc_h
+    user root
+    group system root
+    disabled
+    oneshot
+
+

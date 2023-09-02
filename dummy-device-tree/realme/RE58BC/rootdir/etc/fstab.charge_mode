@@ -1,0 +1,4 @@
+# Android fstab file for charge-mode
+# <src>                    <mnt_point>  <type>  <mnt_flags and options>            			 <fs_mgr_flags>
+/dev/block/by-name/cache /cache f2fs noatime,nosuid,nodev,discard wait,check,formattable \
+/dev/block/by-name/cache /cache ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc wait,check,formattable

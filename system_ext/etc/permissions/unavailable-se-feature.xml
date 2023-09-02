@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature remove for Bug1876297. -->
+<permissions>
+    <scan-in-config config="ro.telephony.se.enable" value="false">
+    <disallowed-scan-path name="/system/app/SecureElement"/>
+    </scan-in-config>
+</permissions>

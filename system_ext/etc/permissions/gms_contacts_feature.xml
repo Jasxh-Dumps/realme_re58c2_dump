@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <feature name="com.google.android.contacts.feature.SIM_WRITE" />
+    <feature name="com.google.android.contacts.feature.CONTACTS_PROVIDER_WRITES_TO_SIM_CARD" />
+</permissions>

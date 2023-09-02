@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2018 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<MediaCodecs>
+    <Decoders>
+        <MediaCodec name="c2.android.avc.decoder" type="video/avc" variant="slow-cpu,!slow-cpu" update="true">
+                <Limit name="size" min="2x2" max="1280x1280" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" variant="slow-cpu,!slow-cpu"  update="true">
+                <Limit name="size" min="2x2" max="1280x1280" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" variant="slow-cpu,!slow-cpu"  update="true">
+                <Limit name="size" min="2x2" max="1920x1920" />
+        </MediaCodec>
+
+    </Decoders>
+    <Decoders>
+        <MediaCodec name="c2.unisoc.imaadpcm.decoder" type="audio/ima-adpcm">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.mp3.decoder" type="audio/mpeg">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+            <Limit name="bitrate" range="8000-320000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.mpl1.decoder" type="audio/mpeg-L1">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+            <Limit name="bitrate" range="8000-320000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.mpl2.decoder" type="audio/mpeg-L2">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+            <Limit name="bitrate" range="8000-320000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.hevc.decoder" type="video/hevc">
+            <Alias name="OMX.sprd.hevc.decoder" />
+            <Limit name="size" min="64x64" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-32640" />
+            <Limit name="blocks-per-second" range="1-1728000" />
+            <Limit name="bitrate" range="1-50000000" />
+            <Limit name="concurrent-instances" max="20" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.mpeg4.decoder" type="video/mp4v-es">
+            <Alias name="OMX.sprd.mpeg4.decoder" />
+            <Limit name="size" min="64x64" max="1920x2032" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-457200" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="18" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.h263.decoder" type="video/3gpp">
+            <Alias name="OMX.sprd.h263.decoder" />
+            <Limit name="size" min="64x64" max="1408x1152" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-457200" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="18" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.avc.decoder" type="video/avc">
+            <Alias name="OMX.sprd.h264.decoder" />
+            <Limit name="size" min="64x64" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-864000" />
+            <Limit name="bitrate" range="1-50000000" />
+            <Limit name="concurrent-instances" max="10" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.av1.decoder" type="video/av01">
+            <Alias name="OMX.sprd.av1.decoder" />
+            <Attribute name="software-codec" />
+            <Limit name="size" min="64x64" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Limit name="concurrent-instances" max="10" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.vp8.decoder" type="video/x-vnd.on2.vp8">
+            <Alias name="OMX.sprd.vpx.decoder" />
+            <Limit name="size" min="64x64" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.vp9.decoder" type="video/x-vnd.on2.vp9">
+            <Alias name="OMX.sprd.vp9.decoder" />
+            <Limit name="size" min="64x64" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-864000" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="20" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+    </Decoders>
+
+    <Encoders>
+        <MediaCodec name="c2.unisoc.mp3.encoder" type="audio/mpeg">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
+            <!-- also may support 64000, 88200  and 96000 Hz -->
+            <Limit name="bitrate" range="32000-320000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.avc.encoder" type="video/avc">
+            <Alias name="OMX.sprd.h264.encoder" />
+            <Limit name="size" min="176x144" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-40000000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.hevc.encoder" type="video/hevc">
+            <Alias name="OMX.sprd.h265.encoder" />
+            <Limit name="size" min="176x144" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="32x32" />
+            <Limit name="block-count" range="1-8160" />
+            <Limit name="blocks-per-second" range="1-244800" />
+            <Limit name="bitrate" range="1-25000000" />
+        </MediaCodec>
+    </Encoders>
+
+</MediaCodecs>

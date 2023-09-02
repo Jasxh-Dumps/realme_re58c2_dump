@@ -1,0 +1,51 @@
+on property:persist.nhmonitor.enable=off
+    write /proc/monitor_enable "off"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=wdgreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=apwdgreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=unknowreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=panic
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=unknown
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=alarm
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=silent
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=kernel_crash
+    write /proc/monitor_enable "on"
+
+on property:persist.nhmonitor.enable=on && property:ro.bootmode=normal
+    write /proc/monitor_enable "on"
+
+service nhmonitor /system_ext/bin/nhMonitorService
+    class late_start 
+    user root
+    group everybody
+    oneshot
+
+on early-fs
+    chown system system /dev/native_hang_monitor
+    chown system system /proc/monitor_enable
+
+on property:debug.wdt.sysdump=on
+    setprop vendor.debug.sysdump.enabled true
+    setprop persist.vendor.eng.reset  0
+
+
+
+
+
+
+
+

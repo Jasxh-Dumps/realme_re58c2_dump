@@ -1,0 +1,29 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Rear_Panorama",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 2160,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 3264,
+                    "max_height": 1632,
+                    "formats": [ "NV12" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Multimode_Preview",
+            "Pipeline_Async",
+            "Pipeline_Multimode_Callback"
+        ]
+    }
+}

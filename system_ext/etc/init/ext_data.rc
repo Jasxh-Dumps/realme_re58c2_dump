@@ -1,0 +1,6 @@
+#extend data service
+#storage: system_ext/etc/init/
+service ext_data /system_ext/bin/ext_data
+    class main
+    user root
+    group vpn

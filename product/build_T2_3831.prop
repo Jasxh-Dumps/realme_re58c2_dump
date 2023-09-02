@@ -1,0 +1,8 @@
+ro.product.product.model=RMX3831
+ro.product.product.device=RE58C0
+ro.product.product.name=RMX3831
+ro.product.bootimage.name=RMX3831
+ro.product.bootimage.model=RMX3831
+ro.product.bootimage.device=RE58C0
+ro.product.build.fingerprint=realme/RMX3831/RE58C0:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.bootimage.build.fingerprint=realme/RMX3831/RE58C0:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys

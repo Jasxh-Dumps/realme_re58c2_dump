@@ -1,0 +1,13 @@
+<!--
+    Input:
+        manifest_disable_tui.xml
+        manifest_disable_soter.xml
+-->
+<manifest version="5.0" type="device">
+    <hal format="aidl" override="true">
+        <name>vendor.sprd.hardware.soter</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.sprd.hardware.tui</name>
+    </hal>
+</manifest>

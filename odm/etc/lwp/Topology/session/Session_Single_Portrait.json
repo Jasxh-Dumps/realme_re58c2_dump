@@ -1,0 +1,34 @@
+{
+    "session": {
+        "name": "Session_Single_Portrait",
+        "usecase": {
+            "facing": "front",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 960,
+                    "max_height": 720,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 3264,
+                    "max_height": 2448,
+                    "formats": [ "JPEG" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 320,
+                    "max_height": 240,
+                    "formats": [ "NV12"]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Single_Portrait_Preview",
+            "Pipeline_Single_Portrait_Capture",
+            "Pipeline_Async",
+            "Pipeline_Rear_Auto_Debug_Reprocess"
+        ]
+    }
+}

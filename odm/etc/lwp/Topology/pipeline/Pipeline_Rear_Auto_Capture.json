@@ -1,0 +1,372 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_Auto_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR_router"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "cap_DeWarping"
+        },
+        {
+            "type": "MFNR_4Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR4"
+        },
+        {
+            "type": "ArcHDRNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR"
+        },
+        {
+            "type": "ArcCHDRNode",
+            "vendor": "SPRD",
+            "id": "cap_CHDR"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR_MFSR"
+        },
+        {
+            "type": "DeWarpPortraitNode",
+            "vendor": "SPRD",
+            "id": "cap_DeWarpPortrait"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "cap_FaceBeauty"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        },
+        {
+            "type": "MfsrNode",
+            "vendor": "SPRD",
+            "id": "cap_MFSR"
+        },
+		{
+            "type": "PCCNode",
+            "vendor": "SPRD",
+            "id": "cap_PCC"
+        },
+        {
+            "type": "FilterCapNode",
+            "vendor": "SPRD",
+            "id": "cap_Filter"
+        },
+        {
+            "type": "PolarrRenderNode",
+            "vendor": "SPRD",
+            "id": "cap_FilterPolarr"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "VdBlurless4Node",
+            "vendor": "VD",
+            "id": "cap_VDBlurless"
+        },
+        {
+            "type": "VdSuperphotoNode",
+            "vendor": "VD",
+            "id": "cap_VDSuperphoto"
+        }
+
+    ],
+    "rootNodes": ["SourceNode0", "SourceNode2", "SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "flash"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "hdr"
+            },
+            "to": {
+                "name": "cap_HDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "vdblurless"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_VDBlurless",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_CHDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_CHDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfsr"
+            },
+            "to": {
+                "name": "cap_VDSuperphoto",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_VDSuperphoto",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFSR",
+                "port": "mfsr_out"
+            },
+            "to": {
+                "name": "cap_YNRCNR_MFSR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR_MFSR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_MFSR",
+                "port": "mfsr_post_in"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFSR",
+                "port": "mfsr_post_out"
+            },
+            "to": {
+                "name": "cap_DeWarpPortrait",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_DeWarpPortrait",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_DeWarpPortrait",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_PCC",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FilterPolarr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FilterPolarr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

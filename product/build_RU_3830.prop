@@ -1,0 +1,8 @@
+ro.product.product.model=RMX3830
+ro.product.product.device=RE58BC
+ro.product.product.name=RMX3830RU
+ro.product.bootimage.name=RMX3830RU
+ro.product.bootimage.model=RMX3830
+ro.product.bootimage.device=RE58BC
+ro.product.build.fingerprint=realme/RMX3830RU/RE58BC:13/TP1A.220624.014/T.1691917416:user/release-keys
+ro.bootimage.build.fingerprint=realme/RMX3830RU/RE58BC:13/TP1A.220624.014/T.1691917416:user/release-keys

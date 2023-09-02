@@ -1,0 +1,8 @@
+on property:vendor.ro.bootmode=autotest && property:init.svc.bootanim=running
+    stop bootanim
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.netd=running
+    stop netd
+
+on property:vendor.ro.bootmode=autotest && property:init.svc.media=stopped
+    start media

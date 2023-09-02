@@ -1,0 +1,166 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_NightPro_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR_router"
+        },
+        {
+            "type": "ArcYUVNightNode",
+            "vendor": "SPRD",
+            "id": "cap_YUVNight"
+        },
+        {
+            "type": "HDR4Node",
+            "vendor": "SPRD",
+            "id": "cap_HDR"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "cap_FaceBeauty"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "VdBlurless4Node",
+            "vendor": "VD",
+            "id": "cap_VDBlurless"
+        }
+    ],
+    "rootNodes": ["SourceNode0"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_YUVNight",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "vdblurless"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_VDBlurless",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YUVNight",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Turbo integration to enable Playstore update -->
+    <!-- Use this if Turbo APK is preloaded -->
+<config>
+    <feature name="com.google.android.feature.TURBO_PRELOAD" />
+</config>

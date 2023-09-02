@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <feature name="com.google.android.feature.PERSONAL_SAFETY" />
+
+    <!-- Allow background operation in battery saver mode for Personal Safety-->
+    <allow-in-power-save package="com.google.android.apps.safetyhub" />
+</config>

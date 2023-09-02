@@ -1,0 +1,3 @@
+import /vendor/etc/init/hw/init.ram.gms.rc
+import /vendor/etc/init/hw/init.ram.native.rc
+import /vendor/etc/init/hw/init.zramwb.rc

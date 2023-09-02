@@ -1,0 +1,14 @@
+on property:sys.boot_completed=1
+    start zramwb-sh
+
+#Enable zram fast idle
+on property:vendor.zram.writeback=idle
+    write /sys/block/zram0/idle fast
+on property:vendor.zram.writeback=idle_fast
+    exec_background /vendor/bin/idlefast.sh
+
+service zramwb-sh /vendor/bin/zramwb.sh
+    user root
+    disabled
+    oneshot
+

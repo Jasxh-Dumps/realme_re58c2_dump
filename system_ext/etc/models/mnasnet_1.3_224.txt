@@ -1,0 +1,54 @@
+13 conference room
+40 river
+50 waiting room
+29 kitchen
+49 tree
+9 bus
+44 ship
+36 parlour
+37 party
+3 basketball
+38 people
+0 aircraft
+11 cat
+24 football
+8 building
+17 dog
+48 train
+10 car
+39 playground
+14 crawling animal
+53 lake
+5 bicycle
+26 grassland
+22 flower
+31 metro
+28 helicopter
+42 sea
+34 mountain
+41 road
+46 sky
+21 fish
+19 evergreen
+33 motorcycle
+6 bird
+45 shopping mall
+7 bridge
+12 classroom
+32 mobile phone
+30 laptop
+52 cake
+4 bedroom
+47 telephone
+43 selfie
+20 farmland
+23 food
+15 desktop computer
+35 office
+18 electric bicycle
+27 group photo
+51 night scene
+54 card
+1 animal
+2 baby
+16 document

@@ -1,0 +1,46 @@
+{
+    "DefaultZoom": {
+        "PhyCameras": "3",
+        "MaxDigitalZoom": "10.0",
+        "BinningRatio": "5.0",
+        "PhyCamZoomRegion": {
+            "CameraSw": {
+                "Min": "0.6",
+                "Max": "1.0",
+                "Enable": "1"
+            },
+            "CameraWide": {
+                "Min": "1.0",
+                "Max": "3.0",
+                "Enable": "1"
+            },
+            "CameraTele": {
+                "Min": "3.0",
+                "Max": "10.0",
+                "Enable": "1"
+            }
+        }
+    },
+    "DualVideoZoom": {
+        "PhyCameras": "2",
+        "MaxDigitalZoom": "10.0",
+        "BinningRatio": "5.0",
+        "PhyCamZoomRegion": {
+            "CameraSw": {
+                "Min": "0.6",
+                "Max": "1.0",
+                "Enable": "1"
+            },
+            "CameraWide": {
+                "Min": "1.0",
+                "Max": "3.0",
+                "Enable": "0"
+            },
+            "CameraTele": {
+                "Min": "3.0",
+                "Max": "10.0",
+                "Enable": "1"
+            }
+        }
+    }
+}

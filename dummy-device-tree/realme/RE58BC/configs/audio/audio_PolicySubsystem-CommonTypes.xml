@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<ComponentTypeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schemas/ComponentTypeSet.xsd">
+    <ComponentType Name="OutputDevicesMask" Description="64bit representation of devices">
+        <BitParameterBlock Name="mask" Size="64">
+            <BitParameter Name="earpiece" Size="1" Pos="0"/>
+            <BitParameter Name="speaker" Size="1" Pos="1"/>
+            <BitParameter Name="wired_headset" Size="1" Pos="2"/>
+            <BitParameter Name="wired_headphone" Size="1" Pos="3"/>
+            <BitParameter Name="bluetooth_sco" Size="1" Pos="4"/>
+            <BitParameter Name="bluetooth_sco_headset" Size="1" Pos="5"/>
+            <BitParameter Name="bluetooth_sco_carkit" Size="1" Pos="6"/>
+            <BitParameter Name="bluetooth_a2dp" Size="1" Pos="7"/>
+            <BitParameter Name="bluetooth_a2dp_headphones" Size="1" Pos="8"/>
+            <BitParameter Name="bluetooth_a2dp_speaker" Size="1" Pos="9"/>
+            <BitParameter Name="hdmi" Size="1" Pos="10"/>
+            <BitParameter Name="anlg_dock_headset" Size="1" Pos="11"/>
+            <BitParameter Name="dgtl_dock_headset" Size="1" Pos="12"/>
+            <BitParameter Name="usb_accessory" Size="1" Pos="13"/>
+            <BitParameter Name="usb_device" Size="1" Pos="14"/>
+            <BitParameter Name="remote_submix" Size="1" Pos="15"/>
+            <BitParameter Name="telephony_tx" Size="1" Pos="16"/>
+            <BitParameter Name="line" Size="1" Pos="17"/>
+            <BitParameter Name="hdmi_arc" Size="1" Pos="18"/>
+            <BitParameter Name="spdif" Size="1" Pos="19"/>
+            <BitParameter Name="fm" Size="1" Pos="20"/>
+            <BitParameter Name="aux_line" Size="1" Pos="21"/>
+            <BitParameter Name="speaker_safe" Size="1" Pos="22"/>
+            <BitParameter Name="ip" Size="1" Pos="23"/>
+            <BitParameter Name="bus" Size="1" Pos="24"/>
+            <BitParameter Name="proxy" Size="1" Pos="25"/>
+            <BitParameter Name="usb_headset" Size="1" Pos="26"/>
+            <BitParameter Name="hearing_aid" Size="1" Pos="27"/>
+            <BitParameter Name="echo_canceller" Size="1" Pos="28"/>
+            <BitParameter Name="ble_headset" Size="1" Pos="29"/>
+            <BitParameter Name="stub" Size="1" Pos="30"/>
+            <BitParameter Name="hdmi_earc" Size="1" Pos="32"/>
+            <BitParameter Name="ble_speaker" Size="1" Pos="33"/>
+            <BitParameter Name="ble_broadcast" Size="1" Pos="34"/>
+        </BitParameterBlock>
+    </ComponentType>
+    <ComponentType Name="InputDevicesMask" Description="64bit representation of devices">
+        <BitParameterBlock Name="mask" Size="64">
+            <BitParameter Name="communication" Size="1" Pos="0"/>
+            <BitParameter Name="ambient" Size="1" Pos="1"/>
+            <BitParameter Name="builtin_mic" Size="1" Pos="2"/>
+            <BitParameter Name="bluetooth_sco_headset" Size="1" Pos="3"/>
+            <BitParameter Name="wired_headset" Size="1" Pos="4"/>
+            <BitParameter Name="hdmi" Size="1" Pos="5"/>
+            <BitParameter Name="telephony_rx" Size="1" Pos="6"/>
+            <BitParameter Name="back_mic" Size="1" Pos="7"/>
+            <BitParameter Name="remote_submix" Size="1" Pos="8"/>
+            <BitParameter Name="anlg_dock_headset" Size="1" Pos="9"/>
+            <BitParameter Name="dgtl_dock_headset" Size="1" Pos="10"/>
+            <BitParameter Name="usb_accessory" Size="1" Pos="11"/>
+            <BitParameter Name="usb_device" Size="1" Pos="12"/>
+            <BitParameter Name="fm_tuner" Size="1" Pos="13"/>
+            <BitParameter Name="tv_tuner" Size="1" Pos="14"/>
+            <BitParameter Name="line" Size="1" Pos="15"/>
+            <BitParameter Name="spdif" Size="1" Pos="16"/>
+            <BitParameter Name="bluetooth_a2dp" Size="1" Pos="17"/>
+            <BitParameter Name="loopback" Size="1" Pos="18"/>
+            <BitParameter Name="ip" Size="1" Pos="19"/>
+            <BitParameter Name="bus" Size="1" Pos="20"/>
+            <BitParameter Name="proxy" Size="1" Pos="24"/>
+            <BitParameter Name="usb_headset" Size="1" Pos="25"/>
+            <BitParameter Name="bluetooth_ble" Size="1" Pos="26"/>
+            <BitParameter Name="hdmi_arc" Size="1" Pos="27"/>
+            <BitParameter Name="echo_reference" Size="1" Pos="28"/>
+            <BitParameter Name="ble_headset" Size="1" Pos="29"/>
+            <BitParameter Name="stub" Size="1" Pos="30"/>
+            <BitParameter Name="hdmi_earc" Size="1" Pos="32"/>
+        </BitParameterBlock>
+    </ComponentType>
+    <ComponentType Name="VolumeProfileType">
+        <EnumParameter Name="volume_profile" Size="32">
+            <ValuePair Literal="voice_call" Numerical="0"/>
+            <ValuePair Literal="system" Numerical="1"/>
+            <ValuePair Literal="ring" Numerical="2"/>
+            <ValuePair Literal="music" Numerical="3"/>
+            <ValuePair Literal="alarm" Numerical="4"/>
+            <ValuePair Literal="notification" Numerical="5"/>
+            <ValuePair Literal="bluetooth_sco" Numerical="6"/>
+            <ValuePair Literal="enforced_audible" Numerical="7"/>
+            <ValuePair Literal="dtmf" Numerical="8"/>
+            <ValuePair Literal="tts" Numerical="9"/>
+            <ValuePair Literal="accessibility" Numerical="10"/>
+            <ValuePair Literal="assistant" Numerical="11"/>
+            <ValuePair Literal="rerouting" Numerical="12"/>
+            <ValuePair Literal="patch" Numerical="13"/>
+            <ValuePair Literal="call_assistant" Numerical="14"/>
+        </EnumParameter>
+    </ComponentType>
+    <ComponentType Name="Stream" Mapping="Stream">
+        <Component Name="applicable_volume_profile" Type="VolumeProfileType" Description="Volume profile followed by a given stream type."/>
+    </ComponentType>
+    <ComponentType Name="InputSource">
+        <Component Name="applicable_input_device" Type="InputDevicesMask" Mapping="InputSource" Description="Selected Input device"/>
+    </ComponentType>
+    <ComponentType Name="ProductStrategy" Mapping="ProductStrategy">
+        <Component Name="selected_output_devices" Type="OutputDevicesMask"/>
+        <StringParameter Name="device_address" MaxLength="256" Description="if any, device address associated"/>
+    </ComponentType>
+</ComponentTypeSet>

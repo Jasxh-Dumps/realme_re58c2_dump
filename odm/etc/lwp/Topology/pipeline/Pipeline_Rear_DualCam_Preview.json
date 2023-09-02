@@ -1,0 +1,111 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_DualCam_Preview",
+    "stream": "preview_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_ModeRouter"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "prev_FaceBeauty"
+        },
+        {
+            "type": "FilterNode",
+            "vendor": "SPRD",
+            "id": "prev_Filter"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "filter"
+            },
+            "to": {
+                "name": "prev_Filter",
+               "port": "in0"
+           }
+       },
+        {
+            "from": {
+               "name": "prev_Filter",
+               "port": "out0"
+           },
+            "to": {
+               "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+               "name": "prev_ModeRouter",
+                "port": "normal"
+            },
+            "to": {
+                "name": "prev_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_Filter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_Filter",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

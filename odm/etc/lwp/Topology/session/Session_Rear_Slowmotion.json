@@ -1,0 +1,28 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Rear_Slowmotion",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 1280,
+                    "max_height": 720,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 1280,
+                    "max_height": 720,
+                    "formats": [ "NV12_VIDEO" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Multimode_Preview",
+            "Pipeline_Slowmotion"
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+<audioparam_config>
+    <AudioTester ChipName="unisoc1.5" FmType="Digital" CodeType="2730" SocketBufferSize="0xffff" DiagBufferSize="0xfff0" etc_path="/vendor/etc/audio_params/sprd" SmartAmpSupport="fbsmartamp" SmartAmpUseCase="playback" version="1.5" recordAlgorithm="cvs">
+        <common>
+            <audioparam name="Audio\Handset\NB1" Path="Audio\RCV" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\NB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\WB1" Path="Audio\RCV" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\WB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\SWB1" Path="Audio\RCV" Usecase="VOLTE_SWB" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\FB1" Path="Audio\RCV" Usecase="VOLTE_FB" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handset\VOIP1" Path="Audio\RCV" Usecase="VOIP" OutDevice="Earpiece" />
+            <audioparam name="Audio\Handsfree\NB1" Path="Audio\SPK" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\NB2" Path="Audio\SPK" Usecase="NONE" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\WB1" Path="Audio\SPK" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\WB2" Path="Audio\SPK" Usecase="NONE" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\SWB1" Path="Audio\SPK" Usecase="VOLTE_SWB" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\FB1" Path="Audio\SPK" Usecase="VOLTE_FB" OutDevice="Speaker" />
+            <audioparam name="Audio\Handsfree\VOIP1" Path="Audio\SPK" Usecase="VOIP" OutDevice="Speaker" />
+            <audioparam name="Audio\Headset4P\NB1" Path="Audio\HP" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\NB2" Path="Audio\HP" Usecase="NONE" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\WB1" Path="Audio\HP" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\WB2" Path="Audio\HP" Usecase="NONE" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\SWB1" Path="Audio\HP" Usecase="VOLTE_SWB" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\FB1" Path="Audio\HP" Usecase="VOLTE_FB" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset4P\VOIP1" Path="Audio\HP" Usecase="VOIP" OutDevice="Headset4P" />
+            <audioparam name="Audio\Headset3P\NB1" Path="Audio\HP" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\NB2" Path="Audio\HP" Usecase="NONE" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\WB1" Path="Audio\HP" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\WB2" Path="Audio\HP" Usecase="NONE" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\SWB1" Path="Audio\HP" Usecase="VOLTE_SWB" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\FB1" Path="Audio\HP" Usecase="VOLTE_FB" OutDevice="Headset3P" />
+            <audioparam name="Audio\Headset3P\VOIP1" Path="Audio\HP" Usecase="VOIP" OutDevice="Headset3P" />
+            <audioparam name="Audio\BTHS\NB1" Path="Audio\BTHS" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\NB2" Path="Audio\BTHS" Usecase="NONE" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\WB1" Path="Audio\BTHS" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\WB2" Path="Audio\BTHS" Usecase="NONE" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\SWB1" Path="Audio\BTHS" Usecase="VOLTE_SWB" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\FB1" Path="Audio\BTHS" Usecase="VOLTE_FB" OutDevice="Sco" />
+            <audioparam name="Audio\BTHS\VOIP1" Path="Audio\BTHS" Usecase="VOIP" OutDevice="Sco" />
+            <audioparam name="Audio\CARKIT\NB1" Path="Audio\CARKIT" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\NB2" Path="Audio\CARKIT" Usecase="NONE" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\WB1" Path="Audio\CARKIT" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\WB2" Path="Audio\CARKIT" Usecase="NONE" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\SWB1" Path="Audio\CARKIT" Usecase="VOLTE_SWB" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\FB1" Path="Audio\CARKIT" Usecase="VOLTE_FB" OutDevice="Carkit" />
+            <audioparam name="Audio\CARKIT\VOIP1" Path="Audio\CARKIT" Usecase="VOIP" OutDevice="Carkit" />
+            <audioparam name="Audio\BTHSNREC\NB1" Path="Audio\BTHSNREC" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\NB2" Path="Audio\BTHSNREC" Usecase="NONE" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\WB1" Path="Audio\BTHSNREC" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\WB2" Path="Audio\BTHSNREC" Usecase="NONE" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\SWB1" Path="Audio\BTHSNREC" Usecase="VOLTE_SWB" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\FB1" Path="Audio\BTHSNREC" Usecase="VOLTE_FB" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\BTHSNREC\VOIP1" Path="Audio\BTHSNREC" Usecase="VOIP" OutDevice="Sco,Carkit" />
+            <audioparam name="Audio\TypeC_Digital\NB1" Path="Audio\TypeC_Digital" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\NB2" Path="Audio\TypeC_Digital" Usecase="NONE" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\WB1" Path="Audio\TypeC_Digital" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\WB2" Path="Audio\TypeC_Digital" Usecase="NONE" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\SWB1" Path="Audio\TypeC_Digital" Usecase="VOLTE_SWB" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\FB1" Path="Audio\TypeC_Digital" Usecase="VOLTE_FB" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\TypeC_Digital\VOIP1" Path="Audio\TypeC_Digital" Usecase="VOIP" OutDevice="UsbHeadset" />
+            <audioparam name="Audio\HighVolume\NB1" Path="Audio\RCV" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\NB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\WB1" Path="Audio\RCV" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\WB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\SWB1" Path="Audio\RCV" Usecase="VOLTE_SWB" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\FB1" Path="Audio\RCV" Usecase="VOLTE_FB" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\HighVolume\VOIP1" Path="Audio\RCV" Usecase="VOIP" OutDevice="Earpiece" ExtUsecase="1" />
+            <audioparam name="Audio\Hac\NB1" Path="Audio\RCV" Usecase="GSM,TD,CDMA2000,WCDMA_NB,VOLTE_NB,VOWIFI_NB" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\NB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\WB1" Path="Audio\RCV" Usecase="WCDMA_WB,VOLTE_WB,VOWIFI_WB" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\WB2" Path="Audio\RCV" Usecase="NONE" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\SWB1" Path="Audio\RCV" Usecase="VOLTE_SWB" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\FB1" Path="Audio\RCV" Usecase="VOLTE_FB" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Audio\Hac\VOIP1" Path="Audio\RCV" Usecase="VOIP" OutDevice="Earpiece" ExtUsecase="2" />
+            <audioparam name="Music\Headset\Playback" Path="Music\HP" Usecase="Playback" OutDevice="Headset3P,Headset4P,Sco" />
+            <audioparam name="Music\Headset\Record" Path="Music\HeadsetMic" Usecase="Record" InDevice="HeadsetMic" />
+            <audioparam name="Music\Headset\UnprocessRecord" Path="Music\HeadsetMic" Usecase="UnprocessRecord" InDevice="HeadsetMic" />
+            <audioparam name="Music\Headset\VoiceRecognition" Path="Music\ApHeadsetMic" Usecase="VoiceRecognition" InDevice="HeadsetMic" />
+            <audioparam name="Music\Headset\FM" Path="Music\HeadsetFm" Usecase="Fm" OutDevice="Headset3P,Headset4P" />
+            <audioparam name="Music\Handsfree\Playback" Path="Music\SPK" Usecase="Playback" OutDevice="Speaker" />
+            <audioparam name="Music\Handsfree\Record" Path="Music\MainMic,AuxMic" Usecase="Record" InDevice="MainMic,AuxMic" />
+            <audioparam name="Music\Handsfree\UnprocessRecord" Path="Music\MainMic,AuxMic" Usecase="UnprocessRecord" InDevice="MainMic,AuxMic" />
+            <audioparam name="Music\Handsfree\VideoRecord" Path="Music\MainMic,AuxMic" Usecase="VideoRecord" InDevice="MainMic,AuxMic" />
+            <audioparam name="Music\Handsfree\VoiceRecognition" Path="Music\ApMainMic,AuxMic" Usecase="VoiceRecognition" InDevice="MainMic,AuxMic" />
+            <audioparam name="Music\Handsfree\FM" Path="Music\HandsfreeFm" Usecase="Fm" OutDevice="Speaker" />
+            <audioparam name="Music\TypeC_Digital\Playback" Path="Music\TypeC_DigitalPlayback" Usecase="Playback" OutDevice="UsbHeadset" />
+            <audioparam name="Music\TypeC_Digital\Record" Path="Music\TypeC_DigitalRecord" Usecase="Record" InDevice="UsbHeadsetIn" />
+            <audioparam name="Music\TypeC_Digital\UnprocessRecord" Path="Music\TypeC_DigitalUnprocessRecord" Usecase="UnprocessRecord" InDevice="UsbHeadsetIn" />
+            <audioparam name="Music\TypeC_Digital\VoiceRecognition" Path="Music\ApTypeC_DigitalRecord" Usecase="VoiceRecognition" InDevice="UsbHeadsetIn" />
+            <audioparam name="Music\TypeC_Digital\FM" Path="Music\TypeC_DigitalFm" Usecase="Fm" OutDevice="UsbHeadset" />
+            <audioparam name="Music\Handset\Playback" Path="Music\RCV" Usecase="Playback" OutDevice="Earpiece" />
+            <audioparam name="Music\Headfree\Playback" Path="Music\HP,SPK" Usecase="Playback" OutDevice="Speaker,Headset3P,Headset4P" />
+            <audioparam name="Music\Bluetooth\Record" Path="Music\BluetoothRecord" Usecase="Record" InDevice="Sco" />
+            <audioparam name="Loopback\Handset\Loop1" Path="Loopback\RCV" Usecase="Loop" OutDevice="Earpiece" InDevice="AuxMic,MainMic" />
+            <audioparam name="Loopback\Handsfree\Loop1" Path="Loopback\SPK" Usecase="Loop" OutDevice="Speaker" InDevice="MainMic,AuxMic" />
+            <audioparam name="Loopback\Headset4P\Loop1" Path="Loopback\HP" Usecase="Loop" OutDevice="Headset4P,Headset3P" InDevice="HeadsetMic" />
+            <audioparam name="Loopback\Headset3P\Loop1" Path="Loopback\HP" Usecase="Loop" OutDevice="Headset4P,Headset3P" InDevice="MainMic" />
+        </common>
+        <custom>
+            <audioparam name="Music\Headset\FM" Type="dsp_vbc" include="Music\Headset\Playback" />
+            <audioparam name="Music\Handsfree\FM" Type="dsp_vbc" include="Music\Handsfree\Playback" />
+            <audioparam name="Audio\Handsfree\VOIP1" Type="dsp_smartamp" include="Audio\Handsfree\WB1" />
+            <audioparam name="Music\TypeC_Digital\FM" Type="dsp_vbc,codec" include="Music\TypeC_Digital\Playback" />
+            <audioparam name="Music\Headset\VoiceRecognition" Type="dsp_vbc,codec,audio_pga" include="Music\Headset\Record" />
+            <audioparam name="Music\Handsfree\VoiceRecognition" Type="dsp_vbc,codec,audio_pga" include="Music\Handsfree\Record" />
+            <audioparam name="Music\TypeC_Digital\VoiceRecognition" Type="dsp_vbc,codec,audio_pga" include="Music\TypeC_Digital\Record" />
+            <audioparam name="Music\Handsfree\VideoRecord" Type="dsp_vbc,codec,audio_pga" include="Music\Handsfree\Record" />
+        </custom>
+    </AudioTester>
+</audioparam_config>

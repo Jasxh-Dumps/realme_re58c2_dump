@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Props>
+ <group>
+  <name>Capture</name>
+  <Prop name="persist.vendor.cam.icap.dump">1</Prop>
+  <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.jpeg.enable">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.sensor.raw.enable">0</Prop>
+  <Prop name="persist.vendor.cam.iss.enable">1</Prop>
+  <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
+  <Prop name="persist.sys.cam.iss.mode">0</Prop>
+ </group>
+ <group>
+  <name>Preview</name>
+  <Prop name="persist.vendor.cam.icap.dump">1</Prop>
+  <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.jpeg.enable">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.sensor.raw.enable">0</Prop>
+  <Prop name="persist.vendor.cam.iss.enable">1</Prop>
+  <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
+  <Prop name="persist.sys.cam.iss.mode">0</Prop>
+ </group>
+ <group>
+  <name>UltraRes</name>
+  <Prop name="persist.vendor.cam.icap.dump">1</Prop>
+  <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.jpeg.enable">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.sensor.raw.enable">0</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.dcam.raw.enable">0</Prop>
+  <Prop name="persist.vendor.cam.iss.enable">1</Prop>
+  <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
+  <Prop name="persist.sys.cam.iss.mode">55</Prop>
+  <Prop name="persist.vendor.cam.iss.mode">0</Prop>
+ </group>
+ <group>
+  <name>NightPro</name>
+  <Prop name="persist.vendor.cam.icap.dump">1</Prop>
+  <Prop name="persist.vendor.cam.afl.bypass">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.jpeg.enable">1</Prop>
+  <Prop name="persist.vendor.cam.icap.dump.sensor.raw.enable">0</Prop>
+  <Prop name="persist.vendor.cam.iss.enable">1</Prop>
+  <Prop name="persist.vendor.cam.raw.mode">jpg</Prop>
+  <Prop name="persist.sys.cam.iss.mode">53</Prop>
+ </group>
+</Props>

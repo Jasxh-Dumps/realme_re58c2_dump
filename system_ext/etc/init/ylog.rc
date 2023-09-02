@@ -1,0 +1,110 @@
+service ylog /system_ext/bin/ylog
+    class main
+    user root
+    group system media_rw sdcard_rw everybody cache
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+service fwklog /system_ext/bin/fwkreboot.sh
+    class main
+    user root
+    group system
+    disabled
+    oneshot
+
+service poweronlog /system_ext/bin/poweronlog.sh
+    class main
+    user root
+    group system cache
+    oneshot
+    disabled
+
+service bugreport /system_ext/bin/bugreport.sh "bugreport"
+    class main
+    user root
+    group system cache
+    seclabel u:r:dumpstate:s0
+    oneshot
+    disabled
+
+service transfer_bugreport /system_ext/bin/bugreport.sh "transfer_bugreport"
+    class core
+    user root
+    group system shell everybody media_rw sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service delete_bugreport /system_ext/bin/bugreport.sh "delete_bugreport"
+    class main
+    user root
+    group system
+    seclabel u:r:dumpstate:s0
+    oneshot
+    disabled
+
+on post-fs-data
+    mkdir /cache/ylog 0777 system system
+    mkdir /data/ylog 0777 system system encryption=None
+    mkdir /data/ylog/dropbox 0777 system system
+    mkdir /data/log 0777 system system
+    mkdir /data/oppobootstats 0777 system system
+    mkdir /data/ylog/hprofs 0777 system system
+    mkdir /data/oppo
+    chmod 0777 /data/oppo
+    chown system system /data/oppo
+    mkdir /data/log/reliability 0777 system system
+    mkdir /data/log/reliability/dumplog 0777 system system
+    mkdir /data/oppo/log/ 0777 system system
+    mkdir /data/oppo/log/DCS/ 0777 system system
+    mkdir /data/oppo/log/DCS/de/ 0777 system system
+    mkdir /data/oppo/log/DCS/en/ 0777 system system
+    mkdir /data/oppo/log/DCS/en/eap_moa 0777 system system
+    mkdir /data/oppo/log/DCS/de/hang_oppo 0777 system system
+    mkdir /data/oppo/log/DCS/en/hang_oppo 0777 system system
+    mkdir /data/oppobootstats 0777 system system
+    chmod 0777 /data/oppobootstats
+    chown system system /data/oppobootstats
+    mkdir /data/oppo/log/opporeserve 0777 system system
+    chmod 0777 /data/oppo/log/opporeserve
+    chown system system /data/oppo/log/opporeserve
+    mkdir /data/oppo/log/opporeserve/media 0777 system system
+    chmod 0777 /data/oppo/log/opporeserve/media
+    chown system system /data/oppo/log/opporeserve/media
+    mkdir /data/oppo/log/opporeserve/media/log 0777 system system
+    chmod 0777 /data/oppo/log/opporeserve/media/log
+    chown system system /data/oppo/log/opporeserve/media/log
+    mkdir /data/oppo/log/opporeserve/media/log/hang_oppo 0777 system system
+    chmod 0777 /data/oppo/log/opporeserve/media/log/hang_oppo
+    chown system system /data/oppo/log/opporeserve/media/log/hang_oppo
+    mount ext4 /mnt/vendor/opporeserve/media/log/hang_oppo /data/oppo/log/opporeserve/media/log/hang_oppo bind
+
+    chmod 0555 /sys/fs/pstore/
+    chmod 0555 /sys/fs/pstore/console-ramoops-0
+    chmod 0555 /sys/fs/pstore/dmesg-ramoops-0
+    chmod 0555 /sys/fs/pstore/pmsg-ramoops-0
+    copy /sys/fs/pstore/console-ramoops-0 /data/ylog/lastkernel.log
+    copy /sys/fs/pstore/dmesg-ramoops-0 /data/ylog/dmesg.log
+    copy /sys/fs/pstore/pmsg-ramoops-0 /data/ylog/lastandroid.log
+    chmod 666 /data/ylog/lastkernel.log
+    chown system system /data/ylog/lastkernel.log
+    chmod 666 /data/ylog/dmesg.log
+    chown system system /data/ylog/dmesg.log
+    chmod 666 /data/ylog/lastandroid.log
+    chown system system /data/ylog/lastandroid.log
+    mkdir /data/oppo/coloros 0777 system system
+    start ylog
+
+on property:init.svc.logd=running
+    mkdir /cache/ylog 0777 system system
+    mkdir /blackbox/ylog 0770 root system
+    start ylog
+    start poweronlog
+
+on property:sys.debug.fwc=*
+    start fwklog
+
+on early-init
+    mkdir /dev/socket/ylog 0755 system system
+
+

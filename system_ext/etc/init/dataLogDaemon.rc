@@ -1,0 +1,8 @@
+#dataLogDaemon
+service dataLogDaemon /system_ext/bin/dataLogDaemon
+    user root
+    group sdcard_rw shell
+    oneshot
+
+on boot
+    start dataLogDaemon

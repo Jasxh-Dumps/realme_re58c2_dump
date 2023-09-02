@@ -1,0 +1,3382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+        <boolean name="always_show_data_rat_icon_bool" value="false" />
+        <boolean name="support_direct_fdn_dialing_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <boolean name="hide_enable_2g_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string name="wcdma_default_signal_strength_measurement_string">rscp</string>
+        <string-array name="allowed_initial_attach_apn_types_string_array" num="2">
+            <item value="ia" />
+            <item value="default" />
+        </string-array>
+        <string name="config_ims_package_override_string">com.google.android.ims</string>
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="00101" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="5">
+            <item value="46000" />
+            <item value="46002" />
+            <item value="46004" />
+            <item value="46007" />
+            <item value="46008" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="3">
+            <item value="46001" />
+            <item value="46006" />
+            <item value="46009" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="enhanced_4g_lte_title_variant_int" value="0" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="2">
+            <item value="46003" />
+            <item value="46011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="45403" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="45412" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="5">
+            <item value="45416" />
+            <item value="45419" />
+            <item value="45400" />
+            <item value="45402" />
+            <item value="45418" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="45406" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="45501" />
+            <item value="45504" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="45502" />
+            <item value="45507" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="config_oplus_sms_ims_support_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="46611" />
+            <item value="46692" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="46601" />
+            <item value="46602" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="46697" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="46689" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string name="carrier_name_string">GT</string>
+        <string-array name="mccmnc" num="1">
+            <item value="46605" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="3">
+            <item value="52501" />
+            <item value="52502" />
+            <item value="52507" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="52505" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0A">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name=" carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">GT WIFI</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="52505" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string name="carrier_name_string">SGP-M1</string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="support_manage_ims_conference_call_bool" value="false" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="52503" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="52510" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="4">
+            <item value="50501" />
+            <item value="50511" />
+            <item value="50571" />
+            <item value="50572" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="50503" />
+            <item value="50506" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="50502" />
+            <item value="50590" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="53024" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="53005" />
+            <item value="53099" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <boolean name="show_volte_icon" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="53001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <string-array name="mccmnc" num="25">
+            <item value="44004" />
+            <item value="44006" />
+            <item value="44020" />
+            <item value="44040" />
+            <item value="44041" />
+            <item value="44042" />
+            <item value="44043" />
+            <item value="44044" />
+            <item value="44045" />
+            <item value="44046" />
+            <item value="44047" />
+            <item value="44048" />
+            <item value="44090" />
+            <item value="44092" />
+            <item value="44093" />
+            <item value="44094" />
+            <item value="44095" />
+            <item value="44096" />
+            <item value="44097" />
+            <item value="44098" />
+            <item value="44161" />
+            <item value="44162" />
+            <item value="44163" />
+            <item value="44164" />
+            <item value="44165" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="44010" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <string-array name="mccmnc" num="19">
+            <item value="44007" />
+            <item value="44008" />
+            <item value="44050" />
+            <item value="44051" />
+            <item value="44052" />
+            <item value="44053" />
+            <item value="44054" />
+            <item value="44055" />
+            <item value="44056" />
+            <item value="44071" />
+            <item value="44072" />
+            <item value="44073" />
+            <item value="44074" />
+            <item value="44075" />
+            <item value="44076" />
+            <item value="44077" />
+            <item value="44079" />
+            <item value="44088" />
+            <item value="44089" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="44011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="42501" />
+            <item value="42510" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="42503" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="42502" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="42509" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="42507" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="22801" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <string-array name="mccmnc" num="1">
+            <item value="21403" />
+        </string-array>
+        <string-array name="unloggable_numbers_string_array" num="6">
+            <item value="016" />
+            <item value="900018018" />
+            <item value="+34016" />
+            <item value="+34900018018" />
+            <item value="0034016" />
+            <item value="0034900018018" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <string name="default_vm_number_string">22177</string>
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="21401" />
+        </string-array>
+        <string-array name="unloggable_numbers_string_array" num="10">
+            <item value="016" />
+            <item value="900018018" />
+            <item value="+34016" />
+            <item value="+34900018018" />
+            <item value="0034016" />
+            <item value="0034900018018" />
+            <item value="021" />
+            <item value="024" />
+            <item value="116111" />
+            <item value="017" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="support_video_call_tx_rx_control" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="21405" />
+            <item value="21407" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <string-array name="mccmnc" num="1">
+            <item value="21404" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string name="default_vm_number_string">888</string>
+        <string-array name="mccmnc" num="4">
+            <item value="20801" />
+            <item value="20802" />
+            <item value="20829" />
+            <item value="20891" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="20815" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
+        <string-array name="mccmnc" num="3">
+            <item value="20820" />
+            <item value="20821" />
+            <item value="20888" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="4">
+            <item value="20809" />
+            <item value="20810" />
+            <item value="20811" />
+            <item value="64710" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="54705" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="22201" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="22210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <string-array name="mccmnc" num="1">
+            <item value="22250" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="com.google.android.dialer.display_wifi_calling_button_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="22288" />
+            <item value="22299" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="call_barring_default_service_class_int" value="1" />
+        <int name="call_barring_disableall_service_class_int" value="1" />
+        <string-array name="mccmnc" num="2">
+            <item value="22207" />
+            <item value="22249" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="22208" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">EE Wi-Fi Calling</string>
+        <string-array name="mccmnc" num="6">
+            <item value="23430" />
+            <item value="23431" />
+            <item value="23432" />
+            <item value="23433" />
+            <item value="23434" />
+            <item value="23486" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="23594" />
+            <item value="23420" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="23410" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="0AFFFFFF">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="23410" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="23415" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="20404" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="3" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="20416" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="3" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="20402" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="20408" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">Play WiFi Calling</string>
+        <string-array name="mccmnc" num="2">
+            <item value="26098" />
+            <item value="26006" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="4">
+            <item value="26001" />
+            <item value="26014" />
+            <item value="26016" />
+            <item value="26017" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="3">
+            <item value="26004" />
+            <item value="26012" />
+            <item value="26015" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <string name="display_wifi_icon_type_string">vowifi</string>
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">Orange WiFi Calling</string>
+        <string-array name="mccmnc" num="2">
+            <item value="26003" />
+            <item value="26005" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">%s Wi-Fi</string>
+        <int name="wfc_spn_format_idx_int" value="4" />
+        <int name="wfc_data_spn_format_idx_int" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="26002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="28601" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="28602" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="28603" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="smsToMmsTextThreshold" value="4" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="25099" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="4" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="25020" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25035" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="25011" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25045" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25027" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <int name="smsToMmsTextThreshold" value="4" />
+        <string-array name="mccmnc" num="1">
+            <item value="25050" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="25701" />
+            <item value="257001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="22610" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_volte_icon" value="false" />
+        <string name="default_vm_number_string">+40722033334</string>
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">Vodafone WiFi calling</string>
+        <string-array name="mccmnc" num="1">
+            <item value="22601" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="22605" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="22603" />
+            <item value="22606" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <string name="default_vm_number_string">22177</string>
+        <string-array name="mccmnc" num="1">
+            <item value="26801" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="26806" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="26803" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="20610" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="20605" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_cnap_name_in_call_log" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <string name="default_vm_number_string">5500</string>
+        <string-array name="mccmnc" num="2">
+            <item value="26202" />
+            <item value="26209" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="26223" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="3" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <string-array name="mccmnc" num="3">
+            <item value="26201" />
+            <item value="26206" />
+            <item value="26298" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <string-array name="mccmnc" num="3">
+            <item value="26203" />
+            <item value="26207" />
+            <item value="26211" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="23102" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="23106" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="display_hd_plus_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_3g_plus" value="true" />
+        <int name="carrier_ims_user_agent" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="23101" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_volte_icon" value="false" />
+        <string name="default_vm_number_string">+420608989898</string>
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">Vodafone WiFi volání</string>
+        <string-array name="mccmnc" num="2">
+            <item value="23003" />
+            <item value="23099" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="23001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="23002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="21601" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="call_barring_visibility_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="21630" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="21670" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="20209" />
+            <item value="20210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="show_specific_wifi_calling" value="true" />
+        <string name="show_specific_wifi_calling_string">Vodafone WiFi Calling</string>
+        <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="20205" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="20201" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="28401" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="28405" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="28403" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="29341" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="29340" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="29370" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="29401" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="29402" />
+            <item value="29403" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="27201" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="3" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="3" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="21901" />
+            <item value="21920" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="21910" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="22005" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="carrier_support_cfnl" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="22003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="2">
+            <item value="23203" />
+            <item value="23207" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="show_volte_icon" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="3">
+            <item value="23205" />
+            <item value="23210" />
+            <item value="23214" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="24802" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <string name="display_lte_icon_type_string">volte</string>
+        <string name="display_wifi_icon_type_string">vowifi</string>
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <boolean name="display_hd_audio_property_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="21890" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="show_volte_icon" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="29701" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="29703" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="51009" />
+            <item value="51028" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41805" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41677" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="41603" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="51010" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="51001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="51011" />
+            <item value="51008" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="additional_settings_caller_id_visibility_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="45202" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="45204" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="45205" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="additional_settings_caller_id_visibility_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="45201" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="51502" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="51503" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="51566" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <string-array name="mccmnc" num="3">
+            <item value="52005" />
+            <item value="52018" />
+            <item value="52047" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="52000" />
+            <item value="52004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="52001" />
+            <item value="52003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="50216" />
+            <item value="50210" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="carrier_feature_play_rbt_type_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="50212" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="hide_preferred_network_type_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="502152" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_radio_power_on_for_ecall" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="502153" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="50218" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="50213" />
+            <item value="50219" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="hide_preferred_network_type_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="45605" />
+            <item value="45606" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="45611" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <boolean name="force_cellular_network_available_for_ecall" value="true" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="mccmnc" num="23">
+            <item value="40401" />
+            <item value="40405" />
+            <item value="40411" />
+            <item value="40413" />
+            <item value="40415" />
+            <item value="40420" />
+            <item value="40427" />
+            <item value="40430" />
+            <item value="40443" />
+            <item value="40446" />
+            <item value="40460" />
+            <item value="40484" />
+            <item value="40486" />
+            <item value="40488" />
+            <item value="40566" />
+            <item value="40567" />
+            <item value="405750" />
+            <item value="405751" />
+            <item value="405752" />
+            <item value="405753" />
+            <item value="405754" />
+            <item value="405755" />
+            <item value="405756" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <string-array name="mccmnc" num="23">
+            <item value="40402" />
+            <item value="40403" />
+            <item value="40410" />
+            <item value="40416" />
+            <item value="40431" />
+            <item value="40440" />
+            <item value="40445" />
+            <item value="40449" />
+            <item value="40470" />
+            <item value="40490" />
+            <item value="40492" />
+            <item value="40493" />
+            <item value="40494" />
+            <item value="40495" />
+            <item value="40496" />
+            <item value="40497" />
+            <item value="40498" />
+            <item value="40551" />
+            <item value="40552" />
+            <item value="40553" />
+            <item value="40554" />
+            <item value="40555" />
+            <item value="40556" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="hide_preferred_network_type_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <boolean name="config_show_lte_tile" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="carrier_radio_power_on_for_ecall" value="false" />
+        <boolean name="disable_supplementary_services_in_airplane_mode_bool" value="true" />
+        <boolean name="display_voicemail_number_as_default_call_forwarding_number" value="false" />
+        <boolean name="support_video_call_tx_rx_control" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <string-array name="mccmnc" num="22">
+            <item value="405840" />
+            <item value="405854" />
+            <item value="405855" />
+            <item value="405856" />
+            <item value="405857" />
+            <item value="405858" />
+            <item value="405859" />
+            <item value="405860" />
+            <item value="405861" />
+            <item value="405862" />
+            <item value="405863" />
+            <item value="405864" />
+            <item value="405865" />
+            <item value="405866" />
+            <item value="405867" />
+            <item value="405868" />
+            <item value="405869" />
+            <item value="405870" />
+            <item value="405871" />
+            <item value="405872" />
+            <item value="405873" />
+            <item value="405874" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="supports_video_callforward_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <int name="call_barring_default_service_class_int" value="0" />
+        <string-array name="mccmnc" num="28">
+            <item value="40404" />
+            <item value="40407" />
+            <item value="40412" />
+            <item value="40414" />
+            <item value="40419" />
+            <item value="40422" />
+            <item value="40424" />
+            <item value="40444" />
+            <item value="40456" />
+            <item value="40478" />
+            <item value="40482" />
+            <item value="40487" />
+            <item value="40489" />
+            <item value="40570" />
+            <item value="405799" />
+            <item value="405845" />
+            <item value="405846" />
+            <item value="405847" />
+            <item value="405848" />
+            <item value="405849" />
+            <item value="405850" />
+            <item value="405851" />
+            <item value="405852" />
+            <item value="405853" />
+            <item value="405908" />
+            <item value="405909" />
+            <item value="405910" />
+            <item value="405911" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <string-array name="mccmnc" num="22">
+            <item value="40434" />
+            <item value="40438" />
+            <item value="40451" />
+            <item value="40453" />
+            <item value="40454" />
+            <item value="40455" />
+            <item value="40457" />
+            <item value="40458" />
+            <item value="40459" />
+            <item value="40462" />
+            <item value="40464" />
+            <item value="40466" />
+            <item value="40471" />
+            <item value="40472" />
+            <item value="40473" />
+            <item value="40474" />
+            <item value="40475" />
+            <item value="40476" />
+            <item value="40477" />
+            <item value="40479" />
+            <item value="40480" />
+            <item value="40481" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41406" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41409" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41405" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41401" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41302" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41301" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41308" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41305" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="support_modify_dialstring_for_ecall" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="47002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="support_modify_dialstring_for_ecall" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="47006" />
+            <item value="47007" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="47001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="47003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="47004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <string-array name="mccmnc" num="2">
+            <item value="42901" />
+            <item value="42903" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="42902" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42904" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="41001" />
+            <item value="41007" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="41006" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="42402" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="42403" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="4">
+            <item value="42003" />
+            <item value="96603" />
+            <item value="96656" />
+            <item value="96654" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="42001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="42004" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_by_network" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42009" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42702" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42701" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="60203" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_volte_icon" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="60202" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="42206" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_location_on_caller_ui_when_ecc" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="63902" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="false" />
+        <boolean name="synchronous_setting_for_wfc_volte" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="65501" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="65510" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="65502" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="65507" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="2">
+            <item value="65501" />
+            <item value="65510" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="H_plus_bool" value="true" />
+        <boolean name="show_3g_for_sim" value="true" />
+        <int name="carrier_ims_user_agent" value="3" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="supports_video_callforward_bool" value="false" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-120" />
+            <item value="-115" />
+            <item value="-110" />
+            <item value="-105" />
+        </int-array>
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="mccmnc" num="2">
+            <item value="33402" />
+            <item value="334020" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
+        <string-array name="mccmnc" num="4">
+            <item value="334050" />
+            <item value="334090" />
+            <item value="33405" />
+            <item value="334070" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="7" />
+        <string-array name="mccmnc" num="2">
+            <item value="33403" />
+            <item value="334030" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="334140" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="334130" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="hplus_data_distinguishable" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="smsEncodingChangeable" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="71617" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="hplus_data_distinguishable" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <int name="carrier_ims_user_agent" value="1" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">movistar</string>
+        <string-array name="mccmnc" num="1">
+            <item value="71606" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="carrier_ims_user_agent" value="6" />
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <string name="display_lte_icon_type_string">volte</string>
+        <string name="display_wifi_icon_type_string">vowifi</string>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="hplus_data_distinguishable" value="true" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="71610" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="732103" />
+            <item value="732111" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="732123" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <string-array name="mccmnc" num="1">
+            <item value="732360" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <string name="display_lte_icon_type_string">volte</string>
+        <string name="display_wifi_icon_type_string">vowifi</string>
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <int name="carrier_ims_user_agent" value="4" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="deregister_vowifi_when_cellular_preffered" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="support_voice_clear_code_volte_csfb" value="true" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="732101" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="4">
+            <item value="72406" />
+            <item value="72410" />
+            <item value="72411" />
+            <item value="72423" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="3">
+            <item value="72405" />
+            <item value="72412" />
+            <item value="72438" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="default_show_wifi_call" value="false" />
+        <boolean name="show_volte_icon" value="false" />
+        <string-array name="mccmnc" num="4">
+            <item value="72402" />
+            <item value="72403" />
+            <item value="72404" />
+            <item value="72454" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="73009" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <boolean name="display_call_type_icon_bool" value="true" />
+        <string name="display_lte_icon_type_string">volte</string>
+        <string name="display_wifi_icon_type_string">vowifi</string>
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <int name="carrier_ims_user_agent" value="5" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="73003" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="73001" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="73002" />
+            <item value="73007" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="2">
+            <item value="74001" />
+            <item value="740010" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="74002" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <int name="carrier_ims_user_agent" value="8" />
+        <boolean name="disable_play_hold_tone" value="true" />
+        <string name="default_vm_number_string">*82</string>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hspa_data_distinguishable" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="74000" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="70402" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="74807" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="71401" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <string name="default_vm_number_string">*1690</string>
+        <string-array name="mccmnc" num="1">
+            <item value="71204" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="722310" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="support_show_wifi_calling_preference" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="default_show_wifi_call" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <string-array name="mccmnc" num="1">
+            <item value="72234" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="70802" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="60400" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="60401" />
+        </string-array>
+    </carrier_config>
+    <carrier_config>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <string-array name="mccmnc" num="1">
+            <item value="60402" />
+        </string-array>
+    </carrier_config>
+</carrier_config_list>

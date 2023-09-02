@@ -1,0 +1,8 @@
+ro.product.product.model=RMX3760
+ro.product.product.device=RE58C2
+ro.product.product.name=RMX3760
+ro.product.bootimage.name=RMX3760
+ro.product.bootimage.model=RMX3760
+ro.product.bootimage.device=RE58C2
+ro.product.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.bootimage.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys

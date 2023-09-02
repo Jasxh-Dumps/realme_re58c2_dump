@@ -1,0 +1,8 @@
+ro.product.product.model=RMX3763
+ro.product.product.device=RE5C71
+ro.product.product.name=RMX3763RU
+ro.product.bootimage.name=RMX3763RU
+ro.product.bootimage.model=RMX3763
+ro.product.bootimage.device=RE5C71
+ro.product.build.fingerprint=realme/RMX3763RU/RE5C71:13/TP1A.220624.014/T.1691917416:user/release-keys
+ro.bootimage.build.fingerprint=realme/RMX3763RU/RE5C71:13/TP1A.220624.014/T.1691917416:user/release-keys

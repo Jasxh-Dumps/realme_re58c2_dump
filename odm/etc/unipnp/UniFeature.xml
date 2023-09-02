@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--6-->
+<unipnp version="0">
+    <feature name="HelloWorldFeature">
+        <classname>com.unipnp.feature.HelloWorldFeature</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>0</switch>
+        <version>1</version>
+        <id>0</id>
+        <unievent>
+            <event>unievent_screen_on</event>
+            <event>unievent_screen_off</event>
+        </unievent>
+    </feature>
+
+    <feature name="AppStartScene">
+        <classname>com.unipnp.feature.AppStartScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>1</id>
+        <unievent>
+            <event>unievent_activity_start</event>
+            <event>unievent_activity_launchdone</event>
+        </unievent>
+        <policy>
+            <item id="activity_start">
+                <action name="POWER_BOOST">
+                    <string>com.tencent.mm,POWER_HINT_VENDOR_INTERACTION_LAUNCH,12000</string>
+                    <string>com.facebook.katana,POWER_HINT_VENDOR_INTERACTION_LAUNCH,20000</string>
+                    <string>com.facebook.orca,POWER_HINT_VENDOR_INTERACTION_LAUNCH,15000</string>
+                    <string>com.imangi.templerun2,POWER_HINT_VENDOR_INTERACTION_LAUNCH,30000</string>
+                    <string>com.kiloo.subwaysurf,POWER_HINT_VENDOR_INTERACTION_LAUNCH,15000</string>
+                </action>
+                <action name="FAST_KILL">
+                    <string>com.android.camera2,300</string>
+                </action>
+                <!--<action name="FAST_FREEZER">
+                    <string>com.google.android.dialer,cacheApp</string>
+                </action>-->
+            </item>
+            <item id="activity_end">
+                <action name="FAST_UNFREEZER">
+                    <string>*</string>
+                </action>
+            </item>
+            <item id="process_adj_protect">
+                <string>com.sprd.logmanager</string>
+                <string>com.android.traceur</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="AppForegroundScene">
+        <classname>com.unipnp.feature.AppForegroundScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>2</id>
+        <unievent>
+            <event>unievent_activity_resumed</event>
+            <event>unievent_activity_paused</event>
+        </unievent>
+        <policy>
+            <item id="activity_resumed">
+                <action name="POWER_BOOST">
+                    <string>*,PACKAGE,0</string>
+                    <string>antutu,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>benchmark,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>ludashi,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>cfbench,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>quicinc.vellamo,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>geekbench,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>greenecomputing.linpack,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>nenamark,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>Quadrant,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>qihoo360.mobilesafe.opti,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>eembc.coremark,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>rightware.tdmm2v10jnifree,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>aurorasoftworks.quadrant,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>futuremark.dmandroid,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>andromeda.androbench,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>rightware.Basemark,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>tptest,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                    <string>mobilexprt,POWER_HINT_VENDOR_BENCHMARK,0</string>
+                </action>
+                <action name="PROCESS_SCHED">
+                    <string>com.tencent.tmgp.pubgmhd|com.tencent.tmgp.pubgmhd|UI Thread,other,-19#RenderThread*,other,-19#RHIThread,other,-19|-1</string>
+                    <string>com.kiloo.subwaysurf|com.kiloo.subwaysurf|iloo.subwaysurf, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.tencent.tmgp.sgame|com.tencent.tmgp.sgame|cent.tmgp.sgame, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.mobile.legends|com.mobile.legends:UnityKillsMe|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.tencent.ig|com.tencent.ig|MainThread-UE4, other, -19#Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.dts.freefireth|com.dts.freefireth|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.ngame.allstar.eu|com.ngame.allstar.eu|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.supercell.brawlstars|com.supercell.brawlstars|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>jp.konami.pesam|jp.konami.pesam|MainThread-UE4, other, -19#Thread*, other, -19#RHIThread, other, -19|-1</string>
+                    <string>com.lilithgame.roc.gp|com.lilithgame.roc.gp|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.tencent.godgame|com.tencent.godgame|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.garena.game.codm|com.garena.game.codm|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.activision.callofduty.shooter|com.activision.callofduty.shooter|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.igg.android.lordsmobile|com.igg.android.lordsmobile|Thread*, other, -19#Unity*, other, -19|-1</string>
+                    <string>com.shopee.id|com.shopee.id|com.shopee.id,other,-19#RenderThread*,other,-19|-1</string>
+                    <string>com.facebook.orca|com.facebook.orca|m.facebook.orca,other,-19#RenderThread*,other,-19|-1</string>
+                    <string>com.google.android.youtube|com.google.android.youtube|android.youtube,other,-19#RenderThread*,other,-19|-1</string>
+                </action>
+                <action name="SCENARIO">
+                    <string>com.mobile.legends,legends</string>
+                    <string>com.tencent.ig,ig</string>
+                    <string>com.dts.freefireth.FFMainActivity,freefire</string>
+                    <string>com.instagram.android,ins</string>
+                </action>
+            </item>
+            <item id="activity_paused">
+                <action name="STOP_POWER_BOOST">
+                    <string>*</string>
+                </action>
+                <action name="STOP_PROCESS_SCHED">
+                    <string>*</string>
+                </action>
+                <action name="STOP_SCENARIO">
+                    <string>*</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="XTestScene">
+        <classname>com.unipnp.feature.XTestScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>3</id>
+        <unievent>
+            <event>unievent_instrumentation_changed</event>
+        </unievent>
+        <policy>
+            <item id="start">
+                <action name="POWER_BOOST">
+                    <!--GTS-->
+                    <string>com.google.android.exoplayer.gts,POWER_HINT_VENDOR_PERFORMANCE_GTS,0</string>
+                    <string>com.google.android.media.gts,POWER_HINT_VENDOR_PERFORMANCE_GTS,0</string>
+                    <string>android.jank.cts,POWER_HINT_VENDOR_PERFORMANCE_GTS,0</string>
+                    <string>com.google.android.youtube.gts,POWER_HINT_VENDOR_PERFORMANCE_GTS,0</string>
+                    <!--CTS-->
+                    <string>android.openglperf.cts,POWER_HINT_VENDOR_PERFORMANCE_CTS,0</string>
+                    <string>android.media.cts,POWER_HINT_VENDOR_PERFORMANCE_CTS,0</string>
+                    <string>android.autofillservice.cts,POWER_HINT_VENDOR_PERFORMANCE_CTS,0</string>
+                </action>
+            </item>
+            <item id="end">
+                <action name="STOP_POWER_BOOST">
+                    <string>*</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="ScrollableViewScene">
+        <classname>com.unipnp.feature.ScrollableViewScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>0</switch>
+        <version>1</version>
+        <id>4</id>
+        <unievent>
+            <event>unievent_scrollable_View</event>
+        </unievent>
+        <policy>
+            <item id="move">
+                <action name="POWER_BOOST">
+                    <string>*,POWER_HINT_VENDOR_INTERACTION_TOUCH,0</string>
+                </action>
+            </item>
+            <item id="up_or_cancel">
+                <action name="STOP_POWER_BOOST">
+                    <string>*</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="TouchScene">
+        <classname>com.unipnp.feature.TouchScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>5</id>
+        <unievent>
+            <event>unievent_activity_resumed</event>
+            <event>unievent_activity_paused</event>
+            <event>unievent_fling_event</event>
+        </unievent>
+        <policy>
+            <item id="move">
+                <action name="POWER_BOOST">
+                    <string>com.android.chrome/com.google.android.apps.chrome.Main,5,POWER_HINT_VENDOR_INTERACTION_TOUCH,0</string>
+                    <string>com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity,5,POWER_HINT_VENDOR_INTERACTION_TOUCH,0</string>
+                </action>
+            </item>
+            <item id="fling">
+                <action name="POWER_BOOST">
+                    <string>*,POWER_HINT_VENDOR_INTERACTION_FLING,0</string>
+                </action>
+            </item>
+            <item id="up_or_cancel">
+                <action name="STOP_POWER_BOOST">
+                    <string>*</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="MemoryCleanFeature">
+        <classname>com.unipnp.feature.memory.MemoryCleanFeature</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>7</id>
+        <unievent>
+            <event>unievent_memory_pressure</event>
+            <event>unievent_screen_on</event>
+            <event>unievent_screen_off</event>
+            <event>unievent_focus_activity</event>
+        </unievent>
+        <policy>
+            <item id="1024M">
+                <emergencyMemory>170</emergencyMemory>
+                <fsMemory>160 200 250</fsMemory>
+                <fsIdleTime>0 1 2</fsIdleTime>
+                <swapUsage>85 80 75</swapUsage>
+                <swapKill>90 80</swapKill>
+                <bgPkgLimit>3</bgPkgLimit>
+            </item>
+            <item id="2048M">
+                <emergencyMemory>350</emergencyMemory>
+                <fsMemory>300 400 500 600</fsMemory>
+                <fsIdleTime>0 1 3 5</fsIdleTime>
+                <swapUsage>85 80 75 70</swapUsage>
+                <swapKill>95 85</swapKill>
+                <bgPkgLimit>5</bgPkgLimit>
+            </item>
+            <item id="3072M">
+                <emergencyMemory>400</emergencyMemory>
+                <fsMemory>400 500 800 1000 1200</fsMemory>
+                <fsIdleTime>0 2 5 10 15</fsIdleTime>
+                <swapUsage>95 90 85 80 70</swapUsage>
+                <swapKill>99 95</swapKill>
+                <bgPkgLimit>6</bgPkgLimit>
+            </item>
+            <item id="4096M">
+                <emergencyMemory>400</emergencyMemory>
+                <fsMemory>600 800 1200 1500 1800</fsMemory>
+                <fsIdleTime>0 2 5 10 15</fsIdleTime>
+                <swapUsage>95 90 85 80 70</swapUsage>
+                <swapKill>99 95</swapKill>
+                <bgPkgLimit>10</bgPkgLimit>
+            </item>
+            <item id="6144M">
+                <emergencyMemory>400</emergencyMemory>
+                <fsMemory>600 800 1200 1500 1800</fsMemory>
+                <fsIdleTime>0 2 5 10 15</fsIdleTime>
+                <swapUsage>95 90 85 80 70</swapUsage>
+                <swapKill>99 95</swapKill>
+                <bgPkgLimit>10</bgPkgLimit>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="AppLmkdKillerScene">
+        <classname>com.unipnp.feature.AppLmkdKillerScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>0</switch>
+        <version>1</version>
+        <id>8</id>
+        <unievent>
+            <event>unievent_lmkd_killer</event>
+        </unievent>
+        <policy>
+            <item id="white_list">
+                <string>com.android</string>
+                <string>com.google</string>
+                <string>com.tencent.mm</string>
+                <string>com.tencent.mobileqq</string>
+                <string>com.whatsapp</string>
+                <string>com.facebook.orca</string>
+                <string>android.inputmethodservice.cts</string>
+                <string>com.quicinc.vellamo</string>
+                <string>com.spreadtrum.itestapp</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="KeepAppAliveScene">
+        <classname>com.unipnp.feature.KeepAppAliveScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>9</id>
+        <unievent>
+            <event>unievent_restart_app</event>
+        </unievent>
+        <policy>
+            <item id="keep_app_alive_list">
+                <string>com.android.settings</string>
+                <string>com.android.messaging</string>
+                <string>com.android.email</string>
+                <string>com.android.dialer</string>
+                <string>com.android.gallery3d</string>
+                <string>com.android.contacts</string>
+                <string>com.android.deskclock</string>
+                <string>com.google.android.dialer</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="OomAdjustFeature">
+        <classname>com.unipnp.feature.OomAdjustFeature</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>0</switch>
+        <version>1</version>
+        <id>10</id>
+        <unievent>
+        </unievent>
+        <policy>
+            <item id="commonConfig">
+                <hotapp_launchcount>50</hotapp_launchcount>
+                <hotapp_adj>service</hotapp_adj>
+                <hotapp_count>2</hotapp_count>
+                <recentapp_adj>serviceb</recentapp_adj>
+                <sectionhabit_adj>serviceb</sectionhabit_adj>
+                <sectionhabitapp_count>2</sectionhabitapp_count>
+                <sectionhabitapp_launchcount>50</sectionhabitapp_launchcount>
+            </item>
+            <item id="normal">
+                <visible_adj>visible</visible_adj>
+                <perceptible_adj>perceptible</perceptible_adj>
+                <service_adj>service</service_adj>
+                <serviceb_adj>serviceb</serviceb_adj>
+                <idletime>30</idletime>
+                <notificationtime>5</notificationtime>
+            </item>
+            <item id="moderate">
+                <visible_adj>visible</visible_adj>
+                <perceptible_adj>perceptible</perceptible_adj>
+                <service_adj>service</service_adj>
+                <serviceb_adj>serviceb</serviceb_adj>
+                <idletime>15</idletime>
+                <notificationtime>4</notificationtime>
+            </item>
+            <item id="low">
+                <visible_adj>service</visible_adj>
+                <perceptible_adj>service</perceptible_adj>
+                <service_adj>serviceb</service_adj>
+                <serviceb_adj>cached</serviceb_adj>
+                <idletime>10</idletime>
+                <notificationtime>2</notificationtime>
+            </item>
+            <item id="critical">
+                <visible_adj>service</visible_adj>
+                <perceptible_adj>service</perceptible_adj>
+                <service_adj>cached</service_adj>
+                <serviceb_adj>cached</serviceb_adj>
+                <idletime>5</idletime>
+                <notificationtime>1</notificationtime>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="SnapShotFeature">
+        <classname>com.unipnp.feature.snapshot.SnapShotFeature</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>11</id>
+        <unievent>
+            <event>unievent_activity_launchdone</event>
+            <event>unievent_activity_resumed</event>
+        </unievent>
+        <policy>
+            <item id="white_list">
+                <string>com.android.settings</string>
+                <string>com.android.music</string>
+                <string>com.android.soundrecorder</string>
+                <string>com.thunderst.radio</string>
+                <string>com.android.documentsui</string>
+                <string>com.android.calendar</string>
+                <string>com.android.deskclock</string>
+                <string>com.sprd.note</string>
+                <string>com.sprd.sprdnote</string>
+                <string>com.android.calculator2</string>
+                <string>com.sprd.fileexplorer</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="LocaleChangeScene">
+        <classname>com.unipnp.feature.LocaleChangeScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>0</switch>
+        <version>1</version>
+        <id>12</id>
+        <unievent>
+            <event>unievent_locale_changed</event>
+        </unievent>
+        <policy>
+            <item id="locale_changed">
+                <action name="POWER_BOOST">
+                    <string>com.android.settings,POWER_HINT_VENDOR_INTERACTION_LAUNCH,3000</string>
+                </action>
+                <action name="PROCESS_SCHED">
+                    <!--<string>*|*|UI Thread,other,-19|1000</string>-->
+                    <string>com.android.settings|com.android.settings|ndroid.settings,rr,1#RenderThread,other,-19|3000</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="AppAnimFeature">
+        <classname>com.unipnp.feature.AppAnimFeature</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>13</id>
+        <policy>
+            <item name="config_anim_app_start">
+                <string>*,1,150,1</string>
+                <string>com.android.camera2,0,-1,-1</string>
+            </item>
+            <item name="config_anim_app_exit">
+                <string>*,1,200,1</string>
+                <string>com.sprd.powersavemodelauncher,0,-1,-1</string>
+                <string>com.android.camera2,0,-1,-1</string>
+                <string>com.google.android.youtube,1,100,1</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="RotateScreenScene">
+        <classname>com.unipnp.feature.RotateScreenScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>14</id>
+        <unievent>
+            <event>unievent_orientation_changed</event>
+        </unievent>
+        <policy>
+            <item id="orientation_changed">
+                <action name="POWER_BOOST">
+                    <string>*,POWER_HINT_VENDOR_INTERACTION_LAUNCH,1000</string>
+                </action>
+                <action name="PROCESS_SCHED">
+                    <!--<string>*|*|UI Thread,other,-19|1000</string>-->
+                    <string>com.google.android.dialer|com.google.android.dialer|.android.dialer,rr,1#RenderThread,other,-19|1000</string>
+                    <string>com.google.android.youtube|com.google.android.youtube|android.youtube,rr,1#RenderThread,other,-19|1000</string>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="IncomingCallScene">
+        <classname>com.unipnp.feature.IncomingCallScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>15</id>
+        <unievent>
+            <event>unievent_call_state_idle</event>
+            <event>unievent_call_state_ringing</event>
+            <event>unievent_call_state_offhook</event>
+        </unievent>
+        <policy>
+            <item id="phone_ringing">
+                <action name="POWER_BOOST">
+                    <string>*,POWER_HINT_VENDOR_INTERACTION_LAUNCH,3000</string>
+                    <string>com.google.android.dialer,POWER_HINT_VENDOR_INTERACTION_LAUNCH,5000</string>
+                    <string>com.android.dialer,POWER_HINT_VENDOR_INTERACTION_LAUNCH,5000</string>
+                </action>
+                <action name="FAST_KILL">
+                    <string>*,180</string>
+                </action>
+                <action name="PROCESS_SCHED">
+                    <String>com.google.android.dialer|com.google.android.dialer|UI Thread,rr,1#RenderThread*,other,-19#BG Thread*,other,-19|5000</String>
+                    <String>com.android.dialer|com.android.dialer|UI Thread,rr,1#RenderThread*,other,-19#BG Thread*,other,-19|5000</String>
+                </action>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="PreforkProcessScene">
+        <classname>com.unipnp.feature.PreforkProcessScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>16</id>
+        <policy>
+            <item id="white_list">
+                <string>com.unisoc.helloworld</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="ProcessUclampScene">
+        <classname>com.unipnp.feature.ProcessUclampScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>17</id>
+        <unievent>
+            <event>unievent_peak_refresh_rate</event>
+        </unievent>
+        <policy>
+            <item id="process_thread">
+                <string>process,gsp-core,500,1024</string>
+            </item>
+            <item id="process_reduce">
+                <string>process,gsp-core,0,1024</string>
+            </item>
+        </policy>
+    </feature>
+
+    <feature name="ClickScene">
+        <classname>com.unipnp.feature.ClickScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>18</id>
+        <unievent>
+            <event>unievent_activity_resumed</event>
+            <event>unievent_activity_paused</event>
+            <event>unievent_motion_event</event>
+        </unievent>
+        <policy>
+            <item id="click">
+                <action name="POWER_BOOST">
+                    <string>*,POWER_HINT_VENDOR_INTERACTION_TOUCH,0</string>
+                </action>
+            </item>
+            <item id="stop">
+                <action name="STOP_POWER_BOOST">
+                    <string>*</string>
+                </action>
+            </item>
+            <item id="touch_boost_white_list">
+                <string>com.android.settings</string>
+            </item>
+            <item id="touch_boost_black_list">
+                <string>com.android.music</string>
+                <string>com.android.soundrecorder</string>
+                <string>com.thunderst.radio</string>
+                <string>com.android.documentsui</string>
+                <string>com.android.calendar</string>
+                <string>com.android.deskclock</string>
+                <string>com.sprd.note</string>
+                <string>com.sprd.sprdnote</string>
+                <string>com.android.calculator2</string>
+                <string>com.sprd.fileexplorer</string>
+             </item>
+         </policy>
+     </feature>
+     <feature name="ScrollSystemUIScene">
+        <classname>com.unipnp.feature.ScrollSystemUIScene</classname>
+        <dexpath>/system/framework/unipnp-features.jar</dexpath>
+        <switch>1</switch>
+        <version>1</version>
+        <id>20</id>
+        <unievent>
+            <event>unievent_systemui_scheduler_rr</event>
+            <event>unievent_systemui_scheduler_other</event>
+        </unievent>
+    </feature>
+</unipnp>

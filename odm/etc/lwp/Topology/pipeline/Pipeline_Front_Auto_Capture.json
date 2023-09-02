@@ -1,0 +1,261 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Front_Auto_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR_router"
+        },
+        {
+            "type": "MFNR_4Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR4"
+        },
+        {
+            "type": "ArcHDRNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR"
+        },
+		{
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR_MFSR"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "cap_FaceBeauty"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        },
+        {
+            "type": "MfsrNode",
+            "vendor": "SPRD",
+            "id": "cap_MFSR"
+        },
+		{
+            "type": "PCCNode",
+            "vendor": "SPRD",
+            "id": "cap_PCC"
+        },
+        {
+            "type": "FilterCapNode",
+            "vendor": "SPRD",
+            "id": "cap_Filter"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "PolarrRenderNode",
+            "vendor": "SPRD",
+            "id": "cap_FilterPolarr"
+        },
+        {
+            "type": "VdBlurless4Node",
+            "vendor": "VD",
+            "id": "cap_VDBlurless"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "flash"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "hdr"
+            },
+            "to": {
+                "name": "cap_HDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "vdblurless"
+            },
+            "to": {
+                "name": "cap_VDBlurless",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_VDBlurless",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfsr"
+            },
+            "to": {
+                "name": "cap_MFSR",
+                "port": "mfsr_in"
+            }
+        },
+		{
+            "from": {
+                "name": "cap_MFSR",
+                "port": "mfsr_out"
+            },
+            "to": {
+                "name": "cap_YNRCNR_MFSR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR_MFSR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_MFSR",
+                "port": "mfsr_post_in"
+            }
+        },
+		{
+            "from": {
+                "name": "cap_MFSR",
+                "port": "mfsr_post_out"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_PCC",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FilterPolarr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FilterPolarr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

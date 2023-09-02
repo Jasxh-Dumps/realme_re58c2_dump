@@ -1,0 +1,4 @@
+service ext_data_init_values /system_ext/bin/ext_data_init_values.sh
+    class main
+    user root
+    oneshot

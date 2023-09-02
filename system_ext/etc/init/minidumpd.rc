@@ -1,0 +1,9 @@
+service minidumpd /system_ext/bin/minidumpd
+    class late_start
+    user system
+    group system sdcard_rw media_rw root shell
+    oneshot
+on post-fs-data
+    mkdir /data/minidump 0777 system system encryption=None
+    mkdir /data/fulldump 0777 system system encryption=None
+    mount -t ext4 /dev/block/by-name/fulldumpdb /data/fulldump

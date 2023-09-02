@@ -1,0 +1,123 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.radio.config</name>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.data</name>
+        <interface>
+            <name>IRadioData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.messaging</name>
+        <interface>
+            <name>IRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.modem</name>
+        <interface>
+            <name>IRadioModem</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.network</name>
+        <interface>
+            <name>IRadioNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.sim</name>
+        <interface>
+            <name>IRadioSim</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.voice</name>
+        <interface>
+            <name>IRadioVoice</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.data</name>
+        <interface>
+            <name>IExtRadioData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.messaging</name>
+        <interface>
+            <name>IExtRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.modem</name>
+        <interface>
+            <name>IExtRadioModem</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.network</name>
+        <interface>
+            <name>IExtRadioNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.sim</name>
+        <interface>
+            <name>IExtRadioSim</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.voice</name>
+        <interface>
+            <name>IExtRadioVoice</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.unisoc.hardware.radio.ims</name>
+        <interface>
+            <name>IImsRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>SIM1</instance>
+            <instance>SIM2</instance>
+        </interface>
+    </hal>
+</manifest>

@@ -1,0 +1,35 @@
+on cali
+    mount_all /vendor/etc/fstab.cali
+    mount tmpfs tmpfs /data mode=0777
+
+    trigger load_persist_props_action
+
+    wait /sys/class/usb_notify/usb_control/usb_data_enabled
+    setprop sys.usb.configfs 1
+
+    wait_for_prop vendor.all.modules.ready 1
+    trigger cali-fs
+    trigger cali-start
+
+on cali-fs
+    chmod 0775 /mnt/vendor
+    chown system system /mnt/vendor
+    chmod 0771 /data
+
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/media 0770 audioserver system
+
+    mkdir /data/vendor/local/mlogservice 0770 shell system
+
+    chmod 0660 /sys/power/wakeup_count
+
+on cali-start
+    class_start cali
+    
+    start vendor.audio-hal-2-0
+    start vendor.engpcclientlte
+    start vendor.modem_control
+    start vendor.refnotify
+    start console
+    start system_suspend

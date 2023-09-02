@@ -1,0 +1,30 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Front_HighResolution",
+        "usecase": {
+            "facing": "front",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 1440,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 6528,
+                    "max_height": 4896,
+                    "formats": [ "JPEG" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Front_HighRes_Preview",
+            "Pipeline_Front_HighRes_Capture",
+            "Pipeline_Async",
+            "Pipeline_Rear_Auto_Debug_Reprocess"
+        ]
+    }
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<audio_config>
+    <card_name val="sprdphone-sc2730"/>
+    <log level="3"/>
+    <mic_config main_mic="1" aux_mic="1"/>
+    <audio_zoom_supported val="0"/>
+    <nr>
+        <nr_support rate="48000" enable="true" />
+        <nr_support rate="44100" enable="true" />
+        <nr_support rate="16000" enable="false" />
+        <nr_support rate="8000" enable="false" />
+        <nr_support rate="other_rate" enable="false" />
+    </nr>
+    <mute>
+        <spk_mute ctl="Speaker Mute"/>
+        <spk2_mute ctl="Speaker2 Mute"/>
+        <handset_mute ctl="Earpiece Mute"/>
+        <headset_mute ctl="HeadPhone Mute"/>
+        <linein_mute ctl="Linein Mute Switch"/>
+        <dsp_da0_mdg_mute ctl="VBC DAC0 DSP MDG Set"/>
+        <dsp_da1_mdg_mute ctl="VBC DAC1 DSP MDG Set"/>
+        <audio_mdg_mute ctl="VBC DAC0 AUD MDG Set"/>
+        <audio_mdg23_mute ctl="VBC DAC0 AUD23 MDG Set"/>
+    </mute>
+    <audioparam>
+        <sprd path="/odm/etc/audio_params/sprd"/>
+        <vendor01 path="/vendor/etc/audio_params/01"/>
+    </audioparam>
+    <microphone_characteristics>
+        <microphone
+            device_id="MainMic"
+            type="0x80000004"
+            address=""
+            location="1"
+            group="0"
+            index_in_the_group="0"
+            directionality="1"
+            num_frequency_responses="18"
+            frequencies="200,400,600,800,1000,1200,1500,1800,2000,3000,4000,8000,10000,120000,140000,160000,180000,200000"
+            responses="0.1,0.3,0.5,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8,0.6,0.6,0.4,0.4"
+            sensitivity="0.0"
+            max_spl="1.0"
+            min_spl="0.0"
+            orientation="0.0,0.0,0.0"
+            geometric_location="0.0,0.0,0.0"/>
+        <microphone
+            device_id="AuxMic"
+            type="0x80000080"
+            address=""
+            location="1"
+            group="0"
+            index_in_the_group="0"
+            directionality="1"
+            num_frequency_responses="18"
+            frequencies="200,400,600,800,1000,1200,1500,1800,2000,3000,4000,8000,10000,120000,140000,160000,180000,200000"
+            responses="0.1,0.3,0.5,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8,0.6,0.6,0.4,0.4"
+            sensitivity="0.0"
+            max_spl="1.0"
+            min_spl="0.0"
+            orientation="0.0,0.0,0.0"
+            geometric_location="0.0,0.0,0.0"/>
+        <microphone
+            device_id="wiredheadset"
+            type="0x80000010"
+            address=""
+            location="1"
+            group="0"
+            index_in_the_group="0"
+            directionality="1"
+            num_frequency_responses="18"
+            frequencies="200,400,600,800,1000,1200,1500,1800,2000,3000,4000,8000,10000,120000,140000,160000,180000,200000"
+            responses="0.1,0.3,0.5,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.8,0.6,0.6,0.4,0.4"
+            sensitivity="0.0"
+            max_spl="1.0"
+            min_spl="0.0"
+            orientation="0.0,0.0,0.0"
+            geometric_location="0.0,0.0,0.0"/>
+        <microphone
+            device_id="btscoheadset"
+            type="0x80000008"
+            address="btscoheadset"
+            location="1"
+            group="0"
+            index_in_the_group="0"
+            directionality="1"
+            num_frequency_responses="12"
+            frequencies="200,400,600,800,1000,1200,1500,1800,2000,3000,4000,8000"
+            responses="0.1,0.3,0.5,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0"
+            sensitivity="0.0"
+            max_spl="1.0"
+            min_spl="0.0"
+            orientation="0.0,0.0,0.0"
+            geometric_location="0.0,0.0,0.0"/>
+        <microphone
+            device_id="btscoheadset"
+            type="0x80000040"
+            address="btscoheadset"
+            location="1"
+            group="0"
+            index_in_the_group="0"
+            directionality="1"
+            num_frequency_responses="12"
+            frequencies="200,400,600,800,1000,1200,1500,1800,2000,3000,4000,8000"
+            responses="0.1,0.3,0.5,0.8,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0"
+            sensitivity="0.0"
+            max_spl="1.0"
+            min_spl="0.0"
+            orientation="0.0,0.0,0.0"
+            geometric_location="0.0,0.0,0.0"/>
+    </microphone_characteristics>
+</audio_config>

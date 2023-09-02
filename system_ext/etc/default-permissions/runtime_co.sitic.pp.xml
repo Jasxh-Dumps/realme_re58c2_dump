@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exceptions>
+    <exception package="co.sitic.pp">
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.CALL_PHONE" fixed="false"/>
+        <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" fixed="false"/>
+    </exception>
+</exceptions>

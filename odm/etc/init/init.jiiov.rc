@@ -1,0 +1,11 @@
+on post-fs
+    insmod ${ro.vendor.ko.mount.point}/socko/jiiov_fp.ko
+	wait /dev/jiiov_fp
+	chmod 660 /dev/jiiov_fp
+	chown system system /dev/jiiov_fp
+	chmod 660 sys/devices/platform/fingerprint@0/fp_suspend
+	chown system system sys/devices/platform/fingerprint@0/fp_suspend
+
+on factorytest
+    insmod ${ro.vendor.ko.mount.point}/socko/jiiov_fp.ko
+

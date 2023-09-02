@@ -1,0 +1,512 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "nodes": [
+		{
+			"type": "DummyNode",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "result_out" ],
+			"priv": {
+				"SourceNode0": "phyCam0",
+				"SourceNode1": "phyCam1",
+				"SourceNode2": "phyCam2",
+				"SourceNode3": "phyCam3"
+			}
+		},
+		{
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "cin0"],
+			"outputs": [ "flash", "single", "hdr", "hdr2", "mfnr", "mfsr", "vdblurless"]
+        },
+		{
+			"type": "JpegNode",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "CppNode",
+			"vendor": "SPRD",
+			"node_major": 6,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "src_in" ],
+			"outputs": [ "full_out", "scle_out" ],
+			"priv": {
+				"devname": "/dev/sprd_cpp"
+			}
+		},
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+			    "DeWarpingNode0": "phyCam2",
+				"so_name": "libsprdwarp.so",
+                "otp_path": "/data/vendor/cameraserver/ips/otp_manual_spw.txt"
+			}
+        },
+		{
+            "type": "DeWarpPortraitNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+			"type": "DCAM_IF_R5P3",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [],
+			"outputs": [ "prev_out", "cap_out" ]
+		},
+		{
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdfacebeauty.so"
+			}
+        },
+		{
+            "type": "FaceDetectNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdfd.so"
+			}
+		},
+		{
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libfacealgapi.so"
+			}
+		},
+		{
+            "type": "AISceneNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0"],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "EISNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0"],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "FlashChecker",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "HALWrapper",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": []
+        },
+		{
+            "type": "HDRNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "3.0"
+			}
+		},
+		{
+            "type": "HDR3Node",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "3.0"
+			}
+		},
+		{
+			"type": "HDR4Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdhdradapter.so",
+				"algo_version": "4.0"
+			}
+		},
+		{
+            "type": "MFNRNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libmfnr.so"
+			}
+        },
+        {
+            "type": "MFNR_4Node",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0", "in1" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libmfnr4.so"
+			}
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+            "inputs": [ "in0" ],
+			"outputs": ["out0", "out1" ]
+        },
+        {
+            "type": "RangeRouter",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+            "inputs": [ "in0" ],
+			"outputs": ["sequential-generated"]
+		},
+		{
+            "type": "BrightRouterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+            "inputs": [ "cin0" ],
+			"outputs": ["high_bright", "low_bright"]
+		},
+		{
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+            "inputs": [ "in0" ],
+			"outputs": ["filter", "eis", "normal"]
+        },
+        {
+            "type": "StatusRouter",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+            "inputs": [ "in0" ],
+			"outputs": ["sequential-generated"]
+        },
+		{
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"logo_path": "/vendor/logo"
+			}
+        },
+		{
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libsprdcnr.so"
+			}
+        },
+		{
+            "type": "PCCNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "MfsrNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "mfsr_in", "mfsr_post_in"],
+			"outputs": [ "mfsr_out", "mfsr_post_out" ]
+        },
+		{
+            "type": "SceneDetectNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "FilterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "FilterCapNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+            "type": "PolarrRenderNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": ["libPolarrRender.so"]
+			}
+		},
+		{
+            "type": "GestureNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": "libgesture_mnn.so"
+			}
+		},
+		{
+            "type": "FastThumbNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+            "type": "ThirdpartyRouterNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": ["xts", "camera_go", "default"]
+		},
+		{
+            "type": "CapBlurNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "PrevBlurNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+        },
+		{
+            "type": "LptNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "ArcHDRNode",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": ["libarcsoft_hdr_denoise_api.so",
+				            "libarcsoft_high_dynamic_range.so",
+						    "libarcsoft_smart_denoise.so"]
+			}
+		},
+		{
+            "type": "ArcYUVNightNode",
+            "vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+			"type": "ArcCHDRNode",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": ["libarcsoft_hdr_couple_api.so",
+				            "libarcsoft_high_dynamic_range_couple.so",
+						    "libarcsoft_smart_denoise.so"]
+			}
+		},
+		{
+            "type": "VdBlurless4Node",
+            "vendor": "VD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+            "type": "VdSuperphotoNode",
+            "vendor": "VD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ]
+		},
+		{
+            "type": "VdUpScaleNode",
+            "vendor": "VD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": [ "in0" ],
+			"outputs": [ "out0" ],
+			"priv": {
+				"so_name": ["libVDUpScale.so"]
+			}
+		}
+    ]
+}

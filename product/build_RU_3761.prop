@@ -1,0 +1,8 @@
+ro.product.product.model=RMX3761
+ro.product.product.device=RE58C6
+ro.product.product.name=RMX3761RU
+ro.product.bootimage.name=RMX3761RU
+ro.product.bootimage.model=RMX3761
+ro.product.bootimage.device=RE58C1
+ro.product.build.fingerprint=realme/RMX3761RU/RE58C6:13/TP1A.220624.014/T.1691917416:user/release-keys
+ro.bootimage.build.fingerprint=realme/RMX3761RU/RE58C6:13/TP1A.220624.014/T.1691917416:user/release-keys

@@ -1,0 +1,14 @@
+on init
+    start srmi_proxyd
+
+on property:ro.boot.product.hardware.sku=wifionly
+    stop srmi_proxyd
+
+on property:ro.boot.product.hardware.sku=dataonly
+    stop srmi_proxyd
+
+service srmi_proxyd /system_ext/bin/srmi_proxyd
+        class main
+        disabled
+        user root
+        group system

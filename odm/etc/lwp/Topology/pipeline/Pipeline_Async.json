@@ -1,0 +1,135 @@
+{
+	"DataLicense": "LicenseRef-Unisoc-General-1.0",
+	"DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Async",
+    "stream": "async_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "async_DeWarping"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect"
+        },
+        { "type": "GestureNode",
+            "vendor": "SPRD",
+            "id": "async_Gesture"
+        },
+        {
+            "type": "SceneDetectNode",
+            "vendor": "SPRD",
+            "id": "async_SceneDetect"
+        },
+        {
+            "type": "EISNode",
+            "vendor": "SPRD",
+            "id": "async_EIS"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_EIS",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_Gesture",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        }
+    ]
+}

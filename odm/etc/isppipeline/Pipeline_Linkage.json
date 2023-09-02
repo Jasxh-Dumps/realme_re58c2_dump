@@ -1,0 +1,527 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Linkage",
+    "Blocks": [
+        {
+            "Name": "BLC",
+            "Id": "0x4002",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp": "persist.vendor.cam.pm.blc.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "RGB_GAIN",
+            "Id": "0x4007",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.rgb_gain.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "AWB",
+            "Id": "0x4032",
+            "Field": "raw",
+            "Fix": 1,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.awb.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "PPE",
+            "Id": "0x5073",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.ppe.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "ALSC",
+            "Id": "0x402F",
+            "Field": "raw",
+            "Fix": 1,
+            "Bypass": 1,
+            "BypassProp":null,
+            "Bit2Bit":0
+        },
+        {
+            "Name": "BPC",
+            "Id": "0x5054",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.bpc.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "NLM",
+            "Id": "0x506F",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.nlm.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "IMBALANCE",
+            "Id": "0x506E",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.imblance.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "GTM_MAPPING",
+            "Id": "0x509C",
+            "Field": "raw",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.gtm.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "CFA",
+            "Id": "0x5059",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.cfa.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "CMC",
+            "Id": "0x50AA",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.cmc10_v1.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "RGB_LTM",
+            "Id": "0x506B",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.rgb_ltm.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "RGB_GAMC",
+            "Id": "0x4014",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.rgbgamma.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "XTM",
+            "Id": "0x50A2",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.set.xtm.bypass",
+            "Bit2Bit":0
+        },
+        {
+            "Name": "HSV",
+            "Id": "0x508D",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.hsv.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "CCE",
+            "Id": "0x4017",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.cce.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "UVDIV",
+            "Id": "0x505A",
+            "Field": "rgb",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.uv_div.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "3DNR",
+            "Id": "0x505B",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.3dnr.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "YUV_PRECDN",
+            "Id": "0x505D",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.pre_cdn.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "YNR",
+            "Id": "0x5060",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.ynr.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "EE",
+            "Id": "0x5061",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.edge.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "Y_GAMMC",
+            "Id": "0x5075",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.ygamma.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "UV_CDN",
+            "Id": "0x505E",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.uv_cdn.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "UV_POSTCDN",
+            "Id": "0x505F",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.uv_postcdn.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "IIRCNR_IIR",
+            "Id": "0x5062",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.iircnr.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "BCHS",
+            "Id": "0x5065",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.bchs.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "MFNR",
+            "Id": "0x5090",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.mfnr_v4.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "YNRS",
+            "Id": "0x506C",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.ynrs.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "CNR",
+            "Id": "0x5076",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "BypassProp":"persist.vendor.cam.pm.cnr3.bypass",
+            "Bit2Bit":1
+        },
+        {
+            "Name": "FaceBeauty",
+            "Id": "0x5077",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "HDR",
+            "Id": "0x50a1",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "PCC",
+            "Id": "0x50a0",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
+        },
+        {
+            "Name": "Mfsr",
+            "Id": "0x508f",
+            "Field": "yuv",
+            "Fix": 0,
+            "Bypass": 1,
+            "Bit2Bit": 0
+        }
+    ],
+    "rootBlocks": ["BLC"],
+    "linkages": [
+        {
+            "from": {
+                "Name": "BLC"
+            },
+            "to": {
+                "Name": "RGB_GAIN"
+            }
+        },
+        {
+            "from": {
+                "Name": "RGB_GAIN"
+            },
+            "to": {
+                "Name": "ALSC"
+            }
+        },
+        {
+            "from": {
+                "Name": "ALSC"
+            },
+            "to": {
+                "Name": "AWB"
+            }
+        },
+        {
+            "from": {
+                "Name": "AWB"
+            },
+            "to": {
+                "Name": "PPE"
+            }
+        },
+        {
+            "from": {
+                "Name": "PPE"
+            },
+            "to": {
+                "Name": "BPC"
+            }
+        },
+        {
+            "from": {
+                "Name": "BPC"
+            },
+            "to": {
+                "Name": "NLM"
+            }
+        },
+        {
+            "from": {
+                "Name": "NLM"
+            },
+            "to": {
+                "Name": "IMBALANCE"
+            }
+        },
+        {
+            "from": {
+                "Name": "IMBALANCE"
+            },
+            "to": {
+                "Name": "GTM_MAPPING"
+            }
+        },
+        {
+            "from": {
+                "Name": "GTM_MAPPING"
+            },
+            "to": {
+                "Name": "CFA"
+            }
+        },
+        {
+            "from": {
+                "Name": "CFA"
+            },
+            "to": {
+                "Name": "CMC"
+            }
+        },
+        {
+            "from": {
+                "Name": "CMC"
+            },
+            "to": {
+                "Name": "RGB_LTM"
+            }
+        },
+        {
+            "from": {
+                "Name": "RGB_LTM"
+            },
+            "to": {
+                "Name": "RGB_GAMC"
+            }
+        },
+        {
+            "from": {
+                "Name": "RGB_GAMC"
+            },
+            "to": {
+                "Name": "XTM"
+            }
+        },
+        {
+            "from": {
+                "Name": "XTM"
+            },
+            "to": {
+                "Name": "HSV"
+            }
+        },
+        {
+            "from": {
+                "Name": "HSV"
+            },
+            "to": {
+                "Name": "CCE"
+            }
+        },
+        {
+            "from": {
+                "Name": "CCE"
+            },
+            "to": {
+                "Name": "UVDIV"
+            }
+        },
+        {
+            "from": {
+                "Name": "UVDIV"
+            },
+            "to": {
+                "Name": "3DNR"
+            }
+        },
+        {
+            "from": {
+                "Name": "3DNR"
+            },
+            "to": {
+                "Name": "YUV_PRECDN"
+            }
+        },
+        {
+            "from": {
+                "Name": "YUV_PRECDN"
+            },
+            "to": {
+                "Name": "YNR"
+            }
+        },
+        {
+            "from": {
+                "Name": "YNR"
+            },
+            "to": {
+                "Name": "EE"
+            }
+        },
+        {
+            "from": {
+                "Name": "EE"
+            },
+            "to": {
+                "Name": "Y_GAMMC"
+            }
+        },
+        {
+            "from": {
+                "Name": "Y_GAMMC"
+            },
+            "to": {
+                "Name": "UV_CDN"
+            }
+        },
+        {
+            "from": {
+                "Name": "UV_CDN"
+            },
+            "to": {
+                "Name": "UV_POSTCDN"
+            }
+        },
+        {
+            "from": {
+                "Name": "UV_POSTCDN"
+            },
+            "to": {
+                "Name": "IIRCNR_IIR"
+            }
+        },
+        {
+            "from": {
+                "Name": "IIRCNR_IIR"
+            },
+            "to": {
+                "Name": "BCHS"
+            }
+        },
+        {
+            "from": {
+                "Name": "BCHS"
+            },
+            "to": {
+                "Name": "MFNR"
+            }
+        },
+        {
+            "from": {
+                "Name": "MFNR"
+            },
+            "to": {
+                "Name": "YNRS"
+            }
+        },
+        {
+            "from": {
+                "Name": "YNRS"
+            },
+            "to": {
+                "Name": "CNR"
+            }
+        }
+    ]
+}

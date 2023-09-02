@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<app_powersave_config>
+<package name="com.spreadtrum.itestapp" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.comcat.activity" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.sprd.sleepwakeuptest" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="sprdtest.message" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.greenpoint.android.mc10086.activity" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.jio.emiddleware" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0"/>
+<package name="com.sprd.bmte.coulomb" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="0" secondarylaunch="0" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.google.android.apps.work.clouddpc" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="0" consumertype="0" exemptsource="0" />
+<package name="com.sprd.powertest" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.sprd.providers.photos" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.unisoc.unisocdemo" optimize="1" alarm="0" wakelock="0" network="0" autolaunch="2" secondarylaunch="2" lockscreencleanup="2" consumertype="0" exemptsource="0" />
+<package name="com.payjoy.status" optimize="0" alarm="2" wakelock="2" network="2" autolaunch="2" secondarylaunch="2" lockscreencleanup="0" consumertype="0"/>
+<package name="cn.xiaofengkj.fitpro" optimize="1" alarm="1" wakelock="1" network="1" autolaunch="1" secondarylaunch="1" lockscreencleanup="1" consumertype="0" exemptsource="0"/>
+<package name="share.sharekaro.pro" optimize="1" alarm="1" wakelock="1" network="1" autolaunch="1" secondarylaunch="1" lockscreencleanup="1" consumertype="0" exemptsource="0"/>
+<package name="com.sharekaro.app" optimize="1" alarm="1" wakelock="1" network="1" autolaunch="1" secondarylaunch="1" lockscreencleanup="1" consumertype="0" exemptsource="0"/>
+</app_powersave_config>

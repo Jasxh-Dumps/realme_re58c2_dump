@@ -1,0 +1,161 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_Auto_Preview",
+    "stream": "preview_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "prev_DeWarping"
+        },
+        {
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_ModeRouter"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "prev_FaceBeauty"
+        },
+        {
+            "type": "AISceneNode",
+            "vendor": "SPRD",
+            "id": "prev_AIScene"
+        },
+        {
+            "type": "FilterNode",
+            "vendor": "SPRD",
+            "id": "prev_Filter"
+        },
+        {
+            "type": "EISNode",
+            "vendor": "SPRD",
+            "id": "prev_EIS"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "normal"
+            },
+            "to": {
+                "name": "prev_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_AIScene",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_AIScene",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "filter"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "eis"
+            },
+            "to": {
+                "name": "prev_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_EIS",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

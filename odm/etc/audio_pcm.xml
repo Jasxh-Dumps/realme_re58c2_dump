@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rootnode>
+	<playback>
+		<mm_normal channels="2" rate="48000" period_size="960" period_count="4" format="0" card="sprdphone-sc2730"  device="5" FE_device="FE_ST_FAST"/>
+		<mmap_noirq channels="2" rate="48000" period_size="960" period_count="4" format="0" card="sprdphone-sc2730"  device="3" FE_device="FE_ST_NORMAL_AP23"/>
+		<modem_dl channels="1" rate="8000" period_size="160" period_count="2" format="0" stop_threshold="-1" card="sprdphone-sc2730"  device="7" FE_device="FE_ST_VOICE"/>
+		<voip channels="1" rate="16000" period_size="640" period_count="3" format="0" start_threshold="1280" card="sprdphone-sc2730"  device="8" FE_device="FE_ST_VOIP"/>
+		<fm channels="2" rate="32000" period_size="1280" period_count="2" format="0" stop_threshold="-1" card="sprdphone-sc2730"  device="9" FE_device="FE_ST_FM"/>
+		<fm_bydsp channels="2" rate="32000" period_size="1280" period_count="2" format="0" stop_threshold="-1" card="sprdphone-sc2730"  device="17" FE_device="FE_ST_FM_DSP"/>
+		<fast channels="2" rate="48000" period_size="480" period_count="2" format="0" card="sprdphone-sc2730"  device="2" FE_device="FE_ST_NORMAL_AP01"/>
+		<dsp_loop channels="1" rate="8000" period_size="640" period_count="4" format="0" card="sprdphone-sc2730"  device="12" FE_device="FE_ST_LOOP"/>
+		<voice_tx channels="1" rate="16000" period_size="640" period_count="2" format="0"  start_threshold="1280" card="sprdphone-sc2730"  device="55" FE_device="FE_ST_VOICE_PCM_P"/>
+	</playback>
+	<record>
+		<recognition channels="1" period_size="960" period_count="2" format="0" rate="48000" card="sprdphone-sc2730"  device="2" FE_device="FE_ST_NORMAL_AP01"/>
+		<mm_normal channels="2" period_size="1920" period_count="4" format="0" start_threshold="1920" rate="48000" card="sprdphone-sc2730"  device="4" FE_device="FE_ST_CAPTURE_DSP"/>
+		<mmap_noirq channels="1" period_size="960" period_count="2" format="0" rate="48000" card="sprdphone-sc2730"  device="3" FE_device="FE_ST_NORMAL_AP23"/>
+		<modem_ul channels="1" rate="8000" period_size="160" period_count="2" format="0" stop_threshold="-1" card="sprdphone-sc2730"  device="7" FE_device="FE_ST_VOICE"/>
+		<voip channels="1" rate="16000" period_size="640" period_count="2" format="0" start_threshold="1280" card="sprdphone-sc2730"  device="8" FE_device="FE_ST_VOIP"/>
+		<fm channels="2" rate="48000" period_size="960" period_count="2" format="0" card="sprdphone-sc2730"  device="15" FE_device="FE_ST_CAPTURE_FM_DSP"/>
+		<voice_c channels="1" period_size="960" period_count="2" format="0" rate="8000" card="sprdphone-sc2730"  device="11" FE_device="FE_ST_VOICE_C"/>
+		<dsp_loop channels="1" rate="8000" period_size="640" period_count="4" format="0" card="sprdphone-sc2730" device="12" FE_device="FE_ST_LOOP"/>
+		<btsco_record channels="1" period_size="960" period_count="2" format="0" rate="48000" card="sprdphone-sc2730"  device="16" FE_device="FE_ST_CAPTURE_BTSCO_DSP"/>
+		<vbcdump channels="1" rate="48000" period_size="640" period_count="8" format="0" card="sprdphone-sc2730"  device="18" FE_device="FE_ST_DUMP"/>
+	</record>
+	<compress fragment_size="0x5000" fragments="0x40" card="sprdphone-sc2730" device="7" FE_device="FE_ST_OFFLOAD"/>
+	<!--Note:modify period_size and period_count affect the latency-->
+	<offload>
+		<a2dp>
+			<mixer channels="2" rate="48000" period_size="960" period_count="4" format="0" stop_threshold="-1" card="sprdphone-sc2730"  device="15" FE_device="FE_ST_A2DP_PCM"/>
+			<compress fragment_size="0x5000" fragments="0x08" card="sprdphone-sc2730" device="14" FE_device="FE_ST_A2DP_OFFLOAD"/>
+		</a2dp>
+	</offload>
+</rootnode>

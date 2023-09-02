@@ -1,0 +1,2206 @@
+/dts-v1/;
+
+/ {
+	compatible = "sprd,ums9230-1h10-go";
+	model = "Spreadtrum UMS9230-1H10-GO Board";
+	sprd,board_id = <0x1900>;
+	sprd,sc-id = "ums9230 1h10 go";
+
+	__fixups__ {
+		adi_bus = "/fragment@28:target:0";
+		aon_apb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-ap-apb:0", "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-ap-apb:0";
+		aon_clk = "/fragment@12/__overlay__/sec-nfc@27:clocks:0";
+		aon_i2c0 = "/fragment@15:target:0";
+		aonapb_gate = "/fragment@12/__overlay__/sec-nfc@27:clocks:12";
+		ap_gpio = "/fragment/__overlay__/cpwcn-btwf:merlion-chip-en-gpios:0", "/fragment/__overlay__/cpwcn-btwf:merlion-rst-gpios:0", "/fragment/__overlay__/cpwcn-btwf:xtal-26m-type-sel-gpios:0", "/fragment/__overlay__/cpwcn-gnss:merlion-chip-en-gpios:0", "/fragment/__overlay__/cpwcn-gnss:merlion-rst-gpios:0", "/fragment/__overlay__/cpwcn-gnss:xtal-26m-type-sel-gpios:0", "/fragment/__overlay__/gpio-keys/key-volumedown:gpios:0", "/fragment/__overlay__/audio-voice-trig:irq_gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:omnivision,irq-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:omnivision,reset-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:himax,irq-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:himax,rst-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:focaltech,reset-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:focaltech,irq-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:chipone,rst-gpio:0", "/fragment@0/__overlay__/omnivision_tcm@0:chipone,irq-gpio:0", "/fragment@5/__overlay__/sensor-main@20:dvdd-gpios:0", "/fragment@5/__overlay__/sensor-main@20:reset-gpios:0", "/fragment@5/__overlay__/sensor-main@20:power-down-gpios:0", "/fragment@5/__overlay__/sensor-sub@5a:dvdd-gpios:0", "/fragment@5/__overlay__/sensor-sub@5a:reset-gpios:0", "/fragment@5/__overlay__/sensor-sub@5a:power-down-gpios:0", "/fragment@6/__overlay__/sensor-main2@20:avdd-gpios:0", "/fragment@6/__overlay__/sensor-main2@20:mot-gpios:0", "/fragment@6/__overlay__/sensor-main2@20:reset-gpios:0", "/fragment@6/__overlay__/sensor-main2@20:power-down-gpios:0", "/fragment@7/__overlay__/charger@6b:irq-gpio:0", "/fragment@7/__overlay__/charger@65:irq-gpio:0", "/fragment@7/__overlay__/charger@1b:chg_pump_en_gpio:0", "/fragment@7/__overlay__/charger@61:rx,irq_gpio:0", "/fragment@7/__overlay__/charger@61:switch_chg_en_gpio:0", "/fragment@7/__overlay__/charger@61:switch_flag_en_gpio:0", "/fragment@7/__overlay__/flash-ic@63:flash-torch-en-gpios:0", "/fragment@7/__overlay__/flash-ic@63:flash-chip-en-gpios:0", "/fragment@7/__overlay__/flash-ic@63:flash-en-gpios:0", "/fragment@7/__overlay__/flash-ic@63:flash-sync-gpios:0", "/fragment@8/__overlay__/sensor-sub2@6e:avdd-gpios:0", "/fragment@8/__overlay__/sensor-sub2@6e:mot-gpios:0", "/fragment@8/__overlay__/sensor-sub2@6e:reset-gpios:0", "/fragment@12/__overlay__/sec-nfc@27:sec-nfc,ven-gpio:0", "/fragment@12/__overlay__/sec-nfc@27:sec-nfc,firm-gpio:0", "/fragment@12/__overlay__/sec-nfc@27:sec-nfc,irq-gpio:0", "/fragment@12/__overlay__/sec-nfc@27:sec-nfc,clk-req:0", "/fragment@12/__overlay__/ucp1301@58:reset-gpios:0", "/fragment@14/__overlay__/ucp1301@58:reset-gpios:0", "/fragment@14/__overlay__/vl53l0@52:interrupt-parent:0", "/fragment@16/__overlay__:mic-gpios:0", "/fragment@16/__overlay__:lr-gpios:0", "/fragment@21/__overlay__:avdd-gpio:0", "/fragment@21/__overlay__:avee-gpio:0", "/fragment@21/__overlay__:reset-gpio:0";
+		chosen = "/fragment@2:target:0";
+		csi0 = "/fragment@5/__overlay__/sensor-main@20:csi:0", "/fragment@5/__overlay__/sensor-sub@5a:csi:0";
+		csi1 = "/fragment@6/__overlay__/sensor-main2@20:csi:0";
+		csi2 = "/fragment@8/__overlay__/sensor-sub2@6e:csi:0";
+		ddr_dfs = "/fragment@25:target:0";
+		dpu = "/fragment@22:target:0";
+		eic_async = "/fragment/__overlay__/fingerprint@0:fpint-gpios:0";
+		eic_sync = "/fragment@11/__overlay__:cd-gpios:0";
+		ext_26m = "/fragment@5/__overlay__/sensor-main@20:clocks:40", "/fragment@5/__overlay__/sensor-sub@5a:clocks:40", "/fragment@6/__overlay__/sensor-main2@20:clocks:40", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:40", "/fragment@12/__overlay__/sec-nfc@27:clocks:8";
+		extcon_gpio = "/fragment@9/__overlay__:extcon:0", "/fragment@10/__overlay__:extcon:0";
+		hsphy = "/fragment/__overlay__/charger-manager:phys:0", "/fragment@7/__overlay__/charger@61:phys:0", "/fragment@9:target:0", "/fragment@20/__overlay__:phys:0";
+		i2c0 = "/fragment@5:target:0";
+		i2c1 = "/fragment@6:target:0";
+		i2c2 = "/fragment@12:target:0";
+		i2c3 = "/fragment@13:target:0";
+		i2c4 = "/fragment@14:target:0";
+		i2c5 = "/fragment@7:target:0";
+		i2c6 = "/fragment@8:target:0";
+		ion = "/fragment@27:target:0";
+		mailbox = "/fragment@1/__overlay__/core@3:mboxes:0", "/fragment@1/__overlay__/core@4:mboxes:0";
+		mm_clk = "/fragment@5/__overlay__/sensor-main@20:clocks:0", "/fragment@5/__overlay__/sensor-sub@5a:clocks:0", "/fragment@6/__overlay__/sensor-main2@20:clocks:0", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:0";
+		mm_domain = "/fragment@5/__overlay__/sensor-main@20:power-domains:0", "/fragment@5/__overlay__/sensor-sub@5a:power-domains:0", "/fragment@6/__overlay__/sensor-main2@20:power-domains:0";
+		mm_gate = "/fragment@5/__overlay__/sensor-main@20:clocks:8", "/fragment@5/__overlay__/sensor-sub@5a:clocks:8", "/fragment@6/__overlay__/sensor-main2@20:clocks:8", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:8";
+		panel = "/fragment@21:target:0";
+		pdm_dmic = "/fragment@17:target:0", "/fragment@18/__overlay__/sprd-audio-card,dai-link@81/codec:sound-dai:0";
+		pin_controller = "/fragment@26:target:0";
+		pll1 = "/fragment@5/__overlay__/sensor-main@20:clocks:16", "/fragment@5/__overlay__/sensor-main@20:clocks:24", "/fragment@5/__overlay__/sensor-main@20:clocks:32", "/fragment@5/__overlay__/sensor-sub@5a:clocks:16", "/fragment@5/__overlay__/sensor-sub@5a:clocks:24", "/fragment@5/__overlay__/sensor-sub@5a:clocks:32", "/fragment@6/__overlay__/sensor-main2@20:clocks:16", "/fragment@6/__overlay__/sensor-main2@20:clocks:24", "/fragment@6/__overlay__/sensor-main2@20:clocks:32", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:16", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:24", "/fragment@8/__overlay__/sensor-sub2@6e:clocks:32";
+		pmic_adc = "/fragment/__overlay__/thermal-sensor:io-channels:0", "/fragment/__overlay__/pa-sensor:io-channels:0", "/fragment/__overlay__/chg-sensor:io-channels:0";
+		pmic_eic = "/fragment/__overlay__/gpio-keys/key-volumeup:gpios:0", "/fragment/__overlay__/gpio-keys/key-power:gpios:0";
+		pmic_fchg = "/fragment@23:target:0";
+		pmic_fgu = "/fragment@20:target:0";
+		pmic_pd = "/fragment/__overlay__/charger-manager:extcon:4", "/fragment@24:target:0";
+		pmic_typec = "/fragment/__overlay__/charger-manager:extcon:0", "/fragment@10/__overlay__:extcon:4", "/fragment@16/__overlay__:extcon:0";
+		pmu_apb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-ap-pmu:0", "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-ap-pmu:0";
+		pub_apb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-ap-pub-apb:0", "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-ap-pub-apb:0";
+		pwms = "/fragment/__overlay__/sprd_backlight:pwms:0";
+		reserved_memory = "/fragment@3:target:0";
+		sdio0 = "/fragment@11:target:0";
+		sipc = "/fragment@1:target:0";
+		sound_vbc_v4_sprd_codec = "/fragment@18:target:0";
+		spi3 = "/fragment@0:target:0";
+		sprd_headset = "/fragment@16:target:0";
+		sprd_route_pcm = "/fragment@18/__overlay__/sprd-audio-card,dai-link@53/plat:sound-dai:0", "/fragment@18/__overlay__/sprd-audio-card,dai-link@55/plat:sound-dai:0", "/fragment@18/__overlay__/sprd-audio-card,dai-link@81/plat:sound-dai:0";
+		thm_zone = "/fragment@4:target:0";
+		uid_end = "/fragment/__overlay__/sprd_uid:nvmem-cells:4";
+		uid_start = "/fragment/__overlay__/sprd_uid:nvmem-cells:0";
+		usb = "/fragment@10:target:0";
+		vbc_v4 = "/fragment@18/__overlay__/sprd-audio-card,dai-link@53/cpu:sound-dai:0", "/fragment@18/__overlay__/sprd-audio-card,dai-link@55/cpu:sound-dai:0", "/fragment@18/__overlay__/sprd-audio-card,dai-link@81/cpu:sound-dai:0";
+		vddcama0 = "/fragment@5/__overlay__/sensor-main@20:vddcama-supply:0", "/fragment@5/__overlay__/sensor-sub@5a:vddcama-supply:0";
+		vddcama1 = "/fragment@6/__overlay__/sensor-main2@20:vddcama-supply:0";
+		vddcamd0 = "/fragment@6/__overlay__/sensor-main2@20:vddcamd-supply:0";
+		vddcamd1 = "/fragment@8/__overlay__/sensor-sub2@6e:vddcamd-supply:0";
+		vddcamio = "/fragment@5/__overlay__/sensor-main@20:vddio-supply:0", "/fragment@5/__overlay__/sensor-sub@5a:vddio-supply:0", "/fragment@6/__overlay__/sensor-main2@20:vddio-supply:0", "/fragment@8/__overlay__/sensor-sub2@6e:vddio-supply:0";
+		vddcammot = "/fragment@5/__overlay__/sensor-main@20:vddcammot-supply:0", "/fragment@5/__overlay__/sensor-sub@5a:vddcammot-supply:0", "/fragment@6/__overlay__/sensor-main2@20:vddcammot-supply:0", "/fragment@8/__overlay__/sensor-sub2@6e:vddcammot-supply:0";
+		vddldo0 = "/fragment@19:target:0";
+		vddsim2 = "/fragment/__overlay__/cpwcn-btwf:dcxo1v8-supply:0", "/fragment/__overlay__/cpwcn-gnss:dcxo1v8-supply:0";
+		vddusb33 = "/fragment@9/__overlay__:vdd-supply:0";
+		vddwcn = "/fragment/__overlay__/cpwcn-btwf:vddwcn-supply:0", "/fragment/__overlay__/cpwcn-gnss:vddwcn-supply:0";
+		vddwifipa = "/fragment/__overlay__/cpwcn-btwf:vddwifipa-supply:0";
+		wcn_alpha = "/fragment/__overlay__/cpwcn-btwf:nvmem-cells:0", "/fragment/__overlay__/cpwcn-gnss:nvmem-cells:0";
+		wcncp_aon_ahb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-wcn-aon-ahb:0", "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-wcn-aon-ahb:0";
+		wcncp_aon_apb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-wcn-aon-apb:0", "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-wcn-aon-apb:0";
+		wcncp_btwf_ahb_regs = "/fragment/__overlay__/cpwcn-btwf:sprd,syscon-wcn-btwf-ahb:0";
+		wcncp_gnss_ahb_regs = "/fragment/__overlay__/cpwcn-gnss:sprd,syscon-wcn-gnss-ahb:0";
+	};
+
+	__local_fixups__ {
+
+		fragment {
+
+			__overlay__ {
+
+				charger-manager {
+					monitored-battery = <0x0>;
+				};
+
+				lcds {
+
+					lcd_dummy_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_ft8057_ld_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_g40396_truly_mipi_fhd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_hx83108a_boe_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_hx83108a_lce_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_icnl9916c_hjc_cd_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_icnl9916c_inx_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_icnl9916c_ld_hjc_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_nt36672e_truly_mipi_fhd_nodsc {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_td4160_cw_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_td4160_cw_new_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_td4160_cw_old_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+
+					lcd_td4160b_cw_boe_mipi_hd {
+
+						display-timings {
+							native-mode = <0x0>;
+						};
+					};
+				};
+			};
+		};
+
+		fragment@0 {
+
+			__overlay__ {
+
+				omnivision_tcm@0 {
+					panel = <0x0 0x4 0x8 0xc 0x10 0x14 0x18 0x1c 0x20 0x24>;
+				};
+			};
+		};
+
+		fragment@10 {
+
+			__overlay__ {
+				vbus-supply = <0x0>;
+			};
+		};
+
+		fragment@18 {
+
+			__overlay__ {
+
+				sprd-audio-card,dai-link@53 {
+
+					codec {
+						sound-dai = <0x0>;
+					};
+				};
+
+				sprd-audio-card,dai-link@55 {
+
+					codec {
+						sound-dai = <0x0>;
+					};
+				};
+			};
+		};
+
+		fragment@20 {
+
+			__overlay__ {
+				monitored-battery = <0x0>;
+			};
+		};
+
+		fragment@21 {
+
+			__overlay__ {
+				sprd,backlight = <0x0>;
+			};
+		};
+
+		fragment@22 {
+
+			__overlay__ {
+				sprd,backlight = <0x0>;
+				sprd,logo-memory = <0x0>;
+			};
+		};
+
+		fragment@26 {
+
+			__overlay__ {
+				pinctrl-0 = <0x0>;
+				pinctrl-1 = <0x0>;
+				pinctrl-2 = <0x0>;
+				pinctrl-3 = <0x0>;
+				pinctrl-4 = <0x0>;
+				pinctrl-5 = <0x0>;
+				pinctrl-6 = <0x0>;
+			};
+		};
+
+		fragment@27 {
+
+			__overlay__ {
+
+				heap@4 {
+					memory-region = <0x0>;
+				};
+			};
+		};
+
+		fragment@4 {
+
+			__overlay__ {
+
+				board-thmzone {
+					thermal-sensors = <0x0>;
+				};
+
+				chg-thmzone {
+					thermal-sensors = <0x0>;
+				};
+
+				pa-thmzone {
+					thermal-sensors = <0x0>;
+				};
+			};
+		};
+
+		fragment@7 {
+
+			__overlay__ {
+
+				charger@6b {
+					monitored-battery = <0x0>;
+				};
+			};
+		};
+	};
+
+	__symbols__ {
+		bat = "/fragment/__overlay__/battery";
+		bd_thmzone = "/fragment@4/__overlay__/board-thmzone";
+		bq2560x_chg = "/fragment@7/__overlay__/charger@6b";
+		bq2597x_chg = "/fragment@7/__overlay__/charger@65";
+		chg_thermistor = "/fragment/__overlay__/chg-sensor";
+		chg_thmzone = "/fragment@4/__overlay__/chg-thmzone";
+		dummy_timing0 = "/fragment/__overlay__/lcds/lcd_dummy_mipi_hd/display-timings/timing0";
+		fd_reserved = "/fragment@3/__overlay__/faceid-mem@ffa70000";
+		flash_ic = "/fragment@7/__overlay__/flash-ic@63";
+		ft8057_ld_timing0 = "/fragment/__overlay__/lcds/lcd_ft8057_ld_mipi_hd/display-timings/timing0";
+		ft8057_ld_timing1 = "/fragment/__overlay__/lcds/lcd_ft8057_ld_mipi_hd/display-timings/timing1";
+		g40396_truly_timing0 = "/fragment/__overlay__/lcds/lcd_g40396_truly_mipi_fhd/display-timings/timing0";
+		gpio_124 = "/fragment@26/__overlay__/keyin0";
+		gpio_175 = "/fragment@26/__overlay__/bt_rfctl2";
+		gpio_22 = "/fragment@26/__overlay__/rfctl3";
+		gpio_24 = "/fragment@26/__overlay__/rfctl5";
+		gpio_25 = "/fragment@26/__overlay__/rfctl6";
+		gpio_26 = "/fragment@26/__overlay__/rfctl7";
+		gpio_8 = "/fragment@26/__overlay__/rfctl16";
+		hl1506_cp_converter = "/fragment@7/__overlay__/charger@1b";
+		hx83108a_boe_timing0 = "/fragment/__overlay__/lcds/lcd_hx83108a_boe_mipi_hd/display-timings/timing0";
+		hx83108a_boe_timing1 = "/fragment/__overlay__/lcds/lcd_hx83108a_boe_mipi_hd/display-timings/timing1";
+		hx83108a_lce_timing0 = "/fragment/__overlay__/lcds/lcd_hx83108a_lce_mipi_hd/display-timings/timing0";
+		hx83108a_lce_timing1 = "/fragment/__overlay__/lcds/lcd_hx83108a_lce_mipi_hd/display-timings/timing1";
+		icnl9916c_hjc_cd_timing0 = "/fragment/__overlay__/lcds/lcd_icnl9916c_hjc_cd_mipi_hd/display-timings/timing0";
+		icnl9916c_hjc_cd_timing1 = "/fragment/__overlay__/lcds/lcd_icnl9916c_hjc_cd_mipi_hd/display-timings/timing1";
+		icnl9916c_inx_timing0 = "/fragment/__overlay__/lcds/lcd_icnl9916c_inx_mipi_hd/display-timings/timing0";
+		icnl9916c_inx_timing1 = "/fragment/__overlay__/lcds/lcd_icnl9916c_inx_mipi_hd/display-timings/timing1";
+		icnl9916c_ld_hjc_timing0 = "/fragment/__overlay__/lcds/lcd_icnl9916c_ld_hjc_mipi_hd/display-timings/timing0";
+		icnl9916c_ld_hjc_timing1 = "/fragment/__overlay__/lcds/lcd_icnl9916c_ld_hjc_mipi_hd/display-timings/timing1";
+		lcd_dummy_mipi_hd = "/fragment/__overlay__/lcds/lcd_dummy_mipi_hd";
+		lcd_ft8057_ld_mipi_hd = "/fragment/__overlay__/lcds/lcd_ft8057_ld_mipi_hd";
+		lcd_g40396_truly_mipi_fhd = "/fragment/__overlay__/lcds/lcd_g40396_truly_mipi_fhd";
+		lcd_hx83108a_boe_mipi_hd = "/fragment/__overlay__/lcds/lcd_hx83108a_boe_mipi_hd";
+		lcd_hx83108a_lce_mipi_hd = "/fragment/__overlay__/lcds/lcd_hx83108a_lce_mipi_hd";
+		lcd_icnl9916c_hjc_cd_mipi_hd = "/fragment/__overlay__/lcds/lcd_icnl9916c_hjc_cd_mipi_hd";
+		lcd_icnl9916c_inx_mipi_hd = "/fragment/__overlay__/lcds/lcd_icnl9916c_inx_mipi_hd";
+		lcd_icnl9916c_ld_hjc_mipi_hd = "/fragment/__overlay__/lcds/lcd_icnl9916c_ld_hjc_mipi_hd";
+		lcd_nt36672e_truly_mipi_fhd_nodsc = "/fragment/__overlay__/lcds/lcd_nt36672e_truly_mipi_fhd_nodsc";
+		lcd_td4160_cw_mipi_hd = "/fragment/__overlay__/lcds/lcd_td4160_cw_mipi_hd";
+		lcd_td4160_cw_new_mipi_hd = "/fragment/__overlay__/lcds/lcd_td4160_cw_new_mipi_hd";
+		lcd_td4160_cw_old_mipi_hd = "/fragment/__overlay__/lcds/lcd_td4160_cw_old_mipi_hd";
+		lcd_td4160b_cw_boe_mipi_hd = "/fragment/__overlay__/lcds/lcd_td4160b_cw_boe_mipi_hd";
+		logo_reserved = "/fragment@3/__overlay__/logobuffer@9e000000";
+		nt36672e_truly_timing0 = "/fragment/__overlay__/lcds/lcd_nt36672e_truly_mipi_fhd_nodsc/display-timings/timing0";
+		nu1619_rx = "/fragment@7/__overlay__/charger@61";
+		pa_thermistor = "/fragment/__overlay__/pa-sensor";
+		pa_thmzone = "/fragment@4/__overlay__/pa-thmzone";
+		pwm_backlight = "/fragment/__overlay__/sprd_backlight";
+		sensor_main = "/fragment@5/__overlay__/sensor-main@20";
+		sensor_main2 = "/fragment@6/__overlay__/sensor-main2@20";
+		sensor_sub = "/fragment@5/__overlay__/sensor-sub@5a";
+		sensor_sub2 = "/fragment@8/__overlay__/sensor-sub2@6e";
+		sipc_gnss = "/fragment@1/__overlay__/core@4";
+		sipc_wcn = "/fragment@1/__overlay__/core@3";
+		stm_vl53l0 = "/fragment@14/__overlay__/vl53l0@52";
+		sttygnss0 = "/fragment@1/__overlay__/core@4/channel@4";
+		tboard_thermistor = "/fragment/__overlay__/thermal-sensor";
+		td4160_cw_new_timing0 = "/fragment/__overlay__/lcds/lcd_td4160_cw_new_mipi_hd/display-timings/timing0";
+		td4160_cw_new_timing1 = "/fragment/__overlay__/lcds/lcd_td4160_cw_new_mipi_hd/display-timings/timing1";
+		td4160_cw_old_timing0 = "/fragment/__overlay__/lcds/lcd_td4160_cw_old_mipi_hd/display-timings/timing0";
+		td4160_cw_old_timing1 = "/fragment/__overlay__/lcds/lcd_td4160_cw_old_mipi_hd/display-timings/timing1";
+		td4160_cw_timing0 = "/fragment/__overlay__/lcds/lcd_td4160_cw_mipi_hd/display-timings/timing0";
+		td4160b_cw_boe_timing0 = "/fragment/__overlay__/lcds/lcd_td4160b_cw_boe_mipi_hd/display-timings/timing0";
+		td4160b_cw_boe_timing1 = "/fragment/__overlay__/lcds/lcd_td4160b_cw_boe_mipi_hd/display-timings/timing1";
+		ucp1301_rcv = "/fragment@12/__overlay__/ucp1301@58";
+		ucp1301_spk = "/fragment@14/__overlay__/ucp1301@58";
+		usb_con = "/fragment@24/__overlay__/connector";
+		vddvbus = "/fragment@7/__overlay__/charger@6b/otg-vbus";
+		wcn_btwf = "/fragment/__overlay__/cpwcn-btwf";
+		wcn_gnss = "/fragment/__overlay__/cpwcn-gnss";
+		wcn_reserved = "/fragment@3/__overlay__/wcn-mem@87000000";
+	};
+
+	fragment {
+		target-path = [2f 00];
+
+		__overlay__ {
+			#address-cells = <0x2>;
+			#size-cells = <0x2>;
+
+			audio-voice-trig {
+				compatible = "sprd,voice_trig";
+				irq_gpio = <0xffffffff 0xa9 0x0>;
+				status = "disable";
+			};
+
+			battery {
+				battery-internal-resistance-celsius = <0xffffffec 0xfffffff6 0x0 0xa 0x19 0x23 0x2d 0x37>;
+				battery-internal-resistance-ocv-table = <0x423538 0x413f20 0x406848 0x3f9d28 0x3ed5f0 0x3e2240 0x3d5ef0 0x3cc698 0x3c2670 0x3b6320 0x3ada68 0x3a7ca8 0x3a2e88 0x39f008 0x39b958 0x3976f0 0x3928d0 0x38cef8 0x3859c8 0x382700 0x347998>;
+				battery-internal-resistance-table-0 = <0x4c8 0x4c8 0x474 0x43c 0x40a 0x3e9 0x3e2 0x3e0 0x3e0 0x3e0 0x3e4 0x3ea 0x3f2 0x400 0x415 0x430 0x49c 0x571 0x6dc 0x99d 0x10b0>;
+				battery-internal-resistance-table-1 = <0x37d 0x37d 0x332 0x2ff 0x2e7 0x2c1 0x2ad 0x2ac 0x2a6 0x2a3 0x2a0 0x2a1 0x2a7 0x2b3 0x2c5 0x2de 0x2fd 0x31f 0x347 0x383 0x444>;
+				battery-internal-resistance-table-2 = <0x197 0x197 0x192 0x1a7 0x1ad 0x1ac 0x199 0x1a0 0x198 0x18b 0x186 0x186 0x189 0x18e 0x195 0x1a0 0x1af 0x1c4 0x1ec 0x249 0x2da>;
+				battery-internal-resistance-table-3 = <0x17d 0x17d 0x17a 0x173 0x16e 0x176 0x166 0x16c 0x15d 0x14c 0x147 0x149 0x14e 0x154 0x15e 0x16e 0x182 0x1a1 0x1db 0x249 0x303>;
+				battery-internal-resistance-table-4 = <0xb6 0xb6 0xb3 0xb3 0xb3 0xb5 0xb6 0xc3 0xc2 0xad 0xa4 0xa4 0xa7 0xab 0xaf 0xae 0xac 0xb3 0xbb 0xf4 0x137>;
+				battery-internal-resistance-table-5 = <0xa8 0xa8 0xaf 0xac 0xab 0xab 0xad 0xb8 0xb0 0x99 0x93 0x93 0x96 0x99 0x9c 0x98 0x95 0x9a 0x9e 0xce 0xff>;
+				battery-internal-resistance-table-6 = <0x7b 0x7b 0x7a 0x7a 0x7b 0x7e 0x82 0x8a 0x8f 0x78 0x73 0x74 0x77 0x7c 0x81 0x78 0x75 0x77 0x75 0x8b 0x9c>;
+				battery-internal-resistance-table-7 = <0x6a 0x6a 0x6a 0x6a 0x6c 0x6e 0x71 0x77 0x80 0x6b 0x68 0x69 0x6c 0x70 0x75 0x6b 0x6a 0x6b 0x69 0x7f 0x8c>;
+				cap-calib-energy-density-ocv-table = <0x331df0 0x39fbc0 0x3f52f0 0x426030>;
+				capacity-temp-table = <0x2d 0x64 0x19 0x64 0xa 0x64 0x0 0x5f 0xfffffff6 0x5a>;
+				cdp-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0xaae60 0x423920 0x5aa 0x58c 0x16e360 0x423920 0x640 0x622 0xaae60 0x3e8fa0>;
+				charge-cdp-current-microamp = <0x16e360 0x16e360>;
+				charge-dcp-current-microamp = <0x1e8480 0x2625a0>;
+				charge-fchg-current-microamp = <0x319750 0x2dc6c0>;
+				charge-flash-current-microamp = <0x4c4b40 0x2932e0>;
+				charge-full-design-microamp-hours = <0x2d0370>;
+				charge-sdp-current-microamp = <0x7a120 0x7a120>;
+				charge-term-current-microamp = <0xea60>;
+				charge-unknown-current-microamp = <0x100590 0x100590>;
+				charge-wl-bpp-current-microamp = <0xf4240 0xf4240>;
+				charge-wl-epp-current-microamp = <0x1e8480 0xf4240>;
+				compatible = "simple-battery";
+				constant-charge-voltage-max-microvolt = <0x423920>;
+				dcp-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0xaae60 0x423920 0x5aa 0x58c 0x1e8480 0x423920 0x640 0x622 0xaae60 0x3e8fa0>;
+				factory-internal-resistance-micro-ohms = <0x3d860>;
+				fast-charge-threshold-microvolt = <0x3e8fa0>;
+				fchg-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0xaae60 0x423920 0x5aa 0x58c 0x319750 0x423920 0x640 0x622 0xaae60 0x3e8fa0>;
+				first-calib-capacity = <0x32>;
+				first-calib-voltage = <0x36a060>;
+				first-fullbatt-current = <0x249f0>;
+				flash-jeita-temp-table = <0x3e8 0x3fc 0x0 0x423920 0x41a 0x42e 0x7a120 0x423920 0x460 0x474 0xf4240 0x423920 0x488 0x49c 0x16e360 0x423920 0x4c4 0x4d8 0x44aa20 0x423920 0x53c 0x550 0x4c4b40 0x423920 0x55a 0x546 0x4c4b40 0x423920 0x578 0x564 0x44aa20 0x423920 0x58c 0x578 0x40d990 0x423920 0x5aa 0x596 0x3d0900 0x423920 0x640 0x622 0xf4240 0x3e8fa0>;
+				fullbatt-current = <0x1d4c0>;
+				fullbatt-track-end-cur = <0x1fbd0>;
+				fullbatt-track-end-vol = <0x418958>;
+				fullbatt-voltage = <0x419ce0>;
+				fullbatt-voltage-offset-microvolt = <0xafc8>;
+				ir-cv-offset-microvolt = <0x186a0>;
+				ir-rc-micro-ohms = <0x4e20>;
+				ir-us-upper-limit-microvolt = <0x44aa20>;
+				ocv-capacity-celsius = <0x14>;
+				ocv-capacity-table-0 = <0x41cfa8 0x64 0x40e930 0x5f 0x401a28 0x5a 0x3f56d8 0x55 0x3e9770 0x50 0x3df360 0x4b 0x3d2070 0x46 0x3c9f88 0x41 0x3bf790 0x3c 0x3b3c10 0x37 0x3ac2f8 0x32 0x3a6d08 0x2d 0x3a22d0 0x28 0x39e838 0x23 0x39b188 0x1e 0x397308 0x19 0x3928d0 0x14 0x38cb10 0xf 0x385db0 0xa 0x382ed0 0x5 0x33e140 0x0>;
+				phandle = <0xe>;
+				resistance-temp-table = <0x2d 0x35 0x19 0x64 0xa 0x18b 0x0 0x237 0xfffffff6 0x319>;
+				sdp-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0x7a120 0x423920 0x5aa 0x58c 0x7a120 0x423920 0x640 0x622 0x7a120 0x3e8fa0>;
+				unknown-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0xaae60 0x423920 0x5aa 0x58c 0x100590 0x423920 0x640 0x622 0xaae60 0x3e8fa0>;
+				voltage-min-design-microvolt = <0x34a490>;
+				voltage-temp-table = <0x10f0fe 0x320 0xf4010 0x352 0xd963e 0x384 0xbfcb6 0x3b6 0xa7e0e 0x3e8 0x920cc 0x41a 0x7e630 0x44c 0x6ce94 0x47e 0x5d99e 0x4b0 0x504f6 0x4e2 0x44cf0 0x514 0x3af48 0x546 0x328b6 0x578 0x2b5ac 0x5aa 0x253aa 0x5dc 0x20058 0x60e 0x1b968 0x640 0x17dfe 0x672>;
+				wl-bpp-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0x7a120 0x423920 0x5aa 0x58c 0xf4240 0x423920 0x640 0x622 0x4c4b40 0x3e8fa0>;
+				wl-epp-jeita-temp-table = <0x3e8 0x406 0x0 0x423920 0x47e 0x49c 0x7a120 0x423920 0x5aa 0x58c 0x1e8480 0x423920 0x640 0x622 0x7a120 0x3e8fa0>;
+			};
+
+			charger-manager {
+				cm-battery-cold = <0xc8>;
+				cm-battery-cold-in-minus;
+				cm-battery-hot = <0x320>;
+				cm-battery-stat = <0x2>;
+				cm-battery-temp-diff = <0x64>;
+				cm-cap-remap-table = <0x1 0x2 0x3 0x2 0x3 0x2 0x62 0x63 0x2 0x63 0x64 0x3>;
+				cm-charge-pumps = "bq2597x-standalone";
+				cm-charge-voltage-drop = <0xaae60>;
+				cm-charge-voltage-max = <0x632ea0>;
+				cm-chargers = "bq2560x_charger";
+				cm-charging-max = <0x1499700>;
+				cm-cp-taper-current = <0xf4240>;
+				cm-discharging-max = <0x2932e0>;
+				cm-fast-charge-voltage-drop = <0xaae60>;
+				cm-fast-charge-voltage-max = <0xa037a0>;
+				cm-flash-charge-voltage-drop = <0xf4240>;
+				cm-flash-charge-voltage-max = <0xb71b00>;
+				cm-fuel-gauge = "sc27xx-fgu";
+				cm-fullbatt-capacity = <0x64>;
+				cm-fullbatt-vchkdrop-ms = <0x7530>;
+				cm-fullbatt-vchkdrop-volt = <0xea60>;
+				cm-keep-awake;
+				cm-name = "battery";
+				cm-one-cap-time = <0x1e>;
+				cm-poll-interval = <0x3a98>;
+				cm-poll-mode = <0x2>;
+				cm-shutdown-voltage = <0x2f4d60>;
+				cm-thermal-zone = "board-thmzone";
+				cm-tickle-time-out = <0x5dc>;
+				cm-wdt-interval = <0x3c>;
+				cm-wireless-charge-pump-converters = "hl1506_cp_converter";
+				cm-wireless-charge-voltage-drop = <0xaae60>;
+				cm-wireless-charge-voltage-max = <0x632ea0>;
+				cm-wireless-chargers = "nu1619_wireless_charger";
+				cm-wireless-fast-charge-voltage-drop = <0xf4240>;
+				cm-wireless-fast-charge-voltage-max = <0xb71b00>;
+				compatible = "charger-manager";
+				extcon = <0xffffffff 0xffffffff>;
+				monitored-battery = <0xe>;
+				pd-extcon-enable;
+				phys = <0xffffffff>;
+				sprd,pd-fixed-max-microwatt = <0x112a880>;
+				sprd,support-fchg;
+				sprd,support-pd-pps;
+			};
+
+			chg-sensor {
+				#thermal-sensor-cells = <0x0>;
+				compatible = "generic-adc-thermal";
+				io-channel-names = "sensor-channel";
+				io-channels = <0xffffffff 0x4>;
+				phandle = <0x1b>;
+				temperature-lookup-table = <0xffff64c2 0x46b 0xffff8baf 0x456 0xffffb3e8 0x432 0xffffedb9 0x3d7 0x277e 0x346 0x60e5 0x28e 0xaf7a 0x19d 0xd677 0x13c 0xfd7f 0xee 0x12484 0xb2 0x14b93 0x85 0x172a3 0x64 0x199b0 0x4b 0x1c0c9 0x39 0x1e7c8 0x2b>;
+			};
+
+			cpwcn-btwf {
+				#address-cells = <0x2>;
+				#size-cells = <0x2>;
+				compatible = "unisoc,integrate_marlin";
+				dcxo1v8-supply = <0xffffffff>;
+				merlion-chip-en-gpios = <0xffffffff 0x76 0x0>;
+				merlion-rst-gpios = <0xffffffff 0x75 0x0>;
+				nvmem-cell-names = "wcn_efuse_blk0";
+				nvmem-cells = <0xffffffff>;
+				phandle = <0x35>;
+				reg = <0x0 0x87000000 0x0 0x200000 0x0 0x7c00a000 0x0 0x74>;
+				sprd,apcp-sync-addr = <0x7fdc00>;
+				sprd,ctrl-mask = <0x3fff 0x2000000 0x80 0x1000000 0x40000000 0x100f 0x55 0x3000000 0xffffffff 0x55>;
+				sprd,ctrl-probe-num = <0x1>;
+				sprd,ctrl-reg = <0x9018 0x23a8 0x2818 0x23a8 0x90 0x98 0xc 0x1410 0x4c 0xc>;
+				sprd,ctrl-rw-offset = <0x1000 0x2000 0x2000 0x2000 0x0 0x0 0x0 0x1000 0x0 0x0>;
+				sprd,ctrl-shutdown-mask = <0x1000>;
+				sprd,ctrl-shutdown-reg = <0x98>;
+				sprd,ctrl-shutdown-rw-offset = <0x0>;
+				sprd,ctrl-shutdown-type = <0xa>;
+				sprd,ctrl-shutdown-us-delay = <0xa>;
+				sprd,ctrl-shutdown-value = <0x1000>;
+				sprd,ctrl-type = <0x2 0x1 0x1 0x1 0xa 0xa 0x9 0x7 0x9 0x9>;
+				sprd,ctrl-us-delay = <0x3e8 0x3e8 0x3e8 0x7d0 0x3e8 0x3e8 0x3e8 0x3e8 0x3e8 0x3e8>;
+				sprd,ctrl-value = <0x70 0x2000000 0x80 0x1000000 0x40000000 0x0 0x55 0x3000000 0x7fdc00 0x0>;
+				sprd,debugbus-to-ddr-disable;
+				sprd,file-length = <0x200000>;
+				sprd,file-name = "/dev/block/platform/soc/soc:ap-apb/201d0000.sdio/by-name/wcnmodem";
+				sprd,file-name-ufs = "/dev/block/platform/soc/soc:ap-apb/20200000.ufs/by-name/wcnmodem";
+				sprd,firmware-path = "/vendor/firmware/";
+				sprd,name = "wcn_btwf";
+				sprd,syscon-ap-apb = <0xffffffff>;
+				sprd,syscon-ap-pmu = <0xffffffff>;
+				sprd,syscon-ap-pub-apb = <0xffffffff>;
+				sprd,syscon-wcn-aon-ahb = <0xffffffff>;
+				sprd,syscon-wcn-aon-apb = <0xffffffff>;
+				sprd,syscon-wcn-btwf-ahb = <0xffffffff>;
+				sprd,wcn-pm-qos-enable;
+				sprd,wcn-sipc-ver = <0x1>;
+				vddwcn-supply = <0xffffffff>;
+				vddwifipa-supply = <0xffffffff>;
+				xtal-26m-type-sel-gpios = <0xffffffff 0xad 0x0>;
+
+				sprd-wlan {
+					compatible = "sprd,sc2355-sipc-wifi";
+					reg = <0x0 0x87380000 0x0 0x280000>;
+				};
+			};
+
+			cpwcn-gnss {
+				#address-cells = <0x1>;
+				#size-cells = <0x1>;
+				compatible = "unisoc,integrate_gnss";
+				dcxo1v8-supply = <0xffffffff>;
+				merlion-chip-en-gpios = <0xffffffff 0x76 0x0>;
+				merlion-rst-gpios = <0xffffffff 0x75 0x0>;
+				nvmem-cell-names = "gnss_efuse_blk0";
+				nvmem-cells = <0xffffffff>;
+				phandle = <0x36>;
+				reg = <0x0 0x87600000 0x0 0x180000>;
+				sprd,apcp-sync-addr = <0x1ffc00>;
+				sprd,ctrl-mask = <0x3fff 0x2000000 0x80 0x1000000 0x40000000 0x100f 0x22 0x1ffffff 0xffffffff 0x22>;
+				sprd,ctrl-probe-num = <0x1>;
+				sprd,ctrl-reg = <0x9018 0x23a8 0x2818 0x23a8 0x90 0xc8 0xc 0x1404 0x50 0xc>;
+				sprd,ctrl-rw-offset = <0x1000 0x2000 0x2000 0x2000 0x0 0x0 0x0 0x1000 0x0 0x0>;
+				sprd,ctrl-shutdown-mask = <0x1000>;
+				sprd,ctrl-shutdown-reg = <0xc8>;
+				sprd,ctrl-shutdown-rw-offset = <0x0>;
+				sprd,ctrl-shutdown-type = <0xa>;
+				sprd,ctrl-shutdown-us-delay = <0xa>;
+				sprd,ctrl-shutdown-value = <0x1000>;
+				sprd,ctrl-type = <0x2 0x1 0x1 0x1 0xa 0xa 0x9 0x8 0x9 0x9>;
+				sprd,ctrl-us-delay = <0x3e8 0x3e8 0x3e8 0x7d0 0x3e8 0x3e8 0x3e8 0x3e8 0x3e8 0x3e8>;
+				sprd,ctrl-value = <0x70 0x2000000 0x80 0x1000000 0x40000000 0x0 0x22 0x1600000 0x1ffc00 0x0>;
+				sprd,file-length = <0x180000>;
+				sprd,file-name = "/dev/block/platform/soc/soc:ap-apb/201d0000.sdio/by-name/gnssmodem";
+				sprd,file-name-ext = "/dev/block/platform/soc/soc:ap-apb/201d0000.sdio/by-name/gnssmodem";
+				sprd,file-name-ext-ufs = "/dev/block/platform/soc/soc:ap-apb/20200000.ufs/by-name/gnssmodem";
+				sprd,file-name-ufs = "/dev/block/platform/soc/soc:ap-apb/20200000.ufs/by-name/gnssmodem";
+				sprd,name = "wcn_gnss";
+				sprd,syscon-ap-apb = <0xffffffff>;
+				sprd,syscon-ap-pmu = <0xffffffff>;
+				sprd,syscon-ap-pub-apb = <0xffffffff>;
+				sprd,syscon-wcn-aon-ahb = <0xffffffff>;
+				sprd,syscon-wcn-aon-apb = <0xffffffff>;
+				sprd,syscon-wcn-gnss-ahb = <0xffffffff>;
+				sprd,wcn-sipc-ver = <0x1>;
+				vddwcn-supply = <0xffffffff>;
+				xtal-26m-type-sel-gpios = <0xffffffff 0xad 0x0>;
+			};
+
+			fingerprint@0 {
+				compatible = "microarray,afs121";
+				fpint-gpios = <0xffffffff 0x1d 0x0>;
+			};
+
+			gnss_common_ctl {
+				compatible = "sprd,gnss";
+				sprd,name = "gnss_common_ctl";
+			};
+
+			gpio-keys {
+				compatible = "gpio-keys";
+
+				key-power {
+					debounce-interval = <0x2>;
+					gpios = <0xffffffff 0x1 0x1>;
+					label = "Power Key";
+					linux,code = <0x74>;
+					wakeup-source;
+				};
+
+				key-volumedown {
+					debounce-interval = <0x2>;
+					gpios = <0xffffffff 0x7c 0x1>;
+					label = "Volume Down Key";
+					linux,code = <0x72>;
+					wakeup-source;
+				};
+
+				key-volumeup {
+					debounce-interval = <0x2>;
+					gpios = <0xffffffff 0x4 0x0>;
+					label = "Volume Up Key";
+					linux,code = <0x73>;
+					wakeup-source;
+				};
+			};
+
+			lcds {
+
+				lcd_dummy_mipi_hd {
+					phandle = <0x2b>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,initial-command = [13 78 00 01 11 13 64 00 01 29];
+					sprd,sleep-in-command = [13 0a 00 01 28 13 78 00 01 10];
+					sprd,sleep-out-command = [13 78 00 01 11 13 64 00 01 29];
+
+					display-timings {
+						native-mode = <0x3>;
+
+						timing0 {
+							clock-frequency = <0x493e000>;
+							hactive = <0x2d0>;
+							hback-porch = <0x3c>;
+							hfront-porch = <0x50>;
+							hsync-len = <0x3c>;
+							phandle = <0x3>;
+							vactive = <0x500>;
+							vback-porch = <0xc>;
+							vfront-porch = <0x26>;
+							vsync-len = <0x4>;
+						};
+					};
+				};
+
+				lcd_ft8057_ld_mipi_hd {
+					phandle = <0x13>;
+					sprd,cabc-moving-command = [23 00 00 02 55 03];
+					sprd,cabc-off-command = [23 00 00 02 55 00];
+					sprd,cabc-still-command = [23 00 00 02 55 02];
+					sprd,cabc-ui-command = [23 00 00 02 55 01];
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x0>;
+					sprd,esd-check-mode = <0x1>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,height-mm = <0x9c>;
+					sprd,initial-command = [29 00 00 02 00 00 29 00 00 04 ff 80 57 01 29 00 00 02 00 80 29 00 00 03 ff 80 57 29 00 00 02 00 86 29 00 00 02 a4 b6 29 00 00 02 00 a3 29 00 00 02 a5 04 29 00 00 02 00 a5 29 00 00 02 b0 1d 29 00 00 02 00 a3 29 00 00 05 b3 06 40 00 18 29 00 00 02 00 86 29 00 00 02 b7 80 29 00 00 02 00 70 29 00 00 07 c0 00 9f 01 14 00 1c 29 00 00 02 00 ca 29 00 00 03 c0 90 00 29 00 00 02 00 a1 29 00 00 07 c1 cc 3c 00 3b 00 ec 29 00 00 02 00 68 29 00 00 25 c2 8a 09 68 b6 89 09 68 b6 86 09 68 b6 85 09 68 b6 06 04 68 b6 07 04 68 b6 08 04 68 b6 09 04 68 b6 0d 09 68 b6 29 00 00 02 00 8c 29 00 00 59 c2 82 02 03 68 b6 81 03 03 68 b6 80 04 03 68 b6 01 05 03 68 b6 02 06 03 68 b6 03 07 03 68 b6 04 08 03 68 b6 05 09 03 68 b6 06 86 03 68 b6 07 85 03 68 b6 08 84 03 68 b6 09 83 03 68 b6 0a 82 03 68 b6 0b 81 03 68 b6 0c 00 03 68 b6 0d 01 03 68 b6 ff ff ff ff ff ff ff ff 29 00 00 02 00 e4 29 00 00 05 c2 0e 09 68 b6 29 00 00 02 00 90 29 00 00 02 c3 00 29 00 00 02 00 85 29 00 00 15 c4 80 00 00 00 00 00 00 00 00 00 00 88 02 00 00 ff 80 cc 00 08 29 00 00 02 00 82 29 00 00 03 c5 55 07 29 00 00 02 00 90 29 00 00 11 c5 84 03 01 6b 15 04 41 6b 25 01 41 51 41 25 55 56 29 00 00 02 00 b0 29 00 00 11 c5 00 0a 0d 00 0a 02 57 57 37 37 f0 f0 00 00 00 00 29 00 00 02 00 b0 29 00 00 07 ca 00 00 0c 00 00 06 29 00 00 02 00 80 29 00 00 45 cb c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 02 00 d2 29 00 00 1f cb 83 00 83 83 00 83 83 00 83 83 00 00 00 00 83 83 00 83 83 00 83 83 00 83 83 00 83 c1 00 00 29 00 00 02 00 fa 29 00 00 03 cb 83 00 29 00 00 02 00 80 29 00 00 19 cc 00 16 18 00 00 00 00 00 1f 1e 26 1a 14 12 10 0e 0c 0a 08 06 04 02 00 00 29 00 00 02 00 80 29 00 00 19 cd 00 17 19 00 00 00 00 00 1f 1e 26 1b 15 13 11 0f 0d 0b 09 07 05 03 00 00 29 00 00 02 00 80 29 00 00 02 ce 00 29 00 00 02 00 d0 29 00 00 1d ce 01 00 1e 01 01 00 f1 01 00 00 0f ff 00 00 0f 00 00 08 03 39 04 4c 03 39 00 f1 00 f1 29 00 00 02 00 99 29 00 00 02 cf 56 29 00 00 02 00 00 29 00 00 03 d8 2b 2b 29 00 00 02 00 00 29 00 00 19 e1 2d 31 3c 48 50 58 65 71 6f 7a 7a 8b 7b 6a 6d 61 5a 4f 3f 35 2d 1c 10 0f 29 00 00 02 00 00 29 00 00 19 e2 2d 31 3c 48 50 58 65 71 6f 7a 7a 8b 7b 6a 6d 61 5a 4f 3f 35 2d 1c 10 0f 29 00 00 02 00 91 29 00 00 05 e9 ff ff ff 00 29 00 00 02 00 83 29 00 00 15 f5 11 19 19 0d 46 0c 0f c0 00 00 00 00 00 0a ac 4b 01 11 49 0d 29 00 00 02 00 b1 29 00 00 13 f5 1b 16 16 16 c8 18 1d c1 d9 c1 00 00 00 00 00 00 00 42 29 00 00 02 00 00 29 00 00 04 ff 00 00 00 29 00 00 02 00 80 29 00 00 03 ff 00 00 29 00 00 03 51 ff 0f 29 00 00 02 53 2c 29 00 00 02 55 00 05 78 00 01 11 05 00 00 01 29 29 1e 00 02 35 00];
+					sprd,phy-bit-clock = <0x10dc68>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0xa>;
+
+						timing0 {
+							clock-frequency = <0x927c000>;
+							hactive = <0x2d0>;
+							hback-porch = <0x26>;
+							hfront-porch = <0x80>;
+							hsync-len = <0x8>;
+							phandle = <0xa>;
+							vactive = <0x640>;
+							vback-porch = <0xf0>;
+							vfront-porch = <0x3f3>;
+							vsync-len = <0x8>;
+						};
+
+						timing1 {
+							clock-frequency = <0x927c000>;
+							hactive = <0x2d0>;
+							hback-porch = <0x26>;
+							hfront-porch = <0x80>;
+							hsync-len = <0x8>;
+							phandle = <0x31>;
+							vactive = <0x640>;
+							vback-porch = <0xf0>;
+							vfront-porch = <0x39>;
+							vsync-len = <0x8>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 ff];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_g40396_truly_mipi_fhd {
+					phandle = <0x29>;
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsc-enable = <0x0>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,dual-dsi-enable = <0x0>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-regs = <0xa>;
+					sprd,esd-return-code = <0x9c>;
+					sprd,height-mm = <0x98>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [29 00 00 02 00 00 29 00 00 04 ff 87 56 01 29 00 00 02 00 80 29 00 00 03 ff 87 56 29 00 00 02 00 a1 29 00 00 07 b3 04 38 09 60 00 fc 29 00 00 02 00 80 29 00 00 07 c0 00 8c 00 20 00 08 29 00 00 02 00 90 29 00 00 07 c0 00 8c 00 20 00 08 29 00 00 02 00 a0 29 00 00 07 c0 01 19 00 20 00 08 29 00 00 02 00 b0 29 00 00 06 c0 00 8c 00 20 08 29 00 00 02 00 c1 29 00 00 09 c0 00 d0 00 9f 00 8b 00 ee 29 00 00 02 00 d7 29 00 00 07 c0 00 8b 00 20 00 08 29 00 00 02 00 a3 29 00 00 07 c1 00 3e 00 3e 00 02 29 00 00 02 00 80 29 00 00 11 ce 01 81 09 13 00 d0 00 e8 00 82 00 9a 00 68 00 74 29 00 00 02 00 90 29 00 00 10 ce 00 8e 0c df 00 8e 80 09 13 00 04 00 08 08 08 29 00 00 02 00 a0 29 00 00 04 ce 00 00 00 29 00 00 02 00 b0 29 00 00 04 ce 22 00 00 29 00 00 02 00 d1 29 00 00 08 ce 00 00 01 00 00 00 00 29 00 00 02 00 e1 29 00 00 0c ce 08 02 4d 02 4d 02 4d 00 00 00 00 29 00 00 02 00 f1 29 00 00 0a ce 13 09 0d 00 f6 01 96 00 c2 29 00 00 02 00 b0 29 00 00 05 cf 00 00 68 6c 29 00 00 02 00 b5 29 00 00 05 cf 04 04 e4 e8 29 00 00 02 00 c0 29 00 00 05 cf 09 09 2c 30 29 00 00 02 00 c5 29 00 00 05 cf 00 00 08 0c 29 00 00 02 00 e8 29 00 00 02 c0 40 29 00 00 02 00 80 29 00 00 05 c2 84 01 3f 3f 29 00 00 02 00 90 29 00 00 05 c2 02 01 00 00 29 00 00 02 00 a0 29 00 00 10 c2 84 04 00 00 8a 83 04 00 00 8a 82 04 00 00 8a 29 00 00 02 00 b0 29 00 00 06 c2 81 04 00 00 8a 29 00 00 02 00 e0 29 00 00 0f c2 33 33 33 33 33 33 00 00 12 00 05 02 00 00 29 00 00 02 00 c0 29 00 00 05 c3 99 99 99 99 29 00 00 02 00 d0 29 00 00 0d c3 45 00 00 05 45 00 00 05 45 00 00 05 29 00 00 02 00 80 29 00 00 11 cb c1 c1 00 c1 c1 00 00 c1 fe 01 c1 00 fd c1 00 c0 29 00 00 02 00 90 29 00 00 11 cb c0 00 00 00 00 00 00 00 ff 00 00 00 00 00 00 00 29 00 00 02 00 a0 29 00 00 05 cb 00 00 00 00 29 00 00 02 00 b0 29 00 00 05 cb 55 55 95 55 29 00 00 02 00 c0 29 00 00 05 cb 10 51 94 50 29 00 00 02 00 80 29 00 00 11 cc 00 00 00 25 25 29 16 17 18 19 1a 1b 22 24 06 06 29 00 00 02 00 90 29 00 00 09 cc 08 08 24 02 12 01 29 29 29 00 00 02 00 80 29 00 00 11 cd 00 00 00 25 25 29 16 17 18 19 1a 1b 22 24 07 07 29 00 00 02 00 90 29 00 00 09 cd 09 09 24 02 12 01 29 29 29 00 00 02 00 a0 29 00 00 11 cc 00 00 00 25 25 29 16 17 18 19 1a 1b 24 23 09 09 29 00 00 02 00 b0 29 00 00 09 cc 07 07 24 12 02 01 29 29 29 00 00 02 00 a0 29 00 00 11 cd 00 00 00 25 25 29 16 17 18 19 1a 1b 24 23 08 08 29 00 00 02 00 b0 29 00 00 09 cd 06 06 24 12 02 01 29 29 29 00 00 02 00 80 29 00 00 02 a7 10 29 00 00 02 00 82 29 00 00 03 a7 33 02 29 00 00 02 00 85 29 00 00 02 a7 10 29 00 00 02 00 85 29 00 00 02 c4 1c 29 00 00 02 00 97 29 00 00 02 c4 01 29 00 00 02 00 a0 29 00 00 04 c4 2d d2 2d 29 00 00 02 00 93 29 00 00 02 c5 29 29 00 00 02 00 97 29 00 00 02 c5 29 29 00 00 02 00 9a 29 00 00 02 c5 23 29 00 00 02 00 9c 29 00 00 02 c5 23 29 00 00 02 00 b6 29 00 00 03 c5 1f 1f 29 00 00 02 00 b8 29 00 00 03 c5 19 19 29 00 00 02 00 9b 29 00 00 02 f5 4b 29 00 00 02 00 93 29 00 00 03 f5 00 00 29 00 00 02 00 9d 29 00 00 02 f5 49 29 00 00 02 00 82 29 00 00 03 f5 00 00 29 00 00 02 00 8c 29 00 00 04 c3 00 00 00 29 00 00 02 00 84 29 00 00 03 c5 28 28 29 00 00 02 00 a4 29 00 00 02 d7 00 29 00 00 02 00 80 29 00 00 03 f5 59 59 29 00 00 02 00 84 29 00 00 04 f5 59 59 59 29 00 00 02 00 96 29 00 00 02 f5 59 29 00 00 02 00 a6 29 00 00 02 f5 59 29 00 00 02 00 ca 29 00 00 02 c0 80 29 00 00 02 00 b1 29 00 00 02 f5 1f 29 00 00 02 00 00 29 00 00 03 d8 2f 2f 29 00 00 02 00 00 29 00 00 03 d9 23 23 29 00 00 02 00 86 29 00 00 07 c0 01 04 01 04 0e 03 29 00 00 02 00 96 29 00 00 07 c0 01 04 01 04 0d 03 29 00 00 02 00 a6 29 00 00 07 c0 01 04 01 04 18 03 29 00 00 02 00 e9 29 00 00 07 c0 01 04 01 04 0d 03 29 00 00 02 00 a3 29 00 00 07 ce 01 04 01 04 0d 03 29 00 00 02 00 b3 29 00 00 07 ce 01 04 01 04 0d 03 29 00 00 02 00 a0 29 00 00 02 d7 04 29 00 00 02 00 00 29 00 00 29 e1 00 04 08 0f 1a 1a 22 28 33 5c 3b 42 48 4d 1b 53 5b 63 6a 2b 72 79 81 8a 3a 95 9b a1 a9 0a b2 bd cb d4 6b e0 ee fa ff 17 29 00 00 02 00 00 29 00 00 29 e2 00 04 08 0f 1a 1a 22 28 33 5c 3b 42 48 4e 18 53 5b 63 6b 28 72 79 81 8a 2a 94 9b a1 a9 ca b2 bd cb d5 68 e0 ee fa ff 67 29 00 00 02 00 00 29 00 00 29 e3 00 03 07 0e 3f 19 21 27 31 46 39 40 47 4c b2 51 5a 61 69 8d 70 77 7f 88 68 92 97 9d a5 2c ad b7 c3 cb 58 d4 df e6 ea 7b 29 00 00 02 00 00 29 00 00 29 e4 00 03 07 0e 3f 19 21 27 31 45 39 40 47 4c b1 51 59 61 69 bd 70 77 7f 87 67 91 97 9d a5 ec ad b7 c3 cb 49 d4 e0 e6 ea 4b 29 00 00 02 00 00 29 00 00 29 e5 00 03 08 0e 33 19 20 27 31 31 39 41 47 4c 87 51 5a 62 69 d6 70 77 7f 88 b8 92 97 9e a5 32 ae b8 c5 ce 2c d8 e6 f0 f5 f6 29 00 00 02 00 00 29 00 00 29 e6 00 03 08 0e 33 19 20 27 31 31 39 41 47 4c 87 51 5a 62 69 d2 70 77 7f 88 b8 92 97 9e a5 32 ae b8 c5 ce 2d d9 e7 f0 f5 06 29 00 00 02 00 cc 29 00 00 02 c0 10 29 00 00 02 00 00 29 00 00 04 ff ff ff ff 15 00 00 02 35 00 15 00 00 02 51 ff 15 00 00 02 53 24 15 00 00 02 55 00 05 b4 00 01 11 05 64 00 01 29];
+					sprd,output-bpc = <0x8>;
+					sprd,phy-bit-clock = <0x104be0>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-gpio-delay = <0x14>;
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x5 0x1 0x14>;
+					sprd,sleep-in-command = <0x15000002 0x3900 0x4ff87 0x56011500 0x20080 0x39000003 0xff875605 0x128 0x5780001 0x10150000 0x2000039 0x5f7 0x5aa59527>;
+					sprd,sleep-out-command = [05 78 00 01 11 05 00 00 01 29];
+					sprd,slice-height = <0x960>;
+					sprd,slice-width = <0x21c>;
+					sprd,sr-height = <0x640>;
+					sprd,sr-width = <0x2d0>;
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,width-mm = <0x44>;
+
+					display-timings {
+						native-mode = <0x1>;
+
+						timing0 {
+							clock-frequency = <0xa9c1080>;
+							hactive = <0x438>;
+							hback-porch = <0x20>;
+							hfront-porch = <0x30>;
+							hsync-len = <0x10>;
+							phandle = <0x1>;
+							vactive = <0x960>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x5b>;
+							vsync-len = <0x4>;
+						};
+					};
+				};
+
+				lcd_hx83108a_boe_mipi_hd {
+					phandle = <0x15>;
+					sprd,cabc-moving-command = [23 00 00 02 55 03];
+					sprd,cabc-off-command = [23 00 00 02 55 00];
+					sprd,cabc-still-command = [23 00 00 02 55 02];
+					sprd,cabc-ui-command = [23 00 00 02 55 01];
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9d>;
+					sprd,height-mm = <0x9c>;
+					sprd,himax-sequence = <0x1>;
+					sprd,himax-vsn-recovery = <0x1>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 04 b9 83 10 8a 39 00 00 02 bd 00 39 00 00 12 b1 2c 37 37 35 35 22 43 57 18 18 0c 98 21 11 46 34 ff 39 00 00 11 b2 00 26 d0 40 00 e2 3a 20 5e 11 00 00 00 15 22 df 39 00 00 0f b4 14 14 14 14 14 14 14 50 14 50 02 52 01 02 39 00 00 05 ba 73 03 a8 96 39 00 00 03 bf fc 40 39 00 00 07 c0 62 62 11 22 b3 cf 39 00 00 02 e9 c5 39 00 00 09 c7 88 ca 08 14 02 04 04 00 39 00 00 02 e9 3f 39 00 00 02 e9 c6 39 00 00 04 c8 87 13 ff 39 00 00 02 e9 3f 39 00 00 02 cc 02 39 00 00 06 cb 13 08 e0 09 57 39 00 00 03 d1 27 02 39 00 00 05 d2 07 0f 07 0f 39 00 00 20 d3 c0 00 08 08 00 00 37 37 44 43 dd dd dd dd 32 10 d9 00 d9 32 10 08 00 08 32 10 08 00 08 00 00 39 00 00 2d d5 18 18 18 18 be be 18 18 20 21 22 23 04 05 06 07 00 01 02 03 3e 3e 3e 3e 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 39 00 00 2d d6 18 18 3e 3e be be 18 18 23 22 21 20 03 02 01 00 07 06 05 04 18 18 3e 3e 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 39 00 00 25 d8 2e aa ab 00 00 00 2e aa ab 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 14 e7 d2 14 14 01 0f 84 00 3c 3c 32 32 00 00 00 00 e9 10 01 02 39 00 00 02 e9 dd 39 00 00 02 e7 32 39 00 00 02 e9 3f 39 00 00 02 e9 e0 39 00 00 02 e7 08 39 00 00 02 e9 3f 39 00 00 2f e0 0d 09 10 14 1a 29 3e 43 4a 46 61 68 70 81 80 8a 93 a6 a6 52 5a 65 73 00 09 10 14 1a 29 3e 43 4a 46 61 68 70 81 80 8a 93 a6 a6 52 5a 65 73 39 00 00 02 bd 01 39 00 00 03 b1 01 1b 39 00 00 02 bf 0e 39 00 00 02 e9 c6 39 00 00 03 d2 d4 ec 39 00 00 02 e9 3f 39 00 00 02 e9 c8 39 00 00 02 d3 81 39 00 00 02 e9 3f 39 00 00 05 cb 00 34 02 01 39 00 00 25 d8 ff ff ff 00 00 00 ff ff ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 0e e7 01 00 20 01 00 00 29 02 33 04 1b 00 00 39 00 00 02 bd 02 39 00 00 0d d8 ff ff ff ff ff f0 ff ff ff ff ff f0 39 00 00 02 e9 e0 39 00 00 02 e7 d1 39 00 00 02 e9 3f 39 00 00 02 bd 03 39 00 00 19 d8 ae aa aa aa aa a0 ae aa aa aa aa a0 ae aa aa aa aa a0 ae aa aa aa aa a0 39 00 00 25 e4 13 3c 46 51 84 85 86 87 e5 ff ff 03 65 7f a3 ad b7 c1 c6 7a 7c aa ea 03 65 7f a3 ad b7 c1 c6 7a 7c aa ea 03 39 00 00 02 bd 01 39 00 00 28 e4 e1 e1 e1 e1 e1 e1 e1 e1 c5 b0 9e 8e 7f 73 67 5b 4f 45 39 34 2b 25 22 1d 17 13 0e 0a 08 05 01 54 55 55 55 55 55 55 55 39 00 00 02 bd 00 39 00 00 02 35 00 05 7a 00 01 11 39 00 00 02 e9 ff 39 00 00 02 bf 02 39 00 00 02 e9 3f 39 00 00 06 c9 00 1e 07 18 01 39 00 00 04 b9 00 00 00 39 00 00 02 53 24 05 01 00 01 29];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [14 14 03];
+					sprd,reset-off-avdd-sequence = <0x0 0x14>;
+					sprd,reset-off-sequence = <0x1 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x3 0x1 0x32 0x0 0x3 0x1 0x14>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-in-command-gesture-off = [05 14 00 01 28 05 78 00 01 10 39 00 00 04 b9 83 10 8a 15 00 00 02 bd 00 15 14 00 02 b1 2d];
+					sprd,sleep-out-command = [05 64 00 01 11 05 14 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0x9>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x78>;
+							hfront-porch = <0x78>;
+							hsync-len = <0x1c>;
+							phandle = <0x9>;
+							vactive = <0x640>;
+							vback-porch = <0xdc>;
+							vfront-porch = <0x3ec>;
+							vsync-len = <0x8>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x78>;
+							hfront-porch = <0x78>;
+							hsync-len = <0x1c>;
+							phandle = <0x30>;
+							vactive = <0x640>;
+							vback-porch = <0xdc>;
+							vfront-porch = <0x3c>;
+							vsync-len = <0x8>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_hx83108a_lce_mipi_hd {
+					phandle = <0x12>;
+					sprd,cabc-moving-command = [23 00 00 02 55 03];
+					sprd,cabc-off-command = [23 00 00 02 55 00];
+					sprd,cabc-still-command = [23 00 00 02 55 02];
+					sprd,cabc-ui-command = [23 00 00 02 55 01];
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9d>;
+					sprd,height-mm = <0x9c>;
+					sprd,himax-sequence = <0x1>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 04 b9 83 10 8a 39 00 00 02 bd 00 39 00 00 13 b1 2c 32 32 2f 2f 20 61 39 18 18 0c 98 21 11 46 77 0c 04 39 00 00 11 b2 00 26 d0 40 00 e2 3a 20 62 11 00 00 00 14 22 df 39 00 00 0f b4 5a 5a 5a 5a 5a 5a 5a 49 5a 49 02 4e 01 02 39 00 00 05 ba 73 03 a8 96 39 00 00 03 bf fc 40 39 00 00 07 c0 62 62 11 22 b3 df 39 00 00 02 e9 cd 39 00 00 02 c0 85 39 00 00 02 e9 3f 39 00 00 02 e9 c5 39 00 00 09 c7 88 ca 08 14 02 04 04 00 39 00 00 02 e9 3f 39 00 00 02 e9 c6 39 00 00 04 c8 87 13 ff 39 00 00 02 e9 3f 39 00 00 02 cc 02 39 00 00 06 cb 13 08 e0 09 57 39 00 00 03 d1 27 02 39 00 00 05 d2 07 0f 07 0f 39 00 00 20 d3 c0 00 0c 0c 00 00 5b 5b 66 6b da da da da 32 10 d6 00 d6 32 10 da 00 da 32 10 0f 00 0f 00 00 39 00 00 2d d5 18 18 18 18 3e 3e 3e 3e 18 18 18 18 be be 18 18 18 18 18 18 be be 01 00 03 02 05 04 07 06 09 08 0b 0a 25 24 23 22 21 20 18 18 18 18 39 00 00 2d d6 18 18 18 18 3e 3e 3e 3e 18 18 18 18 be be 18 18 18 18 18 18 be be 01 00 03 02 05 04 07 06 09 08 0b 0a 25 24 23 22 21 20 18 18 18 18 39 00 00 25 d8 aa ae ae aa aa a0 aa ae ae aa aa a0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 14 e7 d3 14 14 01 0f 84 00 3c 3c 32 32 00 00 00 00 e9 10 01 02 39 00 00 02 e9 dd 39 00 00 02 e7 32 39 00 00 02 e9 3f 39 00 00 02 e9 e0 39 00 00 02 e7 08 39 00 00 02 e9 3f 39 00 00 2f e0 00 02 0b 10 17 23 38 40 47 43 5e 66 6e 80 80 8a 94 a7 a5 51 59 64 73 00 02 0b 10 17 23 38 40 47 43 5e 66 6e 80 80 8a 94 a7 a5 51 59 64 73 39 00 00 02 bd 01 39 00 00 03 b1 01 1b 39 00 00 02 bf 0e 39 00 00 02 e9 c6 39 00 00 03 d2 d4 ec 39 00 00 02 e9 3f 39 00 00 02 e9 c8 39 00 00 02 d3 81 39 00 00 02 e9 3f 39 00 00 05 cb 00 34 02 01 39 00 00 25 d8 aa aa aa aa aa a0 aa aa aa aa aa a0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 0e e7 01 00 20 01 00 00 2d 02 33 06 1b 00 00 39 00 00 02 bd 02 39 00 00 0d d8 ff ff ff ff ff f0 ff ff ff ff ff f0 39 00 00 02 e9 e0 39 00 00 02 e7 d1 39 00 00 02 e9 3f 39 00 00 02 bd 03 39 00 00 19 d8 aa ae ae aa aa a0 aa ae ae aa aa a0 aa ae ae aa aa a0 aa ae ae aa aa a0 39 00 00 02 bd 00 39 00 00 02 35 00 05 7a 00 01 11 39 00 00 02 e9 ff 39 00 00 02 bf 02 39 00 00 02 e9 3f 39 00 00 06 c9 00 1e 07 18 01 39 00 00 04 b9 00 00 00 39 00 00 02 53 24 05 01 00 01 29];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [12 12 03];
+					sprd,reset-off-avdd-sequence = <0x0 0x14>;
+					sprd,reset-off-sequence = <0x1 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x3 0x1 0x32 0x0 0x3 0x1 0x14>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-in-command-gesture-off = [05 14 00 01 28 05 78 00 01 10 39 00 00 04 b9 83 10 8a 15 00 00 02 bd 00 15 14 00 02 b1 2d];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0x8>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x78>;
+							hfront-porch = <0x78>;
+							hsync-len = <0x1c>;
+							phandle = <0x8>;
+							vactive = <0x640>;
+							vback-porch = <0xdc>;
+							vfront-porch = <0x3ec>;
+							vsync-len = <0x8>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x78>;
+							hfront-porch = <0x78>;
+							hsync-len = <0x1c>;
+							phandle = <0x2f>;
+							vactive = <0x640>;
+							vback-porch = <0xdc>;
+							vfront-porch = <0x3c>;
+							vsync-len = <0x8>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_icnl9916c_hjc_cd_mipi_hd {
+					phandle = <0x18>;
+					sprd,cabc-moving-command = [39 00 00 03 55 00 00];
+					sprd,cabc-off-command = [39 00 00 03 55 00 00];
+					sprd,cabc-still-command = <0x39000004 0xf099160c 0x39000003 0x55020039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x90a0b0c0 0xd0e0f2d0 0xd0d0dde1 0xe0e1e1e0 0xe0e1e3e3 0xe3e3e339 0x21e2 0x26f82d00 0x2d002d00 0x2e802d00 0x2d002d00 0x2d002d00 0x2d003100 0x2e903200 0x36003970 0x39000004 0xf0000000>;
+					sprd,cabc-ui-command = <0x39000004 0xf099160c 0x39000003 0x55010039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x90a0b0c0 0xd0e0eaf6 0xf6f6f6f6 0xf2f7f7f5 0xf6f6f3f4 0xf6f6ff39 0x21e2 0x32f8396b 0x396b396b 0x3b803b80 0x396b396f 0x396b396b 0x396b3851 0x396b396b 0x396b3e70 0x39000004 0xf0000000>;
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x1>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 04 f0 99 16 0c 39 00 00 15 c1 00 f8 20 44 04 b0 48 04 40 06 22 70 35 30 07 11 84 4c 00 93 39 00 00 07 c3 06 00 ff 00 ff 5c 39 00 00 0d c4 04 31 b8 40 00 bc 00 00 00 00 00 f0 39 00 00 18 c5 03 21 96 c8 3e 00 04 01 14 04 19 0b c6 03 64 ff 01 04 18 22 45 14 38 39 00 00 0e c6 89 24 17 2b 2b 28 3f 03 16 a5 00 00 00 39 00 00 1e b2 03 02 97 98 99 99 8b 01 49 78 7e 78 7e 78 7e 78 7e 78 7e 78 7e 00 00 00 55 55 00 00 00 39 00 00 1a b3 f3 01 02 09 81 78 12 03 73 08 80 00 73 78 73 f3 01 01 01 01 00 00 00 00 00 39 00 00 21 b5 00 04 06 00 00 00 00 00 00 c1 00 2a 1a 18 16 14 12 10 0e 0c 0a 28 60 ff fc 00 00 00 00 00 00 00 39 00 00 21 b6 00 05 07 00 00 00 00 00 00 c1 00 2b 1b 19 17 15 13 11 0f 0d 0b 29 60 ff fc 00 00 00 00 00 00 00 39 00 00 17 b7 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 39 00 00 14 bc 00 00 00 00 04 00 ff f0 0b 13 5c 5b 33 33 00 64 3c 5e 36 39 00 00 0a bf 0c 19 0c 19 00 11 04 18 50 39 00 00 15 c0 40 93 ff ff ff 3f ff 00 ff 00 cc b1 23 45 67 89 ad ff ff f0 39 00 00 21 c7 76 54 32 22 23 45 67 76 30 76 54 32 22 23 45 67 76 30 31 00 01 ff ff 40 6e 6e 40 00 00 00 00 00 39 00 00 21 80 ff f8 ee e6 e0 db d6 d2 ce c2 b9 b2 ab a4 9f 94 8c 84 7c 7b 72 69 5f 53 44 31 27 1b 18 15 11 0d 39 00 00 21 81 ff f8 ee e6 e0 db d6 d2 ce c2 b9 b2 ab a4 9f 94 8c 84 7c 7b 72 69 5f 53 44 31 27 1b 18 15 11 0d 39 00 00 21 82 ff f8 ee e6 e0 db d6 d2 ce c2 b9 b2 ab a4 9f 94 8c 84 7c 7b 72 69 5f 53 44 31 27 1b 18 15 11 0d 39 00 00 1a 83 01 09 05 00 00 09 05 00 00 09 05 00 00 0a 06 02 00 0a 06 02 00 0a 06 02 00 39 00 00 1c 84 17 99 fe b3 17 80 e6 82 ec 17 99 fe b3 17 80 e6 82 ec 17 99 fe b3 17 80 e6 82 ec 15 00 00 02 c2 00 39 00 00 1f ca 25 40 00 19 46 94 41 8f 44 44 68 68 40 40 6e 6e 40 40 33 00 01 01 0f 0b 02 02 05 00 00 04 39 00 00 21 e0 0c 00 b0 10 00 07 b7 29 00 21 02 00 00 00 00 24 12 08 11 48 47 00 00 ff 00 00 00 00 00 00 00 00 39 00 00 05 bd a1 0a 52 a6 39 00 00 03 35 00 00 39 00 00 03 51 00 00 39 00 00 03 53 24 00 39 00 00 03 55 00 00 39 78 00 03 11 00 00 39 14 00 03 29 00 00 39 00 00 03 6d 02 00 39 00 00 05 bd a1 0a 52 ae 39 00 00 04 f0 00 00 00];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [0f 0f 03];
+					sprd,reset-off-sequence = <0x1 0x5>;
+					sprd,reset-on-sequence = <0x1 0xf 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [39 00 00 03 6d 25 00 39 14 00 03 28 00 00 39 78 00 03 10 00 00];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0xb>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xb0>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0xb>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x3fc>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xb0>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0x32>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x44>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_icnl9916c_inx_mipi_hd {
+					phandle = <0x17>;
+					sprd,cabc-moving-command = [39 00 00 03 55 00 00];
+					sprd,cabc-off-command = [39 00 00 03 55 00 00];
+					sprd,cabc-still-command = <0x39000004 0xf099160c 0x39000003 0x55020039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x9099b7c0 0xd0e0f2d0 0xd0d0dde1 0xdfe1e1e0 0xe0e3ebe3 0xe3e3e339 0x21e2 0x26f82d00 0x2d002d00 0x2e802d00 0x2d002d00 0x2d002d00 0x2dd02e80 0x2d003200 0x36003970 0x39000004 0xf0000000>;
+					sprd,cabc-ui-command = <0x39000004 0xf099160c 0x39000003 0x55010039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x90a0b0c0 0xd0e0eaf6 0xf6f6f6f6 0xf2f7f7f5 0xf6f6f3f4 0xf6f6ff39 0x21e2 0x32f8396b 0x396b396b 0x3b803b80 0x396b396f 0x396b396b 0x396b3851 0x396b396b 0x396b3e70 0x39000004 0xf0000000>;
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x1>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 04 f0 99 16 0c 39 00 00 15 c0 40 93 ff ff ff 3f ff 00 ff 00 cc b1 23 45 67 89 ad ff ff f0 39 00 00 21 c1 00 f8 20 54 04 ac 48 04 40 06 22 70 30 30 07 11 84 4c 00 93 13 63 00 00 00 00 00 00 00 00 00 00 39 00 00 09 c2 11 05 01 10 00 01 80 11 39 00 00 09 c3 06 00 ff 00 ff 5c 10 01 39 00 00 0d c4 04 31 b8 40 00 bc 00 00 00 00 00 f0 39 00 00 18 c5 03 21 96 c8 3e 00 09 01 14 04 0f 18 c6 03 64 ff 01 04 18 22 45 14 38 39 00 00 0d c6 72 24 13 2b 2b 28 3f 02 16 96 00 01 15 00 00 02 ca 00 39 00 00 19 b2 70 11 09 10 96 36 0b 07 44 10 10 10 10 10 10 10 10 52 6e 52 6e 00 00 00 39 00 00 0c b3 b4 07 02 0f 81 65 10 24 64 10 00 39 00 00 16 b4 00 10 15 10 15 26 26 91 a2 33 44 00 26 00 55 3c 02 08 20 30 00 39 00 00 21 b5 00 00 32 32 00 00 33 00 00 00 33 0d 0f 11 13 15 17 09 07 05 00 00 ff ff fc 32 20 00 00 00 00 00 39 00 00 21 b6 00 00 32 32 00 00 33 00 00 00 33 0c 0e 10 12 14 16 08 06 04 00 00 ff ff fc 32 20 00 00 00 00 00 39 00 00 17 b7 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 5a 39 00 00 09 bb 01 02 03 0a 04 13 14 00 39 00 00 14 bc 00 00 00 00 04 00 ff f0 0b 13 54 5b 33 33 00 78 3c 70 34 39 00 00 0e bd a1 0a 52 ae 8f 04 c7 c1 06 03 2e 15 01 39 00 00 0a bf 0c 19 0c 19 00 11 04 18 50 39 00 00 1c c7 76 54 32 22 34 56 77 77 30 76 54 32 22 34 56 77 77 30 31 00 01 ff ff 00 7d 91 40 39 00 00 21 80 ff fb f3 ed e8 e3 df db d8 cc c3 bb b4 ae a7 9c 91 87 7b 7a 6e 64 59 4b 3c 2c 22 15 12 0e 0c 09 39 00 00 21 81 ff fb f3 ed e8 e3 df db d8 cc c3 bb b4 ae a7 9c 91 87 7b 7a 6e 64 59 4b 3c 2c 22 15 12 0e 0c 09 39 00 00 21 82 ff fb f3 ed e8 e3 df db d8 cc c3 bb b4 ae a7 9c 91 87 7b 7a 6e 64 59 4b 3c 2c 22 15 12 0e 0c 09 39 00 00 1a 83 01 06 03 00 00 06 03 00 00 06 03 00 00 0a 06 02 00 0a 06 02 00 0a 06 02 00 39 00 00 1c 84 1c 7b 21 ec 80 c2 67 78 44 1c 7b 21 ec 80 c2 67 78 44 1c 7b 21 ec 80 c2 67 78 44 39 00 00 05 c8 46 00 88 98 39 00 00 21 e0 0c 00 b0 10 00 07 b7 29 00 21 02 00 00 00 00 24 12 08 11 48 47 00 00 ff 00 00 00 00 00 00 00 00 39 00 00 05 bd a1 0a 52 a6 39 00 00 03 35 00 00 39 00 00 03 51 00 00 39 00 00 03 53 24 00 39 00 00 03 55 00 00 39 78 00 03 11 00 00 39 14 00 03 29 00 00 39 00 00 03 6d 02 00 39 00 00 05 bd a1 0a 52 ae 39 00 00 04 f0 00 00 00];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [14 14 03];
+					sprd,reset-off-sequence = <0x1 0x5>;
+					sprd,reset-on-sequence = <0x1 0xf 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [39 00 00 03 6d 25 00 39 14 00 03 28 00 00 39 78 00 03 10 00 00];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0xd>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xb0>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0xd>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x3fc>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xac>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0x34>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x54>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_icnl9916c_ld_hjc_mipi_hd {
+					phandle = <0x14>;
+					sprd,cabc-moving-command = [39 00 00 03 55 00 00];
+					sprd,cabc-off-command = [39 00 00 03 55 00 00];
+					sprd,cabc-still-command = <0x39000004 0xf099160c 0x39000003 0x55020039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x90a0b0c0 0xd0e0f2d0 0xd0d0dde1 0xe0e1e1e0 0xe0e1e3e3 0xe3e3e339 0x21e2 0x26f82d00 0x2d002d00 0x2e802d00 0x2d002d00 0x2d002d00 0x2d003100 0x2e903200 0x36003970 0x39000004 0xf0000000>;
+					sprd,cabc-ui-command = <0x39000004 0xf099160c 0x39000003 0x55010039 0x20e1 0xf1f2f3f 0x4f5f6f7f 0x90a0b0c0 0xd0e0eaf6 0xf6f6f6f6 0xf2f7f7f5 0xf6f6f3f4 0xf6f6ff39 0x21e2 0x32f8396b 0x396b396b 0x3b803b80 0x396b396f 0x396b396b 0x396b3851 0x396b396b 0x396b3e70 0x39000004 0xf0000000>;
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x1>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 04 f0 99 16 0c 39 00 00 15 c1 00 f8 20 44 04 b0 48 04 40 06 22 70 35 30 07 11 84 4c 00 93 39 00 00 07 c3 06 00 ff 00 ff 5c 39 00 00 0d c4 04 31 b8 40 00 bc 00 00 00 00 00 f0 39 00 00 18 c5 03 21 96 c8 3e 00 04 01 14 04 19 0b c6 03 64 ff 01 04 18 22 45 14 38 39 00 00 0e c6 89 24 17 2b 2b 28 3f 03 16 a5 00 00 00 39 00 00 1e b2 03 02 97 98 99 99 8b 01 49 78 7e 78 7e 78 7e 78 7e 78 7e 78 7e 00 00 00 55 55 00 00 00 39 00 00 1a b3 f3 01 02 09 81 78 12 03 73 08 80 00 73 78 73 f3 01 01 01 01 00 00 00 00 00 39 00 00 21 b5 00 04 06 00 00 00 00 00 00 c1 00 2a 1a 18 16 14 12 10 0e 0c 0a 28 60 ff fc 00 00 00 00 00 00 00 39 00 00 21 b6 00 05 07 00 00 00 00 00 00 c1 00 2b 1b 19 17 15 13 11 0f 0d 0b 29 60 ff fc 00 00 00 00 00 00 00 39 00 00 17 b7 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 39 00 00 14 bc 00 00 00 00 04 00 ff f0 0b 13 5c 5b 33 33 00 64 3c 5e 36 39 00 00 0a bf 0c 19 0c 19 00 11 04 18 50 39 00 00 15 c0 40 93 ff ff ff 3f ff 00 ff 00 cc b1 23 45 67 89 ad ff ff f0 39 00 00 21 c7 76 54 32 22 34 56 77 77 30 76 54 32 22 34 56 77 77 30 31 00 01 ff ff 40 6e 6e 40 00 00 00 00 00 39 00 00 21 80 ff f8 ee e6 e0 da d6 d2 ce c2 b9 b2 ab a5 9f 94 8b 81 77 76 6d 63 59 4e 40 31 27 1a 17 12 0e 0c 39 00 00 21 81 ff f8 ee e6 e0 da d6 d2 ce c2 b9 b2 ab a5 9f 94 8b 81 77 76 6d 63 59 4e 40 31 27 1a 17 12 0e 0c 39 00 00 21 82 ff f8 ee e6 e0 da d6 d2 ce c2 b9 b2 ab a5 9f 94 8b 81 77 76 6d 63 59 4e 40 31 27 1a 17 12 0e 0c 39 00 00 1a 83 01 08 05 00 00 08 05 00 00 08 05 00 00 0a 06 02 00 0a 06 02 00 0a 06 02 00 39 00 00 1c 84 16 75 bf c3 07 78 3f 2c cc 16 75 bf c3 07 78 3f 2c cc 16 75 bf c3 07 78 3f 2c cc 15 00 00 02 c2 00 39 00 00 1f ca 25 40 00 19 46 94 41 8f 44 44 68 68 40 40 6e 6e 40 40 33 00 01 01 0f 0b 02 02 05 00 00 04 39 00 00 21 e0 0c 00 b0 10 00 07 b7 29 00 21 02 00 00 00 00 24 12 08 11 48 47 00 00 ff 00 00 00 00 00 00 00 00 39 00 00 05 bd a1 0a 52 a6 39 00 00 03 35 00 00 39 00 00 03 51 00 00 39 00 00 03 53 24 00 39 00 00 03 55 00 00 39 78 00 03 11 00 00 39 14 00 03 29 00 00 39 00 00 03 6d 02 00 39 00 00 05 bd a1 0a 52 ae 39 00 00 04 f0 00 00 00];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [0f 0f 03];
+					sprd,reset-off-sequence = <0x1 0x5>;
+					sprd,reset-on-sequence = <0x1 0xf 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [39 00 00 03 6d 25 00 39 14 00 03 28 00 00 39 78 00 03 10 00 00];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0xc>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xb0>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0xc>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x3fc>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0xb0>;
+							hfront-porch = <0x48>;
+							hsync-len = <0x4>;
+							phandle = <0x33>;
+							vactive = <0x640>;
+							vback-porch = <0xf8>;
+							vfront-porch = <0x44>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_nt36672e_truly_mipi_fhd_nodsc {
+					phandle = <0x2a>;
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsc-enable = <0x0>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,dual-dsi-enable = <0x0>;
+					sprd,esd-check-enable = <0x0>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x3e8>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9c>;
+					sprd,height-mm = <0x98>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [15 00 00 02 ff 10 15 00 00 02 fb 01 15 00 00 02 b0 00 15 00 00 02 c0 00 29 00 00 11 c1 89 28 00 08 00 aa 02 0e 00 2b 00 07 0d b7 0c b7 29 00 00 03 c2 1b a0 15 00 00 02 ff 20 15 00 00 02 fb 01 15 00 00 02 01 66 15 00 00 02 06 40 15 00 00 02 07 38 15 00 00 02 2f 83 15 00 00 02 69 91 15 00 00 02 95 d1 15 00 00 02 96 d1 15 00 00 02 f2 64 15 00 00 02 f3 54 15 00 00 02 f4 64 15 00 00 02 f5 54 15 00 00 02 f6 64 15 00 00 02 f7 54 15 00 00 02 f8 64 15 00 00 02 f9 54 15 00 00 02 ff 24 15 00 00 02 fb 01 15 00 00 02 01 0f 15 00 00 02 03 0c 15 00 00 02 05 1d 15 00 00 02 08 2f 15 00 00 02 09 2e 15 00 00 02 0a 2d 15 00 00 02 0b 2c 15 00 00 02 11 17 15 00 00 02 12 13 15 00 00 02 13 15 15 00 00 02 15 14 15 00 00 02 16 16 15 00 00 02 17 18 15 00 00 02 1b 01 15 00 00 02 1d 1d 15 00 00 02 20 2f 15 00 00 02 21 2e 15 00 00 02 22 2d 15 00 00 02 23 2c 15 00 00 02 29 17 15 00 00 02 2a 13 15 00 00 02 2b 15 15 00 00 02 2f 14 15 00 00 02 30 16 15 00 00 02 31 18 15 00 00 02 32 04 15 00 00 02 34 10 15 00 00 02 35 1f 15 00 00 02 36 1f 15 00 00 02 4d 14 15 00 00 02 4e 36 15 00 00 02 4f 36 15 00 00 02 53 36 15 00 00 02 71 30 15 00 00 02 79 11 15 00 00 02 7a 82 15 00 00 02 7b 8f 15 00 00 02 7d 04 15 00 00 02 80 04 15 00 00 02 81 04 15 00 00 02 82 13 15 00 00 02 84 31 15 00 00 02 85 00 15 00 00 02 86 00 15 00 00 02 87 00 15 00 00 02 90 13 15 00 00 02 92 31 15 00 00 02 93 00 15 00 00 02 94 00 15 00 00 02 95 00 15 00 00 02 9c f4 15 00 00 02 9d 01 15 00 00 02 a0 0f 15 00 00 02 a2 0f 15 00 00 02 a3 02 15 00 00 02 a4 04 15 00 00 02 a5 04 15 00 00 02 c6 c0 15 00 00 02 c9 00 15 00 00 02 d9 80 15 00 00 02 e9 02 15 00 00 02 ff 25 15 00 00 02 fb 01 15 00 00 02 18 22 15 00 00 02 19 e4 15 00 00 02 21 40 15 00 00 02 66 d8 15 00 00 02 68 50 15 00 00 02 69 10 15 00 00 02 6b 00 15 00 00 02 6d 0d 15 00 00 02 6e 48 15 00 00 02 72 41 15 00 00 02 73 4a 15 00 00 02 74 d0 15 00 00 02 77 62 15 00 00 02 79 7e 15 00 00 02 7d 03 15 00 00 02 84 4d 15 00 00 02 cf 80 15 00 00 02 d6 80 15 00 00 02 d7 80 15 00 00 02 ef 20 15 00 00 02 f0 84 15 00 00 02 ff 26 15 00 00 02 fb 01 15 00 00 02 81 0f 15 00 00 02 83 01 15 00 00 02 84 03 15 00 00 02 85 01 15 00 00 02 86 03 15 00 00 02 87 01 15 00 00 02 88 05 15 00 00 02 8a 1a 15 00 00 02 8b 11 15 00 00 02 8c 24 15 00 00 02 8e 42 15 00 00 02 8f 11 15 00 00 02 90 11 15 00 00 02 91 11 15 00 00 02 9a 80 15 00 00 02 9b 04 15 00 00 02 9c 00 15 00 00 02 9d 00 15 00 00 02 9e 00 15 00 00 02 ff 27 15 00 00 02 fb 01 15 00 00 02 01 68 15 00 00 02 20 81 15 00 00 02 21 6a 15 00 00 02 25 81 15 00 00 02 26 94 15 00 00 02 6e 00 15 00 00 02 6f 00 15 00 00 02 70 00 15 00 00 02 71 00 15 00 00 02 72 00 15 00 00 02 75 00 15 00 00 02 76 00 15 00 00 02 77 00 15 00 00 02 7d 09 15 00 00 02 7e 67 15 00 00 02 80 23 15 00 00 02 82 09 15 00 00 02 83 67 15 00 00 02 88 01 15 00 00 02 89 10 15 00 00 02 a5 10 15 00 00 02 a6 23 15 00 00 02 a7 01 15 00 00 02 b6 40 15 00 00 02 e5 02 15 00 00 02 e6 d3 15 00 00 02 eb 03 15 00 00 02 ec 28 15 00 00 02 ff 2a 15 00 00 02 fb 01 15 00 00 02 00 91 15 00 00 02 03 20 15 00 00 02 07 50 15 00 00 02 0a 70 15 00 00 02 0c 04 15 00 00 02 0d 40 15 00 00 02 0f 01 15 00 00 02 11 e0 15 00 00 02 15 0f 15 00 00 02 16 a4 15 00 00 02 19 0f 15 00 00 02 1a 78 15 00 00 02 1b 23 15 00 00 02 1d 36 15 00 00 02 1e 3e 15 00 00 02 1f 3e 15 00 00 02 20 3e 15 00 00 02 28 fd 15 00 00 02 29 12 15 00 00 02 2a e1 15 00 00 02 2d 0a 15 00 00 02 30 49 15 00 00 02 33 96 15 00 00 02 34 ff 15 00 00 02 35 40 15 00 00 02 36 de 15 00 00 02 37 f9 15 00 00 02 38 45 15 00 00 02 39 d9 15 00 00 02 3a 49 15 00 00 02 4a f0 15 00 00 02 7a 09 15 00 00 02 7b 40 15 00 00 02 7f f0 15 00 00 02 83 0f 15 00 00 02 84 a4 15 00 00 02 87 0f 15 00 00 02 88 78 15 00 00 02 89 23 15 00 00 02 8b 36 15 00 00 02 8c 7d 15 00 00 02 8d 7d 15 00 00 02 8e 7d 15 00 00 02 ff 2c 15 00 00 02 fb 01 15 00 00 02 61 1f 15 00 00 02 62 1f 15 00 00 02 7e 03 15 00 00 02 6a 14 15 00 00 02 6b 36 15 00 00 02 6c 36 15 00 00 02 6d 36 15 00 00 02 53 04 15 00 00 02 54 04 15 00 00 02 55 04 15 00 00 02 56 0f 15 00 00 02 58 0f 15 00 00 02 59 0f 15 00 00 02 ff 20 15 00 00 02 fb 01 39 00 00 11 b0 00 e2 00 e9 00 f6 01 01 01 0c 01 15 01 20 01 28 39 00 00 11 b1 01 33 01 51 01 6e 01 9a 01 c0 01 fd 02 34 02 35 39 00 00 11 b2 02 6b 02 a9 02 d1 03 04 03 25 03 51 03 5f 03 6d 39 00 00 0f b3 03 7d 03 90 03 a7 03 bb 03 d4 03 d8 00 00 39 00 00 11 b4 00 aa 00 b3 00 c4 00 d4 00 e2 00 f0 00 fc 01 08 39 00 00 11 b5 01 12 01 39 01 58 01 8c 01 b5 01 f7 02 30 02 31 39 00 00 11 b6 02 68 02 a6 02 ce 03 01 03 23 03 4e 03 5c 03 6a 39 00 00 0f b7 03 7b 03 8e 03 a5 03 bb 03 d4 03 d8 00 00 39 00 00 11 b8 00 00 00 20 00 47 00 65 00 85 00 99 00 ad 00 c0 39 00 00 11 b9 00 d2 01 06 01 30 01 70 01 9f 01 e8 02 25 02 26 39 00 00 11 ba 02 5f 02 9f 02 c7 03 fd 03 20 03 52 03 63 03 67 39 00 00 0f bb 03 78 03 8b 03 a3 03 b9 03 d4 03 d8 00 00 15 00 00 02 ff 21 15 00 00 02 fb 01 39 00 00 11 b0 00 e2 00 e9 00 f6 01 01 01 0c 01 15 01 20 01 28 39 00 00 11 b1 01 33 01 51 01 6e 01 9a 01 c0 01 fd 02 34 02 35 39 00 00 11 b2 02 6b 02 a9 02 d1 03 04 03 25 03 51 03 5f 03 6d 39 00 00 0f b3 03 7d 03 90 03 a7 03 bb 03 d4 03 d8 00 00 39 00 00 11 b4 00 aa 00 b3 00 c4 00 d4 00 e2 00 f0 00 fc 01 08 39 00 00 11 b5 01 12 01 39 01 58 01 8c 01 b5 01 f7 02 30 02 31 39 00 00 11 b6 02 68 02 a6 02 ce 03 01 03 23 03 4e 03 5c 03 6a 39 00 00 0f b7 03 7b 03 8e 03 a5 03 bb 03 d4 03 d8 00 00 39 00 00 11 b8 00 00 00 20 00 47 00 65 00 85 00 99 00 ad 00 c0 39 00 00 11 b9 00 d2 01 06 01 30 01 70 01 9f 01 e8 02 25 02 26 39 00 00 11 ba 02 5f 02 9f 02 c7 02 fd 03 20 03 52 03 63 03 67 39 00 00 0f bb 03 78 03 8b 03 a3 03 b9 03 d4 03 d8 00 00 15 00 00 02 ff f0 15 00 00 02 fb 01 15 00 00 02 5a 00 15 00 00 02 ff 10 05 c8 00 01 11 05 32 00 01 29];
+					sprd,output-bpc = <0x8>;
+					sprd,phy-bit-clock = <0x104be0>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0xf 0x0 0xf 0x1 0xf>;
+					sprd,sleep-in-command = [13 0a 00 01 28 13 78 00 01 10];
+					sprd,sleep-out-command = [13 78 00 01 11 13 32 00 01 29];
+					sprd,slice-height = <0x8>;
+					sprd,slice-width = <0x21c>;
+					sprd,use-gen-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,width-mm = <0x44>;
+
+					display-timings {
+						native-mode = <0x2>;
+
+						timing0 {
+							clock-frequency = <0xa9c1080>;
+							hactive = <0x438>;
+							hback-porch = <0x23>;
+							hfront-porch = <0x46>;
+							hsync-len = <0xa>;
+							phandle = <0x2>;
+							vactive = <0x968>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x20>;
+							vsync-len = <0x2>;
+						};
+					};
+				};
+
+				lcd_td4160_cw_mipi_hd {
+					phandle = <0x11>;
+					sprd,cabc-moving-command = [23 00 00 02 55 03];
+					sprd,cabc-off-command = [23 00 00 02 55 00];
+					sprd,cabc-still-command = [23 00 00 02 55 02];
+					sprd,cabc-ui-command = [23 00 00 02 55 01];
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x0>;
+					sprd,esd-check-mode = <0x1>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,height-mm = <0x97>;
+					sprd,initial-command = [29 00 00 02 b0 00 29 00 00 02 d6 00 29 00 00 07 b6 30 62 00 86 c3 03 29 00 00 05 b7 31 00 00 00 29 00 00 07 b8 02 4a 06 00 04 5a 29 00 00 07 b9 02 4a 18 00 09 b4 29 00 00 07 ba 20 00 00 00 00 00 29 00 00 04 bb 00 b4 a0 29 00 00 04 bc 00 b4 a0 29 00 00 04 bd 00 b4 a0 29 00 00 0e be 07 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 19 c0 00 80 18 06 4c 00 16 08 68 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 28 c1 30 41 50 fa 01 00 00 10 00 00 00 00 40 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 f5 c2 00 00 50 14 06 10 0e 00 00 00 00 50 12 06 10 0a 00 00 00 00 50 12 06 06 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 d0 56 0c 0c 06 00 c1 00 b0 01 03 00 41 00 00 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 6a c3 00 00 50 01 67 10 05 00 00 00 20 00 04 e0 00 41 64 c0 02 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00 00 00 00 00 20 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 55 c4 00 5f 5f 0c 5d 04 06 08 01 14 14 16 16 18 18 1a 1a 1c 1c 1e 1e 5f 00 00 5f 1d 1d 1b 1b 19 19 17 17 15 15 13 13 01 07 05 03 5d 0b 5f 5f 00 00 00 00 00 00 00 ff 0f ff 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 33 33 00 00 55 55 55 55 55 41 55 55 55 55 55 29 00 00 06 c5 08 00 00 00 00 29 00 00 4d c6 00 00 00 00 01 22 04 22 01 00 53 00 00 00 01 00 53 00 01 05 01 0b 01 35 ff 8f 06 15 01 c0 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20 20 00 00 00 c0 11 00 00 00 10 10 00 00 00 01 00 50 00 33 03 00 00 29 00 00 1f cb 02 d0 01 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 70 00 00 00 00 00 ff 29 00 00 19 ce 16 40 60 78 87 94 9e ab b8 c4 cd d6 de e5 ec f3 ff 07 0f 00 00 00 04 8c 29 00 00 02 cf 00 29 00 00 15 d0 c1 50 81 66 09 90 00 cc 92 9f 11 1e 06 7e 09 08 cc 1b f0 06 29 00 00 26 d1 d0 d0 1b 33 33 17 07 bb 22 52 22 52 00 3b 77 07 3b 30 06 72 33 13 00 d7 0c 22 02 00 18 70 18 77 11 11 11 20 20 29 00 00 04 d2 00 00 00 29 00 00 9a d3 00 00 00 00 00 00 00 00 00 ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff 29 00 00 18 d4 00 00 00 00 00 00 00 00 00 20 00 00 00 00 20 00 00 00 00 00 00 00 00 29 00 00 2f d7 01 00 12 12 00 54 01 04 00 54 01 04 03 83 80 85 85 85 87 84 45 86 87 80 88 86 89 83 83 87 84 88 8a 0c 0b 0a 0a 0a 07 07 06 06 00 08 0a 0a 29 00 00 17 d8 40 99 26 ed 16 6c 16 6c 16 6c 00 14 00 14 00 14 01 0c 00 00 01 00 29 00 00 29 d9 00 02 7f 00 00 00 00 00 00 00 00 00 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29 00 00 05 dd 30 06 23 65 29 00 00 0f de 00 00 00 0f ff 00 00 00 00 10 00 00 00 00 29 00 00 09 e6 00 00 00 00 00 00 00 00 29 00 00 24 ea 02 0e 0e 06 80 07 40 74 00 00 00 03 33 07 07 00 54 00 54 00 54 01 28 01 28 00 54 00 54 00 54 00 08 02 00 29 00 00 09 eb 08 30 83 0b 41 01 08 00 29 00 00 18 ec 05 f0 01 70 6b 07 40 74 00 00 00 02 2a 00 00 00 00 00 00 00 00 00 00 29 00 00 22 ed 01 02 00 00 00 00 00 00 67 c6 fe 00 00 00 00 00 00 00 00 00 00 00 02 b0 00 00 00 00 00 00 c0 10 00 29 00 00 7a ee 05 00 01 00 c0 57 00 c0 57 00 c0 57 00 00 03 00 c0 57 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 c0 57 00 00 00 00 00 c0 0f 00 00 00 00 00 00 57 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 29 00 00 0c f9 20 3f e0 00 00 07 ff 00 00 07 ff 29 00 00 4d c7 00 00 00 55 00 c2 01 0f 01 82 01 b5 01 b5 01 ba 01 b2 01 b1 01 ad 01 a7 01 a3 01 8c 01 99 02 2c 02 6f 02 9d 02 ff 00 00 00 55 00 c2 01 0f 01 82 01 b5 01 b5 01 ba 01 b2 01 b1 01 ad 01 a7 01 a3 01 8c 01 99 02 2c 02 6f 02 9d 02 ff 29 00 00 03 51 03 ff 29 00 00 02 53 2c 29 00 00 02 55 00 29 00 00 02 b0 03 05 60 00 01 11 05 20 00 01 29];
+					sprd,phy-bit-clock = <0xa8b38>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,width-mm = <0x44>;
+
+					display-timings {
+						native-mode = <0x4>;
+
+						timing0 {
+							clock-frequency = <0x5b8d800>;
+							hactive = <0x2d0>;
+							hback-porch = <0x18>;
+							hfront-porch = <0x38>;
+							hsync-len = <0x4>;
+							phandle = <0x4>;
+							vactive = <0x64c>;
+							vback-porch = <0x1e>;
+							vfront-porch = <0xac>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 04];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_td4160_cw_new_mipi_hd {
+					phandle = <0x10>;
+					sprd,cabc-moving-command = [39 00 00 02 55 03];
+					sprd,cabc-off-command = [39 00 00 02 55 03];
+					sprd,cabc-still-command = [39 00 00 02 55 02];
+					sprd,cabc-ui-command = [39 00 00 02 55 01];
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9c>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 02 b0 04 39 00 00 02 d6 00 39 00 00 07 b6 30 6a 00 86 c3 03 39 00 00 05 b7 31 00 00 00 39 00 00 07 b8 02 50 09 00 04 40 39 00 00 07 b9 02 09 18 00 09 46 39 00 00 07 ba 02 90 00 00 00 00 39 00 00 04 bb 00 b4 a0 39 00 00 04 bc 00 b4 a0 39 00 00 04 bd 00 b4 a0 39 00 00 0e be 07 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 19 c0 00 60 24 06 40 00 16 06 98 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 28 c1 30 81 50 fa 01 00 00 10 00 00 00 00 40 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0 07 08 07 d0 0a be 39 00 00 65 c2 01 20 50 14 04 10 0b 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 f0 54 08 08 05 05 c5 00 80 00 00 00 00 08 00 00 00 00 11 00 80 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 39 00 00 65 c3 01 00 55 01 01 86 68 00 00 00 20 01 01 00 55 01 01 86 68 00 00 00 20 02 01 00 55 01 01 86 68 00 00 00 20 00 01 00 55 01 01 86 68 00 00 00 20 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 55 c4 00 00 5e 64 00 03 05 13 15 17 19 5d 5f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5f 5d 1a 18 16 14 06 04 00 64 5e 00 00 00 00 00 00 00 c0 03 00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 57 57 00 00 57 55 55 ff ff ff ff ff 55 55 d5 39 00 00 06 c5 08 00 00 00 00 39 00 00 4d c6 00 00 00 00 01 22 04 22 01 00 61 00 00 00 01 00 61 00 01 05 01 0b 01 35 ff 8f 06 c5 02 c0 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20 20 00 00 00 c0 11 00 00 00 10 10 00 00 00 01 00 50 00 33 03 00 00 39 00 00 1f cb 02 d0 01 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 70 00 00 00 00 00 ff 39 00 00 19 ce 16 56 66 88 9b aa bb c0 c8 cd d2 d8 e1 e7 ec f0 f3 07 0f 00 00 00 04 8c 39 00 00 02 cf 00 39 00 00 15 d0 c1 46 81 66 09 90 00 cc f2 ff 11 46 06 7e 09 08 cc 1b f0 06 39 00 00 26 d1 ce d8 1b 33 33 17 07 bb 22 52 22 52 00 3b 77 07 3b 30 06 72 33 13 00 d7 0c 22 02 00 18 70 18 77 11 11 11 20 20 39 00 00 04 d2 00 00 00 39 00 00 65 d3 00 00 00 00 00 00 00 00 00 ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff 39 00 00 18 d4 00 00 00 00 00 00 00 00 00 20 00 00 00 00 20 00 00 00 00 00 00 00 00 39 00 00 02 d6 00 39 00 00 2f d7 01 00 12 12 00 62 00 16 00 62 00 16 03 83 80 85 85 85 87 84 45 86 87 80 88 86 89 83 83 87 84 88 8a 0c 0b 0a 0a 0a 07 07 06 06 00 08 0a 0a 39 00 00 17 d8 40 99 26 ed 16 6c 16 6c 16 6c 00 14 00 14 00 14 01 0c 00 00 01 00 39 00 00 29 d9 00 02 7f 00 00 00 00 00 00 00 00 00 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 05 dd 30 06 23 65 39 00 00 0f de 00 00 00 0f ff 00 00 00 00 10 00 00 00 00 39 00 00 05 e5 03 00 00 00 39 00 00 09 e6 00 00 00 00 00 0e 00 00 39 00 00 24 ea 02 07 07 04 80 10 01 00 00 00 00 03 23 00 07 00 ed 00 ed 00 ed 01 28 01 28 00 62 00 62 00 62 01 0f 01 00 39 00 00 09 eb 06 e0 6e 07 61 01 01 00 39 00 00 18 ec 02 d0 01 70 73 10 01 00 00 00 00 02 2a 00 00 00 00 00 00 00 00 00 00 39 00 00 22 ed 01 02 00 00 00 00 00 00 67 a6 f0 00 00 00 00 00 00 00 00 00 00 00 00 f0 01 00 00 00 00 00 41 10 01 39 00 00 65 ee 05 00 05 00 c0 0b 00 00 03 00 00 03 00 00 03 00 c0 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 40 03 04 65 40 00 00 55 17 04 65 40 00 00 55 03 04 65 40 00 00 40 17 04 65 40 00 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 40 15 00 00 39 00 00 0c f9 20 3f e0 00 00 07 ff 00 00 07 ff 39 00 00 02 35 00 39 00 00 4d c7 00 00 00 77 00 ca 00 e7 01 00 01 0b 01 1a 01 1d 01 3d 01 0f 01 67 01 2d 01 78 01 2b 01 9b 01 a6 02 2f 02 96 02 a0 00 00 00 77 00 ca 00 e7 01 00 01 0b 01 1a 01 1d 01 3d 01 0f 01 67 01 2d 01 78 01 2b 01 9b 01 a6 02 2f 02 96 02 a0 39 00 00 02 53 24 39 00 00 02 55 00 39 00 00 02 b0 03 05 60 00 01 11 05 20 00 01 29];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [14 14 03];
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0x5>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x68>;
+							hfront-porch = <0xe0>;
+							hsync-len = <0x4>;
+							phandle = <0x5>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x3fe>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x64>;
+							hfront-porch = <0xe0>;
+							hsync-len = <0x4>;
+							phandle = <0x2c>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x90>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_td4160_cw_old_mipi_hd {
+					phandle = <0xf>;
+					sprd,cabc-moving-command = [39 00 00 02 55 03];
+					sprd,cabc-off-command = [39 00 00 02 55 03];
+					sprd,cabc-still-command = [39 00 00 02 55 02];
+					sprd,cabc-ui-command = [39 00 00 02 55 01];
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9c>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 02 b0 04 39 00 00 02 d6 00 39 00 00 07 b6 30 6a 00 86 c3 03 39 00 00 05 b7 31 00 00 00 39 00 00 07 b8 02 50 09 00 04 40 39 00 00 07 b9 02 09 18 00 09 46 39 00 00 07 ba 02 90 00 00 00 00 39 00 00 04 bb 00 b4 a0 39 00 00 04 bc 00 b4 a0 39 00 00 04 bd 00 b4 a0 39 00 00 0e be 07 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 19 c0 00 60 24 06 40 00 16 06 98 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 28 c1 30 81 50 fa 01 00 00 10 00 00 00 00 40 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0 07 08 07 d0 0a be 39 00 00 65 c2 01 20 50 14 04 10 0b 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 f0 54 08 08 05 05 c5 00 80 00 00 00 00 08 00 00 00 00 11 00 80 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 39 00 00 65 c3 01 00 55 01 01 86 68 00 00 00 20 01 01 00 55 01 01 86 68 00 00 00 20 02 01 00 55 01 01 86 68 00 00 00 20 00 01 00 55 01 01 86 68 00 00 00 20 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 55 c4 00 00 5e 64 00 03 05 13 15 17 19 5d 5f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5f 5d 1a 18 16 14 06 04 00 64 5e 00 00 00 00 00 00 00 c0 03 00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 57 57 00 00 57 55 55 ff ff ff ff ff 55 55 d5 39 00 00 06 c5 08 00 00 00 00 39 00 00 4d c6 00 00 00 00 01 22 04 22 01 00 61 00 00 00 01 00 61 00 01 05 01 0b 01 35 ff 8f 06 c5 02 c0 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20 20 00 00 00 c0 11 00 00 00 10 10 00 00 00 01 00 50 00 33 03 00 00 39 00 00 1f cb 02 d0 01 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 70 00 00 00 00 00 ff 39 00 00 19 ce 16 56 66 88 9b aa bb c0 c8 cd d2 d8 e1 e7 ec f0 f3 07 0f 00 00 00 04 8c 39 00 00 02 cf 00 39 00 00 15 d0 c1 46 81 66 09 90 00 cc f2 ff 11 46 06 7e 09 08 cc 1b f0 06 39 00 00 26 d1 ce d8 1b 33 33 17 07 bb 22 52 22 52 00 3b 77 07 3b 30 06 72 33 13 00 d7 0c 22 02 00 18 70 18 77 11 11 11 20 20 39 00 00 04 d2 00 00 00 39 00 00 65 d3 00 00 00 00 00 00 00 00 00 ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff 39 00 00 18 d4 00 00 00 00 00 00 00 00 00 20 00 00 00 00 20 00 00 00 00 00 00 00 00 39 00 00 02 d6 00 39 00 00 2f d7 01 00 12 12 00 62 00 16 00 62 00 16 03 83 80 85 85 85 87 84 45 86 87 80 88 86 89 83 83 87 84 88 8a 0c 0b 0a 0a 0a 07 07 06 06 00 08 0a 0a 39 00 00 17 d8 40 99 26 ed 16 6c 16 6c 16 6c 00 14 00 14 00 14 01 0c 00 00 01 00 39 00 00 29 d9 00 02 7f 00 00 00 00 00 00 00 00 00 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 05 dd 30 06 23 65 39 00 00 0f de 00 00 00 0f ff 00 00 00 00 10 00 00 00 00 39 00 00 05 e5 03 00 00 00 39 00 00 09 e6 00 00 00 00 00 0e 00 00 39 00 00 24 ea 02 07 07 04 80 10 01 00 00 00 00 03 23 00 07 00 ed 00 ed 00 ed 01 28 01 28 00 62 00 62 00 62 01 0f 01 00 39 00 00 09 eb 06 e0 6e 07 61 01 01 00 39 00 00 18 ec 02 d0 01 70 73 10 01 00 00 00 00 02 2a 00 00 00 00 00 00 00 00 00 00 39 00 00 22 ed 01 02 00 00 00 00 00 00 67 a6 f0 00 00 00 00 00 00 00 00 00 00 00 00 f0 01 00 00 00 00 00 41 10 01 39 00 00 65 ee 05 00 05 00 c0 0b 00 00 03 00 00 03 00 00 03 00 c0 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 40 03 04 65 40 00 00 55 17 04 65 40 00 00 55 03 04 65 40 00 00 40 17 04 65 40 00 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 40 15 00 00 39 00 00 0c f9 20 3f e0 00 00 07 ff 00 00 07 ff 39 00 00 02 35 00 39 00 00 4d c7 00 00 00 72 00 b9 00 d4 00 ed 00 f8 01 08 01 0c 01 2c 00 fe 01 57 01 1d 01 63 01 22 01 92 01 9e 02 27 02 92 02 a0 00 00 00 72 00 b9 00 d4 00 ed 00 f8 01 08 01 0c 01 2c 00 fe 01 57 01 1d 01 63 01 22 01 92 01 9e 02 27 02 92 02 a0 39 00 00 02 53 24 39 00 00 02 55 00 39 00 00 02 b0 03 05 60 00 01 11 05 20 00 01 29];
+					sprd,phy-bit-clock = <0xf6180>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,power-i2c-addr = <0x3e>;
+					sprd,power-i2c-bus = <0x4>;
+					sprd,power-i2c-reg = [00 01 03];
+					sprd,power-i2c-val = [14 14 03];
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,video-lp-en-mode = <0x2>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0x6>;
+
+						timing0 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x68>;
+							hfront-porch = <0xe0>;
+							hsync-len = <0x4>;
+							phandle = <0x6>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x3fe>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0xa037a00>;
+							hactive = <0x2d0>;
+							hback-porch = <0x64>;
+							hfront-porch = <0xe0>;
+							hsync-len = <0x4>;
+							phandle = <0x2d>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x90>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+
+				lcd_td4160b_cw_boe_mipi_hd {
+					phandle = <0x16>;
+					sprd,cabc-moving-command = [39 00 00 02 55 03];
+					sprd,cabc-off-command = [39 00 00 02 55 00];
+					sprd,cabc-still-command = [39 00 00 02 55 02];
+					sprd,cabc-ui-command = [39 00 00 02 55 01];
+					sprd,dpi-clk-div = <0x6>;
+					sprd,dsi-color-format = "rgb888";
+					sprd,dsi-lane-number = <0x4>;
+					sprd,dsi-work-mode = <0x1>;
+					sprd,esd-check-enable = <0x1>;
+					sprd,esd-check-mode = <0x0>;
+					sprd,esd-check-period = <0x7d0>;
+					sprd,esd-check-register = <0xa>;
+					sprd,esd-check-value = <0x9c>;
+					sprd,height-mm = <0x9c>;
+					sprd,hporch-lp-disable = <0x1>;
+					sprd,initial-command = [39 00 00 02 b0 04 39 00 00 02 d6 00 39 00 00 07 b6 30 6a 00 86 c3 03 39 00 00 05 b7 31 00 00 00 39 00 00 07 b8 02 50 09 00 04 40 39 00 00 07 b9 02 09 18 00 09 46 39 00 00 07 ba 06 90 00 00 00 00 39 00 00 04 bb 00 b4 a0 39 00 00 04 bc 00 b4 a0 39 00 00 04 bd 00 b4 a0 39 00 00 0e be 07 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 19 c0 00 60 24 06 40 00 16 06 98 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 28 c1 30 81 50 fa 01 00 00 10 00 00 00 00 40 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0 07 08 07 d0 0a be 39 00 00 65 c2 01 20 50 14 04 10 0b 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 f0 54 08 08 05 05 c5 00 80 00 00 00 00 08 00 00 00 00 11 00 80 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00 00 00 39 00 00 65 c3 01 00 55 01 01 86 68 00 00 00 20 01 01 00 55 01 01 86 68 00 00 00 20 02 01 00 55 01 01 86 68 00 00 00 20 00 01 00 55 01 01 86 68 00 00 00 20 00 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 55 c4 00 00 5e 64 00 03 05 13 15 17 19 5d 5f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5f 5d 1a 18 16 14 06 04 00 64 5e 00 00 00 00 00 00 00 c0 03 00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 57 57 00 00 57 55 55 ff ff ff ff ff 55 55 d5 39 00 00 06 c5 08 00 00 00 00 39 00 00 4d c6 00 00 00 00 01 22 04 22 01 00 61 00 00 00 01 00 61 00 01 05 01 0b 01 35 ff 8f 06 c5 02 c0 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20 20 00 00 00 c0 11 00 00 00 10 10 00 00 00 01 00 50 00 33 03 00 00 39 00 00 1f cb 02 d0 01 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 70 00 00 00 00 00 ff 39 00 00 19 ce 16 56 66 88 9b aa bb c0 c8 cd d2 d8 e1 e7 ec f0 f3 07 0f 00 00 00 04 8c 39 00 00 02 cf 00 39 00 00 15 d0 c1 46 81 66 09 90 00 cc f2 ff 11 46 06 7e 09 08 cc 1b f0 06 39 00 00 26 d1 ce d8 1b 33 33 17 07 bb 22 52 22 52 00 3b 77 07 3b 30 06 72 33 13 00 d7 0c 22 02 00 18 70 18 77 11 11 11 20 20 39 00 00 04 d2 00 00 00 39 00 00 65 d3 00 00 00 00 00 00 00 00 00 ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff f7 ff ff 39 00 00 18 d4 00 00 00 00 00 00 00 00 00 20 00 00 00 00 20 00 00 00 00 00 00 00 00 39 00 00 02 d6 00 39 00 00 2f d7 01 00 12 12 00 62 00 16 00 62 00 16 03 83 80 85 85 85 87 84 45 86 87 80 88 86 89 83 83 87 84 88 8a 0c 0b 0a 0a 0a 07 07 06 06 00 08 0a 0a 39 00 00 17 d8 40 99 26 ed 16 6c 16 6c 16 6c 00 14 00 14 00 14 01 0c 00 00 01 00 39 00 00 29 d9 00 02 7f 00 00 00 00 00 00 00 00 00 00 00 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 05 dd 30 06 23 65 39 00 00 0f de 00 00 00 0f ff 00 00 00 00 10 00 00 00 00 39 00 00 05 e5 03 00 00 00 39 00 00 09 e6 00 00 00 00 00 0e 00 00 39 00 00 24 ea 02 07 07 04 80 10 01 00 00 00 00 03 23 00 07 00 ed 00 ed 00 ed 01 28 01 28 00 62 00 62 00 62 01 0f 01 00 39 00 00 09 eb 06 e0 6e 07 61 01 01 00 39 00 00 18 ec 02 d0 01 70 73 10 01 00 00 00 00 02 2a 00 00 00 00 00 00 00 00 00 00 39 00 00 22 ed 01 02 00 00 00 00 00 00 67 a6 f0 00 00 00 00 00 00 00 00 00 00 00 00 f0 01 00 00 00 00 00 41 10 01 39 00 00 65 ee 05 00 05 00 c0 0b 00 00 03 00 00 03 00 00 03 00 c0 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 00 00 00 00 00 03 00 40 03 04 65 40 00 00 55 17 04 65 40 00 00 55 03 04 65 40 00 00 40 17 04 65 40 00 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 00 03 00 40 15 00 00 39 00 00 0c f9 20 3f e0 00 00 07 ff 00 00 07 ff 39 00 00 02 35 00 39 00 00 4d c7 00 00 00 6d 00 af 00 cc 00 e1 00 ee 00 ff 01 00 01 1e 00 f1 01 4b 01 12 01 59 01 17 01 85 01 97 02 1e 02 94 02 a0 00 00 00 6d 00 af 00 cc 00 e1 00 ee 00 ff 01 00 01 1e 00 f1 01 4b 01 12 01 59 01 17 01 85 01 97 02 1e 02 94 02 a0 39 00 00 02 53 24 39 00 00 02 55 00 39 00 00 02 b0 03 05 60 00 01 11 05 20 00 01 29];
+					sprd,phy-bit-clock = <0xdbba0>;
+					sprd,phy-escape-clock = <0x4e20>;
+					sprd,reset-off-sequence = <0x0 0x5>;
+					sprd,reset-on-sequence = <0x1 0x5 0x0 0x5 0x1 0x1e>;
+					sprd,sleep-in-command = [05 14 00 01 28 05 78 00 01 10];
+					sprd,sleep-out-command = [05 14 00 01 11 05 78 00 01 29];
+					sprd,use-dcs-write;
+					sprd,video-lp-cmd-enable = <0x1>;
+					sprd,width-mm = <0x47>;
+
+					display-timings {
+						native-mode = <0x7>;
+
+						timing0 {
+							clock-frequency = <0x8f0d180>;
+							hactive = <0x2d0>;
+							hback-porch = <0x68>;
+							hfront-porch = <0x70>;
+							hsync-len = <0x4>;
+							phandle = <0x7>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x3fc>;
+							vsync-len = <0x4>;
+						};
+
+						timing1 {
+							clock-frequency = <0x8f0d180>;
+							hactive = <0x2d0>;
+							hback-porch = <0x68>;
+							hfront-porch = <0x70>;
+							hsync-len = <0x4>;
+							phandle = <0x2e>;
+							vactive = <0x640>;
+							vback-porch = <0x20>;
+							vfront-porch = <0x87>;
+							vsync-len = <0x4>;
+						};
+					};
+
+					oled-backlight {
+						brightness-levels = [39 00 00 03 51 00 00];
+						default-brightness = <0x51a>;
+						sprd,max-level = <0xfff>;
+					};
+				};
+			};
+
+			pa-sensor {
+				#thermal-sensor-cells = <0x0>;
+				compatible = "generic-adc-thermal";
+				io-channel-names = "sensor-channel";
+				io-channels = <0xffffffff 0x2>;
+				phandle = <0x1a>;
+				temperature-lookup-table = <0xffff64c2 0x46b 0xffff8baf 0x456 0xffffb3e8 0x432 0xffffedb9 0x3d7 0x277e 0x346 0x60e5 0x28e 0xaf7a 0x19d 0xd677 0x13c 0xfd7f 0xee 0x12484 0xb2 0x14b93 0x85 0x172a3 0x64 0x199b0 0x4b 0x1c0c9 0x39 0x1e7c8 0x2b>;
+			};
+
+			sprd_backlight {
+				brightness-levels = <0x0 0x3 0x4 0x5 0x6 0x7 0x8 0x9 0xa 0xb 0xc 0xd 0xe 0x10 0x11 0x12 0x13 0x14 0x15 0x16 0x17 0x18 0x19 0x1a 0x1b 0x1c 0x1d 0x1f 0x21 0x23 0x25 0x27 0x29 0x2b 0x2d 0x2f 0x30 0x32 0x34 0x36 0x38 0x3a 0x3c 0x3e 0x40 0x43 0x45 0x48 0x4a 0x4c 0x4e 0x50 0x52 0x54 0x56 0x58 0x5a 0x5c 0x5e 0x60 0x62 0x64 0x66 0x68 0x6b 0x6d 0x70 0x72 0x74 0x76 0x78 0x7a 0x7c 0x7e 0x80 0x82 0x84 0x86 0x88 0x8a 0x8c 0x8e 0x90 0x93 0x95 0x97 0x9a 0x9c 0x9e 0xa0 0xa2 0xa4 0xa6 0xa8 0xaa 0xac 0xaf 0xb2 0xb5 0xb8 0xbb 0xbe 0xc1 0xc4 0xc7 0xcb 0xcd 0xd0 0xd3 0xd6 0xd9 0xdc 0xdf 0xe2 0xe5 0xea 0xed 0xf0 0xf3 0xf7 0xfa 0xfd 0x100 0x103 0x107 0x10a 0x10d 0x10e 0x112 0x115 0x118 0x11b 0x11f 0x122 0x126 0x129 0x12c 0x12f 0x133 0x136 0x13a 0x13e 0x145 0x149 0x14e 0x153 0x154 0x157 0x15b 0x15e 0x162 0x166 0x16d 0x171 0x176 0x17c 0x17e 0x181 0x185 0x188 0x18c 0x190 0x197 0x19b 0x1a0 0x1a6 0x1aa 0x1ae 0x1b2 0x1b6 0x1ba 0x1be 0x1c4 0x1c9 0x1cc 0x1d0 0x1d6 0x1da 0x1e0 0x1e6 0x1ec 0x1f2 0x1f8 0x1fc 0x200 0x204 0x20a 0x20f 0x214 0x218 0x21c 0x221 0x226 0x22b 0x231 0x238 0x23e 0x243 0x248 0x24d 0x252 0x258 0x25d 0x262 0x267 0x26c 0x271 0x276 0x27b 0x281 0x287 0x28c 0x291 0x296 0x29b 0x2a1 0x2b0 0x2b6 0x2bc 0x2c2 0x2c8 0x2cc 0x2d0 0x2d5 0x2da 0x2df 0x2e4 0x2ea 0x2f0 0x2f6 0x2fc 0x302 0x308 0x30e 0x316 0x31e 0x323 0x32a 0x331 0x339 0x340 0x348 0x34d 0x352 0x357 0x35d 0x362 0x368 0x36e 0x374 0x37a 0x380 0x387 0x38f 0x396 0x39c>;
+				compatible = "sprd,sharkl6-backlight";
+				default-brightness-level = <0x106>;
+				phandle = <0x1f>;
+				pwm-names = "backlight";
+				pwms = <0xffffffff 0x2 0x9c40>;
+				sprd,brightness-scale = <0x3ff>;
+				sprd,max-brightness-level = <0x39c>;
+			};
+
+			sprd_uid {
+				compatible = "sprd-uid";
+				nvmem-cell-names = "uid_start", "uid_end";
+				nvmem-cells = <0xffffffff 0xffffffff>;
+			};
+
+			thermal-sensor {
+				#thermal-sensor-cells = <0x0>;
+				compatible = "generic-adc-thermal";
+				io-channel-names = "sensor-channel";
+				io-channels = <0xffffffff 0x1>;
+				phandle = <0x19>;
+				temperature-lookup-table = <0xffff64c2 0x46b 0xffff8baf 0x456 0xffffb3e8 0x432 0xffffedb9 0x3d7 0x277e 0x346 0x60e5 0x28e 0xaf7a 0x19d 0xd677 0x13c 0xfd7f 0xee 0x12484 0xb2 0x14b93 0x85 0x172a3 0x64 0x199b0 0x4b 0x1c0c9 0x39 0x1e7c8 0x2b>;
+			};
+		};
+	};
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			status = "okay";
+
+			omnivision_tcm@0 {
+				chipone,compensate-cap-max = <0x7f>;
+				chipone,compensate-cap-min = <0x1>;
+				chipone,gesture-lp-noise-max = <0x78>;
+				chipone,gesture-lp-rawdata-max = <0x1518>;
+				chipone,gesture-lp-rawdata-min = <0x708>;
+				chipone,gesture-noise-max = <0x78>;
+				chipone,gesture-rawdata-max = <0x1518>;
+				chipone,gesture-rawdata-min = <0x708>;
+				chipone,irq-gpio = <0xffffffff 0x90 0x2008>;
+				chipone,noise-max = <0x78>;
+				chipone,open-min = <0x640>;
+				chipone,rawdata-max = <0xb54>;
+				chipone,rawdata-min = <0x44c>;
+				chipone,rst-gpio = <0xffffffff 0x92 0x0>;
+				chipone,short-min = <0x640>;
+				chipone,test-compensate-cap;
+				chipone,test-gesture-lp-noise;
+				chipone,test-gesture-lp-noise-frames = <0x3>;
+				chipone,test-gesture-lp-rawdata;
+				chipone,test-gesture-lp-rawdata-frames = <0x3>;
+				chipone,test-gesture-noise;
+				chipone,test-gesture-noise-frames = <0x3>;
+				chipone,test-gesture-rawdata;
+				chipone,test-gesture-rawdata-frames = <0x3>;
+				chipone,test-int-pin;
+				chipone,test-noise;
+				chipone,test-noise-frames = <0x32>;
+				chipone,test-open;
+				chipone,test-rawdata;
+				chipone,test-rawdata-frames = <0x1>;
+				chipone,test-reset-pin;
+				chipone,test-short;
+				chipone,touch-charger-detect-enable;
+				chipone,touch-charger-detect-psp = "POWER_SUPPLY_PROP_ONLINE";
+				chipone,touch-charger-detect-psp-poll-interval = <0x3e8>;
+				chipone,touch-charger-detect-psy-name = "charger";
+				chipone,touch-charger-detect-type = "notify";
+				chipone,touch-earjack-detect-enable;
+				chipone,touch-earjack-poll-interval = <0x3e8>;
+				chipone,touch-earjack-state-filepath = "/sys/bus/platform/drivers/Accdet_Driver/state";
+				chipone,x-res = <0x2d0>;
+				chipone,y-res = <0x640>;
+				compatible = "omnivision,tcm-spi", "himax,hxcommon", "focaltech,fts", "chipone-tddi";
+				focaltech,display-coords = <0x0 0x0 0x2d0 0x640>;
+				focaltech,irq-gpio = <0xffffffff 0x90 0x2008>;
+				focaltech,max-touch-number = <0xa>;
+				focaltech,reset-gpio = <0xffffffff 0x92 0x0>;
+				himax,display-coords = <0x0 0x2d0 0x0 0x640>;
+				himax,irq-gpio = <0xffffffff 0x90 0x2008>;
+				himax,panel-coords = <0x0 0x2d0 0x0 0x640>;
+				himax,rst-gpio = <0xffffffff 0x92 0x0>;
+				omnivision,block-delay-us = <0x0>;
+				omnivision,byte-delay-us = <0x0>;
+				omnivision,irq-gpio = <0xffffffff 0x90 0x2008>;
+				omnivision,irq-on-state = <0x0>;
+				omnivision,power-delay-ms = <0xc8>;
+				omnivision,reset-active-ms = <0x14>;
+				omnivision,reset-delay-ms = <0xc8>;
+				omnivision,reset-gpio = <0xffffffff 0x92 0x0>;
+				omnivision,reset-on-state = <0x0>;
+				omnivision,spi-mode = <0x3>;
+				omnivision,ubl-byte-delay-us = <0x14>;
+				omnivision,ubl-max-freq = <0x2dc6c0>;
+				panel = <0xf 0x10 0x11 0x12 0x13 0x14 0x15 0x16 0x17 0x18>;
+				reg = <0x0>;
+				report_type = <0x1>;
+				spi-cpha;
+				spi-max-frequency = <0x927c00>;
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+
+			core@3 {
+				compatible = "sprd,sipc";
+				label = "sipc-wcn";
+				mboxes = <0xffffffff 0x8 0x0>;
+				phandle = <0x37>;
+				reg = <0x3>;
+				sprd,smem-info = <0x87240000 0x240000 0x140000>;
+
+				wcn_bt {
+					compatible = "sprd,wcn_internal_chip";
+					sprd,channel = <0x4>;
+					sprd,dst = <0x3>;
+					sprd,name = "ttyBT";
+					sprd,rx_bufid = <0xa>;
+					sprd,tx_bufid = <0xb>;
+				};
+
+				wcn_fm {
+					compatible = "sprd,wcn_fm_internal_chip";
+					sprd,dst = <0x3>;
+					sprd,name = "fm";
+					sprd,rx_bufid = <0xd>;
+					sprd,rx_channel = <0x4>;
+					sprd,tx_bufid = <0xe>;
+					sprd,tx_channel = <0x4>;
+				};
+			};
+
+			core@4 {
+				#address-cells = <0x1>;
+				#size-cells = <0x0>;
+				compatible = "sprd,sipc";
+				label = "sipc-gnss";
+				mboxes = <0xffffffff 0x9 0x0>;
+				phandle = <0x38>;
+				reg = <0x4>;
+				sprd,smem-info = <0x8749b000 0x11b000 0x32000>;
+
+				channel@4 {
+					compatible = "sprd,spipe";
+					label = "sttygnss0";
+					phandle = <0x39>;
+					reg = <0x4>;
+					sprd,ringnr = <0x1>;
+					sprd,size-rxbuf = <0x19000>;
+					sprd,size-txbuf = <0xc800>;
+				};
+			};
+		};
+	};
+
+	fragment@10 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			extcon = <0xffffffff 0xffffffff>;
+			status = "okay";
+			vbus-supply = <0x1c>;
+		};
+	};
+
+	fragment@11 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			cd-gpios = <0xffffffff 0x23 0x0>;
+		};
+	};
+
+	fragment@12 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			status = "okay";
+
+			sec-nfc@27 {
+				clock-names = "nfc_clk", "source", "enable";
+				clocks = <0xffffffff 0x4 0xffffffff 0xffffffff 0x6>;
+				compatible = "sec-nfc";
+				reg = <0x27>;
+				sec-nfc,clk-req = <0xffffffff 0x3c 0x0>;
+				sec-nfc,firm-gpio = <0xffffffff 0x3d 0x0>;
+				sec-nfc,irq-gpio = <0xffffffff 0x3e 0x0>;
+				sec-nfc,ven-gpio = <0xffffffff 0x3f 0x0>;
+			};
+
+			ucp1301@58 {
+				#sound-dai-cells = <0x1>;
+				compatible = "sprd,ucp1301-rcv";
+				phandle = <0x1e>;
+				reg = <0x58>;
+				reset-gpios = <0xffffffff 0xac 0x0>;
+			};
+		};
+	};
+
+	fragment@13 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			status = "okay";
+		};
+	};
+
+	fragment@14 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			status = "okay";
+
+			ucp1301@58 {
+				#sound-dai-cells = <0x1>;
+				compatible = "sprd,ucp1301-spk";
+				phandle = <0x1d>;
+				reg = <0x58>;
+				reset-gpios = <0xffffffff 0xa7 0x0>;
+			};
+
+			vl53l0@52 {
+				compatible = "st,stmvl53l0";
+				interrupt-parent = <0xffffffff>;
+				interrupts = <0xa9 0x8>;
+				irq_gpios = <0xa9>;
+				phandle = <0x47>;
+				reg = <0x52>;
+				reset_gpios = <0xa8>;
+			};
+		};
+	};
+
+	fragment@15 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			clock-frequency = <0xf4240>;
+			status = "okay";
+		};
+	};
+
+	fragment@16 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			extcon = <0xffffffff>;
+			lr-gpios = <0xffffffff 0xae 0x0>;
+			mic-gpios = <0xffffffff 0xaf 0x0>;
+			sprd,3pole-adc-threshold = <0x70>;
+			status = "okay";
+		};
+	};
+
+	fragment@17 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@18 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			sprd-audio-card,routing = "HPMIC Pin", "HP Mic Jack", "MIC Pin", "Mic Jack", "MIC2 Pin", "Aux Mic Jack", "HeadPhone Jack", "HP Pin", "Ext Spk", "SPK Pin", "UCP1301 SPK ON", "SPK Pin", "Ext Spk", "UCP1301 SPK", "PDM DMIC2 ON", "SPK Pin", "Ext Spk", "PDM_DMIC2", "DMIC Pin", "DMic Jack", "DMIC1 Pin", "DMic1 Jack", "Ext Ear", "EAR Pin", "UCP1301 RCV ON", "EAR Pin", "Ext Ear", "UCP1301 RCV";
+			status = "okay";
+
+			sprd-audio-card,dai-link@53 {
+				be-id = <0x0>;
+				dai-format = "i2s";
+				dpcm-playback = <0x1>;
+				ignore-suspend = <0x1>;
+				link-name = "BE_NORMAL_AP01_UCPSPK";
+				no-pcm = <0x1>;
+				stream-name = "BE_ST_NORMAL_AP01_UCPSPK";
+
+				codec {
+					sound-dai = <0x1d 0x0>;
+				};
+
+				cpu {
+					sound-dai = <0xffffffff 0x1f>;
+				};
+
+				plat {
+					sound-dai = <0xffffffff>;
+				};
+			};
+
+			sprd-audio-card,dai-link@55 {
+				be-id = <0x0>;
+				dai-format = "i2s";
+				dpcm-playback = <0x1>;
+				ignore-suspend = <0x1>;
+				link-name = "BE_NORMAL_AP01_UCPRCV";
+				no-pcm = <0x1>;
+				stream-name = "BE_ST_NORMAL_AP01_UCPRCV";
+
+				codec {
+					sound-dai = <0x1e 0x0>;
+				};
+
+				cpu {
+					sound-dai = <0xffffffff 0x1f>;
+				};
+
+				plat {
+					sound-dai = <0xffffffff>;
+				};
+			};
+
+			sprd-audio-card,dai-link@81 {
+				be-id = <0x0>;
+				dpcm-capture = <0x1>;
+				ignore-suspend = <0x1>;
+				link-name = "BE_PDM_DMIC";
+				no-pcm = <0x1>;
+				stream-name = "BE_ST_PDM_DMIC";
+
+				codec {
+					sound-dai = <0xffffffff 0x0>;
+				};
+
+				cpu {
+					sound-dai = <0xffffffff 0x1f>;
+				};
+
+				plat {
+					sound-dai = <0xffffffff>;
+				};
+			};
+		};
+	};
+
+	fragment@19 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			regulator-always-on;
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			bootargs_ext = "androidboot.hardware=ums9230_1h10_go androidboot.dtbo_idx=0";
+		};
+	};
+
+	fragment@20 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			fgu-capacity-track;
+			monitored-battery = <0xe>;
+			phys = <0xffffffff>;
+			sprd,basp;
+			sprd,calib-resistance-micro-ohms = <0x12f2>;
+			sprd,capacity-boot-calibration;
+			sprd,capacity-charge-cycle;
+			sprd,capacity-sleep-calibration;
+			sprd,comp-resistance-mohm = <0xd>;
+			sprd,relax-counter-threshold = <0x244>;
+			sprd,relax-current-threshold = <0x1e>;
+		};
+	};
+
+	fragment@21 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			avdd-gpio = <0xffffffff 0x87 0x0>;
+			avee-gpio = <0xffffffff 0x88 0x0>;
+			reset-gpio = <0xffffffff 0x32 0x0>;
+			sprd,backlight = <0x1f>;
+		};
+	};
+
+	fragment@22 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			sprd,backlight = <0x1f>;
+			sprd,logo-memory = <0x20>;
+		};
+	};
+
+	fragment@23 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			sprd,input-voltage-microvolt = <0x4c4b40>;
+			status = "okay";
+		};
+	};
+
+	fragment@24 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+
+			connector {
+				compatible = "usb-c-connector";
+				label = "USB-C";
+				op-sink-microwatt = <0x989680>;
+				phandle = <0x48>;
+				power-role = "dual";
+				sink-pdos = <0x401912c 0xc0dc213c>;
+				source-pdos = <0x4019028>;
+				try-power-role = "sink";
+			};
+		};
+	};
+
+	fragment@25 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			sprd-freq = <0x535 0x300 0x100 0x535 0x535 0xbacd 0x535 0xbacd 0xbacd>;
+			sprd-scene = "boost", "lcdon", "lcdoff", "camlow", "camhigh", "camveryhigh", "faceid", "top", "boot-opt";
+		};
+	};
+
+	fragment@26 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			pinctrl-0 = <0x21>;
+			pinctrl-1 = <0x22>;
+			pinctrl-2 = <0x23>;
+			pinctrl-3 = <0x24>;
+			pinctrl-4 = <0x25>;
+			pinctrl-5 = <0x26>;
+			pinctrl-6 = <0x27>;
+			pinctrl-names = "gpio_8", "gpio_22", "gpio_24", "gpio_25", "gpio_26", "gpio_124", "gpio_175";
+
+			bt_rfctl2 {
+				function = "func4";
+				phandle = <0x27>;
+				pins = "QOGIRL6_BT_RFCTL2";
+			};
+
+			keyin0 {
+				function = "func4";
+				phandle = <0x26>;
+				pins = "QOGIRL6_KEYIN0";
+			};
+
+			rfctl16 {
+				function = "func4";
+				phandle = <0x21>;
+				pins = "QOGIRL6_RFCTL16";
+			};
+
+			rfctl3 {
+				function = "func4";
+				phandle = <0x22>;
+				pins = "QOGIRL6_RFCTL3";
+			};
+
+			rfctl5 {
+				function = "func4";
+				phandle = <0x23>;
+				pins = "QOGIRL6_RFCTL5";
+			};
+
+			rfctl6 {
+				function = "func4";
+				phandle = <0x24>;
+				pins = "QOGIRL6_RFCTL6";
+			};
+
+			rfctl7 {
+				function = "func4";
+				phandle = <0x25>;
+				pins = "QOGIRL6_RFCTL7";
+			};
+		};
+	};
+
+	fragment@27 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+
+			heap@4 {
+				label = "carveout_fd";
+				memory-region = <0x28>;
+				reg = <0x4>;
+				type = <0x2>;
+			};
+		};
+	};
+
+	fragment@28 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			sprd,hw-channels = <0x2 0x18cc 0x3 0x18cc 0xd 0x1854 0xf 0x1874 0x11 0x1844 0x13 0x1844 0x15 0x1864 0x1e 0x1820 0x20 0x197c 0x21 0x1988 0x23 0x19b8 0x27 0x19ac>;
+			sprd,hw-channels0 = <0x2 0x18cc 0x3 0x18cc 0xd 0x1874 0xf 0x1874 0x11 0x1844 0x13 0x1854 0x15 0x1864 0x1e 0x1820 0x20 0x197c 0x21 0x1988 0x23 0x19b8 0x27 0x19ac>;
+			sprd,hw-channels1 = <0x2 0x18cc 0x3 0x18cc 0xd 0x1854 0xf 0x1874 0x11 0x1844 0x13 0x1844 0x15 0x1864 0x1e 0x1820 0x20 0x197c 0x21 0x1988 0x23 0x19b8 0x27 0x19ac>;
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x2>;
+			#size-cells = <0x2>;
+
+			faceid-mem@ffa70000 {
+				phandle = <0x28>;
+				reg = <0x0 0xffa70000 0x0 0x500000>;
+			};
+
+			logobuffer@9e000000 {
+				phandle = <0x20>;
+				reg = <0x0 0x9e000000 0x0 0xab0000>;
+			};
+
+			wcn-mem@87000000 {
+				phandle = <0x3a>;
+				reg = <0x0 0x87000000 0x0 0x800000>;
+			};
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			board-thmzone {
+				phandle = <0x3b>;
+				polling-delay = <0x0>;
+				polling-delay-passive = <0x0>;
+				thermal-sensors = <0x19>;
+			};
+
+			chg-thmzone {
+				phandle = <0x3d>;
+				polling-delay = <0x0>;
+				polling-delay-passive = <0x0>;
+				thermal-sensors = <0x1b>;
+			};
+
+			pa-thmzone {
+				phandle = <0x3c>;
+				polling-delay = <0x0>;
+				polling-delay-passive = <0x0>;
+				thermal-sensors = <0x1a>;
+			};
+		};
+	};
+
+	fragment@5 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			clock-frequency = <0x61a80>;
+			status = "okay";
+
+			sensor-main@20 {
+				clock-names = "clk_src", "sensor_eb", "clk_96m", "clk_76m8", "clk_48m", "clk_26m";
+				clocks = <0xffffffff 0x2 0xffffffff 0xd 0xffffffff 0x4 0xffffffff 0x10 0xffffffff 0x5 0xffffffff>;
+				compatible = "sprd,sensor-main";
+				csi = <0xffffffff>;
+				dvdd-gpios = <0xffffffff 0xb 0x0>;
+				phandle = <0x3e>;
+				power-domains = <0xffffffff>;
+				power-down-gpios = <0xffffffff 0x2f 0x0>;
+				reg = <0x20>;
+				reset-gpios = <0xffffffff 0x2d 0x0>;
+				sprd,phyid = <0x0>;
+				vddcama-supply = <0xffffffff>;
+				vddcammot-supply = <0xffffffff>;
+				vddio-supply = <0xffffffff>;
+			};
+
+			sensor-sub@5a {
+				clock-names = "clk_src", "sensor_eb", "clk_96m", "clk_76m8", "clk_48m", "clk_26m";
+				clocks = <0xffffffff 0x2 0xffffffff 0xd 0xffffffff 0x4 0xffffffff 0x10 0xffffffff 0x5 0xffffffff>;
+				compatible = "sprd,sensor-sub";
+				csi = <0xffffffff>;
+				dvdd-gpios = <0xffffffff 0xb 0x0>;
+				phandle = <0x3f>;
+				power-domains = <0xffffffff>;
+				power-down-gpios = <0xffffffff 0x2e 0x0>;
+				reg = <0x5a>;
+				reset-gpios = <0xffffffff 0x2c 0x0>;
+				sprd,phyid = <0x2>;
+				vddcama-supply = <0xffffffff>;
+				vddcammot-supply = <0xffffffff>;
+				vddio-supply = <0xffffffff>;
+			};
+		};
+	};
+
+	fragment@6 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			clock-frequency = <0x61a80>;
+			status = "okay";
+
+			sensor-main2@20 {
+				avdd-gpios = <0xffffffff 0x21 0x0>;
+				clock-names = "clk_src", "sensor_eb", "clk_96m", "clk_76m8", "clk_48m", "clk_26m";
+				clocks = <0xffffffff 0x3 0xffffffff 0xc 0xffffffff 0x4 0xffffffff 0x10 0xffffffff 0x5 0xffffffff>;
+				compatible = "sprd,sensor-main2";
+				csi = <0xffffffff>;
+				mot-gpios = <0xffffffff 0x58 0x0>;
+				phandle = <0x40>;
+				power-domains = <0xffffffff>;
+				power-down-gpios = <0xffffffff 0x28 0x0>;
+				reg = <0x20>;
+				reset-gpios = <0xffffffff 0x29 0x0>;
+				sprd,phyid = <0x4>;
+				vddcama-supply = <0xffffffff>;
+				vddcamd-supply = <0xffffffff>;
+				vddcammot-supply = <0xffffffff>;
+				vddio-supply = <0xffffffff>;
+			};
+		};
+	};
+
+	fragment@7 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			clock-frequency = <0x61a80>;
+			status = "okay";
+
+			charger@1b {
+				chg_pump_en_gpio = <0xffffffff 0x93 0x0>;
+				compatible = "halo,hl1506_cp_converter";
+				phandle = <0x43>;
+				reg = <0x1b>;
+			};
+
+			charger@61 {
+				compatible = "nuvolta,wl_charger_nu1619";
+				phandle = <0x44>;
+				phys = <0xffffffff>;
+				reg = <0x61>;
+				rx,irq_gpio = <0xffffffff 0x92 0x1>;
+				switch_chg_en_gpio = <0xffffffff 0xab 0x0>;
+				switch_flag_en_gpio = <0xffffffff 0xb0 0x0>;
+			};
+
+			charger@65 {
+				compatible = "ti,bq2597x-standalone";
+				irq-gpio = <0xffffffff 0x7e 0x1>;
+				phandle = <0x42>;
+				reg = <0x65>;
+				ti,bq2597x,ac-ovp-threshold = <0xd>;
+				ti,bq2597x,adc-sample-bits = <0xd>;
+				ti,bq2597x,bat-ocp-alarm-threshold = <0x1388>;
+				ti,bq2597x,bat-ocp-threshold = <0x157c>;
+				ti,bq2597x,bat-ovp-alarm-threshold = <0x10f4>;
+				ti,bq2597x,bat-ovp-threshold = <0x1130>;
+				ti,bq2597x,bat-therm-threshold = <0x15>;
+				ti,bq2597x,bat-ucp-alarm-threshold = <0x3e8>;
+				ti,bq2597x,bus-ocp-alarm-threshold = <0xa8c>;
+				ti,bq2597x,bus-ocp-threshold = <0xbb8>;
+				ti,bq2597x,bus-ovp-alarm-threshold = <0x2904>;
+				ti,bq2597x,bus-ovp-threshold = <0x2cec>;
+				ti,bq2597x,bus-therm-disable = <0x1>;
+				ti,bq2597x,bus-therm-threshold = <0x15>;
+				ti,bq2597x,die-therm-threshold = <0xc8>;
+				ti,bq2597x,ibat-regulation-threshold = <0x12c>;
+				ti,bq2597x,regulation-disable = <0x1>;
+				ti,bq2597x,sense-resistor-mohm = <0x5>;
+				ti,bq2597x,ss-timeout = <0x186a0>;
+				ti,bq2597x,vbat-regulation-threshold = <0x64>;
+				ti,bq2597x,vdrop-deglitch = <0x1388>;
+				ti,bq2597x,vdrop-threshold = <0x190>;
+				ti,bq2597x,watchdog-timer = <0x7530>;
+			};
+
+			charger@6b {
+				compatible = "ti,bq2560x_chg";
+				irq-gpio = <0xffffffff 0x73 0x1>;
+				monitored-battery = <0xe>;
+				phandle = <0x41>;
+				reg = <0x6b>;
+
+				otg-vbus {
+					phandle = <0x1c>;
+					regulator-name = "vddvbus";
+				};
+			};
+
+			flash-ic@63 {
+				compatible = "sprd,flash-ocp8137";
+				flash-chip-en-gpios = <0xffffffff 0x8a 0x0>;
+				flash-en-gpios = <0xffffffff 0x8b 0x0>;
+				flash-sync-gpios = <0xffffffff 0x79 0x0>;
+				flash-torch-en-gpios = <0xffffffff 0x20 0x0>;
+				phandle = <0x45>;
+				reg = <0x63>;
+				sprd,flash-ic = <0x1fc9>;
+				sprd,highlight = <0x1>;
+				sprd,highlight-level = <0x80>;
+				sprd,lvfm-enable = <0x1>;
+				sprd,preflash = <0x1>;
+				sprd,preflash-level = <0x80>;
+				sprd,torch = <0x1>;
+				sprd,torch-level = <0x80>;
+			};
+		};
+	};
+
+	fragment@8 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			#address-cells = <0x1>;
+			#size-cells = <0x0>;
+			clock-frequency = <0x61a80>;
+			status = "okay";
+
+			sensor-sub2@6e {
+				avdd-gpios = <0xffffffff 0x82 0x0>;
+				clock-names = "clk_src", "sensor_eb", "clk_96m", "clk_76m8", "clk_48m", "clk_26m";
+				clocks = <0xffffffff 0x4 0xffffffff 0xb 0xffffffff 0x4 0xffffffff 0x10 0xffffffff 0x5 0xffffffff>;
+				compatible = "sprd,sensor-sub2";
+				csi = <0xffffffff>;
+				mot-gpios = <0xffffffff 0x70 0x0>;
+				phandle = <0x46>;
+				reg = <0x6e>;
+				reset-gpios = <0xffffffff 0x72 0x0>;
+				sprd,phyid = <0x3>;
+				vddcamd-supply = <0xffffffff>;
+				vddcammot-supply = <0xffffffff>;
+				vddio-supply = <0xffffffff>;
+			};
+		};
+	};
+
+	fragment@9 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			extcon = <0xffffffff>;
+			sprd,hsphy-device-eye-pattern = <0x613d1c0>;
+			sprd,hsphy-host-eye-pattern = <0x4f3d1c0>;
+			status = "okay";
+			vdd-supply = <0xffffffff>;
+		};
+	};
+};

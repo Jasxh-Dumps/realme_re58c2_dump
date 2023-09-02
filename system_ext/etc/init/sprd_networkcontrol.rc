@@ -1,0 +1,7 @@
+service sprd_networkcontrol /system_ext/bin/sprd_networkcontrol
+    class main
+    user root
+    oneshot  
+    
+
+

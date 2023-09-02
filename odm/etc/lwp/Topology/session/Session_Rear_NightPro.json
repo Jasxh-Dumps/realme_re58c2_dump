@@ -1,0 +1,36 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Rear_NightPro",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 1440,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 4000,
+                    "max_height": 3000,
+                    "formats": [ "JPEG" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 320,
+                    "max_height": 240,
+                    "formats": [ "NV12"]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Rear_NightPro_Capture",
+            "Pipeline_Rear_NightPro_Preview",
+            "Pipeline_Async",
+            "Pipeline_Rear_Auto_Debug_Reprocess"
+        ]
+    }
+}

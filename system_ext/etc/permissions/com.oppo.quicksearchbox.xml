@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.oppo.quicksearchbox">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+</permissions>

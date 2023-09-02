@@ -1,0 +1,11 @@
+/odm/lib(64)?/libkey\.so                       u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libinfo\.so                      u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libDefog\.so                     u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libverify\.so                    u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libSegLite\.so                   u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libsprdbokeh\.so                 u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libinterface\.so                 u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libBokeh2Frames\.so              u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libTfliteWrapper\.so             u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libbokeh_gaussian_cap\.so        u:object_r:same_process_hal_file:s0
+/odm/lib(64)?/libportrait_scene_cap\.so        u:object_r:same_process_hal_file:s0

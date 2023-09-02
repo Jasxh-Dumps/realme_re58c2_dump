@@ -1,0 +1,47 @@
+{
+    "Plugin": {
+        "DataLicense": "LicenseRef-Unisoc-General-1.0",
+        "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+        "id": "LwpPlugin",
+        "usecase": {
+            "Plugin_list": [
+                {
+                    "name": "FastThumb_Plugin",
+                    "type": "CommonPlugin",
+                    "pipetype": "capture_stream",
+                    "bufType": 12,
+                    "need_return": 1,
+                    "copy_num": 0,
+                    "src_node": "cap_MF_router",
+                    "dst_node": "SinkNode",
+                    "dst_port": "in0",
+                    "plugin_nodes": [ "PolarrRenderNode", "FaceBeautyNode", "FastThumbNode" ]
+                },
+                {
+                    "name": "FastThumb_Plugin",
+                    "type": "CommonPlugin",
+                    "pipetype": "capture_stream",
+                    "bufType": 12,
+                    "need_return": 1,
+                    "copy_num": 0,
+                    "src_node": "cap_VDBlurless",
+                    "dst_node": "SinkNode",
+                    "dst_port": "in0",
+                    "plugin_nodes": [ "PolarrRenderNode", "FaceBeautyNode", "FastThumbNode" ]
+                },
+                {
+                    "name": "FastThumb_Plugin",
+                    "type": "CommonPlugin",
+                    "pipetype": "capture_stream",
+                    "bufType": 12,
+                    "need_return": 1,
+                    "copy_num": 0,
+                    "src_node": "cap_BrightRouter",
+                    "dst_node": "SinkNode",
+                    "dst_port": "in0",
+                    "plugin_nodes": [ "PolarrRenderNode", "FaceBeautyNode", "FastThumbNode" ]
+                }
+            ]
+        }
+    }
+}

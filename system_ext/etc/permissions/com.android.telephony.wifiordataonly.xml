@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <scan-in-config config="ro.boot.product.hardware.sku"  value="wifionly">
+        <disallowed-scan-path name="Dialer"/>
+        <disallowed-scan-path name="SprdDialer"/>
+        <disallowed-scan-path name="SprdDialerGo"/>
+        <disallowed-scan-path name="GoogleDialer"/>
+        <disallowed-scan-path name="GoogleDialerGo"/>
+        <disallowed-scan-path name="Stk"/>
+        <disallowed-scan-path name="UplmnSettings"/>
+        <disallowed-scan-path name="CallFireWall"/>
+        <disallowed-scan-path name="ModemNotifier"/>
+        <disallowed-scan-path name="CellBroadcastReceiver"/>
+        <disallowed-scan-path name="ims"/>
+        <disallowed-scan-path name="SprdVoWifiService"/>
+        <disallowed-scan-path name="SprdVoWifiConfiguration"/>
+        <disallowed-scan-path name="ImsCM"/>
+        <disallowed-scan-path name="radio_interactor_service"/>
+        <disallowed-scan-path name="VceDaemon"/>
+        <disallowed-scan-path name="EmergencyInfo"/>
+        <disallowed-scan-path name="Srmi"/>
+        <disallowed-scan-path name="AndroidAutoStub"/>
+        <allowed-scan-path name="FrameworkResWifiOnlyOverlay.apk"/>
+    </scan-in-config>
+
+    <scan-in-config config="ro.boot.product.hardware.sku"  value="dataonly">
+        <disallowed-scan-path name="Dialer"/>
+        <disallowed-scan-path name="SprdDialer"/>
+        <disallowed-scan-path name="SprdDialerGo"/>
+        <disallowed-scan-path name="GoogleDialer"/>
+        <disallowed-scan-path name="GoogleDialerGo"/>
+        <disallowed-scan-path name="Stk"/>
+        <disallowed-scan-path name="UplmnSettings"/>
+        <disallowed-scan-path name="CallFireWall"/>
+        <disallowed-scan-path name="ModemNotifier"/>
+        <disallowed-scan-path name="CellBroadcastReceiver"/>
+        <disallowed-scan-path name="ims"/>
+        <disallowed-scan-path name="SprdVoWifiService"/>
+        <disallowed-scan-path name="SprdVoWifiConfiguration"/>
+        <disallowed-scan-path name="ImsCM"/>
+        <disallowed-scan-path name="VceDaemon"/>
+        <disallowed-scan-path name="Srmi"/>
+        <allowed-scan-path name="FrameworkResDataOnlyOverlay.apk"/>
+    </scan-in-config>
+</permissions>
+

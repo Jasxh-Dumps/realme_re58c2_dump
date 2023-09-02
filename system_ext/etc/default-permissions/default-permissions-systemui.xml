@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+  <exception
+    package="com.android.systemui">
+    <permission name="android.permission.READ_PHONE_STATE" fixed="true"/>
+    <permission name="android.permission.ACTIVITY_RECOGNITION" fixed="true"/>
+  </exception>
+</exceptions>

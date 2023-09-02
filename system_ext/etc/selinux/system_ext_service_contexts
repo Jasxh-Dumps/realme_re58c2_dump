@@ -1,0 +1,109 @@
+#line 1 "device/sprd/mpool/sepolicy/system/private/service_contexts"
+# add for srmi
+srmi                                      u:object_r:srmi_service:s0
+#for led notification
+ledsrv                                    u:object_r:led_service:s0
+
+addon                                     u:object_r:addon_service:s0
+# add for power
+powerguru                                 u:object_r:powerguru_service:s0
+power_ex                                  u:object_r:power_ex_service:s0
+sprd_power                                u:object_r:power_ex_service:s0
+sunlight                                  u:object_r:power_ex_service:s0
+lld                                       u:object_r:power_ex_service:s0
+# add for ssense
+SceneRecognize                            u:object_r:ssense_service:s0
+sprdssense                                u:object_r:ssense_service:s0
+
+# add for ccsa
+security                                  u:object_r:security_service:s0
+connectionEx                              u:object_r:connectionEx_service:s0
+network_adapter                           u:object_r:networkadapter_service:s0
+# add for fm
+
+# add for tele
+iphonesubinfoEx                           u:object_r:radio_service:s0
+phone_ex                                  u:object_r:radio_service:s0
+ismsEx                                    u:object_r:radio_service:s0
+ims_ex                                    u:object_r:radio_service:s0
+ims_ut_ex                                 u:object_r:radio_service:s0
+ims_doze_manager                          u:object_r:radio_service:s0
+simphonebookEx                            u:object_r:radio_service:s0
+irit                                      u:object_r:radio_service:s0
+phone_dmyk                                u:object_r:radio_service:s0
+ions_ex                                   u:object_r:radio_service:s0
+# add for VoLTE video call
+#VideoCallEngineService                    u:object_r:vce_service:s0
+
+# Start of PayJoy changes
+payjoy_access_service                     u:object_r:payjoy_access_service:s0
+# End of PayJoy changes
+
+
+#fow unisocai
+unisocai                                  u:object_r:unisoc_ai_service:s0
+
+# add for audioserviceex
+audio_ex                                  u:object_r:audio_ex_service:s0
+
+## add for UniWifiService
+uni_wifi                                  u:object_r:uni_wifi_service:s0
+
+#add for UniEvent
+unisoc_event                              u:object_r:unisoc_event_service:s0
+
+## add for remotedisplayService
+remotedisplay       u:object_r:remotedisplay_service:s0
+
+## add for UnisocProxyService
+unisoc_proxy                              u:object_r:unisoc_proxy_service:s0
+
+
+# add for tele
+oplus_telephony_ext                       u:object_r:radio_service:s0
+#line 1 "vendor/huaqin/packages/EngineerMode/sepolicy/sprd/system/private/service_contexts"
+#add for guid service
+guid                                    u:object_r:guid_service:s0
+
+#add for engineer service
+engineer                                u:object_r:engineer_service:s0
+
+#add for secrecy service
+secrecy                                 u:object_r:secrecy_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/security/msepolicy/system/private/service_contexts"
+# add for ifaa
+ifaa                                      u:object_r:ifaa_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/media/msepolicy/system/private/service_contexts"
+fm                                        u:object_r:mediaserver_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/telephony/msepolicy/system/private/service_contexts"
+# Add UNISOC extended telephony services.
+uni_telephony                             u:object_r:radio_service:s0
+uni_phone                                 u:object_r:radio_service:s0
+uni_carrierconfig                         u:object_r:radio_service:s0
+uni_simphonebook                          u:object_r:radio_service:s0
+tele_test_service                         u:object_r:radio_service:s0
+isim_test_service                         u:object_r:radio_service:s0
+operator_name_test_service                u:object_r:radio_service:s0
+simrecords_test_service                   u:object_r:radio_service:s0
+subinfo_test_service                      u:object_r:radio_service:s0
+simfilecontent_test_service               u:object_r:radio_service:s0
+simfilelength_test_service                u:object_r:radio_service:s0
+simfilenotfound_test_service              u:object_r:radio_service:s0
+modemLog_test_service                     u:object_r:radio_service:s0
+ss_test_service                           u:object_r:radio_service:s0
+unidatanetwork_test_service               u:object_r:radio_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/smartlink/msepolicy/system/private/service_contexts"
+#for linkturbonative
+linkturbonative                           u:object_r:linkturbonative_service:s0
+SmartlinkSdkService                       u:object_r:smartlink_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/cta/msepolicy/system/private/service_contexts"
+# add for CTA feature
+cta_permission                            u:object_r:cta_permission_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/silentreboot/msepolicy/system/private/service_contexts"
+unisoc_silent_reboot      u:object_r:unisoc_silent_reboot_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/unipnp/msepolicy/system/private/service_contexts"
+# add for unipnp
+unipnp                                    u:object_r:unipnp_service:s0
+#line 1 "device/sprd/mpool/module/system_ext/ai/ai_engine/msepolicy/system/private/service_contexts"
+#for unisocaiengine
+unisocaiengine                            u:object_r:unisocaiengine_service:s0

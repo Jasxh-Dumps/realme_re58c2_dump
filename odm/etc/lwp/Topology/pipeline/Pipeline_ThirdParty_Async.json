@@ -1,0 +1,116 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_ThirdParty_Async",
+    "stream": "async_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect"
+        },
+        {
+            "type": "ThirdpartyRouterNode",
+            "vendor": "SPRD",
+            "id": "third_party_router"
+        },
+        {
+            "type": "SceneDetectNode",
+            "vendor": "SPRD",
+            "id": "async_SceneDetect"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect",
+                "port": "out0"
+            },
+            "to": {
+                "name": "third_party_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "third_party_router",
+                "port": "camera_go"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "third_party_router",
+                "port": "default"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2022 UNISOC Technologies Co.,Ltd. -->
+<config>
+    <!-- Multithread verify is enabled by default while some apps is verifing, as follows -->
+    <allow-multi-verify-package name="com.tencent.mm" />
+    <allow-multi-verify-package name="com.tencent.android.qqdownloader" />
+    <allow-multi-verify-package name="com.tencent.tmgp.sgame" />
+</config>
