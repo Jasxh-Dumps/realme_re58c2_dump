@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engineer_switch>
+    <version>20190101</version>
+    <switch switchName="activity_sw" switchState="false" />
+    <switch switchName="service_sw" switchState="false" />
+    <switch switchName="shell_command_sw" switchState="false" />
+    <switch switchName="engineer_order_sw" switchState="false" />
+    <switch switchName="reset_atm_sw" switchState="false" />
+    <!--*#928#-->
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.wifi.manualtest.WifiFTMActivity" />
+    <!--*#3644321#,*#3644999#-->
+    <activity packageName="com.oppo.engineermode" className="com.oppo.engineermode.RebootManager" />
+    <!--*#8019#-->
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.wireless.WifiSocketHelper" />
+    <!--*#8020#-->
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.wireless.WifiAdbHelper" />
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.wireless.SwitchMetaModeHelper" />
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.DetectMasterClearResult" />
+    <!--*#637243#-->
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.ShowRemoteMessage" />
+    <activity packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.manualtest.modeltest.ModelTestImpl" />
+    <service packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.assistant.SwitchWifiMMI" />
+    <service packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.assistant.SwitchProductionMode" />
+    <service packageName="com.oppo.engineermode"
+        className="com.oppo.autotest.connector.AutoTestServer" />
+    <service packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.mmi.connector.AutoTestServer" />
+    <service packageName="com.oppo.engineermode" className="com.oppo.autotest.RunAllTest" />
+    <service packageName="com.oppo.engineermode"
+        className="com.oppo.engineermode.wireless.WifiAdbHelperService" />
+    <shell_command command="--update_back_cover_color" />
+    <shell_command command="--update_engineer_result" />
+    <shell_command command="--update_oppo_sn" />
+    <shell_command command="--reset_back_cover_color" />
+    <shell_command command="--reset_write_protect" />
+    <shell_command command="--reset_engineer_result" />
+    <shell_command command="--reset_download_mode" />
+    <shell_command command="--execute_start_mmi" />
+    <shell_command command="--execute_stop_mmi" />
+    <shell_command command="--execute_master_clear" />
+    <shell_command command="--execute_power_off" />
+    <shell_command command="--execute_model_test" />
+    <shell_command command="--execute_engineer_order" />
+    <shell_command command="--execute_switch_production_mode" />
+    <shell_command command="--execute_detect_ms_result" />
+    <shell_command command="--execute_show_production_message" />
+    <shell_command command="--execute_switch_wifi_mmi" />
+    <shell_command command="--execute_launch_wifi_mmi" />
+    <shell_command command="--generate_attk_key_pair" />
+    <shell_command command="--verify_attk_key_pair" />
+    <shell_command command="--verify_attk_key_pair_only" />
+    <shell_command command="--verify_ali_key" />
+    <shell_command command="--export_attk_public_key" />
+    <shell_command command="--get_device_id" />
+    <shell_command command="--enable_rpmb" />
+    <shell_command command="--crypto_eng_verify" />
+    <shell_command command="--get_tee_version" />
+    <shell_command command="--install_keybox" />
+    <shell_command command="--provision_keybox" />
+    <shell_command command="--verify_keybox" />
+    <engineer_order order="*#8011#" />
+    <engineer_order order="*#8019#" />
+    <engineer_order order="*#8020#" />
+    <engineer_order order="*#3644321#" />
+    <engineer_order order="*#3644999#" />
+    <engineer_order order="*#928#" />
+    <engineer_order order="*#637243#" />
+    <engineer_order order="*#667611#" />
+    <engineer_order order="*#667610#" />
+    <!-- Xiang.Gui Add for 5G test switch *#54794824#-->
+    <engineer_order order="*#54794824#" />
+</engineer_switch>

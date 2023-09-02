@@ -1,0 +1,26 @@
+on post-fs-data
+    chmod 0646 /sys/class/leds/red/brightness
+    chmod 0646 /sys/class/leds/green/brightness
+    chmod 0646 /sys/class/leds/blue/brightness
+
+#Write flag
+    mkdir /mnt/vendor/persist/flag 0777 root root
+
+#read touchpanel
+    chmod 0777 /proc/touchpanel/baseline_test
+
+#Bright
+    chmod 0646 /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
+
+#Psensor Adjust
+    chmod 0646 /sys/bus/platform/drivers/als_ps/cali
+
+on property:sys.fm.control=1
+    chmod 0666 /dev/fm
+    chown media media /dev/fm
+on property:sys.fm.control=0
+    chmod 0660 /dev/fm
+    chown media media /dev/fm
+
+on property:persist.sys.pcbaflag=1
+    chown root root /mnt/vendor/persist/PCBA.FLG

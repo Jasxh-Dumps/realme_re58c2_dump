@@ -1,0 +1,23 @@
+{
+  "wifi_adb_config": {
+    "target_ssid": "TAXXX_5G",
+    "target_security": "SECURITY_PSK",
+    "target_password": "TS5A3166DR",
+    "target_signal": "-80",
+    "target_auto_connect_delay": "2",
+    "target_off_signal": "-1",
+    "target_channel_5g": "36,40,44,48,52,56,60,64,149,153,157,161,165",
+    "target_channel_2_4g": "1,2,3,6,7,8,11,12,13",
+    "target_channel": "",
+    "target_ip_assignment": "DHCP",
+    "target_brightness": "0.7",
+    "target_timeout": "10",
+    "target_jumpto": "",
+    "target_code_size": "0.8",
+    "target_code_bcolor": "#FFFFFFFF",
+    "target_code_fcolor": "#FF000000",
+    "target_code_y_position": "0",
+    "target_trigger_reconnect": "false"
+  }
+}
+

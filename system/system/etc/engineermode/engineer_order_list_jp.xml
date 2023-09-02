@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderList version="20190101" xmlns:android="http://schemas.android.com/apk/res/android">
+    <OrderItem name="*#0000#" type="startActivity" platform="ALL" region="CN" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.manualtest.TelecomVersionInfo"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+
+    <OrderItem name="*#12345#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="com.oppo.activation.action.STOP_SERVICE" />
+    </OrderItem>
+    <OrderItem name="*#10000#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.MarkResultShow"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#36446337#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.EngineeringMode"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *##*37847# from oopo 2021/07/07 start-->
+	<!--<OrderItem name="*##*37847#" type="startActivity" platform="ALL" region="ALL" level="6">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.device.manualtest.DeviceListActivity"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *##*37847# from oopo 2021/07/07 end-->
+    <OrderItem name="*#394321#" type="startService" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.LanguageSwitchToZimbabweService"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#3644321#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.RebootManager"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#3644999#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.RebootManager"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <!--ifdef VENDOR_EDIT-->
+    <!--Qiang.Yang@ODM_HQ.AD.EngineerMode, 2021/11/15, delete darksecret*#66#-->
+    <!--<OrderItem name="*#66#" type="startActivity" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.IMeiAndPcbCheck"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+    <!--endif /* VENDOR_EDIT *-->
+    <!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#6776# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#6776#" type="startActivity" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.CheckSoftwareInfo"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+    <!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#6776# from oopo 2021/07/07 end-->
+    <OrderItem name="*#649010#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.usb.manualtest.DiagEnabled"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#637243#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.ShowRemoteMessage"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+	<!-- XiangYi.Wu@ODM_HQ.AD.EngineeringMode delete *#727# from oopo 2021/07/16 start-->
+    <!--<OrderItem name="*#727#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.LteSarTest"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+    <OrderItem name="*#727#" type="startActivity" platform="QCOM" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.SarTest"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>-->
+	<!-- XiangYi.Wu@ODM_HQ.AD.EngineeringMode delete *#727# from oopo 2021/07/16 end-->	
+    <OrderItem name="*#7327#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.rftoolkit.RfToolkitCustomerService"
+            android:targetPackage="com.oppo.rftoolkit" />
+    </OrderItem>
+    <!-- Add for TW FETNET, bud 1278196-->
+    <OrderItem name="*#7890#" type="startActivity" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetWorkSet"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+    <OrderItem name="*#807#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.aftersale.DeviceSimpleDetectActivity"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+    <OrderItem name="*#808#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.EngineerModeMain"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#809#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.camera.EngineerCameraMain"
+            android:targetPackage="com.oppo.engineermode.camera" />
+    </OrderItem>
+    <OrderItem name="*#805#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.bluetooth.manualtest.BluetoothTest"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#803#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wifi.manualtest.WifiSettings"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#804#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearch"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+    <OrderItem name="*#802#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.gps.manualtest.GpsActivity"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#806# from oopo 2021/07/21 start-->
+    <!--<OrderItem name="*#806#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.autoaging.AutoAgingMainListActivity"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#806# from oopo 2021/07/21 end-->
+	<OrderItem name="*#8778#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.manualtest.MasterClear"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#888# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#888#" type="startActivity" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.PcbShow"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#888# from oopo 2021/07/07 end-->
+    <OrderItem name="*##*8110#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.development.manualtest.OtaSwitch"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#872#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.usb.manualtest.UsbPreloaderEnabled"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#8019#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wireless.WifiSocketHelper"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#818#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="First" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#838#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Second" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#618#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Nr_ant0" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#638#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Nr_ant1" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#658#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Nr_ant2" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#678#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Nr_ant3" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#858#" type="startActivity" platform="QCOM" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Third" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#878#" type="startActivity" platform="QCOM" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.NetworkSearchNew"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="Step_Num"
+                android:value="Fourth" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#8168#" type="startActivity" platform="ALL" region="CN" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.CmccEvaluationOTA"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="AntPosition"
+                android:value="Button" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#8398#" type="startActivity" platform="ALL" region="CN" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.CmccEvaluationOTA"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="AntPosition"
+                android:value="TOP" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#8020#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wireless.WifiAdbHelper"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#899# from oopo 2021/07/21 start-->
+    <!--<OrderItem name="*#899#" type="other" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.aftersale.AfterSalePage"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#899# from oopo 2021/07/21 end-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#99# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#99#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.development.manualtest.KeepSrceenOn"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#99# from oopo 2021/07/07 end-->
+    <!--
+    <OrderItem name="*#928#" type="startActivity" platform="MTK" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wireless.SwitchMetaModeHelper"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <OrderItem name="*#928#" type="startActivity" platform="QCOM" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wifi.manualtest.WifiFTMActivity"
+            android:targetPackage="com.oppo.engineermode">
+            <extra
+                android:name="Step_WifiFtm"
+                android:value="First" />
+        </intent>
+    </OrderItem>
+    -->
+    <OrderItem name="*#928#" type="startActivity" platform="SPRD" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.wireless.SwitchMetaModeHelper"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#9434# from oopo 2021/07/21 start-->
+    <!--<OrderItem name="*#9434#" type="startActivity" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.decrypt.WifiDecryptionActivity"
+            android:targetPackage="com.oppo.decrypt" />
+    </OrderItem>-->
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *#9434# from oopo 2021/07/21 end-->
+
+    <OrderItem name="*#911#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.PowerOff"
+            android:targetPackage="com.oppo.engineermode" />
+    </OrderItem>
+    <!--<OrderItem name="*#391#" type="other" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.SwitchSoftwareVersion"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>-->
+    <OrderItem name="*#3954391#" type="other" platform="ALL" region="EXP" level="2" />
+    <OrderItem name="*#7799#" type="other" platform="ALL" region="EXP" level="2" />
+    <OrderItem name="*#789#" type="startActivity" platform="ALL" region="EXP" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.simlockexp.ClearTelcelnetlock"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+    <OrderItem name="*#912#" type="startActivity" platform="ALL" region="EXP" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.simlockexp.RecoverTelcelnetlock"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+    <OrderItem name="*#3921234#" type="other" platform="ALL" region="EXP" level="1">
+        <intent android:action="com.android.engineeringmode.SwitchSoftwareVersionInFw" />
+    </OrderItem>
+	<OrderItem name="*#39243#" type="startActivity" platform="ALL" region="ALL" level="1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.explock.SecretVersonShowActivityExp"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+	<!-- rui.wang@ODM_HQ.AD.EngineeringMode delete *##*39243# from oopo 2021/07/21 end-->
+
+    <OrderItem name="*#3988691#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.explock.RegionNetLockDialogExp"
+            android:targetPackage="com.oppo.engineermode.network" />
+    </OrderItem>
+
+    <OrderItem name="*#390000#" type="sendBroadcast" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="com.oppo.show.all.language"
+            android:targetClass="com.oppo.settings.exp.ExpBroadcastReceiver"
+            android:targetPackage="com.android.settings" />
+    </OrderItem>
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#07#" type="other" platform="ALL" region="EXP" level="1" />-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 end-->
+    <OrderItem name="*#67767#" type="other" platform="ALL" region="EXP" level="2" />
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#8011#" type="other" platform="ALL" region="ALL" level="1" />-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 end-->
+    <OrderItem name="*#39724#" type="other" platform="ALL" region="EXP" level="2" />
+    <OrderItem name="*#390501#" type="other" platform="ALL" region="EXP" level="1" />
+    <OrderItem name="*#390502#" type="other" platform="ALL" region="EXP" level="1" />
+    <OrderItem name="*#667611#" type="other" platform="ALL" region="ALL" level="2" />
+    <OrderItem name="*#667610#" type="other" platform="ALL" region="ALL" level="2" />
+    <!-- Xiang.Gui Add for 5G test switch *#54794824#-->
+    <OrderItem name="*#54794824#" type="other" platform="ALL" region="ALL" level="2" />
+
+    <OrderItem name="*#39137#" type="startService" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.SwitchSoftwareService"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="carrierval"
+                android:value="@string/carrierVersion_thailand_true" />
+            <extra
+                android:name="carriername"
+                android:value="Thailand TRUE" />
+            <extra
+                android:name="sim_switch_operator"
+                android:value="@string/sim_switch_operator_switch_on" />
+        </intent>
+    </OrderItem>
+
+    <OrderItem name="*#39248#" type="startService" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.SwitchSoftwareService"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="carrierval"
+                android:value="@string/carrierVersion_thailand_ais" />
+            <extra
+                android:name="carriername"
+                android:value="Thailand AIS" />
+            <extra
+                android:name="sim_switch_operator"
+                android:value="@string/sim_switch_operator_switch_on" />
+        </intent>
+    </OrderItem>
+
+    <OrderItem name="*#39369#" type="startService" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.SwitchSoftwareService"
+            android:targetPackage="com.oppo.engineermode.network">
+            <extra
+                android:name="carrierval"
+                android:value="@string/carrierVersion_thailand_dtac" />
+            <extra
+                android:name="carriername"
+                android:value="Thailand DTAC" />
+            <extra
+                android:name="sim_switch_operator"
+                android:value="@string/sim_switch_operator_switch_on" />
+        </intent>
+    </OrderItem>
+
+    <OrderItem name="*#008#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.LanguageSwitchActivity"
+            android:targetPackage="com.oppo.engineermode">
+            <extra
+                android:name="language_str"
+                android:value="zh_CN" />
+        </intent>
+    </OrderItem>
+    <OrderItem name="*#7869264#" type="startActivity" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.network.explock.DeviceLockDialogExp"
+            android:targetPackage="com.oppo.engineermode.network">
+        </intent>
+    </OrderItem>
+    <!-- SH add start-->
+    <OrderItem name="*#643223#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.development.manualtest.DevelopmentConfigPage"
+            android:targetPackage="com.oppo.engineermode">
+        </intent>
+    </OrderItem>
+
+    <OrderItem name="*#885526#" type="startActivity" platform="ALL" region="ALL" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.development.manualtest.VulkanDebugActivity"
+            android:targetPackage="com.oppo.engineermode">
+        </intent>
+    </OrderItem>
+    <!-- SH add end-->
+
+    <OrderItem name="*#456225#" type="startActivity" platform="ALL" region="EXP" level="2">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.oppo.engineermode.aftersale.SwitchRegionAssistant"
+            android:targetPackage="com.oppo.engineermode">
+        </intent>
+    </OrderItem>
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 start-->
+    <!--<OrderItem name="*#1234#" type="other" platform="ALL" region="ALL" level="1" />-->
+	<!-- zhangqi@ODM_HQ.AD.EngineeringMode delete *#8011# from oopo 2021/07/07 start-->
+    <OrderItem name="##467#" type="other" platform="ALL" region="ALL" level="1" />
+
+    <OrderItem name="*#547967#" type="startActivity" platform="ALL" region="CN" level="2">
+        <intent android:action="com.oppo.otaui.action.enterprise.entry" />
+    </OrderItem>
+</OrderList>

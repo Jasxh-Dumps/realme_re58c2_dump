@@ -1,0 +1,21 @@
+#
+# file create by zhouzhenyu 20180807
+#
+on property:sys.runin.charger.control=1
+  write /sys/class/power_supply/battery/runin_stop 0
+  # chown system system /sys/class/power_supply/bq2560x_charger/status
+  # chmod 664 /sys/class/power_supply/bq2560x_charger/status
+
+on property:sys.runin.charger.control=0
+  write /sys/class/power_supply/battery/runin_stop 1
+  # chown root root /sys/class/power_supply/bq2560x_charger/status
+  # chmod 644 /sys/class/power_supply/bq2560x_charger/status
+
+#add for runin app runing and bsp remove ntc begin
+on property:persist.sys.runin.start.flag=0
+  write /sys/class/power_supply/battery/aging_status 0
+
+on property:persist.sys.runin.start.flag=1
+  write /sys/class/power_supply/battery/aging_status 1
+
+#add for runin app runing and bsp remove ntc end

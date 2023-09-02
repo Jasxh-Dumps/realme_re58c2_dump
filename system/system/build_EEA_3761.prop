@@ -1,0 +1,13 @@
+ro.com.google.clientidbase=android-oppo
+ro.com.google.clientidbase.ms=android-realme-terr2-rso2
+ro.com.google.clientidbase.tx=android-realme-terr2-rso2
+ro.com.google.clientidbase.vs=android-realme-terr2-rso2
+ro.product.model=RMX3761
+ro.product.system.model=RMX3761
+ro.oplus.rsa=rsa4-tier2
+ro.product.device=RE58C6
+ro.product.system.name=RMX3761EEA
+ro.product.name=RMX3761EEA
+ro.system.build.fingerprint=realme/RMX3761EEA/RE58C6:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.build.fingerprint=realme/RMX3761EEA/RE58C6:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.oppo.market.name=realme narzo N53

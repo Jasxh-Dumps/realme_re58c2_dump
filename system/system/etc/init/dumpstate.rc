@@ -1,0 +1,63 @@
+on boot
+    # Allow bugreports access to eMMC 5.0 stats
+    chown root mount /sys/kernel/debug/mmc0/mmc0:0001/ext_csd
+    chmod 0440 /sys/kernel/debug/mmc0/mmc0:0001/ext_csd
+
+service dumpstate /system/bin/dumpstate -s
+    class main
+    socket dumpstate stream 0660 shell log
+    disabled
+    oneshot
+
+# dumpstatez generates a zipped bugreport but also uses a socket to print the file location once
+# it is finished.
+service dumpstatez /system/bin/dumpstate -S
+    socket dumpstate stream 0660 shell log
+    class main
+    disabled
+    oneshot
+
+# bugreportd starts dumpstate binder service and makes it wait for a listener to connect.
+service bugreportd /system/bin/dumpstate -w
+    class main
+    disabled
+    oneshot
+
+# UNISOC: Modify for Bug 1588137
+service unisoc-cpuinfo /system/bin/dumpstate -c
+    class main
+    disabled
+    oneshot
+
+service dumpstatet /system/bin/dumpstate -t
+    class main
+    disabled
+    oneshot
+
+# bugreportwdt for wdt monitor
+service bugreportW /system/bin/dumpstate -d -z -W
+    class main
+    disabled
+    oneshot
+
+service bugreportM /system/bin/dumpstate -d -z -M
+    class main
+    disabled
+    oneshot
+
+service deletecorefile /system/bin/dumpstate -u
+    class main
+    disabled
+    oneshot
+
+service saveFile /system/bin/dumpstate -l
+    class main
+    disabled
+    oneshot
+
+#bug:2049456, 
+service dumpstateStabilityLogs /system/bin/dumpstate -A -S
+    socket dumpstate stream 0660 shell log
+    class main
+    disabled
+    oneshot

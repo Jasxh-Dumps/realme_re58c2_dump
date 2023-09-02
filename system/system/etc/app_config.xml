@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apk_config>
+  <!-- Google_lens -->
+  <package name="com.google.ar.lens" project="common" country="common" operator="common" reserve="true" path="/system/priv-app/Google_lens/Google_lens.apk"/>
+  <!-- Google News -->
+  <package name="com.google.android.apps.magazines" project="common" country="-RU,-TR" operator="-TELCEL,-CLARO" reserve="true" path="/system/preloadapp/GoogleNews/GoogleNews.apk"/>
+  <!-- Google Pay -->
+  <package name="com.google.android.apps.walletnfcrel" project="common" country="-IN,-TR" operator="common" reserve="true" path="/system/app/realme/GooglePay/GooglePay.apk"/>
+  <!-- Google Pay India-->
+  <package name="com.google.android.apps.nbu.paisa.user" project="common" country="IN" operator="common" reserve="true" path="/system/app/realme/GooglePayIndia/GooglePayIndia.apk"/>
+  <!-- podcasts -->
+  <package name="com.google.android.apps.podcasts" project="common" country="-RU,-TR" operator="-TELCEL,-CLARO" reserve="true"  path="/system/preloadapp/GooglePodcasts/GooglePodcasts.apk"/>
+  <!-- Google One -->
+  <package name="com.google.android.apps.subscriptions.red" project="common" country="-RU,-TR" operator="common" reserve="true" path="/system/app/realme/GoogleOne/GoogleOne.apk" />
+  <!-- Google Files -->
+  <package name="com.google.android.apps.nbu.files" project="common" country="common" operator="-TELCEL,-CLARO" reserve="true" path="/product/app/Files/Files.apk" />
+  <!-- Google Assistant -->
+  <package name="com.google.android.apps.googleassistant" project="common" country="common" operator="common" reserve="true" path="/product/app/Assistant/Assistant.apk" />
+  <!-- Google HealthConnect -->
+  <package name="com.google.android.apps.healthdata" project="common" country="common" operator="common" reserve="true" path="/product/app/GoogleHealthConnect/GoogleHealthConnect.apk" />
+  <!-- Google Play Movie/Video -->
+  <package name="com.google.android.videos" project="common" country="IN,ID,NP,LK,VN,PH,MY,KH,SG,TH,EG,SA,MX,PY,LATAM,RU,EUEX,NONEEA,TR,EX,KZ,AE,BR,CO,TW" operator="common" reserve="true" path="/product/app/Videos/Videos.apk"/>
+  <!-- Google Duo -->
+  <package name="com.google.android.apps.tachyon" project="common" country="common" operator="common" reserve="true" path="/system/preloadapp/Duo/Duo.apk"/>
+  <!-- Google Drive -->
+  <package name="com.google.android.apps.docs" project="common" country="common" operator="common" reserve="true" path="/system/preloadapp/Drive/Drive.apk"/>
+  <!-- Google YTMusic -->
+  <package name="com.google.android.apps.youtube.music" project="common" country="common" operator="common" reserve="true" path="/system/preloadapp/YTMusic/YTMusic.apk"/>
+  <!-- WfcActivation -->
+  <package name="com.google.android.wfcactivation" project="common" country="EUEX" operator="common" reserve="true" path="/system/priv-app/WfcActivation/WfcActivation.apk"/>
+  <!-- Google Home -->
+  <package name="com.google.android.apps.chromecast.app" project="common" country="common" operator="common" reserve="true" path="/product/app/GoogleHome/GoogleHome.apk"/>
+  <!-- CrossDeviceServicesStub -->
+  <package name="com.google.ambient.streaming" project="common" country="common" operator="common" reserve="true" path="/product/app/CrossDeviceServicesStub/CrossDeviceServicesStub.apk"/>
+  <!-- GoogleFindMyDevice -->
+  <package name="com.google.android.apps.adm" project="common" country="common" operator="common" reserve="true" path="/product/app/GoogleFindMyDevice/GoogleFindMyDevice.apk"/>
+  <!--SearchSelector-->
+  <package name="com.google.android.apps.setupwizard.searchselector" project="common" country="EUEX" operator="common" reserve="true" path="/system/priv-app/realme/SearchSelector/SearchSelector.apk"/>
+  <!-- EmojiKeyboard -->
+  <package name="com.preff.kb.op" project="common" country="RU,TR" operator="common" reserve="true" path="/system/app/realme/EmojiKeboard/EmojiKeboard.apk"/>
+  <!-- OppoOperationManualExp -->
+  <package name="com.oppo.operationManual" project="common" country="common" operator="common" reserve="true" path="/system/priv-app/realme/OppoOperationManualExp/OppoOperationManualExp.apk"/>
+  <!-- AfterSalesService -->
+  <package name="com.oppoex.afterservice" project="common" country="common" operator="common" reserve="true" path="/system/priv-app/realme/AfterSalesService/AfterSalesService.apk"/>
+  <!-- stk telcel -->
+  <package name="com.android.stk.overlay.telcel" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/Stk_telcel_rro/Stk_telcel_rro.apk"/>
+  <!-- OppoWeather -->
+  <package name="com.coloros.weather2" project="common" country="common" operator="-TELCEL,-CLARO" reserve="true" path="/system/app/realme/OppoWeather/OppoWeather.apk"/>
+  <!-- OppoWeatherService -->
+  <package name="com.coloros.weather.service" project="common" country="common" operator="-TELCEL,-CLARO" reserve="true" path="/system/app/realme/OppoWeatherService/OppoWeatherService.apk"/>
+  <!-- OppoWeatherEU -->
+  <package name="com.coloros.weather2" project="common" country="common" operator="-TELCEL,-CLARO" reserve="true" path="/system/app/realme/OppoWeatherEU/OppoWeatherEU.apk"/>
+  <!-- OppoWeatherServiceEU -->
+  <package name="com.coloros.weather.service" project="common" country="common" operator="-TELCEL,-CLARO" reserve="true" path="/system/app/realme/OppoWeatherServiceEU/OppoWeatherServiceEU.apk"/>
+  <!-- OppoBrowser_exp -->
+  <package name="com.heytap.browser" project="common" country="IN,ID,VN,TH,MY,PH" operator="common" reserve="true" path="/system/priv-app/realme/OppoBrowser_exp/OppoBrowser_exp.apk"/>
+  <!-- OppoBrowser -->
+  <package name="com.heytap.browser" project="common" country="EG,BR,OCA,KZ,LATAM,MX,EUEX,NONEEA,SA,LK,TR,UA,APC,MEA" operator="-TELCEL" reserve="true" path="/system/priv-app/realme/OppoBrowser/OppoBrowser.apk"/>
+  <!-- RussiaBrowser -->
+  <package name="com.heytap.browser" project="common" country="RU" operator="common" reserve="true" path="/system/priv-app/realme/RussiaBrowser/RussiaBrowser.apk"/>
+  <!-- RealmeCommunity -->
+  <package name="com.realmecomm.app" project="common" country="IN,ID,RU,EG,PH" operator="common" reserve="true" path="/system/preloadapp/realme/RMCommEXP/RMCommEXP.apk"/>
+  <!-- RealmeStore -->
+  <package name="com.realmestore.app" project="common" country="IN,ID" operator="common" reserve="true" path="/system/preloadapp/realme/RMStoreExp/RMStoreExp.apk"/>
+  <!-- Opush -->
+  <package name="com.heytap.mcs" project="common" country="IN,TH,MX,MY,ID,LATAM,MEA" operator="common" reserve="true" path="/system/app/realme/Opush/Opush.apk"/>
+  <!-- Soloop -->
+  <package name="com.coloros.videoeditor" project="common" country="-EUEX,-NONEEA,-TR" operator="-TELCEL,-CLARO" reserve="true" path="/system_ext/preloadapp/Soloop/Soloop.apk"/>
+  <!-- Oppo Market -->
+  <package name="com.heytap.market" project="common" country="ID,PH,VN,TH,MY,TW,IN,RU" operator="common" reserve="true" path="/system/priv-app/realme/KeKeMarket/KeKeMarket.apk"/>
+  <!-- Oppo Market international-->
+  <package name="com.heytap.market" project="common" country="EG,BR,KZ,LATAM,SA,LK,APC,MEA" operator="common" reserve="true" path="/system/priv-app/realme/KeKeMarket_inter/KeKeMarket_inter.apk"/>
+  <!-- Oppo Market EU-->
+  <package name="com.heytap.market" project="common" country="EUEX,TR" operator="common" reserve="true" path="/system/priv-app/realme/KeKeMarket_eu/KeKeMarket_eu.apk"/>
+  <!-- FileMnager -->
+  <package name="com.coloros.filemanager" project="common" country="-EUEX,-TR" operator="common" reserve="true" path="/system_ext/app/FileManager/FileManager.apk"/>
+  <!-- SilentReboot -->
+  <package name="com.oplus.silentreboot" project="common" country="-EUEX,-TR" operator="-TELCEL,-CLARO" reserve="true" path="/system/app/SilentReboot/SilentReboot.apk"/>
+  <!-- LockAssistant -->
+  <package name="com.coloros.lockassistant" project="common" country="IN,TH,MX,MY,ID,LATAM,MEA" operator="common" reserve="true" path="/system/app/realme/LockAssistant/LockAssistant.apk"/>
+  <!-- Cota -->
+  <package name="com.oplus.cota" project="common" country="EUEX" operator="common" reserve="true" path="/system/priv-app/realme/Cota/Cota.apk"/>
+  <package name="com.oplus.cota" project="common" country="MEA" operator="common" reserve="true" path="/system/priv-app/realme/PuCota/PuCota.apk"/>
+  <!-- Finmart -->
+  <package name="com.fin.topkredit" project="common" country="ID" operator="common" reserve="true" path="/system/preloadapp/Finmart/Finmart.apk"/>
+  <!-- Prestamofacil -->
+  <package name="com.fintech.prestamofacil" project="common" country="MX" operator="-TELCEL,-CLARO" reserve="true" path="/system/preloadapp/PrestamoFacil/PrestamoFacil.apk"/>
+  <!-- Fineasy -->
+  <package name="com.fintech.life" project="common" country="PH,MY,TH,ID" operator="common" reserve="true" path="/system/preloadapp/Fineasy/Fineasy.apk"/>
+  <!-- AppHub -->
+  <package name="com.applovin.array.apphub.vincere" project="common" country="IN,ID,PH,MY,VN,TH,RU" operator="common" reserve="true" path="/system_ext/priv-app/realme/AppHub/AppHub.apk"/>
+  <!-- heyTapPictorial -->
+  <package name="com.heytap.pictorial" project="common" country="EG,PH,MY,SA,LK,TW,TH,SG,APC,VN" operator="common" reserve="true" path="/system/priv-app/realme/HeyTapPictorial/HeyTapPictorial.apk"/>
+  <package name="com.heytap.pictorial" project="common" country="EUEX,NONEEA,TR" operator="common" reserve="true" path="/system/priv-app/realme/HeyTapPictorial_eu/HeyTapPictorial_eu.apk"/>
+  <package name="com.heytap.pictorial" project="common" country="RU" operator="common" reserve="true" path="/system/priv-app/realme/HeyTapPictorial_ru/HeyTapPictorial_ru.apk"/>
+  <!--VideoGallery-->
+  <package name="com.coloros.video" project="common" country="-EUEX,-TR" operator="common" reserve="true" path="/system/priv-app/realme/VideoGallery/VideoGallery.apk"/>
+  <package name="com.oplus.leftscreen" project="common" country="RU" operator="common" reserve="true" path="/system/priv-app/realme/HiAssistant/HiAssistant.apk"/>
+
+  <!-- BijoyKeyboard -->
+  <package name="com.bijoy.androidkeyboard" project="common" country="LK" operator="-TELCEL,-CLARO" reserve="true" path="/system/preloadapp/realme/BijoyKeyboard/BijoyKeyboard.apk"/>
+  <!-- Glance -->
+  <package name="com.glance.lockscreenRealme" project="common" country="IN,ID" operator="common" reserve="true" path="/system/priv-app/realme/Glance/Glance.apk"/>
+
+
+  <!-- MXContenedor -->
+  <package name="com.telcel.contenedor" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/MXContenedor/MXContenedor.apk"/>
+  <!-- MXMi -->
+  <package name="com.speedymovil.wire" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/MXMi/MXMi.apk"/>
+  <!-- Facebook Public Edition Reusable Telcel Facebook-->
+  <package name="com.facebook.katana" project="common" country="-RU" operator="-TELSTRA,-TELSTRA_POSTPAID,-TELSTRA_PREPAID,-CLARO,-VODAFONE_EEA" reserve="true" path="/system/preloadapp/realme/Facebook/Facebook.apk"/>
+  <!-- FacebookInstaller -->
+  <package name="com.facebook.system" project="common" country="common" operator="-VODAFONE_EEA,-CLARO" reserve="true" path="/system/priv-app/realme/FacebookInstaller/FacebookInstaller.apk"/>
+  <!-- FacebookManager -->
+  <package name="com.facebook.appmanager" project="common" country="common" operator="-VODAFONE_EEA,-CLARO" reserve="true" path="/system/app/realme/FacebookManager/FacebookManager.apk"/>
+  <!-- FacebookServices -->
+  <package name="com.facebook.services" project="common" country="common" operator="-VODAFONE_EEA,-CLARO" reserve="true" path="/system/priv-app/realme/FacebookServices/FacebookServices.apk"/>
+  <!-- MXMessenger -->
+  <package name="com.facebook.orca" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXMessenger/MXMessenger.apk"/>
+  <!-- MXSysDLL -->
+  <package name="co.sitic.pp" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/MXSysDLL/MXSysDLL.apk"/>
+  <!-- MXClaroDrive -->
+  <package name="com.clarodrive.android" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXClaroDrive/MXClaroDrive.apk"/>
+  <!-- MXClaroJuegos -->
+  <package name="com.gameloft.android.gdc" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/MXClaroJuegos/MXClaroJuegos.apk"/>
+  <!-- MXClaroMusica -->
+  <package name="com.telcel.imk" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXClaroMusica/MXClaroMusica.apk"/>
+  <!-- MXClaroVideo -->
+  <package name="com.dla.android" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXClaroVideo/MXClaroVideo.apk"/>
+  <!-- MXinstagram -->
+  <package name="com.instagram.android" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXinstagram/MXinstagram.apk"/>
+  <!-- MX1Weather -->
+  <package name="com.handmark.expressweather" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MX1Weather/MX1Weather.apk"/>
+
+  <!-- TelcelDT -->
+  <package name="com.dti.amx" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/priv-app/realme/TelcelDT/TelcelDT.apk"/>
+  <!-- MXClaroshop -->
+  <package name="com.americamovil.claroshop" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXClaroshop/MXClaroshop.apk"/>
+  <!-- MXClaropay -->
+  <package name="com.globalhitss.claro.pay" project="common" country="MX" operator="TELCEL" reserve="true" path="/system/preloadapp/realme/MXClaropay/MXClaropay.apk"/>
+
+  <!-- VDFFacebook -->
+  <package name="com.facebook.katana" project="common" country="EUEX,NONEEA" operator="common" reserve="true" path="/system/preloadapp/realme/VDFFacebook/VDFFacebook.apk"/>
+  <!-- VDFFacebookInstaller -->
+  <package name="com.facebook.system" project="common" country="EUEX,NONEEA" operator="common" reserve="true" path="/system/priv-app/realme/VDFFacebookInstaller/VDFFacebookInstaller.apk"/>
+  <!-- VDFFacebookManager -->
+  <package name="com.facebook.appmanager" project="common" country="EUEX,NONEEA" operator="common" reserve="true" path="/system/app/realme/VDFFacebookManager/VDFFacebookManager.apk"/>
+  <!-- VDFFacebookServices -->
+  <package name="com.facebook.services" project="common" country="EUEX,NONEEA" operator="common" reserve="true" path="/system/priv-app/realme/VDFFacebookServices/VDFFacebookServices.apk"/>
+  <!-- instagram -->
+  <package name="com.instagram.android" project="common" country="EUEX,NONEEA" operator="common" reserve="true" path="/system/preloadapp/realme/instagram/instagram.apk"/>
+  <!--Fetneticon -->
+  <package name="com.fet.fetneticon" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/Fetneticon/Fetneticon.apk"/>
+  <!--Mobileapp -->
+  <package name="com.gohappy.mobileapp" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/Mobileapp/Mobileapp.apk"/>
+  <!--FetMobileTV -->
+  <package name="com.walkgame.ismarttv" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/FetMobileTV/FetMobileTV.apk"/>
+  <!--Fetself -->
+  <package name="com.fetself" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/Fetself/Fetself.apk"/>
+  <!--FridayWallet -->
+  <package name="com.fet.fridaywallet" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/FridayWallet/FridayWallet.apk"/>
+  <!--FriDayVideo -->
+  <package name="net.fetnet.fetvod" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/FriDayVideo/FriDayVideo.apk"/>
+  <!--Omusic -->
+  <!--<package name="com.omusic.gPhone" project="common" country="TW" operator="FET" reserve="true" path="/system/preloadapp/realme/Omusic/Omusic.apk"/>-->
+  <!--MyMusic -->
+  <package name="com.ezpeer.ezpeerplus.v4" project="common" country="TW" operator="TWM" reserve="true" path="/system/preloadapp/realme/MyMusic/MyMusic.apk"/>
+  <!--VideoPhone -->
+  <package name="com.taiwanmobile.myVideo" project="common" country="TW" operator="TWM" reserve="true" path="/system/preloadapp/realme/VideoPhone/VideoPhone.apk"/>
+  
+  <!-- IT-Tim -->
+  <package name="it.telecomitalia.timsmartkid" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TIMSmartKid/TIMSmartKid.apk"/>
+  <package name="com.dailymotion.dailymotion" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/dailymotion/dailymotion.apk"/>
+  <package name="it.telecomitalia.cubovision" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TimVision/TimVision.apk"/>
+  <package name="it.telecomitalia.cubogiochi" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TIMGames/TIMGames.apk"/>
+  <package name="com.telecomitalia.cubomusica" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TimMusic/TimMusic.apk"/>
+  <package name="it.telecomitalia.timpersonal" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TimPersonal/TimPersonal.apk"/>
+  <package name="it.telecomitalia.centodiciannove" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/MyTIM/MyTIM.apk"/>
+  <package name="com.netflix.mediaclient" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/Netflix/Netflix.apk"/>
+  <package name="com.satispay.customer" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/Satispay/Satispay.apk"/>
+  <package name="com.satispay.promotion" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/TIMDEVICE/TIMDEVICE.apk"/>
+  <package name="com.amazon.mShop.android.shopping" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/AmazonShopping/AmazonShopping.apk"/>
+  <package name="com.amazon.appmanager" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/AmazonMDIP/AmazonMDIP.apk"/>
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CotaLayout/CotaLayout.apk"/>
+  <package name="com.coloros.wallpaperpicker2.wallpaper" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CotaWallpaper/CotaWallpaper.apk"/>
+  <!--FR-Orange-->
+  <package name="com.orange.update" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/OrangeAppCenter/OrangeAppCenter.apk"/>
+  <package name="com.orange.aura.oobe" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/OrangeManualSelector/OrangeManualSelector.apk"/>
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/OrangeCotaLayout/OrangeCotaLayout.apk"/>
+  <!-- ClaroContenedor -->
+  <package name="com.claroColombia.contenedor" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/ClaroContenedor/ClaroContenedor.apk"/>
+  <!-- ClaroMiPe -->
+  <package name="com.claro.pe.miclaro" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/MiClaroPE/MiClaroPE.apk"/>
+  <!-- ClaroFacebook -->
+  <package name="com.facebook.katana" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroFacebook/ClaroFacebook.apk"/>
+  <!-- ClaroFacebookServices -->
+  <package name="com.facebook.services" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/ClaroFacebookServices/ClaroFacebookServices.apk"/>
+  <!-- ClaroFacebookInstaller -->
+  <package name="com.facebook.system" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/ClaroFacebookInstall/ClaroFacebookInstall.apk"/>
+  <!-- ClaroFacebookManager -->
+  <package name="com.facebook.appmanager" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/app/realme/ClaroFacebookAppmanager/ClaroFacebookAppmanager.apk"/>
+  <!-- ClaroMessenger -->
+  <package name="com.facebook.orca" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroFacebookMessenager/ClaroFacebookMessenager.apk"/>
+  <!--ClaroSysDLL -->
+  <package name="co.sitic.pp" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/ClaroSysdll/ClaroSysdll.apk"/>
+  <!-- ClaroClaroDrive -->
+  <package name="com.clarodrive.android" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/MXClaroDrive/MXClaroDrive.apk"/>
+  <!-- ClaroClaroMusica -->
+  <package name="com.claro.claromusica.latam" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroMusica/ClaroMusica.apk"/>
+  <!-- ClaroClaroVideo -->
+  <package name="com.dla.android" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroVideo/ClaroVideo.apk"/>
+  <!-- Claroinstagram -->
+  <package name="com.instagram.android" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroInstagram/ClaroInstagram.apk"/>
+  <!-- Claro1Weather -->
+  <package name="com.handmark.expressweather" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroOneWeather/ClaroOneWeather.apk"/>
+  <!-- stk claro -->
+  <package name="com.android.stk.overlay.claro" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/Stk_claro_rro/Stk_claro_rro.apk"/>
+  <!-- Claro pay co -->
+  <package name="com.claropayco.aplicacion" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/preloadapp/realme/ClaroPayCo/ClaroPayCo.apk"/>
+  <!-- ClaroDT -->
+  <package name="com.dti.amx" project="common" country="LATAM" operator="CLARO" reserve="true" path="/system/priv-app/realme/TelcelDT/TelcelDT.apk"/>
+
+  <!-- WallpaperChooser -->
+  <package name="com.android.wallpaper.livepicker" project="common" country="common" operator="common" reserve="true" path="/system_ext/priv-app/WallpaperChooser.apk"/>
+  <!-- Compass -->
+  <package name="com.sprd.compass" project="common" country="common" operator="-CLARO" reserve="true" path="/system/app/SprdCompass/SprdCompass.apk"/>
+  <!-- Have Channel App Start -->
+  <!-- Booking -->
+  <package name="com.booking" project="common" country="EUEX,SA,LATAM,TW,BR,EG,TR" operator="-TELCEL,-VODAFONE_EEA,-CLARO" reserve="true" path="/my_preload/preloadapp/Booking/Booking.apk"/>
+  <!-- LinkedIn -->
+  <package name="com.linkedin.android" project="common" country="-RU,-KZ" operator="-TELCEL,-CLARO" reserve="true" path="/my_preload/preloadapp/LinkedIn/LinkedIn.apk"/>
+  <!-- Dailyhunt -->
+  <package name="com.eterno" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/Dailyhunt_oppo/Dailyhunt_oppo.apk"/>
+  <!-- Josh -->
+  <package name="com.eterno.shortvideos" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/Josh_oppo/Josh_oppo.apk"/>
+  <!-- Moj -->
+  <!--<package name="in.mohalla.video" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/Moj/Moj.apk"/>-->
+  <!-- Lazada -->
+  <package name="com.lazada.android" project="common" country="ID,VN,PH,MY,TH" operator="common" reserve="true" path="/my_preload/preloadapp/Lazada/Lazada.apk"/>
+  <!-- Shopee ID -->
+  <package name="com.shopee.id" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/shopeeid/shopeeid.apk"/>
+  <!-- Shopee VN -->
+  <package name="com.shopee.vn" project="common" country="VN" operator="common" reserve="true" path="/my_preload/preloadapp/shopeevietnam/shopeevietnam.apk"/>
+  <!-- Shopee PH -->
+  <package name="com.shopee.ph" project="common" country="PH" operator="common" reserve="true" path="/my_preload/preloadapp/shopeeph/shopeeph.apk"/>
+  <!-- Shopee MY -->
+  <package name="com.shopee.my" project="common" country="MY" operator="common" reserve="true" path="/my_preload/preloadapp/shopeemy/shopeemy.apk"/>
+  <!-- Shopee TH -->
+  <package name="com.shopee.th" project="common" country="TH" operator="common" reserve="true" path="/my_preload/preloadapp/shopeeth/shopeeth.apk"/>
+  <!-- TikTok -->
+  <package name="com.ss.android.ugc.trill" project="common" country="ID,VN,PH,MY,TH,TW" operator="-TELCEL,-CLARO" reserve="true" path="/my_preload/preloadapp/TikTok_trill/TikTok_trill.apk"/>
+  <!-- TikTok EU -->
+  <package name="com.zhiliaoapp.musically" project="common" country="EUEX,SA,LATAM,KZ,LK,BR,EG,TR,MEA" operator="-TELCEL,-CLARO" reserve="true" path="/my_preload/preloadapp/TikTokEU_musically/TikTokEU_musically.apk"/>
+  <!-- Agoda -->
+  <package name="com.agoda.mobile.consumer" project="common" country="ID,MY,TH,PH,VN,IN" operator="common" reserve="true" path="/my_preload/preloadapp/Com_Agoda/Com_Agoda.apk"/>
+  <!-- Agoda TW -->
+  <package name="com.agoda.mobile.consumer" project="common" country="TW" operator="common" reserve="true" path="/my_preload/preloadapp/TW_Agoda/TW_Agoda.apk"/>
+  <!-- Snapchat -->
+  <package name="com.snapchat.android" project="common" country="MEA,SA,APC,LATAM,LK,IN,TR,EG" operator="-TELCEL" reserve="true" path="/my_preload/preloadapp/Snapchat/Snapchat.apk"/>
+  <!-- SnackVideo -->
+  <package name="com.kwai.bulldog" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/Kwai_Snackvideo/Kwai_Snackvideo.apk"/>
+  <!-- VN Ngay Nay -->
+  <package name="com.xb.topnews" project="common" country="VN" operator="common" reserve="true"  path="/my_preload/preloadapp/VNY/VNY.apk"/>
+  <!-- Zalo -->
+  <package name="com.zing.zalo" project="common" country="VN" operator="common" reserve="true" path="/my_preload/preloadapp/VNG_Zalo/VNG_Zalo.apk"/>
+  <!-- ZingMP3 -->
+  <package name="com.zing.mp3" project="common" country="VN" operator="common" reserve="true" path="/my_preload/preloadapp/VNG_Zing/VNG_Zing.apk"/>
+  <!-- Bao Moi -->
+  <package name="com.epi" project="common" country="VN" operator="common" reserve="true" path="/my_preload/preloadapp/VNG_Baomoi/VNG_Baomoi.apk"/>
+  <!-- KwaiME -->
+  <package name="com.kwai.kuaishou.video.live" project="common" country="SA" operator="-CLARO" reserve="true" path="/my_preload/preloadapp/KwaiME/KwaiME.apk"/>
+  <!-- KwaiPro -->
+  <package name="com.kwai.video" project="common" country="BR" operator="-TELCEL,-CLARO" reserve="true" path="/my_preload/preloadapp/Kwaipro/Kwaipro.apk"/>
+  <!-- PhonePe -->
+  <package name="com.phonepe.app" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/Phonepe_euex/Phonepe_euex.apk"/>
+  <!-- JT Express -->
+  <package name="com.msd.JTClient" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/JTExpress/JTExpress.apk"/>
+  <!-- Spotify -->
+  <package name="com.spotify.music" project="common" country="IN,ID,PH,TH,EG,TR,VN,MY,MEA,SA,APC,LATAM,EUEX,LK,KZ" operator="common" reserve="true" path="/my_preload/preloadapp/spotify/spotify.apk"/>
+  <!-- Sharechat -->
+  <!--<package name="in.mohalla.sharechat" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/sharechat/sharechat.apk"/>-->
+  <!-- Helo -->
+  <!--<package name="world.social.group.video.share" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/world_social/world_social.apk"/>-->
+  <!-- Public -->
+  <package name="com.cardfeed.video_public" project="common" country="IN" operator="common" reserve="true" path="/my_preload/preloadapp/Public/Public.apk"/>
+  <!-- LordsMobile -->
+  <package name="com.igg.android.lordsmobile" project="common" country="SA,EUEX,TH,TR,TW" operator="common" reserve="true" path="/my_preload/preloadapp/LordsMobile/LordsMobile.apk"/>
+  <!-- Tokopedia -->
+  <package name="com.tokopedia.tkpd" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/Tokopedia/Tokopedia.apk"/>
+  <!-- Ozon -->
+  <package name="ru.ozon.app.android" project="common" country="RU" operator="common" reserve="true" path="/my_preload/preloadapp/Ozon/Ozon.apk"/>
+  <!-- Phoenix -->
+  <package name="com.transsion.phoenix" project="common" country="EG,MEA,SA,LATAM,BR,KZ" operator="common" reserve="true" path="/my_preload/preloadapp/Phoenix/Phoenix.apk"/>
+  <!-- koshelek -->
+  <package name="ru.cardsmobile.mw3" project="common" country="RU" operator="common" reserve="true" path="/my_preload/preloadapp/Koshelek/Koshelek.apk"/>
+  <!-- Liters -->
+  <package name="ru.litres.android" project="common" country="RU" operator="common" reserve="true" path="/my_preload/preloadapp/Litres/Litres.apk"/>
+  <!--RUIVI-->
+  <package name="ru.ivi.client" project="common" country="RU" operator="common" reserve="true" path="/my_preload/preloadapp/RuIVI/RuIVI.apk"/>
+  <!--RuStore-->
+  <package name="ru.vk.store" project="common" country="RU" operator="common" reserve="true" path="/my_preload/preloadapp/Rustore/Rustore.apk"/>
+  <!--PayJoyAccess-->
+  <package name="com.payjoy.access" project="common" country="LATAM,BR" operator="common" reserve="true"  path="/system/priv-app/realme/PayJoyAccess/PayJoyAccess.apk"/>
+  <!--Oplus_PayJoy-->
+  <package name="com.oplus.payjoy" project="common" country="LATAM,BR" operator="common" reserve="true"  path="/system/app/realme/Oplus_PayJoy/Oplus_PayJoy.apk"/>
+   <!-- JT Express -->
+  <package name="com.msd.JTClient" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/JTExpress/JTExpress.apk"/>
+  <!-- Tomorrocoffee -->
+  <package name="com.tomoro.indonesia.android" project="common" country="ID" operator="common" reserve="true" path="/my_preload/preloadapp/Tomorrocoffee/Tomorrocoffee.apk"/>
+  <!-- WPSOffice -->
+  <package name="cn.wps.moffice_eng" project="common" country="-IN,-RU" operator="-TELCEL,-CLARO" reserve="true" path="/my_preload/preloadapp/WPSOffice/WPSOffice.apk"/>
+  <!-- GlobalSearch -->
+  <package name="com.oppo.quicksearchbox" project="common" country="common" operator="common" reserve="true" path="/system_ext/priv-app/realme/GlobalSearch/GlobalSearch.apk"/>
+  <!-- Vodafone CZ -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CzCotaLayout/CzCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CzDreamlab/CzDreamlab.apk"/>
+  <package name="com.zentity.vodafone" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CzMyVodafone/CzMyVodafone.apk"/>
+  <package name="com.medicalit.zachranka" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/Zachranka/Zachranka.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CzFacebook-stub/CzFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/CzInstagram/CzInstagram.apk"/>
+  <!-- Vodafone De -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/DeCotaLayout/DeCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/DeDreamlab/DeDreamlab.apk"/>
+  <package name="com.appseleration.android.selfcare" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/MeinVodafone/MeinVodafone.apk"/>
+  <package name="com.vodafone.android.app.rbt" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/MyTone/MyTone.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/DeFacebook-stub/DeFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/DeInstagram/DeInstagram.apk"/>
+  <!-- Vodafone ES -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsCotaLayout/EsCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsDreamlab/EsDreamlab.apk"/>
+  <package name="es.vodafone.mobile.mivodafone" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsMyVodafone/EsMyVodafone.apk"/>
+  <package name="es.vodafone.tvonline" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsVodafoneTV/EsVodafoneTV.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsFacebook-stub/EsFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/EsInstagram/EsInstagram.apk"/>
+  <!-- Vodafone RO -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/RoCotaLayout/RoCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/RoDreamlab/RoDreamlab.apk"/>
+  <package name="ro.vodafone.mcare.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/RoMyVodafone/RoMyVodafone.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/RoFacebook-stub/RoFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/RoInstagram/RoInstagram.apk"/>
+  <!-- Vodafone IT -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/ItCotaLayout/ItCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/ItDreamlab/ItDreamlab.apk"/>
+  <package name="it.vodafone.my190" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/ItMyVodafone/ItMyVodafone.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/ItFacebook-stub/ItFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/ItInstagram/ItInstagram.apk"/>
+  <!-- Vodafone GR -->
+  <package name="com.coloros.launcher.layout" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/GrCotaLayout/GrCotaLayout.apk"/>
+  <package name="au.com.vodafone.dreamlabapp" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/GrDreamlab/GrDreamlab.apk"/>
+  <package name="com.myvodafone.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/GrMyVodafone/GrMyVodafone.apk"/>
+  <package name="com.facebook.katana" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/GrFacebook-stub/GrFacebook-stub.apk"/>
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/data/preloadapp/GrInstagram/GrInstagram.apk"/>
+  <!--VODACOM MEA -->
+  <package name="com.coloros.launcher.layout" project="common" country="MEA" operator="common" reserve="true" path="/data/preloadapp/VdcCotaLayout/VdcCotaLayout.apk"/>
+  <package name="co.za.vodacom.android.app.mymuze" project="common" country="MEA" operator="common" reserve="true" path="/data/preloadapp/MyMuze/MyMuze.apk"/>
+  <package name="za.co.vodacom.android.app" project="common" country="MEA" operator="common" reserve="true" path="/data/preloadapp/MyVodacom/MyVodacom.apk"/>
+  <package name="co.za.vodacom.android.app.playinc" project="common" country="MEA" operator="common" reserve="true" path="/data/preloadapp/Playinc/Playinc.apk"/>
+  <package name="za.co.thefuse.android" project="common" country="MEA" operator="common" reserve="true" path="/data/preloadapp/Thefuse/Thefuse.apk"/>
+  <!-- MTN -->
+  <package name="com.ayoba.ayoba" project="common" country="MEA" operator="common" reserve="true" path="/system/preloadapp/realme/Ayoba/Ayoba.apk"/>
+  <package name="com.momosa" project="common" country="MEA" operator="common" reserve="true" path="/system/preloadapp/realme/momonf/momonf.apk"/>
+  <package name="com.mtnsar3" project="common" country="MEA" operator="common" reserve="true" path="/system/preloadapp/realme/MTN/MTN.apk"/>
+  <!--VODACOM EUEX -->
+  <package name="com.instagram.android" project="common" country="EUEX" operator="common" reserve="true" path="/system/preloadapp/realme/Instagram/Instagram.apk"/>
+</apk_config>

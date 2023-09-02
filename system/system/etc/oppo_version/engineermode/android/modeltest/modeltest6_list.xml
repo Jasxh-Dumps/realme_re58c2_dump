@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelTestList>
+    <ModelItem name="LcdBacklightTest" />
+    <ModelItem name="BreathLightTest" />
+    <ModelItem name="LcdColorTest" />
+    <ModelItem name="KeyboardBacklightTest" />
+</ModelTestList>

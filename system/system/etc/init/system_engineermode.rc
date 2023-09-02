@@ -1,0 +1,136 @@
+#Add for record engineermode test result
+on boot
+    chmod 664 /proc/oppoCustom/Sensor
+    chown system root /proc/oppoCustom/Sensor
+
+    chmod 664 /proc/oppoCustom/nPlUsbEnumEnabled
+    chown system root /proc/oppoCustom/nPlUsbEnumEnabled
+
+    chmod 664 /proc/oppoCustom/nUsbAutoSwitch
+    chown system root /proc/oppoCustom/nUsbAutoSwitch
+
+    symlink /mnt/vendor/persist /storage/persist
+
+on post-fs-data
+    mkdir /data/engineermode
+    chown system system /data/engineermode
+    chmod 0775 /data/engineermode
+    mkdir /data/engineercamera
+    chown cameraserver system /data/engineercamera
+    chmod 0775 /data/engineercamera
+    mkdir /data/theme_bak
+    chown system system /data/theme_bak
+    chmod 0777 /data/theme_bak
+    chown system system /cache/factory/sbl_memtest_result.txt
+    chown system system /cache/factory/dram_aging_user_result.txt
+    chown system system /cache/factory/flash_aging_result.txt
+
+on property:vendor.oppo.engineermode.chargeswitch=true
+    write /sys/class/power_supply/battery/mmi_charging_enable 1
+    #ifdef ODM_HQ_EDIT
+    #Yebin.Guan@ODM_HQ.Android.EngineeringMode, 2019/11/28 Modif limit time of 360000
+    write /proc/charging_limit_time 360000
+    #endif /* ODM_HQ_EDIT */
+
+on property:vendor.oppo.engineermode.chargeswitch=false
+    write /sys/class/power_supply/battery/mmi_charging_enable 0
+
+#ifdef ODM_HQ_EDIT
+#Yebin.Guan@ODM_HQ.OppoEngineerMode, 2020/02/12,  update AgingTest mode
+on property:vendor.realme.engineermode.chargeswitch=true
+    write /proc/charger_cycle en808
+    write /proc/charging_limit_time 360000
+
+on property:vendor.realme.engineermode.chargeswitch=false
+    write /proc/charger_cycle dis808
+#ENDIF /* ODM_HQ_EDIT */
+
+service switchByMC /system/bin/sh /system/bin/engineer_system_shell.sh switchEng "mc"
+    user root
+    group root system
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+service switchByFtm /system/bin/sh /system/bin/engineer_system_shell.sh switchEng "ftm"
+    user root
+    group root system
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+on property:vendor.oppo.engineer.adb.flag=0
+    start switchByFtm
+
+on property:vendor.oppo.engineer.adb.flag=1
+    start switchByMC
+
+on property:vendor.oppo.engineer.adb.flag=2
+    setprop persist.sys.oppo.fromadbclear true
+
+on property:vendor.oppo.engineer.adb.flag=3
+    start switchByMC
+
+service cpustressAging /system/bin/sh /system/bin/engineer_system_shell.sh startCpustressAging
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+### atm support ###
+on property:vendor.usb.config.meta=true
+    write /sys/class/power_supply/battery/stop_charging_enable 0
+    setprop persist.sys.allcommode true
+    setprop persist.sys.oppo.usbactive true
+    setprop persist.sys.adb.engineermode 0
+
+on property:vendor.usb.config.meta=false
+    write /sys/class/power_supply/battery/stop_charging_enable 1
+
+on property:vendor.usb.config=*
+    setprop vendor.oppo.engineer.usb.config ${vendor.usb.config}
+### atm support ###
+
+#Add for sync panic and mtk log switch
+on property:vendor.MB.running=1
+    setprop persist.sys.assert.panic true
+    #Linghong.Zeng@PSW.NW.IMS.1934070,2019/04/08, add for mtk log switch
+    setprop persist.vendor.log.tel_dbg true
+
+on property:vendor.MB.running=0
+    setprop persist.sys.assert.panic false
+    #Linghong.Zeng@PSW.NW.IMS.1934070,2019/04/08, add for mtk log switch
+    setprop persist.vendor.log.tel_dbg false
+
+#Qiao.Hu@BSP.BaseDrv.CHG.Basic, 2017/12/26, modefy for otg
+on property:persist.sys.otg.switch=true
+    setprop persist.vendor.otg.switch true
+
+on property:persist.sys.otg.switch=false
+    setprop persist.vendor.otg.switch false
+
+#Qiao.Hu@BSP.BaseDrv.CHG.Basic, 2017/12/19, add chg current at call mode
+on property:sys.oppo.call_mode=true
+    write  /sys/class/power_supply/battery/call_mode 1
+    write  /proc/touchpanel/call_phone_switch_enable 1
+
+on property:sys.oppo.call_mode=false
+    write  /sys/class/power_supply/battery/call_mode 0
+    write  /proc/touchpanel/call_phone_switch_enable 0
+
+service cacheAging /system/bin/sh /system/bin/engineer_system_shell.sh startCacheAging
+    user root
+    disabled
+    oneshot
+    seclabel u:r:engineer_system_daemon:s0
+
+on property:vendor.oppo.vulkan.switch=*
+    setprop persist.graphics.vulkan.disable ${vendor.oppo.vulkan.switch}
+
+on property:vendor.oppo.engineer.usb.config=*
+    setprop persist.vendor.usb.config ${vendor.oppo.engineer.usb.config}
+    setprop persist.sys.usb.config ${vendor.oppo.engineer.usb.config}
+
+on property:persist.vendor.exit.activity=*
+    setprop persist.sys.exit.activity ATM_WIFISOCKET_ACTIVITY_CLOSE

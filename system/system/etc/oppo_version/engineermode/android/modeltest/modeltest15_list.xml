@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelTestList>
+    <ModelItem name="NfcReadTagTest" />
+    <ModelItem name="NfcSim1SimulationTest" />
+    <ModelItem name="NfcSim2SimulationTest" />
+    <ModelItem name="NfcEmbeddedSETest" />
+</ModelTestList>

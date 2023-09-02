@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <!-- Co Claro, Add for Sysdll apk Permissions Whitelist -->
+  <privapp-permissions package="co.sitic.pp">
+    <permission name="android.permission.CALL_PHONE"/>
+    <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+    <permission name="android.permission.INTERNET"/>
+    <permission name="android.permission.ACCESS_WIFI_STATE"/>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+    <permission name="android.permission.REORDER_TASKS"/>
+    <permission name="android.permission.CALL_PRIVILEGED"/>
+    <permission name="android.permission.EXPAND_STATUS_BAR"/>
+    <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    <permission name="android.permission.WAKE_LOCK"/>
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission name="android.permission.RECEIVE_SMS"/>
+    <permission name="android.permission.RECEIVE_EMERGENCY_BROADCAST"/>
+    <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <permission name="android.permission.WRITE_SETTINGS"/>
+    <permission name="android.permission.REAL_GET_TASKS"/>
+  </privapp-permissions>
+  <allow-in-power-save package="co.sitic.pp" />
+  <allow-in-data-usage-save package="co.sitic.pp" />
+  <system-user-whitelisted-app package="co.sitic.pp" />
+</permissions>

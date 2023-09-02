@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelTestList>
+    <ModelItem name="VibratorTest" />
+    <ModelItem name="SmallBoardCheck" />
+    <ModelItem name="WifiTest" />
+    <ModelItem name="BluetoothTest" />
+    <ModelItem name="SimDetectTest" />
+    <ModelItem name="OtgTest" />
+</ModelTestList>

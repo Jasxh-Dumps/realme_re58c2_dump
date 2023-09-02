@@ -1,0 +1,6 @@
+service cplogserver /system/bin/cplogserver
+    class main
+    user root
+    group system media_rw root system
+    writepid /dev/cpuset/system-background/tasks
+

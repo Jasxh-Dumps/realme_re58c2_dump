@@ -1,0 +1,19 @@
+on early-init
+    # set core dump resource limit
+    setrlimit 4 0x7fffffff 0x7fffffff
+
+on property:persist.vendor.sys.core.enabled=1
+    mkdir /data/corefile 0777
+    chmod 777 /sys/kernel/debug
+    write /proc/sys/kernel/core_pattern /data/corefile/core-%e-%p@%t
+    write /proc/sys/fs/suid_dumpable  1
+    setprop persist.zygote.core_dump 1
+    exec /system/bin/chcon u:object_r:coredump_file:s0 /data/corefile
+
+
+on property:persist.vendor.sys.core.enabled=0
+    write /proc/sys/fs/suid_dumpable  0
+    setprop persist.zygote.core_dump 0
+    write /proc/sys/kernel/core_pattern " "
+
+

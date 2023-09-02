@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <app-link package="co.sitic.pp" />
+    <hidden-api-whitelisted-app package="co.sitic.pp" />
+</config>

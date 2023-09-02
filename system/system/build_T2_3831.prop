@@ -1,0 +1,13 @@
+ro.com.google.clientidbase=android-oppo
+ro.com.google.clientidbase.ms=android-realme-terr1-rso2
+ro.com.google.clientidbase.tx=android-realme-terr1-rso2
+ro.com.google.clientidbase.vs=android-realme-terr1-rso2
+ro.product.model=RMX3831
+ro.product.system.model=RMX3831
+ro.oplus.rsa=rsa4-tier2
+ro.product.device=RE58C0
+ro.product.system.name=RMX3831
+ro.product.name=RMX3831
+ro.system.build.fingerprint=realme/RMX3831/RE58C0:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.build.fingerprint=realme/RMX3831/RE58C0:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.oppo.market.name=RMX3831

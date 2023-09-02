@@ -1,0 +1,14 @@
+ro.com.google.clientidbase=android-oppo
+ro.com.google.clientidbase.ms=android-realme-terr2-rso2
+ro.com.google.clientidbase.tx=android-realme-terr2-rso2
+ro.com.google.clientidbase.vs=android-realme-terr2-rso2
+ro.com.google.clientidbase.pg=android-realme-deo2
+ro.product.model=RMX3830
+ro.product.system.model=RMX3830
+ro.oplus.rsa=rsa4-tier2
+ro.product.device=RE58BC
+ro.product.system.name=RMX3830EEA
+ro.product.name=RMX3830EEA
+ro.system.build.fingerprint=realme/RMX3830EEA/RE58BC:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.build.fingerprint=realme/RMX3830EEA/RE58BC:13/TP1A.220624.014/T.R4T2.1691917416:user/release-keys
+ro.oppo.market.name=realme C51

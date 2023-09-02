@@ -1,0 +1,12 @@
+ro.com.google.clientidbase=android-oppo
+ro.build.display.id=RMX3760_13_A.30
+ro.build.version.ota=RMX3760_13.A.30_0300_202308131703
+ro.product.model=RMX3760
+ro.product.system.model=RMX3760
+ro.product.device=RE58C2
+ro.product.system.name=RMX3760TR
+ro.product.name=RMX3760TR
+ro.system.build.fingerprint=realme/RMX3760TR/RE58C2:13/TP1A.220624.014/T.1691917416:user/release-keys
+ro.build.fingerprint=realme/RMX3760TR/RE58C2:13/TP1A.220624.014/T.1691917416:user/release-keys
+ro.oppo.market.name=realme C53
+ro.build.version.base_os=realme/RMX3760TR/RE58C2:13/TP1A.220624.014/T.1690510968:user/release-keys

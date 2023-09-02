@@ -1,0 +1,30 @@
+<filter-conf>
+    <version>20210524</version>
+    <!--安规总开关-->
+    <high_temperature_switch>true</high_temperature_switch>
+    <!-- 35度安规关闭闪光灯温度阈值 -->
+    <high_temperature_close_flash_lights>450</high_temperature_close_flash_lights>
+    <!-- 35度安规关闭热点温度阈值 -->
+    <high_temperature_close_hotspot>490</high_temperature_close_hotspot>
+    <!-- 35度安规退应用温度阈值 -->
+    <high_temperature_close_apps>550</high_temperature_close_apps>
+    <!-- 35度安规紧急拨号温度阈值 -->
+    <high_temperature_only_emergencycall>490</high_temperature_only_emergencycall>
+
+    <!-- 25度安规关闭闪光灯温度阈值 -->
+    <high_temperature_close_flash_lights_25_degree>420</high_temperature_close_flash_lights_25_degree>
+    <!-- 25度安规关闭热点温度阈值 -->
+    <high_temperature_close_hotspot_25_degree>420</high_temperature_close_hotspot_25_degree>
+    <!-- 25度安规恢复热点温度阈值 -->
+    <high_temperature_restore_hotspot_25_degree>410</high_temperature_restore_hotspot_25_degree>
+    <!-- 25度安规退应用温度阈值 -->
+    <high_temperature_close_apps_25_degree>420</high_temperature_close_apps_25_degree>
+    <!-- 25度安规国家-->
+    <high_temperature_25_degree_country>RU PH TR MY TH IL ID BD VN AE EG PK BY EUEX</high_temperature_25_degree_country>
+    <!-- 35度安规国家-->
+    <high_temperature_35_degree_country></high_temperature_35_degree_country>
+    <!--25度安规转换35度安规阈值-->
+    <high_temperature_transition_threshold>300</high_temperature_transition_threshold>
+    <!--25度安规转换35度安规灭屏间隔时间阈值，单位：毫秒-->
+    <high_temperature_screen_off_interval_time>600000</high_temperature_screen_off_interval_time>
+</filter-conf>

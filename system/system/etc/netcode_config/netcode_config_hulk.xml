@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright (c) 2013-2014 Qualcomm Technologies, Inc.  All Rights Reserved.
+** Qualcomm Technologies Proprietary and Confidential.
+*/
+-->
+<!-- use empty string to specify no proxy or port -->
+<!-- If you edit this version, also edit the version in the partner-supplied
+    netcode_config.xml configuration file -->
+<netcode version="20221130">
+    <in_list region="LATAM">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="a21cb611a2499ebe" mcc="e8a6f621a3a2e144" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <in_list region="EUEX">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="dd45d34cf4e25a2d" mcc="a129c9a24ba8c2de" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="542133ed7ab7fe2f" mcc="b637a1b6dcc6a5a4" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="9e056cbe200f79f1" mcc="082eadc7dfec0a42" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="008848b386626468" mcc="6e365704e30cb568" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="12ea9808f7a125ab" mcc="33e4e55806a42e27" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="e880f907bb894db8" mcc="f26e3ea70aaf2796" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="1e7f63f1dcd81399" mcc="b162a26ff8bb9c90" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="cb300bb07d716619" mcc="4c7e9713b4e937ff" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="20640a70e9e04a94" mcc="8062c0e5ff4dedbd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="532f34014fae88e3" mcc="9d765a3ff70aec67" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="62ceee51fd7eb671" mcc="435ef300ed1dec4d" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ca2d8ee96122738e" mcc="b3a650e2ed9ba3c9" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="fef3ed50088c9a2d" mcc="e2ec394e59f44db1" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="92f88b58d006d0d3" mcc="539aa90a4f69fcb2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="44aeb40ea7b0d609" mcc="8923baaae87d1eca" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="b3b919ce994adbac" mcc="14552d2a0a4f41d6" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="6ed87335d1f33c87" mcc="1b6a52a5c02bdde3" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ccca6e64571e4f41" mcc="89014ad2c0f262aa" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="59312c417c3857be" mcc="f6e00af23d274492" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="b9381d4aa53c2725" mcc="65f9ad7c2b46a071" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="0ba65ac9ce9ecd6c" mcc="f03bd73c340149b5" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="f33d5e42b7b5debb" mcc="465227cf209b9f17" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ce3d6fb3606a45a1" mcc="86f5b5b70e380db2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="6ccca9478010fd53" mcc="daeb53967f8804f7" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="5bf52470ffceed3a" mcc="556f9f6fc04aa733" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="7e2ee67530f4f879" mcc="f515bb7477005ae9" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="e2b16c2724703bd6" mcc="ac71febf26eeb091" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ea4f708ae4178299" mcc="8235fd92f45e1de3" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="3e04d36c0e295f78" mcc="882f9e099aa6f0f2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="8b79e16ccc9e559d" mcc="6960a9c56a9f03a4" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <in_list region="IN">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="dd45d34cf4e25a2d" mcc="a129c9a24ba8c2de" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="542133ed7ab7fe2f" mcc="b637a1b6dcc6a5a4" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="9e056cbe200f79f1" mcc="082eadc7dfec0a42" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="008848b386626468" mcc="6e365704e30cb568" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="12ea9808f7a125ab" mcc="33e4e55806a42e27" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="e880f907bb894db8" mcc="f26e3ea70aaf2796" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="1e7f63f1dcd81399" mcc="b162a26ff8bb9c90" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="cb300bb07d716619" mcc="4c7e9713b4e937ff" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="20640a70e9e04a94" mcc="8062c0e5ff4dedbd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="532f34014fae88e3" mcc="9d765a3ff70aec67" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="62ceee51fd7eb671" mcc="435ef300ed1dec4d" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ca2d8ee96122738e" mcc="b3a650e2ed9ba3c9" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="fef3ed50088c9a2d" mcc="e2ec394e59f44db1" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="92f88b58d006d0d3" mcc="539aa90a4f69fcb2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="44aeb40ea7b0d609" mcc="8923baaae87d1eca" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="b3b919ce994adbac" mcc="14552d2a0a4f41d6" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="6ed87335d1f33c87" mcc="1b6a52a5c02bdde3" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ccca6e64571e4f41" mcc="89014ad2c0f262aa" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="59312c417c3857be" mcc="f6e00af23d274492" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="b9381d4aa53c2725" mcc="65f9ad7c2b46a071" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="0ba65ac9ce9ecd6c" mcc="f03bd73c340149b5" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="f33d5e42b7b5debb" mcc="465227cf209b9f17" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ce3d6fb3606a45a1" mcc="86f5b5b70e380db2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="6ccca9478010fd53" mcc="daeb53967f8804f7" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="5bf52470ffceed3a" mcc="556f9f6fc04aa733" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="7e2ee67530f4f879" mcc="f515bb7477005ae9" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="e2b16c2724703bd6" mcc="ac71febf26eeb091" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="ea4f708ae4178299" mcc="8235fd92f45e1de3" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="3e04d36c0e295f78" mcc="882f9e099aa6f0f2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="8b79e16ccc9e559d" mcc="6960a9c56a9f03a4" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="9b838cd1ea0b9282" mcc="2b9142656f73e4bd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <in_list region="TH">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="04b9c589cc0a80bf" mcc="33451ed5010fd338" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="c580e6913d0a38e1" mcc="056cc6b28a8656b5" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <in_list region="MEA">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="e43e31b2f8f88a8c" mcc="114d831991885c2c" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="9b838cd1ea0b9282" mcc="2b9142656f73e4bd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <in_list region="KZ">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="cb300bb07d716619" mcc="4c7e9713b4e937ff" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="20640a70e9e04a94" mcc="8062c0e5ff4dedbd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="532f34014fae88e3" mcc="9d765a3ff70aec67" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="62ceee51fd7eb671" mcc="435ef300ed1dec4d" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="fef3ed50088c9a2d" mcc="e2ec394e59f44db1" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="92f88b58d006d0d3" mcc="539aa90a4f69fcb2" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="b3b919ce994adbac" mcc="14552d2a0a4f41d6" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="6ed87335d1f33c87" mcc="1b6a52a5c02bdde3" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="9b838cd1ea0b9282" mcc="2b9142656f73e4bd" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+            <plmn country="e43e31b2f8f88a8c" mcc="114d831991885c2c" mnc="a926009bf4096cdf" category="870b52e141565d59"/>
+        </blacklist>
+    </in_list>
+
+    <testcu_list region="testcu" >
+        <whitelist>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="55f7e5dff1be2c2b" category="10ba71f87daad3b7"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="004a8c11374880c4" category="10ba71f87daad3b7"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c53c6e7b29451305" category="10ba71f87daad3b7"/>
+        </whitelist>
+        <blacklist>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="012bbafa5373c7be" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c22ed6799feab6c3" category="870b52e141565d59"/>
+        </blacklist>
+    </testcu_list>
+
+    <testcmcc_list region="testcmcc">
+        <whitelist>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="012bbafa5373c7be" category="10ba71f87daad3b7"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c22ed6799feab6c3" category="10ba71f87daad3b7"/>
+        </whitelist>
+        <blacklist>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="55f7e5dff1be2c2b" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="004a8c11374880c4" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c53c6e7b29451305" category="870b52e141565d59"/>
+        </blacklist>
+    </testcmcc_list>
+
+    <testall_list region="testall">
+        <whitelist>
+        </whitelist>
+        <blacklist>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="012bbafa5373c7be" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c22ed6799feab6c3" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="55f7e5dff1be2c2b" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="004a8c11374880c4" category="870b52e141565d59"/>
+            <plmn country="807168708a9565a8" mcc="d2eb044a11199215" mnc="c53c6e7b29451305" category="870b52e141565d59"/>
+        </blacklist>
+    </testall_list>
+    <endcode>
+    </endcode>
+</netcode>
